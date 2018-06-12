@@ -3,7 +3,7 @@ package languages
 import (
 	"strings"
 
-	"github.com/janiltonmaciel/dockerfile-generator/core"
+	"github.com/janiltonmaciel/dockerfile-gen/core"
 )
 
 type Ruby struct {

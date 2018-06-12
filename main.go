@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/janiltonmaciel/dockerfile-generator/core"
-	"github.com/janiltonmaciel/dockerfile-generator/languages"
+	"github.com/janiltonmaciel/dockerfile-gen/core"
+	"github.com/janiltonmaciel/dockerfile-gen/languages"
 	"gopkg.in/AlecAivazis/survey.v1"
 	surveyCore "gopkg.in/AlecAivazis/survey.v1/core"
 )

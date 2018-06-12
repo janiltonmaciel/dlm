@@ -42,7 +42,7 @@ COLOR_YELLOW = \033[33m
 
 ## Prints this help
 help:
-	printf "${COLOR_YELLOW}Dockerfile-generator\n------\n${COLOR_RESET}"
+	printf "${COLOR_YELLOW}dockerfile-gen\n------\n${COLOR_RESET}"
 	awk '/^[a-zA-Z\-\_0-9\.%]+:/ { \
 		helpMessage = match(lastLine, /^## (.*)/); \
 		if (helpMessage) { \

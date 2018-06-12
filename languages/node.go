@@ -1,6 +1,6 @@
 package languages
 
-import "github.com/janiltonmaciel/dockerfile-generator/core"
+import "github.com/janiltonmaciel/dockerfile-gen/core"
 
 type Node struct{}
 

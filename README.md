@@ -1,1 +1,1 @@
-# dockerfile-generator
+# dockerfile-gen
