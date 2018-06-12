@@ -19,12 +19,15 @@ func init() {
 }
 
 func main() {
+	var err error
+
 	answers := []string{}
 	prompt := &survey.MultiSelect{
 		Message: "Select the programming languages:",
 		Options: languages.GetLanguages(),
 	}
-	survey.AskOne(prompt, &answers, survey.Required)
+	err = survey.AskOne(prompt, &answers, survey.Required)
+	checkErr(err)
 
 	var context = make(map[string]string)
 	var lang languages.Language
@@ -41,7 +44,8 @@ func main() {
 			Help:    lang.Help(),
 			Default: lang.Default(),
 		}
-		survey.AskOne(prompt, &version, survey.Required)
+		err = survey.AskOne(prompt, &version, survey.Required)
+		checkErr(err)
 
 		context[lang.Name()] = lang.GetDockerfile(version)
 	}
@@ -53,13 +57,24 @@ func main() {
 		Help:    "Alpine libs",
 		Default: ExtraLibs,
 	}
-	err := survey.AskOne(p, &libs, nil)
+	err = survey.AskOne(p, &libs, nil)
+	checkErr(err)
+
 	context["Libs"] = libs
 
-	dockerfile := core.ParseTemplate(context, "Build")
+	contentDockerfile := core.ParseTemplate(context, "Build")
+	saveDockerfile(contentDockerfile)
+}
 
+func checkErr(err error) {
+	if err != nil {
+		println("\n> Good bye!\n")
+		os.Exit(2)
+	}
+}
+
+func saveDockerfile(content string) {
 	output := "Dockerfile"
-
 	rewrite := true
 	if _, err := os.Stat(output); err == nil {
 		p := &survey.Confirm{
@@ -70,7 +85,7 @@ func main() {
 	}
 
 	if rewrite {
-		err := ioutil.WriteFile(output, []byte(dockerfile), 0644)
+		err := ioutil.WriteFile(output, []byte(content), 0644)
 		if err == nil {
 			fmt.Printf("> Successfully Generated `%s` \n", output)
 		} else {
