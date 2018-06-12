@@ -40,7 +40,7 @@ func main() {
 
 		version = ""
 		prompt := &survey.Input{
-			Message: fmt.Sprintf("Informe a versão do %s:", lang.Name()),
+			Message: fmt.Sprintf("Release %s:", lang.Name()),
 			Help:    lang.Help(),
 			Default: lang.Default(),
 		}
