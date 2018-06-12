@@ -1,0 +1,15 @@
+{{ if .Node -}}
+    {{ .Node }}
+{{- else -}}
+    FROM alpine:3.7
+{{- end }}
+
+LABEL maintainer="janilton@gmail.com"
+{{ if .Libs -}}
+    RUN apk update && apk upgrade \
+        && apk add --no-cache {{ .Libs }}
+{{- end }}
+
+{{ .Python }}
+{{ .Ruby }}
+{{ .Golang }}

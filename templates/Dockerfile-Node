@@ -1,0 +1,3 @@
+##### NODE ######
+FROM node:{{ .NODE_VERSION }}-alpine
+ENV PATH node_modules/.bin:$PATH
