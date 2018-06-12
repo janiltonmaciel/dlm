@@ -3,3 +3,4 @@
 .keep
 .GOPATH
 vendor
+dockerfile-gen
