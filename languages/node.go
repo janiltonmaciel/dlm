@@ -1,7 +1,8 @@
 package languages
 
-type Node struct {
-}
+import "github.com/janiltonmaciel/dockerfile-generator/core"
+
+type Node struct{}
 
 func (n Node) Name() string {
 	return "Node"
@@ -19,5 +20,5 @@ func (n Node) GetDockerfile(version string) string {
 		"NODE_VERSION": version,
 	}
 
-	return ParseTemplate(context, n.Name())
+	return core.ParseTemplate(context, n.Name())
 }

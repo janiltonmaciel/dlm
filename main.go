@@ -7,6 +7,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/janiltonmaciel/dockerfile-generator/core"
 	"github.com/janiltonmaciel/dockerfile-generator/languages"
 	"gopkg.in/AlecAivazis/survey.v1"
 	surveyCore "gopkg.in/AlecAivazis/survey.v1/core"
@@ -120,7 +121,7 @@ func main() {
 	survey.AskOne(p, &libs, nil)
 	context["Libs"] = libs
 
-	dockerfile := languages.ParseTemplate(context, "Build")
+	dockerfile := core.ParseTemplate(context, "Build")
 
 	output := "Dockerfile"
 

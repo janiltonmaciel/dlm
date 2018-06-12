@@ -1,6 +1,10 @@
 package languages
 
-import "strings"
+import (
+	"strings"
+
+	"github.com/janiltonmaciel/dockerfile-generator/core"
+)
 
 type Ruby struct {
 }
@@ -24,7 +28,7 @@ func (r Ruby) GetDockerfile(version string) string {
 		"RUBY_VERSION": rubyVersion,
 	}
 
-	return ParseTemplate(context, r.Name())
+	return core.ParseTemplate(context, r.Name())
 }
 
 func (r Ruby) rightPadVersion(version string, padStr string, overallLen int) string {

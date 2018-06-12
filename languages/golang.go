@@ -1,5 +1,7 @@
 package languages
 
+import "github.com/janiltonmaciel/dockerfile-generator/core"
+
 type Golang struct{}
 
 func (g Golang) Name() string {
@@ -19,6 +21,5 @@ func (g Golang) GetDockerfile(version string) string {
 		"GOLANG_VERSION": version,
 	}
 
-	return ParseTemplate(context, g.Name())
-
+	return core.ParseTemplate(context, g.Name())
 }

@@ -1,6 +1,10 @@
 package languages
 
-import "strings"
+import (
+	"strings"
+
+	"github.com/janiltonmaciel/dockerfile-generator/core"
+)
 
 type Python struct {
 }
@@ -27,5 +31,5 @@ func (p Python) GetDockerfile(version string) string {
 		pythonMajor = "2"
 	}
 
-	return ParseTemplate(context, p.Name()+pythonMajor)
+	return core.ParseTemplate(context, p.Name()+pythonMajor)
 }
