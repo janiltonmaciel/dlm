@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -18,7 +19,25 @@ func init() {
 	survey.InputQuestionTemplate = core.InputQuestionTemplate
 }
 
+var (
+	buildVersion string
+	version      bool
+)
+
+func initFlags() {
+	flag.BoolVar(&version, "version", false, "show version")
+	flag.Parse()
+}
+
 func main() {
+
+	initFlags()
+
+	if version {
+		fmt.Println("Version:", buildVersion)
+		return
+	}
+
 	var err error
 
 	answers := []string{}
