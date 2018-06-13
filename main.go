@@ -20,12 +20,14 @@ func init() {
 }
 
 var (
-	buildVersion string
-	version      bool
+	version     string
+	commit      string
+	date        string
+	showVersion bool
 )
 
 func initFlags() {
-	flag.BoolVar(&version, "version", false, "show version")
+	flag.BoolVar(&showVersion, "version", false, "show version")
 	flag.Parse()
 }
 
@@ -33,8 +35,10 @@ func main() {
 
 	initFlags()
 
-	if version {
-		fmt.Println("Version:", buildVersion)
+	if showVersion {
+		fmt.Println("Version:", version)
+		fmt.Println("Commit:", commit)
+		fmt.Println("Date:", date)
 		return
 	}
 

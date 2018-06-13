@@ -5,11 +5,15 @@ SHELL = /bin/bash
 
 PROJECT := dockerfile-gen
 TAG := `git describe --tags`
-LDFLAGS := -X main.buildVersion=$(TAG)
+DATE := `date -u +"%Y-%m-%dT%H:%M:%SZ"`
+COMMIT := ""
+
+LDFLAGS := -X main.version=$(TAG) -X main.commit=$(COMMIT) -X main.date=$(DATE)
+
 
 build:
 	echo "Building $(PROJECT)"
-	go build -ldflags "$(LDFLAGS)" -o $(PROJECT)  main.go 
+	go build -ldflags "$(LDFLAGS)" -o $(PROJECT) main.go
 
 dist-clean:
 	rm -rf dist
