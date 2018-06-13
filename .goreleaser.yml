@@ -1,9 +1,9 @@
 # goreleaser.yml
 # Build customization
-project_name: dockerfiler-gen
+project_name: dockerfile-gen
 build:
   main: ./main.go
-  binary: dockerfiler-gen
+  binary: dockerfile-gen
   goos:
     - windows
     - darwin
@@ -30,10 +30,10 @@ brew:
   # Reporitory to push the tap to.
   github:
     owner: janiltonmaciel
-    name: homebrew-dockerfiler-gen
+    name: homebrew-dockerfile-gen
 
   description: "Generator Dockerfile"
-  homepage: "https://github.com/janiltonmaciel/dockerfiler-gen"
+  homepage: "https://github.com/janiltonmaciel/dockerfile-gen"
 
   # Folder inside the repository to put the formula.
   # Default is the root folder.
@@ -41,7 +41,7 @@ brew:
 
   # Custom install
   install: |
-    bin.install "dockerfiler-gen"
+    bin.install "dockerfile-gen"
 
   test: |
-    assert_match version.to_s, shell_output("#{bin}/dockerfiler-gen --version")
+    assert_match version.to_s, shell_output("#{bin}/dockerfile-gen --version")
