@@ -25,20 +25,23 @@ archive:
     - goos: windows
       format: zip
 
-# # Mac OS Homebrew
-# brew:
-#   # Reporitory to push the tap to.
-#   github: 
-#     owner: janiltonmaciel
-#     name: homebrew-dockerfiler-gen
+# Mac OS Homebrew
+brew:
+  # Reporitory to push the tap to.
+  github:
+    owner: janiltonmaciel
+    name: homebrew-dockerfiler-gen
 
-#   description: "Generator Dockerfile"
-#   homepage: "https://github.com/janiltonmaciel/dockerfile-gen"
+  description: "Generator Dockerfile"
+  homepage: "https://github.com/janiltonmaciel/dockerfiler-gen"
 
-#   # Folder inside the repository to put the formula.
-#   # Default is the root folder.
-#   folder: Formula
+  # Folder inside the repository to put the formula.
+  # Default is the root folder.
+  folder: Formula
 
-#   # Custom install
-#   install: |
-#     bin.install "dockerfile-gen"    
+  # Custom install
+  install: |
+    bin.install "dockerfiler-gen"
+
+  test: |
+    assert_match version.to_s, shell_output("#{bin}/dockerfiler-gen --version")
