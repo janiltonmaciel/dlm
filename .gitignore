@@ -3,6 +3,7 @@
 .keep
 .GOPATH
 vendor
-dockerfile-gen*
+dockerfile-gen
+dockerfile-gen-*.tar.gz
 dist/
 
