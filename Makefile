@@ -4,6 +4,9 @@ SHELL = /bin/bash
 .DEFAULT_GOAL := help
 
 PROJECT := dockerfile-gen
+
+GITHUB_TOKEN := $(shell git config --global --get github.token || echo $$GITHUB_TOKEN)
+
 TAG := `git describe --tags`
 DATE := `date -u +"%Y-%m-%dT%H:%M:%SZ"`
 COMMIT := ""
@@ -16,7 +19,11 @@ build:
 	go build -ldflags "$(LDFLAGS)" -o $(PROJECT) main.go
 
 release:
-	goreleaser --rm-dist
+	@if [ ! "$(GITHUB_TOKEN)" ]; then \
+		echo "github token should be configurated."; \
+		exit 1; \
+	fi
+	export GITHUB_TOKEN=$(GITHUB_TOKEN); goreleaser release --rm-dist
 
 ## Setup of the project
 setup:
