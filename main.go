@@ -26,6 +26,15 @@ var (
 	showVersion bool
 )
 
+var logo = `
+██████╗  ██████╗  ██████╗██╗  ██╗███████╗██████╗ ███████╗██╗██╗     ███████╗     ██████╗ ███████╗███╗   ██╗
+██╔══██╗██╔═══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗██╔════╝██║██║     ██╔════╝    ██╔════╝ ██╔════╝████╗  ██║
+██║  ██║██║   ██║██║     █████╔╝ █████╗  ██████╔╝█████╗  ██║██║     █████╗█████╗██║  ███╗█████╗  ██╔██╗ ██║
+██║  ██║██║   ██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗██╔══╝  ██║██║     ██╔══╝╚════╝██║   ██║██╔══╝  ██║╚██╗██║
+██████╔╝╚██████╔╝╚██████╗██║  ██╗███████╗██║  ██║██║     ██║███████╗███████╗    ╚██████╔╝███████╗██║ ╚████║
+╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝     ╚═════╝ ╚══════╝╚═╝  ╚═══╝
+`
+
 func initFlags() {
 	flag.BoolVar(&showVersion, "version", false, "show version")
 	flag.Parse()
@@ -35,10 +44,10 @@ func main() {
 
 	initFlags()
 
+	fmt.Println(logo)
+
 	if showVersion {
-		fmt.Println("Version:", version)
-		fmt.Println("Commit:", commit)
-		fmt.Println("Date:", date)
+		printInfo()
 		return
 	}
 
@@ -50,7 +59,7 @@ func main() {
 		Options: languages.GetLanguages(),
 	}
 	err = survey.AskOne(prompt, &answers, survey.Required)
-	checkErr(err)
+	core.CheckErr(err)
 
 	var context = make(map[string]string)
 	var lang languages.Language
@@ -68,7 +77,7 @@ func main() {
 			Default: lang.Default(),
 		}
 		err = survey.AskOne(prompt, &version, survey.Required)
-		checkErr(err)
+		core.CheckErr(err)
 
 		context[lang.Name()] = lang.GetDockerfile(version)
 	}
@@ -81,7 +90,7 @@ func main() {
 		Default: ExtraLibs,
 	}
 	err = survey.AskOne(p, &libs, nil)
-	checkErr(err)
+	core.CheckErr(err)
 
 	context["Libs"] = libs
 
@@ -89,17 +98,10 @@ func main() {
 	saveDockerfile(contentDockerfile)
 }
 
-func checkErr(err error) {
-	if err != nil {
-		println("\n> Good bye!\n")
-		os.Exit(2)
-	}
-}
-
 func saveDockerfile(content string) {
 	output := "Dockerfile"
 	rewrite := true
-	if _, err := os.Stat(output); err == nil {
+	if core.HasDockerfile() {
 		p := &survey.Confirm{
 			Message: fmt.Sprintf("Rewrite the file `%s`", output),
 			Default: true,
@@ -115,4 +117,10 @@ func saveDockerfile(content string) {
 			fmt.Printf("> Fail Generated `%s` \n", output)
 		}
 	}
+}
+
+func printInfo() {
+	fmt.Println("Version:", version)
+	fmt.Println("Commit:", commit)
+	fmt.Println("Date:", date)
 }
