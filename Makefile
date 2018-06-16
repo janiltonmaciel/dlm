@@ -5,7 +5,7 @@ SHELL = /bin/bash
 
 PROJECT := dockerfile-gen
 
-GITHUB_TOKEN := $(shell git config --global --get github.token || echo $$GITHUB_TOKEN)
+GITHUB_TOKEN := $(shell git config --get github.token || echo $$GITHUB_TOKEN)
 
 TAG := `git describe --tags`
 DATE := `date -u +"%Y-%m-%dT%H:%M:%SZ"`
