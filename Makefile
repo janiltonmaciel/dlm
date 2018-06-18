@@ -13,12 +13,14 @@ COMMIT := ""
 
 LDFLAGS := -X main.version=$(TAG) -X main.commit=$(COMMIT) -X main.date=$(DATE)
 
+packr:
+	@packr clean && packr
 
-build:
+build: packr
 	echo "Building $(PROJECT)"
 	go build -ldflags "$(LDFLAGS)" -o $(PROJECT) main.go
 
-release:
+release: packr
 	@if [ ! "$(GITHUB_TOKEN)" ]; then \
 		echo "github token should be configurated."; \
 		exit 1; \
