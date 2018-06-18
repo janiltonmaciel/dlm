@@ -23,4 +23,18 @@ $ go get github.com/janiltonmaciel/dockerfile-gen
 ```
 
 ## Usage
-![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/dc-gen1.gif)
+Creating Dockerfile
+
+![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/dc-gen-create.gif)
+  
+---  
+Building docker image  
+   
+
+![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/dc-gen-build.gif)
+
+---  
+Running docker image  
+   
+
+![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/dc-gen-run.gif)
