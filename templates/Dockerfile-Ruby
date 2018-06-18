@@ -1,4 +1,7 @@
 ##### RUBY ######
+# Docker Official Image packaging for Ruby
+# https://github.com/docker-library/ruby
+
 # skip installing gem documentation
 RUN mkdir -p /usr/local/etc \
 	&& { \
