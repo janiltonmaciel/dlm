@@ -1,4 +1,7 @@
 ##### PYTHON ######
+# Docker Official Image packaging for Python
+# https://github.com/docker-library/python
+
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
 
