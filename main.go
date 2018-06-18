@@ -121,6 +121,7 @@ func saveDockerfile(content string) {
 
 func printInfo() {
 	fmt.Println("Version:", version)
+	fmt.Println("Author:", "Janilton Maciel <janilton@gmail.com>")
 	fmt.Println("Commit:", commit)
 	fmt.Println("Date:", date)
 }
