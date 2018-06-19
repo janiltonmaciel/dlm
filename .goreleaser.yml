@@ -25,6 +25,13 @@ archive:
     - goos: windows
       format: zip
 
+dockers:
+- image: janilton/dockerfile-gen
+  tag_templates:
+  - '{{ .Tag }}'
+  - '{{ .Major }}.{{ .Minor }}'
+  - 'latest'
+
 # Mac OS Homebrew
 brew:
   # Reporitory to push the tap to.
