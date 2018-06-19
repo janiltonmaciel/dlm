@@ -24,7 +24,7 @@ $ go get github.com/janiltonmaciel/dockerfile-gen
 
 #### Running with Docker
 
-```console
+```bash
 $ docker run -it --rm \
     -v $(pwd):/app \
     janilton/dockerfile-gen
@@ -33,16 +33,16 @@ $ docker run -it --rm \
 ## Usage
 Creating Dockerfile
 
-![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/dc-gen-create.gif)
+![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/assets/img/dc-gen-create.gif)
   
 ---  
 Building docker image  
    
 
-![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/dc-gen-build.gif)
+![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/assets/img/dc-gen-build.gif)
 
 ---  
 Running docker image  
    
 
-![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/dc-gen-run.gif)
+![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/assets/img/dc-gen-run.gif)
