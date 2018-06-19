@@ -22,6 +22,14 @@ $ brew install dockerfile-gen
 $ go get github.com/janiltonmaciel/dockerfile-gen
 ```
 
+#### Running with Docker
+
+```console
+$ docker run -it --rm \
+    -v $(pwd):/app \
+    janilton/dockerfile-gen
+```
+
 ## Usage
 Creating Dockerfile
 
