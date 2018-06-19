@@ -25,11 +25,13 @@ archive:
     - goos: windows
       format: zip
 
+# Build docker
 dockers:
 - image: janilton/dockerfile-gen
   tag_templates:
   - '{{ .Tag }}'
   - 'latest'
+# End Build docker
 
 # Mac OS Homebrew
 brew:
