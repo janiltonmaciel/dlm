@@ -29,7 +29,6 @@ dockers:
 - image: janilton/dockerfile-gen
   tag_templates:
   - '{{ .Tag }}'
-  - '{{ .Major }}.{{ .Minor }}'
   - 'latest'
 
 # Mac OS Homebrew
