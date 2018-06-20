@@ -1,0 +1,54 @@
+# goreleaser.yml
+# Build customization
+project_name: dockerfile-gen
+build:
+  main: ./main.go
+  binary: dockerfile-gen
+  goos:
+    - windows
+    - darwin
+    - linux
+  goarch:
+    - amd64
+    - 386
+  ignore:
+    - goos: darwin
+      goarch: 386
+
+# Archive customization
+archive:
+  name_template: "{{.ProjectName}}_{{.Version}}_{{.Os}}_{{.Arch}}"
+  format: tar.gz
+  replacements:
+    darwin: macOS
+  format_overrides:
+    - goos: windows
+      format: zip
+
+# Release customazation
+release:
+  # You can disable this pipe in order to not upload any artifacts to
+  # GitHub.
+  # Defaults to false.
+  disable: true
+
+# Mac OS Homebrew
+brew:
+  # Reporitory to push the tap to.
+  github:
+    owner: janiltonmaciel
+    name: homebrew-dockerfile-gen
+
+  description: "Generator Dockerfile"
+  homepage: "https://github.com/janiltonmaciel/dockerfile-gen"
+
+  # Folder inside the repository to put the formula.
+  # Default is the root folder.
+  folder: Formula
+
+  # Custom install
+  install: |
+    bin.install "dockerfile-gen"
+
+  test: |
+    assert_match version.to_s, shell_output("#{bin}/dockerfile-gen --version")
