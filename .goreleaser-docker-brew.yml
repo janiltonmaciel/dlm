@@ -32,6 +32,16 @@ release:
   # Defaults to false.
   disable: true
 
+
+
+# Build docker
+dockers:
+- image: janilton/dockerfile-gen
+  tag_templates:
+  - '{{ .Tag }}'
+  - 'latest'
+# End Build docker
+
 # Mac OS Homebrew
 brew:
   # Reporitory to push the tap to.
