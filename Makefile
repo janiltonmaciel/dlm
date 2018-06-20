@@ -1,5 +1,11 @@
 .SILENT:
 
+COLOR_RESET = \033[0m
+COLOR_COMMAND = \033[36m
+COLOR_YELLOW = \033[33m
+COLOR_GREEN = \033[32m
+COLOR_RED = \033[31m
+
 SHELL = /bin/bash
 .DEFAULT_GOAL := help
 
@@ -16,18 +22,36 @@ LDFLAGS := -X main.version=$(TAG) -X main.commit=$(COMMIT) -X main.date=$(DATE)
 packr:
 	@packr clean && packr
 
+git-tag:
+	@printf "\n"; \
+	read -p "Tag ($(TAG)): "; \
+	if [ ! "$$REPLY" ]; then \
+		printf "\n${COLOR_RED}"; \
+		echo "Invalid tag."; \
+		exit 1; \
+	fi; \
+	TAG=$$REPLY; \
+	sed -i.bak -r "s/[0-9]+.[0-9]+.[0-9]+/$$TAG/g" README.md && rm README.md.bak 2>/dev/null; \
+	sed -i.bak -r "s/[0-9]+.[0-9]+.[0-9]+$$/$$TAG/g" Dockerfile && rm Dockerfile.bak 2>/dev/null; \
+	git commit README.md Dockerfile -m "Update README.md and Dockerfile with release $$TAG"; \
+	git tag -s $$TAG -m "$$TAG"
+
 ## Build project
 build: packr
 	echo "Building $(PROJECT)"
 	go build -ldflags "$(LDFLAGS)" -o $(PROJECT) main.go
 
 ## Release of the project
-release: packr
+release: packr git-tag
 	@if [ ! "$(GITHUB_TOKEN)" ]; then \
 		echo "github token should be configurated."; \
 		exit 1; \
-	fi
-	export GITHUB_TOKEN=$(GITHUB_TOKEN); goreleaser release --rm-dist
+	fi; \
+	export GITHUB_TOKEN=$(GITHUB_TOKEN); \
+	goreleaser release --rm-dist; \
+	goreleaser release -f .goreleaser-docker-brew.yml --rm-dist; \
+	echo "Release - OK"
+
 
 ## Setup of the project
 setup:
@@ -63,9 +87,6 @@ lint: ## Run all the linters
 		./...
 
 
-COLOR_RESET = \033[0m
-COLOR_COMMAND = \033[36m
-COLOR_YELLOW = \033[33m
 
 ## Prints this help
 help:
