@@ -6,9 +6,9 @@ Generator Dockerfile
 
 #### Binaries
 
-- **darwin (macOS)** [amd64](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.8.0/dockerfile-gen_1.8.0_macOS_amd64.tar.gz)
-- **linux** [386](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.8.0/dockerfile-gen_1.8.0_linux_386.tar.gz) / [amd64](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.8.0/dockerfile-gen_1.8.0_linux_amd64.tar.gz)
-- **windows** [386](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.8.0/dockerfile-gen_1.8.0_windows_386.zip) / [amd64](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.8.0/dockerfile-gen_1.8.0_windows_amd64.zip)
+- **darwin (macOS)** [amd64](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.9.0/dockerfile-gen_1.9.0_macOS_amd64.tar.gz)
+- **linux** [386](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.9.0/dockerfile-gen_1.9.0_linux_386.tar.gz) / [amd64](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.9.0/dockerfile-gen_1.9.0_linux_amd64.tar.gz)
+- **windows** [386](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.9.0/dockerfile-gen_1.9.0_windows_386.zip) / [amd64](https://github.com/janiltonmaciel/dockerfile-gen/releases/download/1.9.0/dockerfile-gen_1.9.0_windows_amd64.zip)
 
 #### Via Homebrew (macOS)
 ```bash

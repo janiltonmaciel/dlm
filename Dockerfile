@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 LABEL maintainer="Janilton Maciel <janilton@gmail.com>"
 
-ENV DOCKERFILE_GEN_VERSION 1.8.0
+ENV DOCKERFILE_GEN_VERSION 1.9.0
 
 RUN apk update && apk upgrade \
     && apk add --no-cache wget tar \
