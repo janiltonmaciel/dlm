@@ -47,7 +47,7 @@ brew:
   # Reporitory to push the tap to.
   github:
     owner: janiltonmaciel
-    name: homebrew-dockerfile-gen
+    name: homebrew-tap
 
   description: "Generator Dockerfile"
   homepage: "https://github.com/janiltonmaciel/dockerfile-gen"

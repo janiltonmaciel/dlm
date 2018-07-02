@@ -12,7 +12,7 @@ Generator Dockerfile
 
 #### Via Homebrew (macOS)
 ```bash
-$ brew tap janiltonmaciel/homebrew-dockerfile-gen
+$ brew tap janiltonmaciel/homebrew-tap
 $ brew install dockerfile-gen
 ```
 
