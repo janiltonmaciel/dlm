@@ -49,7 +49,7 @@ release: packr git-tag
 	fi; \
 	export GITHUB_TOKEN=$(GITHUB_TOKEN); \
 	goreleaser release --rm-dist; \
-	goreleaser release -f .goreleaser-docker-brew.yml --rm-dist; \
+	goreleaser release -f .goreleaser-docker.yml --rm-dist; \
 	echo "Release - OK"
 
 

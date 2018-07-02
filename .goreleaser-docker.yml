@@ -33,7 +33,6 @@ release:
   disable: true
 
 
-
 # Build docker
 dockers:
 - image: janilton/dockerfile-gen
@@ -41,24 +40,3 @@ dockers:
   - '{{ .Major }}.{{ .Minor }}'
   - 'latest'
 # End Build docker
-
-# Mac OS Homebrew
-brew:
-  # Reporitory to push the tap to.
-  github:
-    owner: janiltonmaciel
-    name: homebrew-tap
-
-  description: "Generator Dockerfile"
-  homepage: "https://github.com/janiltonmaciel/dockerfile-gen"
-
-  # Folder inside the repository to put the formula.
-  # Default is the root folder.
-  folder: Formula
-
-  # Custom install
-  install: |
-    bin.install "dockerfile-gen"
-
-  test: |
-    assert_match version.to_s, shell_output("#{bin}/dockerfile-gen --version")
