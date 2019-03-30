@@ -10,10 +10,8 @@ from collections import OrderedDict
 class RubyVersions():
     URL_RELEASES_YAML = "https://raw.githubusercontent.com/ruby/www.ruby-lang.org/master/_data/releases.yml"
     URL_RELEASE_NEWS_PAGE = "https://www.ruby-lang.org{}"
-    URL_RELEASES_PAGE = "https://www.ruby-lang.org/en/downloads/releases/"
 
     def __init__(self):
-        # self.file_path_html = "ruby-releases-page.html"
         self.file_path_releases_yaml = "ruby-releases.yml"
         self.file_path_versions_yaml = "ruby-versions.yml"
         self.rewrite = True
@@ -68,31 +66,6 @@ class RubyVersions():
         if self.versions:
             with codecs.open(self.file_path_versions_yaml, 'w', encoding='utf8') as f:
                 yaml.dump(self.versions, f, default_flow_style=False)
-
-    # def download_html(self):
-    #     if os.path.exists(self.file_path_html):
-    #         with codecs.open(self.file_path_html, 'r', encoding='utf8') as fp:
-    #             self.html = fp.read()
-    #     else:
-        
-            # self.html = request_url(self.URL_RELEASES_PAGE)
-    #     if self.rewrite:
-    #         self.save(self.file_path_html, self.html)
-
-    # def parse_releases(self):
-    #     ruby_releases = []
-    #     soup = BeautifulSoup(self.html, 'html.parser')
-    #     data = soup.select(".release-list > tr")
-    #     if data:
-    #         for tr in data:
-    #             tds = tr.find_all("td")
-    #             if tds:
-    #                 ruby_releases.append({
-    #                     "version": tds[0].get_text().replace("Ruby", "").strip(),
-    #                     "post": tds[2].a['href'].strip()
-    #                 })
-        
-    #     self.ruby_releases = ruby_releases
 
 
 class UnsortableList(list):
