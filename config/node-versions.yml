@@ -1,0 +1,2273 @@
+
+  - version: 12.0.0
+    majorVersion: '12.0'
+    prerelease: false
+    date: '2019-04-25T09:10:15'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '12'
+          - 12-stretch
+          - '12.0'
+          - 12.0-stretch
+          - 12.0.0
+          - 12.0.0-stretch
+          - current
+          - current-stretch
+          - latest
+          - stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/29e4ef051ed7a0d55554fc6df53d1be02089e307/12/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 12-slim
+          - 12-stretch-slim
+          - 12.0-slim
+          - 12.0-stretch-slim
+          - 12.0.0-slim
+          - 12.0.0-stretch-slim
+          - current-slim
+          - current-stretch-slim
+          - slim
+          - stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/29e4ef051ed7a0d55554fc6df53d1be02089e307/12/stretch-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 12-alpine
+          - 12.0-alpine
+          - 12.0.0-alpine
+          - alpine
+          - current-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/29e4ef051ed7a0d55554fc6df53d1be02089e307/12/alpine/Dockerfile
+
+  - version: 11.14.0
+    majorVersion: '11.14'
+    prerelease: false
+    date: '2019-04-25T09:10:15'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '11'
+          - 11-stretch
+          - '11.14'
+          - 11.14-stretch
+          - 11.14.0
+          - 11.14.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/974b70c72e027365003bc1d6e47c8cf6ec46a54d/11/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 11-slim
+          - 11-stretch-slim
+          - 11.14-slim
+          - 11.14-stretch-slim
+          - 11.14.0-slim
+          - 11.14.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/974b70c72e027365003bc1d6e47c8cf6ec46a54d/11/stretch-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 11-alpine
+          - 11.14-alpine
+          - 11.14.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5a6a5e91999358c5b04fddd6c22a9a4eb0bf3fbf/11/alpine/Dockerfile
+
+  - version: 11.13.0
+    majorVersion: '11.13'
+    prerelease: false
+    date: '2019-03-29T04:48:08'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '11.13'
+          - 11.13-stretch
+          - 11.13.0
+          - 11.13.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 11.13-slim
+          - 11.13-stretch-slim
+          - 11.13.0-slim
+          - 11.13.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 11.13-alpine
+          - 11.13.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/alpine/Dockerfile
+
+  - version: 11.12.0
+    majorVersion: '11.12'
+    prerelease: false
+    date: '2019-03-16T08:37:07'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '11.12'
+          - 11.12-stretch
+          - 11.12.0
+          - 11.12.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/716a6ea32b3a797884c95b838b57ace41f83e96a/11/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 11.12-slim
+          - 11.12-stretch-slim
+          - 11.12.0-slim
+          - 11.12.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/716a6ea32b3a797884c95b838b57ace41f83e96a/11/stretch-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 11.12-alpine
+          - 11.12.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/716a6ea32b3a797884c95b838b57ace41f83e96a/11/alpine/Dockerfile
+
+  - version: 11.8.0
+    majorVersion: '11.8'
+    prerelease: false
+    date: '2019-01-29T21:31:17'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '11.8'
+          - 11.8-stretch
+          - 11.8.0
+          - 11.8.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f9b80051e434ecfc9e8ae992b93716272aaf3961/11/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 11.8-slim
+          - 11.8-stretch-slim
+          - 11.8.0-slim
+          - 11.8.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f9b80051e434ecfc9e8ae992b93716272aaf3961/11/stretch-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 11.8-alpine
+          - 11.8.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f9b80051e434ecfc9e8ae992b93716272aaf3961/11/alpine/Dockerfile
+
+  - version: 11.6.0
+    majorVersion: '11.6'
+    prerelease: false
+    date: '2018-12-27T01:50:54'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '11.6'
+          - 11.6-stretch
+          - 11.6.0
+          - 11.6.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e9d9c1ce0f4e87b11d7b0ecff529b715038782ae/11/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 11.6-slim
+          - 11.6-stretch-slim
+          - 11.6.0-slim
+          - 11.6.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e9d9c1ce0f4e87b11d7b0ecff529b715038782ae/11/stretch-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 11.6-alpine
+          - 11.6.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e9d9c1ce0f4e87b11d7b0ecff529b715038782ae/11/alpine/Dockerfile
+
+  - version: 10.15.3
+    majorVersion: '10.15'
+    prerelease: false
+    date: '2019-04-25T09:10:15'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '10'
+          - 10-stretch
+          - '10.15'
+          - 10.15-stretch
+          - 10.15.3
+          - 10.15.3-stretch
+          - dubnium
+          - dubnium-stretch
+          - lts
+          - lts-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 10-slim
+          - 10-stretch-slim
+          - 10.15-slim
+          - 10.15-stretch-slim
+          - 10.15.3-slim
+          - 10.15.3-stretch-slim
+          - dubnium-slim
+          - dubnium-stretch-slim
+          - lts-slim
+          - lts-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 10-jessie
+          - 10.15-jessie
+          - 10.15.3-jessie
+          - dubnium-jessie
+          - lts-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 10-jessie-slim
+          - 10.15-jessie-slim
+          - 10.15.3-jessie-slim
+          - dubnium-jessie-slim
+          - lts-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 10-alpine
+          - 10.15-alpine
+          - 10.15.3-alpine
+          - dubnium-alpine
+          - lts-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5a6a5e91999358c5b04fddd6c22a9a4eb0bf3fbf/10/alpine/Dockerfile
+
+  - version: 10.15.1
+    majorVersion: '10.15'
+    prerelease: false
+    date: '2019-01-29T21:31:17'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 10.15.1
+          - 10.15.1-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/90043cdde5057865b94fec447ce193fb46b69e18/10/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 10.15.1-slim
+          - 10.15.1-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/90043cdde5057865b94fec447ce193fb46b69e18/10/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 10.15.1-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/90043cdde5057865b94fec447ce193fb46b69e18/10/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 10.15.1-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/90043cdde5057865b94fec447ce193fb46b69e18/10/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 10.15.1-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/90043cdde5057865b94fec447ce193fb46b69e18/10/alpine/Dockerfile
+
+  - version: 10.15.0
+    majorVersion: '10.15'
+    prerelease: false
+    date: '2018-12-27T01:50:54'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 10.15.0
+          - 10.15.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8c22aeb318ec3df876f8271b9b8a86005f0f53d/10/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 10.15.0-slim
+          - 10.15.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8c22aeb318ec3df876f8271b9b8a86005f0f53d/10/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 10.15.0-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8c22aeb318ec3df876f8271b9b8a86005f0f53d/10/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 10.15.0-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8c22aeb318ec3df876f8271b9b8a86005f0f53d/10/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 10.15.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8c22aeb318ec3df876f8271b9b8a86005f0f53d/10/alpine/Dockerfile
+
+  - version: 8.16.0
+    majorVersion: '8.16'
+    prerelease: false
+    date: '2019-04-25T09:10:15'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '8'
+          - 8-stretch
+          - '8.16'
+          - 8.16-stretch
+          - 8.16.0
+          - 8.16.0-stretch
+          - carbon
+          - carbon-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 8-slim
+          - 8-stretch-slim
+          - 8.16-slim
+          - 8.16-stretch-slim
+          - 8.16.0-slim
+          - 8.16.0-stretch-slim
+          - carbon-slim
+          - carbon-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 8-jessie
+          - 8.16-jessie
+          - 8.16.0-jessie
+          - carbon-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 8-jessie-slim
+          - 8.16-jessie-slim
+          - 8.16.0-jessie-slim
+          - carbon-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 8-alpine
+          - 8.16-alpine
+          - 8.16.0-alpine
+          - carbon-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/alpine/Dockerfile
+
+  - version: 8.15.1
+    majorVersion: '8.15'
+    prerelease: false
+    date: '2019-03-29T04:48:08'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '8.15'
+          - 8.15-stretch
+          - 8.15.1
+          - 8.15.1-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/de76fb48b532d6be012098dc3538bd15329a27d0/8/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 8.15-slim
+          - 8.15-stretch-slim
+          - 8.15.1-slim
+          - 8.15.1-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/de76fb48b532d6be012098dc3538bd15329a27d0/8/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 8.15-jessie
+          - 8.15.1-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/de76fb48b532d6be012098dc3538bd15329a27d0/8/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 8.15-jessie-slim
+          - 8.15.1-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/de76fb48b532d6be012098dc3538bd15329a27d0/8/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 8.15-alpine
+          - 8.15.1-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/de76fb48b532d6be012098dc3538bd15329a27d0/8/alpine/Dockerfile
+
+  - version: 8.15.0
+    majorVersion: '8.15'
+    prerelease: false
+    date: '2019-01-29T21:31:17'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 8.15.0
+          - 8.15.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/86b9618674b01fc5549f83696a90d5bc21f38af0/8/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 8.15.0-slim
+          - 8.15.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/86b9618674b01fc5549f83696a90d5bc21f38af0/8/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 8.15.0-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/86b9618674b01fc5549f83696a90d5bc21f38af0/8/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 8.15.0-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/86b9618674b01fc5549f83696a90d5bc21f38af0/8/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 8.15.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/86b9618674b01fc5549f83696a90d5bc21f38af0/8/alpine/Dockerfile
+
+  - version: 7.8.0
+    majorVersion: '7.8'
+    prerelease: false
+    date: '2017-04-06T21:37:19'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 7-wheezy
+          - 7.8-wheezy
+          - 7.8.0-wheezy
+          - wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/7.8/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 7-slim
+          - 7.8-slim
+          - 7.8.0-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/7.8/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 7-alpine
+          - 7.8-alpine
+          - 7.8.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/7.8/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '7'
+          - '7.8'
+          - 7.8.0
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/7.8/Dockerfile
+
+  - version: 6.17.1
+    majorVersion: '6.17'
+    prerelease: false
+    date: '2019-04-25T09:10:15'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '6'
+          - 6-stretch
+          - '6.17'
+          - 6.17-stretch
+          - 6.17.1
+          - 6.17.1-stretch
+          - boron
+          - boron-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/53fd280cdd46a4caf63b82f8c269dfbb84895546/6/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 6-slim
+          - 6-stretch-slim
+          - 6.17-slim
+          - 6.17-stretch-slim
+          - 6.17.1-slim
+          - 6.17.1-stretch-slim
+          - boron-slim
+          - boron-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/53fd280cdd46a4caf63b82f8c269dfbb84895546/6/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 6-jessie
+          - 6.17-jessie
+          - 6.17.1-jessie
+          - boron-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/53fd280cdd46a4caf63b82f8c269dfbb84895546/6/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 6-jessie-slim
+          - 6.17-jessie-slim
+          - 6.17.1-jessie-slim
+          - boron-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/53fd280cdd46a4caf63b82f8c269dfbb84895546/6/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 6-alpine
+          - 6.17-alpine
+          - 6.17.1-alpine
+          - boron-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5a6a5e91999358c5b04fddd6c22a9a4eb0bf3fbf/6/alpine/Dockerfile
+
+  - version: 6.17.0
+    majorVersion: '6.17'
+    prerelease: false
+    date: '2019-03-29T04:48:08'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 6.17.0
+          - 6.17.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 6.17.0-slim
+          - 6.17.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 6.17.0-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 6.17.0-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 6.17.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/alpine/Dockerfile
+
+  - version: 6.16.0
+    majorVersion: '6.16'
+    prerelease: false
+    date: '2019-01-29T21:31:17'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '6.16'
+          - 6.16-stretch
+          - 6.16.0
+          - 6.16.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/daa131d713cf42ae181292471766879f750b5230/6/stretch/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 6.16-slim
+          - 6.16-stretch-slim
+          - 6.16.0-slim
+          - 6.16.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/daa131d713cf42ae181292471766879f750b5230/6/stretch-slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 6.16-jessie
+          - 6.16.0-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/daa131d713cf42ae181292471766879f750b5230/6/jessie/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 6.16-jessie-slim
+          - 6.16.0-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/daa131d713cf42ae181292471766879f750b5230/6/jessie-slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 6.16-alpine
+          - 6.16.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/daa131d713cf42ae181292471766879f750b5230/6/alpine/Dockerfile
+
+  - version: 6.10.2
+    majorVersion: '6.10'
+    prerelease: false
+    date: '2017-04-06T21:37:19'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 6-wheezy
+          - 6.10-wheezy
+          - 6.10.2-wheezy
+          - boron-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/6.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 6.10-slim
+          - 6.10.2-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/6.10/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 6.10-alpine
+          - 6.10.2-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/6.10/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '6.10'
+          - 6.10.2
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/6.10/Dockerfile
+
+  - version: 6.4.0
+    majorVersion: '6.4'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 6.4.0-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/be9abca6b1be7657fd0f00f005b867393184d19c/6.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 6.4.0-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/be9abca6b1be7657fd0f00f005b867393184d19c/6.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 6.4.0
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/be9abca6b1be7657fd0f00f005b867393184d19c/6.4/Dockerfile
+
+  - version: '6.4'
+    majorVersion: '6.4'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 6.4-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/be9abca6b1be7657fd0f00f005b867393184d19c/6.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 6.4-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/be9abca6b1be7657fd0f00f005b867393184d19c/6.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '6.4'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/be9abca6b1be7657fd0f00f005b867393184d19c/6.4/Dockerfile
+
+  - version: 6.2.2
+    majorVersion: '6.2'
+    prerelease: false
+    date: '2016-06-28T19:28:08'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 6.2.2-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 6.2.2-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 6.2.2
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/Dockerfile
+
+  - version: 6.2.1
+    majorVersion: '6.2'
+    prerelease: false
+    date: '2016-06-02T21:10:12'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 6.2.1-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/466e418a117f33c1cd550414ae1b39423319a265/6.2/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 6.2.1-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/466e418a117f33c1cd550414ae1b39423319a265/6.2/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 6.2.1
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/466e418a117f33c1cd550414ae1b39423319a265/6.2/Dockerfile
+
+  - version: '6.2'
+    majorVersion: '6.2'
+    prerelease: false
+    date: '2016-06-28T19:28:08'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 6.2-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 6.2-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '6.2'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/Dockerfile
+
+  - version: 5.12.0
+    majorVersion: '5.12'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.12.0-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/5.12/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.12.0-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/5.12/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 5.12.0
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/5.12/Dockerfile
+
+  - version: '5.12'
+    majorVersion: '5.12'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.12-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/5.12/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.12-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/5.12/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '5.12'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/5.12/Dockerfile
+
+  - version: 5.11.1
+    majorVersion: '5.11'
+    prerelease: false
+    date: '2016-06-02T21:10:12'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.11.1-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/cbdacad677bafa044140610f851bed00254de1ca/5.11/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.11.1-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/cbdacad677bafa044140610f851bed00254de1ca/5.11/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 5.11.1
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/cbdacad677bafa044140610f851bed00254de1ca/5.11/Dockerfile
+
+  - version: 5.11.0
+    majorVersion: '5.11'
+    prerelease: false
+    date: '2016-04-21T19:16:17'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.11.0-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/5.11/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.11.0-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/5.11/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 5.11.0
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/5.11/Dockerfile
+
+  - version: '5.11'
+    majorVersion: '5.11'
+    prerelease: false
+    date: '2016-06-02T21:10:12'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.11-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/cbdacad677bafa044140610f851bed00254de1ca/5.11/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.11-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/cbdacad677bafa044140610f851bed00254de1ca/5.11/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '5.11'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/cbdacad677bafa044140610f851bed00254de1ca/5.11/Dockerfile
+
+  - version: 5.10.1
+    majorVersion: '5.10'
+    prerelease: false
+    date: '2016-04-05T21:27:43'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.10.1-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/baad247b9df8087d4c13a3a9bfb3c65833f424bb/5.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.10.1-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/baad247b9df8087d4c13a3a9bfb3c65833f424bb/5.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 5.10.1
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/baad247b9df8087d4c13a3a9bfb3c65833f424bb/5.10/Dockerfile
+
+  - version: '5.10'
+    majorVersion: '5.10'
+    prerelease: false
+    date: '2016-04-05T21:27:43'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.10-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/baad247b9df8087d4c13a3a9bfb3c65833f424bb/5.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.10-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/baad247b9df8087d4c13a3a9bfb3c65833f424bb/5.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '5.10'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/baad247b9df8087d4c13a3a9bfb3c65833f424bb/5.10/Dockerfile
+
+  - version: 5.9.0
+    majorVersion: '5.9'
+    prerelease: false
+    date: '2016-03-16T21:46:03'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.9.0-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/c415d0802c101079f10e1da3518d2555e4b03013/5.9/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.9.0-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/c415d0802c101079f10e1da3518d2555e4b03013/5.9/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 5.9.0
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/c415d0802c101079f10e1da3518d2555e4b03013/5.9/Dockerfile
+
+  - version: '5.9'
+    majorVersion: '5.9'
+    prerelease: false
+    date: '2016-03-16T21:46:03'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.9-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/c415d0802c101079f10e1da3518d2555e4b03013/5.9/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.9-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/c415d0802c101079f10e1da3518d2555e4b03013/5.9/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '5.9'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/c415d0802c101079f10e1da3518d2555e4b03013/5.9/Dockerfile
+
+  - version: 5.7.1
+    majorVersion: '5.7'
+    prerelease: false
+    date: '2016-03-09T08:52:18'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.7.1-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/b2c7f6e357359b7b8f30caada05f1d412d926d7b/5.7/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.7.1-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/b2c7f6e357359b7b8f30caada05f1d412d926d7b/5.7/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 5.7.1
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/b2c7f6e357359b7b8f30caada05f1d412d926d7b/5.7/Dockerfile
+
+  - version: '5.7'
+    majorVersion: '5.7'
+    prerelease: false
+    date: '2016-03-09T08:52:18'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 5.7-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/b2c7f6e357359b7b8f30caada05f1d412d926d7b/5.7/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 5.7-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/b2c7f6e357359b7b8f30caada05f1d412d926d7b/5.7/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '5.7'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/b2c7f6e357359b7b8f30caada05f1d412d926d7b/5.7/Dockerfile
+
+  - version: 4.8.2
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-04-06T21:37:19'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4-wheezy
+          - 4.8-wheezy
+          - 4.8.2-wheezy
+          - argon-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/4.8/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4-slim
+          - 4.8-slim
+          - 4.8.2-slim
+          - argon-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/4.8/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 4-alpine
+          - 4.8-alpine
+          - 4.8.2-alpine
+          - argon-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/4.8/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '4'
+          - '4.8'
+          - 4.8.2
+          - argon
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4fa0c90f383880b8c03f6e2c07e8d46a0ae9075f/4.8/Dockerfile
+
+  - version: 4.5.0
+    majorVersion: '4.5'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.5.0-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.5.0-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 4.5.0
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/Dockerfile
+
+  - version: '4.5'
+    majorVersion: '4.5'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.5-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.5-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '4.5'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/Dockerfile
+
+  - version: 4.4.7
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-06-28T19:28:08'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.4.7-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.4.7-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 4.4.7
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/Dockerfile
+
+  - version: 4.4.5
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-06-02T21:10:12'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.4.5-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/fdcbbd6445c70290c50396cba2b2b67357a00629/4.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.4.5-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/fdcbbd6445c70290c50396cba2b2b67357a00629/4.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 4.4.5
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/fdcbbd6445c70290c50396cba2b2b67357a00629/4.4/Dockerfile
+
+  - version: 4.4.3
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-04-21T19:16:17'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.4.3-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/41b505ae714328f28a3457df9098d1e8db88a81a/4.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.4.3-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/41b505ae714328f28a3457df9098d1e8db88a81a/4.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 4.4.3
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/41b505ae714328f28a3457df9098d1e8db88a81a/4.4/Dockerfile
+
+  - version: 4.4.2
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-04-05T21:27:43'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.4.2-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/fd8e6c3434e58796003826fed262071d27a77cc9/4.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.4.2-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/fd8e6c3434e58796003826fed262071d27a77cc9/4.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 4.4.2
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/fd8e6c3434e58796003826fed262071d27a77cc9/4.4/Dockerfile
+
+  - version: 4.4.0
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-03-16T21:46:03'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.4.0-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/12b7be1a82f2366a798c618f40c0a2402dd5b509/4.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.4.0-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/12b7be1a82f2366a798c618f40c0a2402dd5b509/4.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 4.4.0
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/12b7be1a82f2366a798c618f40c0a2402dd5b509/4.4/Dockerfile
+
+  - version: '4.4'
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-06-28T19:28:08'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 4.4-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 4.4-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '4.4'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/Dockerfile
+
+  - version: 0.12.15
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.12.15-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.12/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.12.15-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.12/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.12.15
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.12/Dockerfile
+
+  - version: 0.12.14
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-06-02T21:10:12'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.12.14-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6778e14c0c1ae53cc413f77a94c21c7cf05f651f/0.12/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.12.14-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6778e14c0c1ae53cc413f77a94c21c7cf05f651f/0.12/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.12.14
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6778e14c0c1ae53cc413f77a94c21c7cf05f651f/0.12/Dockerfile
+
+  - version: 0.12.13
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-04-21T19:16:17'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.12.13-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.12/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.12.13-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.12/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.12.13
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.12/Dockerfile
+
+  - version: 0.12.12
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-03-16T21:46:03'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.12.12-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bbdb1dc2ed5e1a0e57ec9d59f9a0cbdd104ff090/0.12/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 0.12.12-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bbdb1dc2ed5e1a0e57ec9d59f9a0cbdd104ff090/0.12/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.12.12
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bbdb1dc2ed5e1a0e57ec9d59f9a0cbdd104ff090/0.12/Dockerfile
+
+  - version: '0.12'
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.12-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.12/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.12-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.12/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '0.12'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.12/Dockerfile
+
+  - version: 0.11.14
+    majorVersion: '0.11'
+    prerelease: false
+    date: '2014-12-18T15:48:06'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 2
+        image: debian:wheezy
+        tags:
+          - 0.11.14-slim
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.11/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - 0.11.14
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.11/Dockerfile
+
+  - version: '0.11'
+    majorVersion: '0.11'
+    prerelease: false
+    date: '2014-12-18T15:48:06'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 2
+        image: debian:wheezy
+        tags:
+          - 0.11-slim
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.11/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - '0.11'
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.11/Dockerfile
+
+  - version: 0.10.46
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.10.46-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.10.46-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.10.46
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.10/Dockerfile
+
+  - version: 0.10.45
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-06-02T21:10:12'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.10.45-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e058d36cc69303d1f62d424615fa03e050f20ef/0.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.10.45-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e058d36cc69303d1f62d424615fa03e050f20ef/0.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.10.45
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e058d36cc69303d1f62d424615fa03e050f20ef/0.10/Dockerfile
+
+  - version: 0.10.44
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-04-21T19:16:17'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.10.44-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.10.44-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.10.44
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.10/Dockerfile
+
+  - version: 0.10.43
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-03-16T21:46:03'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.10.43-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/03d0a92fc4a52087d3bd414b49a977325a7ac4ff/0.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 0.10.43-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/03d0a92fc4a52087d3bd414b49a977325a7ac4ff/0.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 0.10.43
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/03d0a92fc4a52087d3bd414b49a977325a7ac4ff/0.10/Dockerfile
+
+  - version: 0.10.34
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2014-12-18T15:48:06'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 2
+        image: debian:wheezy
+        tags:
+          - 0.10.34-slim
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - 0.10.34
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.10/Dockerfile
+
+  - version: '0.10'
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-08-16T15:22:22'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 0.10-wheezy
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.10/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 3
+        image: buildpack-deps:jessie-curl
+        tags:
+          - 0.10-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.10/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '0.10'
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50b56d39a236fd519eda2231757aa2173e270807/0.10/Dockerfile
+
+  - version: 0.8.28
+    majorVersion: '0.8'
+    prerelease: false
+    date: '2014-12-18T15:48:06'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 2
+        image: debian:wheezy
+        tags:
+          - 0.8.28-slim
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.8/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - 0.8.28
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.8/Dockerfile
+
+  - version: '0.8'
+    majorVersion: '0.8'
+    prerelease: false
+    date: '2014-12-18T15:48:06'
+    distributionReleases: Debian
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 2
+        image: debian:wheezy
+        tags:
+          - 0.8-slim
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.8/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - '0.8'
+        urlRepository: https://github.com/docker-library/node
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/node/70741d88bf688389bfac7b147573f3b761f9ede9/0.8/Dockerfile

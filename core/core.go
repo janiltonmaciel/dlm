@@ -1,6 +1,17 @@
 package core
 
-import "os"
+import (
+	"bufio"
+	"io"
+	"net/http"
+	"os"
+	"regexp"
+	"strings"
+)
+
+var RE_FROM_CMD = regexp.MustCompile(`(^(\s+)?FROM(.*)|^(\s+)?CMD(.*))`)
+var RE_FROM = regexp.MustCompile(`^(\s+)?FROM(.*)`)
+var RE_CMD = regexp.MustCompile(`^(\s+)?CMD(.*)`)
 
 func CheckErr(err error) {
 	if err != nil {
@@ -15,4 +26,60 @@ func HasDockerfile() bool {
 	} else {
 		return false
 	}
+}
+
+func SanitizeDockerfile(url string) (string, error) {
+	data, err := GetUrl(url)
+	if err != nil {
+		return "", err
+	}
+
+	newData := make([]string, 0)
+	for _, line := range data {
+		if !RE_FROM_CMD.MatchString(line) {
+			newData = append(newData, line)
+		}
+	}
+	return strings.Join(newData, "\n"), nil
+}
+
+func GetUrl(url string) ([]string, error) {
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return nil, nil
+	}
+
+	return LinesFromReader(resp.Body)
+}
+
+func LinesFromReader(r io.Reader) ([]string, error) {
+	var lines []string
+	scanner := bufio.NewScanner(r)
+	for scanner.Scan() {
+		lines = append(lines, scanner.Text())
+	}
+	if err := scanner.Err(); err != nil {
+		return nil, err
+	}
+
+	return lines, nil
+}
+
+func Intersection(a, b []Distribution) (c []Distribution) {
+	m := make(map[string]Distribution)
+	for _, item := range a {
+		m[item.Name] = item
+	}
+
+	for _, item := range b {
+		if _, ok := m[item.Name]; ok {
+			c = append(c, item)
+		}
+	}
+	return
 }

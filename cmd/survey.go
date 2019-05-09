@@ -1,4 +1,4 @@
-package core
+package cmd
 
 var (
 	ErrorTemplate = `{{color "red"}}{{ ErrorIcon }} {{.Error}}{{color "reset"}}

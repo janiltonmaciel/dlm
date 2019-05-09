@@ -1,0 +1,26 @@
+- language: erlang
+  url: https://github.com/erlang/otp/releases
+
+- language: golang
+  url: https://golang.org/doc/devel/release.html
+
+- language: haskell
+  url: https://www.haskell.org/ghc/
+
+- language: node
+  url: https://nodejs.org/en/download/releases/
+
+#- language: php
+#url: https://www.php.net/releases/index.php
+
+- language: python
+  url: https://www.python.org/downloads/
+
+- language: ruby
+  url: https://www.ruby-lang.org/en/downloads/releases/
+
+- language: rust
+  url: https://github.com/rust-lang/rust/releases
+
+- language: swift
+  url: https://www.php.net/releases/index.php

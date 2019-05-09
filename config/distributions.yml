@@ -1,0 +1,5 @@
+  - name: Debian
+    releaseName: 9 (stretch)
+    release: 9.0
+    weight: 4
+    image: buildpack-deps:stretch-scm

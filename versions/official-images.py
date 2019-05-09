@@ -1,32 +1,29 @@
 # -*- encoding: utf-8 -*-
+import codecs
+import fnmatch
 import os
 import re
-import fnmatch
 import sys
 from datetime import datetime
-# from distutils.version import StrictVersion, LooseVersion
+from io import StringIO
+from os.path import basename, dirname, exists, join
+from urllib.parse import urlparse
+
+import requests
 from natsort import natsorted
 
-from os.path import dirname, realpath, join, exists, basename
-import codecs
-import requests
-from collections import OrderedDict
-from unicodedata import normalize
-import unicodedata
-
-try:
-    from urllib.parse import urlparse
-except ImportError:
-    from urlparse import urlparse
+from ruamel.yaml import YAML
 
 
 class Hub():
 
-    def __init__(self):
+    def __init__(self, language):
+        self.language = language
         self.images = []
+        self.all_images = []
 
     def add_image(self, image):
-        # print(image.version, image.plataform, image.release, image.stags)
+        self.all_images.append(image)
 
         for data in self.images:
             inter = image.stags.intersection(data.stags)
@@ -34,69 +31,167 @@ class Hub():
                 if image.git_datetime < data.git_datetime:
                     for tag in inter:
                         image.stags.remove(tag)
-                else:
-                    for tag in inter:
-                        data.stags.remove(tag)
 
-        if len(image.stags) > 0 :
-            # print(image.version, image.is_prerelease)
-            # log_debug(image.version, image.plataform, image.release, image.stags)
-            # print(image.git_datetime, image.version)
-            # print(image.version, image.plataform, image.release, image.stags, image.url_repository)
+
+        if len(image.stags) > 0:
             self.images.append(image)
 
-    def versions(self):
-        images_versions = {image.version:image for image in self.images}
+    def print_all_versions(self):
+        for image in self.all_images:
+            print(image.version, image.tags, image.distribution, image.release)
+
+    def print_versions(self):
+        versions = self._versions()
+        for v in versions:
+            print(v.version)
+
+    def save(self, filename=None):
+        file_name = filename or "config/{}-versions.yml".format(self.language)
+        print("Save {}...".format(file_name))
+
+        data = []
+        versions = self._versions()
+        for v in versions:
+            stags = set(v["version"].stags)
+            for vs in v["distributions"]:
+                stags.update(list(vs.stags))
+
+            data_version = {
+                "version": v["version"].version,
+                "majorVersion": v["version"].major_version,
+                "prerelease": v["version"].prerelease,
+                "date": v["version"].git_datetime.isoformat(),
+                # "tags": natsorted(list(stags)),
+                # "distributionReleases": ", ".join(natsorted(set(["{} {}".format(vs.distribution["name"], vs.distribution["release_name"]) for vs in v["distributions"]]))),
+                "distributionReleases": ", ".join(natsorted(set([vs.distribution["name"].title() for vs in v["distributions"]]))),
+                "distributions": [],
+            }
+            for vs in v["distributions"]:
+                data_version["distributions"].append({
+                    "name": vs.distribution["name"],
+                    "releaseName": vs.distribution["release_name"],
+                    "release": float(vs.distribution["release"]),
+                    "weight": vs.distribution["weight"],
+                    "image": vs.image_name,
+                    "tags": natsorted(list(vs.stags)),
+                    "urlRepository": vs.url_repository,
+                    "urlDockerfile": vs.url_dockerfile,
+                })
+            data.append(data_version)
+
+        yaml = YAML()
+        yaml.indent(mapping=2, sequence=4, offset=2)
+        with codecs.open(file_name, 'w', encoding='utf8') as f:
+            yaml.dump(data, f)
+
+        yaml_data = StringIO()
+        with codecs.open(file_name, 'r+', encoding='utf8') as f:
+            for line in f.readlines():
+                if line.find("- version:") != -1:
+                    yaml_data.write("\n")
+                yaml_data.write(line)
+
+            f.seek(0)
+            f.write(yaml_data.getvalue())
+
+    def _versions(self):
+        images_versions = {"{}${}".format(image.version, image.url_dockerfile):image for image in self.images}
         versions = list(images_versions.keys())
 
-        versions = natsorted(versions)
-        for v in versions:
-            print(v)
+        group = {}
+        versions = natsorted(versions, reverse=True)
+        for version in versions:
+            v, url_dockerfile = version.split("$")
+            value = group.get(v)
+            if not value:
+                value = []
+            value.append(version)
+            group[v] = value
+
+        # import pdb; pdb.set_trace()
+        data = []
+        existe = {}
+        for version in versions:
+            v, url_dockerfile = version.split("$")
+            value = group[v]
+            if v in existe:
+                continue
+
+            data.append({
+                "version": images_versions[version],
+                "distributions": [images_versions[x] for x in value],
+            })
+            existe[v] = True
 
 
-# prerelease
+        return data
+
+
 class Image():
-    PLATAFORMS = {
-        # DEBIAN
-        # "buildpack-deps": {"plataform": "Debian", "release": "Debian XXXX"},
+    DISTRIBUTIONS = {}
 
-        "buildpack-deps:stretch": {"plataform": "Debian", "release": "Debian 9 (stretch)"},
-        "buildpack-deps:stretch-scm": {"plataform": "Debian", "release": "Debian 9 (stretch)"},
-        "buildpack-deps:jessie": {"plataform": "Debian", "release": "Debian 8 (jessie)"},
-        "buildpack-deps:jessie-scm": {"plataform": "Debian", "release": "Debian 8 (jessie)"},
-        
-        "debian:stretch": {"plataform": "Debian", "release": "Debian 9 (slim-stretch)"},
-        "debian:jessie": {"plataform": "Debian", "release": "Debian 8 (slim-jessie)"},
-        "debian:wheezy": {"plataform": "Debian", "release": "Debian 7 (slim-wheezy)"},
-        "debian:jessie-slim": {"plataform": "Debian", "release": "Debian 8 (jessie-slim)"},
-        "debian:stretch-slim": {"plataform": "Debian", "release": "Debian 8 (stretch-slim)"},
-        
-        "slim-stretch": {"plataform": "Debian", "release": "Debian 9 (slim-stretch)"},
-        "slim-jessie": {"plataform": "Debian", "release": "Debian 8 (slim-jessie)"},
-
-        "jessie-slim": {"plataform": "Debian", "release": "Debian 8 (jessie-slim)"},
-        "stretch-slim": {"plataform": "Debian", "release": "Debian 8 (stretch-slim)"},
-        
-        "stretch": {"plataform": "Debian", "release": "Debian 9 (stretch)"},
-        "jessie": {"plataform": "Debian", "release": "Debian 8 (jessie)"},
-        "wheezy": {"plataform": "Debian", "release": "Debian 7 (wheezy)"},
-
-        # ALPINE
-        "alpine": {"plataform": "Alpine", "release": None},
+    DEBIAN = {
+        "SQUEEZE": {"name": "Debian", "release_name": "6 (squeeze)", "release": 6},
+        "WHEEZY": {"name": "Debian", "release_name": "7 (wheezy)", "release": 7},
+        "JESSIE": {"name": "Debian", "release_name": "8 (jessie)", "release": 8},
+        "STRETCH": {"name": "Debian", "release_name": "9 (stretch)", "release": 9},
+        "BUSTER": {"name": "Debian", "release_name": "10 (buster)", "release": 10},
     }
+
+    UBUNTU = {
+        "TRUSTY": {"name": "Ubuntu", "release_name": "14.04 (trusty)", "release": 14.04},
+        "XENIAL": {"name": "Ubuntu", "release_name": "16.04 (xenial)", "release": 16.04},
+        "BIONIC": {"name": "Ubuntu", "release_name": "18.04 (bionic)", "release": 18.04},
+        "COSMIC": {"name": "Ubuntu", "release_name": "18.10 (cosmic)", "release": 18.10},
+        "DISCO": {"name": "Ubuntu", "release_name": "19.04 (disco)", "release": 19.04},
+    }
+
+    UBUNTU.update({
+        "{}".format(d["release"]):d
+        for _, d in UBUNTU.items()
+    })
+
+    ALPINE = [3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0]
+
+    # ADD DEBIAN / UBUNTU / BUILD_PACK_DEPS
+    BUILD_PACK_DEPS = {
+        **DEBIAN,
+        **UBUNTU
+    }
+    DISTRIBUTIONS["buildpack-deps"] = {**DEBIAN["STRETCH"], "weight": 5}
+    for k, d in BUILD_PACK_DEPS.items():
+        key_buildpack ="buildpack-deps:{}".format(k).lower()
+        key_buildpack_scm = "{}-scm".format(key_buildpack)
+        key_buildpack_curl = "{}-curl".format(key_buildpack)
+        key_debian = "{}:{}".format(d["name"], k).lower()
+        key_debian_slim = "{}:{}-slim".format(d["name"], k).lower()
+
+        # buildpack-deps:stretch > buildpack-deps:stretch-scm > buildpack-deps:stretch-curl > debian:stretch > debian:stretch-slim
+        weight = 5
+        for key in [key_buildpack, key_buildpack_scm, key_buildpack_curl, key_debian, key_debian_slim]:
+            DISTRIBUTIONS[key] = {**d, "weight": weight}
+            weight = weight - 1
+
+    # ADD ALPINE
+    DISTRIBUTIONS.update({
+        "alpine:{}".format(d).lower():{"name": "Alpine", "release_name": str(d), "release": d, "weight": 1}
+        for d in ALPINE
+    })
 
     RE_PRERELEASE = re.compile(r"(rc|beta|a|b)+\d+$")
     RE_IGNORE = re.compile(r"(-preview|onbuild|windowsservercore|nanoserver|-cross|chakracore)")
-    RE_FROM_TAGS = re.compile(r"^FROM\s+([-\w.:/]+)")
+    RE_FROM_IMAGE = re.compile(r"FROM\s+([-\w.:/]+)")
     RE_RELEASE = re.compile(r"([\.\d]+)$")
+    RE_MAJOR_VERSION = re.compile(r'^(\d+)\.(\d+)')
     RE_VERSIONS = {
-        "ruby": re.compile(r"^(([.\d]+)(-p\d+)?)"),
-        "python": re.compile(r"^(([.\d]+)(\w\d+)?)"),
-        "golang": re.compile(r"^(([.\d]+)((beta|rc)\d+)?)"),
-        "default": re.compile(r"^([.\d]+)"),
+        # "ruby": re.compile(r"^(([.\d]+)(-p\d+)?)"),
+        # "python": re.compile(r"^(([.\d]+)(\w\d+)?)"),
+        # "golang": re.compile(r"^(([.\d]+)((beta|rc)\d+)?)"),
+        # "default": re.compile(r"^([.\d]+)"),
+        "default": re.compile(r"^(\d+[^-]+)"),
     }
 
-    def __init__(self, language, git_datetime, tags, directory, git_commit, repository):
+    def __init__(self, language, git_datetime, tags, directory, git_commit, repository, filepath):
         self.language = language
         self.tags = tags
         self.stags = set(map(str.strip, tags.split(",")))
@@ -104,17 +199,20 @@ class Image():
         self.git_commit = git_commit
         self.directory = directory
         self.repository = repository
-        self.re_versions = self.RE_VERSIONS.get(self.language) or self.RE_VERSIONS["default"]
-        self.url_repository = self.format_url()
+        self.filepath = filepath
 
-        self.plataform = None
-        self.release = None
+        self.re_versions = self.RE_VERSIONS.get(self.language) or self.RE_VERSIONS["default"]
+        self.url_repository = "https://github.com{}".format(repository)
+        self.url_dockerfile = self.format_url()
+
+        self.distribution = None
         self.version = None
         self.major_version = None
+        self.image_name = None
         self.valid = True
 
         self.ignore = self.RE_IGNORE.search(self.tags) != None
-        
+
         if not self.ignore:
             self._proccess()
 
@@ -126,18 +224,16 @@ class Image():
             print(e)
 
         if not self.version or not self.major_version:
-            log_debug("INVALID", self.tags)
+            log_debug("INVALID VERSION:", date=self.git_datetime.isoformat(), tags=self.tags)
             self.valid = False
             return
 
-        self.plataform, self.release = self.find_plataform_release(self.tags)
+        self.distribution, self.image_name = self.get_distribution_release()
 
-        if not self.plataform or not self.release:
-            self.plataform, self.release = self.get_plataform_release()
-            if not self.plataform or not self.release:
-                log_debug("INVALID", self.tags, self.url_repository)
-                self.valid = False
-                return
+        if not self.distribution or not self.image_name:
+            print("INVALID IMAGE:", self.image_name, self.url_dockerfile)
+            self.valid = False
+            return
 
     def _versions(self, tags):
         stags = set(map(str.strip, tags.split(",")))
@@ -146,53 +242,48 @@ class Image():
             resp = self.re_versions.search(tag)
             if resp :
                 versions.append(resp.groups()[0])
-        
+
         if not versions:
             return None, None
 
         version = max(versions, key=len)
-        return version, version[0:3]
 
-    def find_plataform_release(self, tags):
-        plataform = None
-        release = None
-        stags = set(map(str.strip, tags.split(",")))
-        for key, value in self.PLATAFORMS.items():
-            if tags.find(key) != -1:
-                plataform = value["plataform"]
-                release = value["release"] or self._release(stags)
-                break
+        match = self.RE_MAJOR_VERSION.match(version)
+        if match:
+            vmajor, vminor = match.group(1, 2)
+            major = "{}.{}".format(vmajor, vminor)
+        else:
+            major = version[0:3]
 
-        if not plataform:
-            log_debug("Plataforma não encontrada ", tags)
+        return version, major
 
-        return plataform, release
-
-    def get_plataform_release(self):
-        text = self.download(self.url_repository)
-        resp = self.RE_FROM_TAGS.search(text)
+    def get_distribution_release(self):
+        text = self.download(self.url_dockerfile)
+        resp = self.RE_FROM_IMAGE.search(text)
         if resp:
-            tags = resp.groups()[0]
-            log_debug("get_plataform_release:", tags)
-            return self.find_plataform_release(tags)
+            image_name = resp.groups()[0]
+            # print("IMAGE:", image_name)
+            # print("TAGS:", image_name, " - ", self.tags)
+            print(self.tags)
+            # log_debug("get_distribution_release:", tags)
+            return self.find_distribution_release(image_name)
 
+        print("REGEX IMAGE NOT FOUND", self.url_dockerfile)
         return None, None
 
-    def _release(self, stags):
-        release = None
-        for tag in stags:
-            resp = self.RE_RELEASE.search(tag)
-            if resp :
-                release = resp.groups()[0]
-                break
+    def find_distribution_release(self, image_name):
+        stags = set(map(str.strip, image_name.split(",")))
+        for key, distribution in self.DISTRIBUTIONS.items():
+            if image_name == key:
+                return distribution, image_name
 
-        return release
+        return None, None
 
     def is_valid(self):
         return not self.ignore and self.valid
 
     @property
-    def is_prerelease(self):
+    def prerelease(self):
         return self.RE_PRERELEASE.search(self.version) != None
 
     def request_url(self, url):
@@ -202,20 +293,26 @@ class Image():
 
     def download(self, url):
         tmp_filepath = "/tmp/dockerfile-gen/{}/{}".format(self.language, self.slugify(url))
-        if not os.path.exists(tmp_filepath):
-            self.download_file(url, tmp_filepath)
+        if not exists(tmp_filepath):
+            try:
+                self.download_file(url, tmp_filepath)
+            except Exception as e:
+                print("Error %s", str(e))
+                print(self.__dict__)
+                return ""
+
 
         return self.load(tmp_filepath)
 
     def download_file(self, url, file_path):
         dir_path = dirname(file_path)
-        if not os.path.exists(dir_path):
+        if not exists(dir_path):
             os.makedirs(dir_path)
 
         with requests.get(url, stream=True) as r:
             r.raise_for_status()
             with open(file_path, 'wb') as f:
-                for chunk in r.iter_content(chunk_size=512): 
+                for chunk in r.iter_content(chunk_size=512):
                     if chunk:
                         f.write(chunk)
 
@@ -226,9 +323,9 @@ class Image():
     def format_url(self):
         raw_git_url = "https://raw.githubusercontent.com"
         return "{raw_git_url}{repository}/{commit}/{directory}/Dockerfile".format(
-            raw_git_url=raw_git_url, 
-            repository=self.repository, 
-            commit=self.git_commit, 
+            raw_git_url=raw_git_url,
+            repository=self.repository,
+            commit=self.git_commit,
             directory=self.directory)
 
     def slugify(self, s):
@@ -249,7 +346,7 @@ class OfficialImages():
     def __init__(self, dir_path, language):
         log_debug(dir_path, language)
 
-        self.hub = Hub()
+        self.hub = Hub(language)
         self.language = language
         self.dir_path = dir_path
         self.files = self._files()
@@ -257,7 +354,13 @@ class OfficialImages():
         self._parser()
 
     def print_versions(self):
-        return self.hub.versions()
+        return self.hub.print_versions()
+
+    def print_all_versions(self):
+        return self.hub.print_all_versions()
+
+    def save(self, filename=None):
+        return self.hub.save(filename)
 
     def _parser(self):
         for d in self.data:
@@ -269,6 +372,7 @@ class OfficialImages():
                         "language": self.language,
                         "git_datetime": d["git_datetime"],
                         "repository": self._repository(repository),
+                        "filepath": d["filepath"],
                     }
                     fields_kwargs = self.get_value_fields(block, self.FIELDS, ["tags", "git_commit", "directory"])
                     image_kwargs.update(fields_kwargs)
@@ -281,7 +385,7 @@ class OfficialImages():
                     resp = re.search(r"^([.\w-]+):\s+(.*)@([\w]+)+\s+(.*)$", line)
                     if resp:
                         tags, repository, git_commit, directory = resp.groups()
-                        
+
                         image_kwargs = {
                             "language": self.language,
                             "git_datetime": d["git_datetime"],
@@ -289,6 +393,7 @@ class OfficialImages():
                             "git_commit": git_commit,
                             "directory": directory,
                             "repository": self._repository(repository),
+                            "filepath": d["filepath"],
                         }
                         image = Image(**image_kwargs)
                         if image.is_valid():
@@ -301,7 +406,9 @@ class OfficialImages():
             with codecs.open(f, 'r', encoding='utf8') as fp:
                 data.append({
                     "git_datetime": self._git_datetime(f),
-                    "data": fp.readlines()
+                    "data": fp.readlines(),
+                    "filepath": f,
+                    "filename": basename(f),
                 })
 
         return data
@@ -311,11 +418,11 @@ class OfficialImages():
         dt = filename.split("_")[1]
         return datetime.strptime(dt, "%Y-%m-%dT%H:%M:%S")
 
-    def _files(self):
+    def _files(self, filter="*.txt"):
         files = []
         for root, _, filenames in os.walk(self.dir_path):
-            for filename in fnmatch.filter(filenames, '*.txt'):
-                files.append(os.path.join(root, filename))
+            for filename in fnmatch.filter(filenames, filter):
+                files.append(join(root, filename))
 
         return sorted(files)
 
@@ -345,7 +452,7 @@ class OfficialImages():
 
             if init and block:
                 blocks.append(block)
-            
+
             return blocks
 
     def trim(self, value):
@@ -371,23 +478,74 @@ class OfficialImages():
                 return resp.groups()[0]
 
 
+class MhartNode(OfficialImages):
+
+    def __init__(self, dir_path, language):
+        log_debug(dir_path, language)
+
+        self.hub = Hub(language)
+        self.language = language
+        self.dir_path = dir_path
+        self.files = self._files()
+        self.data = self._load()
+        self.repository = "/mhart/alpine-node"
+        self.directory = ""
+        self._parser()
+
+    def _parser(self):
+        for d in self.data:
+            git_commit = d["filename"].split("_")[2]
+            image = self.get_value(d["data"], r"^FROM\s+([-\w.:/]+)")
+            version = self.get_value(d["data"], r"^ENV\s+VERSION=([\w.]+)")
+            if not image or not version:
+                continue
+
+            tags = "{}-{}".format(version.strip("v"), image)
+            image_kwargs = {
+                "language": self.language,
+                "git_datetime": d["git_datetime"],
+                "tags": tags,
+                "git_commit": git_commit,
+                "directory": self.directory,
+                "repository": self.repository,
+            }
+            image = Image(**image_kwargs)
+            if image.is_valid():
+                self.hub.add_image(image)
+
+    def save(self):
+        super().save("mhart-node-versions.yml")
+
 def log_debug(*args, **kwags):
     global DEBUG
     if DEBUG:
         if args and kwags:
-            print("DEBUG: ", args, kwags)
+            print(*args, kwags)
         elif args:
-            print("DEBUG: ", args)
+            print(*args)
         else:
-            print("DEBUG: ", kwags)
+            print(kwags)
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 2:
         print("Usar no seguinte formato:\n python official-images.py <filepath> <language>\n")
         print("Exemplo:\n python official-images.py /tmp/all_versions_exported/python python True\n\n")
         exit(2)
 
     dir_path = sys.argv[1]
     language = sys.argv[2]
-    DEBUG = sys.argv[3] == 'True'
-    OfficialImages(dir_path, language).print_versions()
+    DEBUG = False
+    method_name = "save"
+
+    if len(sys.argv) > 3:
+        DEBUG = sys.argv[3] == 'True'
+
+    if len(sys.argv) > 4:
+        method_name = sys.argv[4]
+
+    official_images = OfficialImages(dir_path, language)
+    if method_name != "":
+        method = getattr(official_images, method_name)
+        method()
+
+    # MhartNode(dir_path, language).save()

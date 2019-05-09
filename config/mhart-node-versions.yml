@@ -1,0 +1,2640 @@
+
+  - version: 12.0.0
+    majorVersion: '12.0'
+    prerelease: false
+    date: '2019-04-23T15:30:46'
+    plataform: Alpine
+    release: '3.9'
+    tags:
+      - 12.0.0-alpine:3.9
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2a7349054a90634b1a94d9ee48644c7ecfa3de65//Dockerfile
+
+  - version: 11.14.0
+    majorVersion: '11.14'
+    prerelease: false
+    date: '2019-04-12T10:57:00'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.14.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2361a7d149bbe8728f19f22bb6ee4e3c1da201e7//Dockerfile
+
+  - version: 11.13.0
+    majorVersion: '11.13'
+    prerelease: false
+    date: '2019-03-29T11:07:55'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.13.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9526f49e50a243fbd10b99c72dd702e131aa2616//Dockerfile
+
+  - version: 11.12.0
+    majorVersion: '11.12'
+    prerelease: false
+    date: '2019-03-18T12:48:00'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.12.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/b8088b37dc0df4c1c63a6dd931bd6e9ca8f4ca50//Dockerfile
+
+  - version: 11.11.0
+    majorVersion: '11.11'
+    prerelease: false
+    date: '2019-03-06T16:29:18'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.11.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1d5a3a7a6f2416271491019238da634762ac0136//Dockerfile
+
+  - version: 11.10.1
+    majorVersion: '11.10'
+    prerelease: false
+    date: '2019-02-28T19:29:11'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.10.1-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/63760f6aa1f9c70bbf9756d28c3a993a0f48fcf9//Dockerfile
+
+  - version: 11.10.0
+    majorVersion: '11.10'
+    prerelease: false
+    date: '2019-02-15T13:21:46'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.10.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/898de75dd32823f36b7d48b6950c598469ccde3f//Dockerfile
+
+  - version: 11.9.0
+    majorVersion: '11.9'
+    prerelease: false
+    date: '2019-02-01T16:25:51'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.9.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d4115523496aec1f9f4a06dc66615365b464d06e//Dockerfile
+
+  - version: 11.8.0
+    majorVersion: '11.8'
+    prerelease: false
+    date: '2019-01-24T23:16:42'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.8.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6c725b991c5d4ff492acb0192b60cd95354624d4//Dockerfile
+
+  - version: 11.7.0
+    majorVersion: '11.7'
+    prerelease: false
+    date: '2019-01-18T11:45:44'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.7.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5cc5c0d6174c75544e4cda0c546830bed6b3ea8d//Dockerfile
+
+  - version: 11.6.0
+    majorVersion: '11.6'
+    prerelease: false
+    date: '2018-12-26T21:08:35'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.6.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/a26b814ce340df172e0c734bd2c4da6d1503745f//Dockerfile
+
+  - version: 11.5.0
+    majorVersion: '11.5'
+    prerelease: false
+    date: '2018-12-18T17:38:32'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.5.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/79b2915e13217178fffc2e6ae77ad75218f554ba//Dockerfile
+
+  - version: 11.4.0
+    majorVersion: '11.4'
+    prerelease: false
+    date: '2018-12-08T16:05:36'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.4.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/de47a61f362b4749577048235e1f3423ec13ca9b//Dockerfile
+
+  - version: 11.3.0
+    majorVersion: '11.3'
+    prerelease: false
+    date: '2018-11-28T10:30:04'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.3.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3b9cb115b06df9c48804bde5bdd4fd32abf3b4ab//Dockerfile
+
+  - version: 11.2.0
+    majorVersion: '11.2'
+    prerelease: false
+    date: '2018-11-15T17:22:00'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.2.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4bda65ed82808dee414219ded31ca0a60d374418//Dockerfile
+
+  - version: 11.1.0
+    majorVersion: '11.1'
+    prerelease: false
+    date: '2018-11-02T10:53:09'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.1.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d702593b0daf4909c28fa7a105fd2518ac494347//Dockerfile
+
+  - version: 11.0.0
+    majorVersion: '11.0'
+    prerelease: false
+    date: '2018-10-23T20:41:38'
+    plataform: Alpine
+    release: '3.8'
+    tags:
+      - 11.0.0-alpine:3.8
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/df02d1197d57a0e5fd026d74ec3d7ade6acfe695//Dockerfile
+
+  - version: 10.15.3
+    majorVersion: '10.15'
+    prerelease: false
+    date: '2019-03-05T20:49:49'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.15.3-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/cf7396b0049b2e4b538ab3e4ec07555552289007//Dockerfile
+
+  - version: 10.15.2
+    majorVersion: '10.15'
+    prerelease: false
+    date: '2019-02-28T21:16:52'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.15.2-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/396e51b2887c33f02f093eb386aa1bcd8c7f82cb//Dockerfile
+
+  - version: 10.15.1
+    majorVersion: '10.15'
+    prerelease: false
+    date: '2019-01-29T17:47:42'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.15.1-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/48eb67651273b420e22b90161b278ec3e91f59ee//Dockerfile
+
+  - version: 10.15.0
+    majorVersion: '10.15'
+    prerelease: false
+    date: '2018-12-26T13:08:02'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.15.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6947d2355cbcf1bf448a4de3c8e7f70516481740//Dockerfile
+
+  - version: 10.14.2
+    majorVersion: '10.14'
+    prerelease: false
+    date: '2018-12-11T20:21:30'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.14.2-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/bfe4384745a95379636d5bc12df905a41dd896da//Dockerfile
+
+  - version: 10.14.0
+    majorVersion: '10.14'
+    prerelease: false
+    date: '2018-11-28T11:16:18'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.14.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/da0c9ed5b4c37cf50a4d25357391a6ba3ca28aad//Dockerfile
+
+  - version: 10.13.0
+    majorVersion: '10.13'
+    prerelease: false
+    date: '2018-10-31T10:42:53'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.13.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d4ca2cd67537f2866b50a1cae3aebe08f1881b79//Dockerfile
+
+  - version: 10.12.0
+    majorVersion: '10.12'
+    prerelease: false
+    date: '2018-10-11T08:39:13'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.12.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/561270247d399dfc8cb23ef75fbcb3e73ca88a13//Dockerfile
+
+  - version: 10.11.0
+    majorVersion: '10.11'
+    prerelease: false
+    date: '2018-09-20T10:41:00'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.11.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/a7ba20b808098c0df17265879895d488c53dc836//Dockerfile
+
+  - version: 10.10.0
+    majorVersion: '10.10'
+    prerelease: false
+    date: '2018-09-07T09:40:16'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.10.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/cc44eb2c3fb9d51f4e88f1be42e66147bc4875be//Dockerfile
+
+  - version: 10.9.0
+    majorVersion: '10.9'
+    prerelease: false
+    date: '2018-08-16T10:40:03'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.9.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4c175d64b3a101846321b23ce74ef2ed57970fa1//Dockerfile
+
+  - version: 10.8.0
+    majorVersion: '10.8'
+    prerelease: false
+    date: '2018-08-01T17:58:38'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.8.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4150fdc8b325063a438576e106811f87f2479fe7//Dockerfile
+
+  - version: 10.7.0
+    majorVersion: '10.7'
+    prerelease: false
+    date: '2018-07-18T16:19:30'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.7.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/23ecc917aa095c6c95294ddc4a971ba093e440f8//Dockerfile
+
+  - version: 10.6.0
+    majorVersion: '10.6'
+    prerelease: false
+    date: '2018-07-04T16:33:19'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.6.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4c39259c143fce5104f7dd593a5491acefe1256d//Dockerfile
+
+  - version: 10.5.0
+    majorVersion: '10.5'
+    prerelease: false
+    date: '2018-06-20T17:39:18'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.5.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ffaf36792e5f1772a9bf50774ea674b863a1c8e9//Dockerfile
+
+  - version: 10.4.1
+    majorVersion: '10.4'
+    prerelease: false
+    date: '2018-06-13T10:30:01'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.4.1-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/074820ba0f22ad82fb99c0a3b3d844c88211de4d//Dockerfile
+
+  - version: 10.4.0
+    majorVersion: '10.4'
+    prerelease: false
+    date: '2018-06-06T18:46:56'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.4.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/de93ec081e953b38df9fb348c292e7516679de04//Dockerfile
+
+  - version: 10.3.0
+    majorVersion: '10.3'
+    prerelease: false
+    date: '2018-05-29T15:43:13'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.3.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/faa00c7d7b1b28824becf0dc95ad6f73096a73ff//Dockerfile
+
+  - version: 10.2.1
+    majorVersion: '10.2'
+    prerelease: false
+    date: '2018-05-25T10:40:12'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.2.1-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1bfc79738c5c045120c98edda5bb8449084da23c//Dockerfile
+
+  - version: 10.2.0
+    majorVersion: '10.2'
+    prerelease: false
+    date: '2018-05-24T10:45:57'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.2.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/0679056823d7f59f6077eb7396303f092d6f342f//Dockerfile
+
+  - version: 10.1.0
+    majorVersion: '10.1'
+    prerelease: false
+    date: '2018-05-10T10:15:15'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.1.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/28d003db2222813f24295031d85be0edfd7deea5//Dockerfile
+
+  - version: 10.0.0
+    majorVersion: '10.0'
+    prerelease: false
+    date: '2018-04-24T17:50:08'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 10.0.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/951e47e4efe164ea93e6f75792156bcd7fbe14e8//Dockerfile
+
+  - version: 9.11.1
+    majorVersion: '9.11'
+    prerelease: false
+    date: '2018-04-05T23:12:56'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.11.1-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/00ca263536564858fd97ff9ff158c772d0c88ccb//Dockerfile
+
+  - version: 9.11.0
+    majorVersion: '9.11'
+    prerelease: false
+    date: '2018-04-04T23:18:25'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.11.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6c92b7e6f745a57384846e81f5b03e4e0ab7c511//Dockerfile
+
+  - version: 9.10.0
+    majorVersion: '9.10'
+    prerelease: false
+    date: '2018-03-28T13:59:51'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.10.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7b7ac09cc5686eea934c497adf9dbca4b13582a6//Dockerfile
+
+  - version: 9.9.0
+    majorVersion: '9.9'
+    prerelease: false
+    date: '2018-03-21T14:14:55'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.9.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/784f92906660953ad31925c1e8bf337e9df93fd9//Dockerfile
+
+  - version: 9.8.0
+    majorVersion: '9.8'
+    prerelease: false
+    date: '2018-03-08T11:35:47'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.8.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/a6ab9b499a423515cfb1dc9b7a3a963d2276d6e6//Dockerfile
+
+  - version: 9.7.1
+    majorVersion: '9.7'
+    prerelease: false
+    date: '2018-03-02T12:17:55'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.7.1-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1669da584225ea4f051f0b079fe1562865a3a492//Dockerfile
+
+  - version: 9.7.0
+    majorVersion: '9.7'
+    prerelease: false
+    date: '2018-03-01T10:29:23'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.7.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5ada7181bc7d2b23aa9771c757538c503250010b//Dockerfile
+
+  - version: 9.6.1
+    majorVersion: '9.6'
+    prerelease: false
+    date: '2018-02-23T13:31:57'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.6.1-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6fe1b80d8b85f726e3a77a26729b2c71605ed5c7//Dockerfile
+
+  - version: 9.6.0
+    majorVersion: '9.6'
+    prerelease: false
+    date: '2018-02-22T12:57:27'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.6.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/474dd815bf9187c58ec3e19c55a22651269c828e//Dockerfile
+
+  - version: 9.5.0
+    majorVersion: '9.5'
+    prerelease: false
+    date: '2018-01-31T20:52:03'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.5.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/8564a2be6be61c804b09becb1eabcba5d94f4a40//Dockerfile
+
+  - version: 9.4.0
+    majorVersion: '9.4'
+    prerelease: false
+    date: '2018-01-10T13:31:13'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.4.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ef17fa7a7b6d5486725aa3404fe76928f6b44597//Dockerfile
+
+  - version: 9.3.0
+    majorVersion: '9.3'
+    prerelease: false
+    date: '2017-12-12T21:21:33'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.3.0-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/0d5dda30da49aaccc0606262b187be0bba660a6c//Dockerfile
+
+  - version: 9.2.1
+    majorVersion: '9.2'
+    prerelease: false
+    date: '2017-12-09T18:40:52'
+    plataform: Alpine
+    release: '3.7'
+    tags:
+      - 9.2.1-alpine:3.7
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5578206c453cfef4900529d6b37ddbc634adb67e//Dockerfile
+
+  - version: 9.2.0
+    majorVersion: '9.2'
+    prerelease: false
+    date: '2017-11-14T21:28:30'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 9.2.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/da3fba29d8634d28d04cb7bbabf268a3af87c3ee//Dockerfile
+
+  - version: 9.1.0
+    majorVersion: '9.1'
+    prerelease: false
+    date: '2017-11-07T17:32:05'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 9.1.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9a8b52f1ccb96d682fd30e59381153e384890a94//Dockerfile
+
+  - version: 9.0.0
+    majorVersion: '9.0'
+    prerelease: false
+    date: '2017-10-31T17:55:39'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 9.0.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/375ce83f2c38ce3b0f0987b35baa1ed2821189fb//Dockerfile
+
+  - version: 8.16.0
+    majorVersion: '8.16'
+    prerelease: false
+    date: '2019-04-18T22:12:26'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.16.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9a652394c318917f1aa5236d8e40c6db07ea2f5e//Dockerfile
+
+  - version: 8.15.1
+    majorVersion: '8.15'
+    prerelease: false
+    date: '2019-02-28T22:05:33'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.15.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e39956993576206178df40eba04d52384ae5c62b//Dockerfile
+
+  - version: 8.15.0
+    majorVersion: '8.15'
+    prerelease: false
+    date: '2018-12-26T20:28:18'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.15.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ea3b4573c903c2b0ae0b03e8ef74ccc782ceecba//Dockerfile
+
+  - version: 8.14.1
+    majorVersion: '8.14'
+    prerelease: false
+    date: '2018-12-18T14:53:59'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.14.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/388784ae99c2f504d673ac9412d64db549cf95d0//Dockerfile
+
+  - version: 8.14.0
+    majorVersion: '8.14'
+    prerelease: false
+    date: '2018-11-28T11:55:38'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.14.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2201b25362652c112cd97c3e203cd5ebc4e2afc2//Dockerfile
+
+  - version: 8.13.0
+    majorVersion: '8.13'
+    prerelease: false
+    date: '2018-11-20T15:16:35'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.13.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/f776e5327f7cbc6de88c8f8261469f9dc6a44833//Dockerfile
+
+  - version: 8.12.0
+    majorVersion: '8.12'
+    prerelease: false
+    date: '2018-09-11T10:57:21'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.12.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e02ace4200de55bf06394b375a72bc067b925aa7//Dockerfile
+
+  - version: 8.11.4
+    majorVersion: '8.11'
+    prerelease: false
+    date: '2018-08-16T11:46:58'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.11.4-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/07f74b8770d44c00ed2599f3bdbb4b0d4e526135//Dockerfile
+
+  - version: 8.11.3
+    majorVersion: '8.11'
+    prerelease: false
+    date: '2018-06-13T12:17:00'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.11.3-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5a7bf8fc75370934b950dbd8db6219614dc90091//Dockerfile
+
+  - version: 8.11.2
+    majorVersion: '8.11'
+    prerelease: false
+    date: '2018-05-16T10:51:35'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.11.2-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/dca5c2e0869a3744e8e2cac001850f28be95234e//Dockerfile
+
+  - version: 8.11.1
+    majorVersion: '8.11'
+    prerelease: false
+    date: '2018-04-06T09:59:51'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.11.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ced03eddbf94784c40aa6a0f997da5b1a2c051dd//Dockerfile
+
+  - version: 8.11.0
+    majorVersion: '8.11'
+    prerelease: false
+    date: '2018-03-28T15:07:42'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.11.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4ddc2b22a2f07229ecd89c8ce8520bde6c78e0a6//Dockerfile
+
+  - version: 8.10.0
+    majorVersion: '8.10'
+    prerelease: false
+    date: '2018-03-07T10:20:07'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.10.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ceeefdca0dd66e16463f6dc2f3f3a7ba543a8957//Dockerfile
+
+  - version: 8.9.4
+    majorVersion: '8.9'
+    prerelease: false
+    date: '2018-01-03T17:55:35'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.9.4-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e987bf741107e34d450a9b5955543cb4896a926a//Dockerfile
+
+  - version: 8.9.3
+    majorVersion: '8.9'
+    prerelease: false
+    date: '2017-12-09T16:23:08'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.9.3-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/bdd38a4562c4e21d19ca6f47c8a55c573bcdd545//Dockerfile
+
+  - version: 8.9.2
+    majorVersion: '8.9'
+    prerelease: false
+    date: '2017-12-06T00:26:59'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.9.2-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d003cf0d6818ef4f7f57b8398e50da1008277f8f//Dockerfile
+
+  - version: 8.9.1
+    majorVersion: '8.9'
+    prerelease: false
+    date: '2017-11-09T11:46:58'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.9.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/fa8f4b1e983db991c0f626648c103991d308cd10//Dockerfile
+
+  - version: 8.9.0
+    majorVersion: '8.9'
+    prerelease: false
+    date: '2017-10-31T16:12:07'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.9.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/cae35ebf81c9721770930a606de4efed2970a214//Dockerfile
+
+  - version: 8.8.1
+    majorVersion: '8.8'
+    prerelease: false
+    date: '2017-10-25T23:31:04'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.8.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/c69ab9cd3258a8fe152c427a03c864fcaa5f7c7e//Dockerfile
+
+  - version: 8.8.0
+    majorVersion: '8.8'
+    prerelease: false
+    date: '2017-10-24T20:55:12'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.8.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/57fb1b6915e43d3d98653dc992e880027349251d//Dockerfile
+
+  - version: 8.7.0
+    majorVersion: '8.7'
+    prerelease: false
+    date: '2017-10-13T21:17:54'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.7.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d5372a2faba42b40fa9b3a272c1cad1710c4381e//Dockerfile
+
+  - version: 8.6.0
+    majorVersion: '8.6'
+    prerelease: false
+    date: '2017-09-26T21:46:09'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.6.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/efd7efbd0199b57b4f3e9ac1cb2c9df23c2dc429//Dockerfile
+
+  - version: 8.5.0
+    majorVersion: '8.5'
+    prerelease: false
+    date: '2017-09-14T12:52:28'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.5.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/823ea3379138030f28b623b5e65298fa2d2a0705//Dockerfile
+
+  - version: 8.4.0
+    majorVersion: '8.4'
+    prerelease: false
+    date: '2017-08-15T17:43:26'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.4.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/80c4ecfc51673447a709cc7f3b96fff6e81e6ba3//Dockerfile
+
+  - version: 8.3.0
+    majorVersion: '8.3'
+    prerelease: false
+    date: '2017-08-10T10:16:23'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.3.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7a74a86ae948d1e863e10532100707036434c61f//Dockerfile
+
+  - version: 8.2.1
+    majorVersion: '8.2'
+    prerelease: false
+    date: '2017-07-21T09:11:09'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.2.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e7f4d72563dab646c7a0ad9998bcfd5498a739d5//Dockerfile
+
+  - version: 8.2.0
+    majorVersion: '8.2'
+    prerelease: false
+    date: '2017-07-20T09:51:04'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.2.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/40467d9a2b3c025dac2902cecb551990fef709a6//Dockerfile
+
+  - version: 8.1.4
+    majorVersion: '8.1'
+    prerelease: false
+    date: '2017-07-14T15:11:51'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.1.4-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/60e0a808fe597193230441c9ebb86a5cc4ef1678//Dockerfile
+
+  - version: 8.1.3
+    majorVersion: '8.1'
+    prerelease: false
+    date: '2017-07-07T17:14:04'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.1.3-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1590e9d1442cfacad8996fff0f0f274ecf63b022//Dockerfile
+
+  - version: 8.1.2
+    majorVersion: '8.1'
+    prerelease: false
+    date: '2017-06-15T12:28:17'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.1.2-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7d774c4b22cd432c5dcfe2910d1aea21eda6c2a9//Dockerfile
+
+  - version: 8.1.1
+    majorVersion: '8.1'
+    prerelease: false
+    date: '2017-06-14T09:32:23'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.1.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5e0a1f78a2d53a2fd4d08b1395ce6334862b08f0//Dockerfile
+
+  - version: 8.1.0
+    majorVersion: '8.1'
+    prerelease: false
+    date: '2017-06-09T12:08:38'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.1.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/bbe55d4a3d1f22252e8c333242a59d33f1ed0a04//Dockerfile
+
+  - version: 8.0.0
+    majorVersion: '8.0'
+    prerelease: false
+    date: '2017-06-05T15:47:44'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 8.0.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/c215aa3bc51f8664869a711088d99e3afb45ded5//Dockerfile
+
+  - version: 7.10.1
+    majorVersion: '7.10'
+    prerelease: false
+    date: '2017-07-14T17:12:48'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.10.1-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/756d471083ebdff74dab10c315003c82db4c8418//Dockerfile
+
+  - version: 7.10.0
+    majorVersion: '7.10'
+    prerelease: false
+    date: '2017-05-03T10:40:38'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.10.0-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/b635b3c376b50842af46b7ea37ee693554b62f63//Dockerfile
+
+  - version: 7.9.0
+    majorVersion: '7.9'
+    prerelease: false
+    date: '2017-04-12T09:54:33'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.9.0-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2d78817f4f6b76bb5dd62188f7d9cc17b57cb3f0//Dockerfile
+
+  - version: 7.8.0
+    majorVersion: '7.8'
+    prerelease: false
+    date: '2017-03-29T07:49:34'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.8.0-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/c3ff61acbc5467e45ef4ceefe070bae81114a4ff//Dockerfile
+
+  - version: 7.7.4
+    majorVersion: '7.7'
+    prerelease: false
+    date: '2017-03-21T21:27:32'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.7.4-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/39e3d79a9bbf0cd485741597ce2275f84f368a44//Dockerfile
+
+  - version: 7.7.3
+    majorVersion: '7.7'
+    prerelease: false
+    date: '2017-03-15T10:07:03'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.7.3-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3913a1213a7a9b880ec671dfd6b7e1cd4c67ec04//Dockerfile
+
+  - version: 7.7.2
+    majorVersion: '7.7'
+    prerelease: false
+    date: '2017-03-09T10:28:01'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.7.2-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/481e35b2dde6d9040524c6ec3041aaf3d8b6e708//Dockerfile
+
+  - version: 7.7.1
+    majorVersion: '7.7'
+    prerelease: false
+    date: '2017-03-02T09:40:29'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.7.1-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3d72774096b61c68e58a0f8bb4dfd31931409fac//Dockerfile
+
+  - version: 7.7.0
+    majorVersion: '7.7'
+    prerelease: false
+    date: '2017-03-01T09:42:48'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.7.0-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/307ed5abc286c88a6edd75617c1e4417e0508aad//Dockerfile
+
+  - version: 7.6.0
+    majorVersion: '7.6'
+    prerelease: false
+    date: '2017-02-21T23:26:01'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.6.0-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5d69c3764ebf08e87689973c6f608514fe518867//Dockerfile
+
+  - version: 7.5.0
+    majorVersion: '7.5'
+    prerelease: false
+    date: '2017-02-01T12:10:38'
+    plataform: Alpine
+    release: '3.5'
+    tags:
+      - 7.5.0-alpine:3.5
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/abddc0b48d4d22b637609a0e9f9a2f83387137dc//Dockerfile
+
+  - version: 7.4.0
+    majorVersion: '7.4'
+    prerelease: false
+    date: '2017-01-04T16:45:10'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 7.4.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/aed08605ccc55321b2e8a24d6a88d5f44df1749a//Dockerfile
+
+  - version: 7.3.0
+    majorVersion: '7.3'
+    prerelease: false
+    date: '2016-12-20T19:39:40'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 7.3.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6220f80563576b4bab8e9d78a584d47405fb645c//Dockerfile
+
+  - version: 7.2.1
+    majorVersion: '7.2'
+    prerelease: false
+    date: '2016-12-06T20:52:31'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 7.2.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/58b03244117b93809f887c5bb327ac761e5222cf//Dockerfile
+
+  - version: 7.2.0
+    majorVersion: '7.2'
+    prerelease: false
+    date: '2016-11-22T20:26:52'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 7.2.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4e313ef92ebfa38cc17d6d0d3944664a1b6a2de0//Dockerfile
+
+  - version: 7.1.0
+    majorVersion: '7.1'
+    prerelease: false
+    date: '2016-11-08T18:25:42'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 7.1.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1531dc9c6cc908c4078e0db505b74e2bd3792857//Dockerfile
+
+  - version: 7.0.0
+    majorVersion: '7.0'
+    prerelease: false
+    date: '2016-10-25T14:20:34'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 7.0.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ed47080bc213f8067f90267a74148ebf3d11ffe3//Dockerfile
+
+  - version: 6.17.1
+    majorVersion: '6.17'
+    prerelease: false
+    date: '2019-04-05T11:08:24'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 6.17.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/bc7a5815c7f1924c5650266eae5686de55058adc//Dockerfile
+
+  - version: 6.17.0
+    majorVersion: '6.17'
+    prerelease: false
+    date: '2019-02-28T22:41:05'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 6.17.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/fbccbee6098dab01da3f7876defeec5d5b865db7//Dockerfile
+
+  - version: 6.16.0
+    majorVersion: '6.16'
+    prerelease: false
+    date: '2018-12-26T18:50:01'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 6.16.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/762618c972c206030fb7869c8ff8f6ba8d41b8eb//Dockerfile
+
+  - version: 6.15.1
+    majorVersion: '6.15'
+    prerelease: false
+    date: '2018-12-03T10:21:33'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 6.15.1-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/887102bd95f7fb0de311fd9adf0deeb998706cfd//Dockerfile
+
+  - version: 6.15.0
+    majorVersion: '6.15'
+    prerelease: false
+    date: '2018-11-28T12:47:56'
+    plataform: Alpine
+    release: '3.6'
+    tags:
+      - 6.15.0-alpine:3.6
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/21c4797b87194b6f8fb0f62ba6834e14db7ee3b1//Dockerfile
+
+  - version: 6.14.4
+    majorVersion: '6.14'
+    prerelease: false
+    date: '2018-08-16T14:21:25'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.14.4-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1ea66c54f67c22536c34ba6aab812d727aa77f1b//Dockerfile
+
+  - version: 6.14.3
+    majorVersion: '6.14'
+    prerelease: false
+    date: '2018-06-13T14:34:23'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.14.3-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4abfe008754eea0cc3da17286892060237bd565f//Dockerfile
+
+  - version: 6.14.2
+    majorVersion: '6.14'
+    prerelease: false
+    date: '2018-05-10T12:35:14'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.14.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7aa43542d5517fe19d3a0594e85e00ecd3a082c4//Dockerfile
+
+  - version: 6.14.1
+    majorVersion: '6.14'
+    prerelease: false
+    date: '2018-04-06T10:32:33'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.14.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d0c3bf80631500c541da144afbc6af0897d6bf00//Dockerfile
+
+  - version: 6.14.0
+    majorVersion: '6.14'
+    prerelease: false
+    date: '2018-03-28T16:05:51'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.14.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/58c7124824f5d3e4c4cbf007545dab7ddc00fafd//Dockerfile
+
+  - version: 6.13.1
+    majorVersion: '6.13'
+    prerelease: false
+    date: '2018-03-06T16:03:24'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.13.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/903010465ae42de51f8ba5409e89738d7b43009a//Dockerfile
+
+  - version: 6.13.0
+    majorVersion: '6.13'
+    prerelease: false
+    date: '2018-02-13T15:07:58'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.13.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/f2d564b382cda2fc381402a1c3056d5457b0b567//Dockerfile
+
+  - version: 6.12.3
+    majorVersion: '6.12'
+    prerelease: false
+    date: '2018-01-02T17:35:33'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.12.3-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4788120d041075d91db474df0362b8730df995e1//Dockerfile
+
+  - version: 6.12.2
+    majorVersion: '6.12'
+    prerelease: false
+    date: '2017-12-09T15:47:13'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.12.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7110e2377d877a5257b30bd7bd123e447fefc72e//Dockerfile
+
+  - version: 6.12.1
+    majorVersion: '6.12'
+    prerelease: false
+    date: '2017-12-06T07:35:51'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.12.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/a171ad851dfbc02a83d1a8c390417bb321f9f5c7//Dockerfile
+
+  - version: 6.12.0
+    majorVersion: '6.12'
+    prerelease: false
+    date: '2017-11-07T16:49:30'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.12.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e4a6858319c341dc00ddcbc874e5f7f775e71e67//Dockerfile
+
+  - version: 6.11.5
+    majorVersion: '6.11'
+    prerelease: false
+    date: '2017-10-24T20:19:04'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.11.5-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7f2b873cb01a8d943c7c27380b2d3397dee237e6//Dockerfile
+
+  - version: 6.11.4
+    majorVersion: '6.11'
+    prerelease: false
+    date: '2017-10-03T18:21:56'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.11.4-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/0837678c02925d4ca7108c97e4ac950c2d8934b3//Dockerfile
+
+  - version: 6.11.3
+    majorVersion: '6.11'
+    prerelease: false
+    date: '2017-09-05T18:58:57'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.11.3-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ac20bc87ca95d00e75dc7886985595b376bd526a//Dockerfile
+
+  - version: 6.11.2
+    majorVersion: '6.11'
+    prerelease: false
+    date: '2017-08-01T12:39:10'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.11.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d20149c48c4e403bc0e5719287a26d95e510177e//Dockerfile
+
+  - version: 6.11.1
+    majorVersion: '6.11'
+    prerelease: false
+    date: '2017-07-11T16:14:28'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.11.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2d3d42e2d505945670f7821e37b4d08ca132a4d6//Dockerfile
+
+  - version: 6.11.0
+    majorVersion: '6.11'
+    prerelease: false
+    date: '2017-06-07T10:05:50'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.11.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/696d835be3b2c333d8ecfd1578a222f323fc06df//Dockerfile
+
+  - version: 6.10.3
+    majorVersion: '6.10'
+    prerelease: false
+    date: '2017-05-02T17:00:46'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.10.3-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/213a198526f1cfdad2bfdd5ed668b8498c7bdc7a//Dockerfile
+
+  - version: 6.10.2
+    majorVersion: '6.10'
+    prerelease: false
+    date: '2017-04-04T10:37:06'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.10.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/897b0be87e1d98023fe62c901e67b8149a50684e//Dockerfile
+
+  - version: 6.10.1
+    majorVersion: '6.10'
+    prerelease: false
+    date: '2017-03-21T21:56:57'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.10.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/8edbf0c926b6b9f840b2e42b71c5da70f254e591//Dockerfile
+
+  - version: 6.10.0
+    majorVersion: '6.10'
+    prerelease: false
+    date: '2017-02-21T23:49:24'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.10.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5814bb7f6a7173183992f20741be4b633432fa00//Dockerfile
+
+  - version: 6.9.5
+    majorVersion: '6.9'
+    prerelease: false
+    date: '2017-02-01T11:08:25'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.9.5-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/8e5e96b996b0eff4f4ca05069d166b093b247697//Dockerfile
+
+  - version: 6.9.4
+    majorVersion: '6.9'
+    prerelease: false
+    date: '2017-01-05T19:55:44'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.9.4-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5dea59ea522abc2eea9538f2fa493742c2a49aa1//Dockerfile
+
+  - version: 6.9.3
+    majorVersion: '6.9'
+    prerelease: false
+    date: '2017-01-03T22:39:02'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.9.3-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e201db47ec523cfead4efa8a2033d65793bef12f//Dockerfile
+
+  - version: 6.9.2
+    majorVersion: '6.9'
+    prerelease: false
+    date: '2016-12-06T17:44:24'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.9.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/8d3972140ae0dc5693a43c098d2a366a4d2a4a6c//Dockerfile
+
+  - version: 6.9.0
+    majorVersion: '6.9'
+    prerelease: false
+    date: '2016-10-18T15:29:30'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.9.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1d8ed7226a3bd33465864447ae0507f2f8143ac0//Dockerfile
+
+  - version: 6.8.1
+    majorVersion: '6.8'
+    prerelease: false
+    date: '2016-10-14T22:00:24'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.8.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4a728377234b19a0e32a46b166981b35779ec78c//Dockerfile
+
+  - version: 6.8.0
+    majorVersion: '6.8'
+    prerelease: false
+    date: '2016-10-12T17:58:33'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.8.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d3fe636e6b11f10d936238df1c60029f819a58a1//Dockerfile
+
+  - version: 6.7.0
+    majorVersion: '6.7'
+    prerelease: false
+    date: '2016-09-28T10:54:45'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.7.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5e4bdf9612859ab496281a7d949adb500daf55e8//Dockerfile
+
+  - version: 6.6.0
+    majorVersion: '6.6'
+    prerelease: false
+    date: '2016-09-15T18:13:48'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.6.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4a83deb3a76a4fef9c1698dc20125afe6af25cad//Dockerfile
+
+  - version: 6.5.0
+    majorVersion: '6.5'
+    prerelease: false
+    date: '2016-08-29T11:08:35'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.5.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9a78eefe88b719cee0c38e82ab436f91707ec64f//Dockerfile
+
+  - version: 6.4.0
+    majorVersion: '6.4'
+    prerelease: false
+    date: '2016-08-16T12:08:45'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.4.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5c5c2aab67b7561bd701aedddc51b66b94457f02//Dockerfile
+
+  - version: 6.3.1
+    majorVersion: '6.3'
+    prerelease: false
+    date: '2016-07-21T21:56:45'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.3.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/875d9a358afd638fac300e23fcff8b306d32ffdb//Dockerfile
+
+  - version: 6.3.0
+    majorVersion: '6.3'
+    prerelease: false
+    date: '2016-07-07T10:24:29'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.3.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/45deb9b74326a0cae8c7cd816e01311f6c8e4bbb//Dockerfile
+
+  - version: 6.2.2
+    majorVersion: '6.2'
+    prerelease: false
+    date: '2016-06-17T15:03:42'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.2.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/aa22f663db2139d99ecfc92bf01d55a10914215f//Dockerfile
+
+  - version: 6.2.1
+    majorVersion: '6.2'
+    prerelease: false
+    date: '2016-06-14T16:54:33'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 6.2.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/0864083094899e22d5cc50322f3eb54693bc8459//Dockerfile
+
+  - version: 6.2.0
+    majorVersion: '6.2'
+    prerelease: false
+    date: '2016-05-17T19:29:36'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 6.2.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/600ea3c336fb01b4bd29b3b0c8770ca0bc8fc767//Dockerfile
+
+  - version: 6.1.0
+    majorVersion: '6.1'
+    prerelease: false
+    date: '2016-05-09T11:56:52'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 6.1.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/84ccf736844a9e3abf23c68ee9c3a6f1bc30567d//Dockerfile
+
+  - version: 6.0.0
+    majorVersion: '6.0'
+    prerelease: false
+    date: '2016-04-26T16:55:32'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 6.0.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5726de86597a1e81b56bad547605b2d26304f19d//Dockerfile
+
+  - version: 5.12.0
+    majorVersion: '5.12'
+    prerelease: false
+    date: '2016-06-23T22:01:40'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 5.12.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/934ddf25f4892f6fb92f52b8b25fcf351525a8c1//Dockerfile
+
+  - version: 5.11.1
+    majorVersion: '5.11'
+    prerelease: false
+    date: '2016-06-14T16:55:01'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.11.1-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/f7c31d2baf4979edd7c4263f7b94af1cd89b4353//Dockerfile
+
+  - version: 5.11.1
+    majorVersion: '5.11'
+    prerelease: false
+    date: '2016-06-14T16:57:15'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.11.1-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/133f74d0f49b3d01499bfdb9697ad90da8dbfd9b//Dockerfile
+
+  - version: 5.11.0
+    majorVersion: '5.11'
+    prerelease: false
+    date: '2016-04-21T18:34:33'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.11.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5a43cd9e85b806d5b47e485b0a5f327d3c8f72cb//Dockerfile
+
+  - version: 5.10.1
+    majorVersion: '5.10'
+    prerelease: false
+    date: '2016-04-05T21:13:54'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.10.1-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/646173d06179416729e8253e927b2a10cdf065b4//Dockerfile
+
+  - version: 5.10.0
+    majorVersion: '5.10'
+    prerelease: false
+    date: '2016-04-01T11:06:56'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.10.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2db5ae109507cd3e6f2454ea3db2236123125f96//Dockerfile
+
+  - version: 5.9.1
+    majorVersion: '5.9'
+    prerelease: false
+    date: '2016-03-23T15:24:11'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.9.1-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4ee3e900fd0bdfed1a69886bdec9beeb834cbc2f//Dockerfile
+
+  - version: 5.9.0
+    majorVersion: '5.9'
+    prerelease: false
+    date: '2016-03-17T09:32:57'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.9.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/51b9ae915619f1f633cd698aa8f5ceae6fbead60//Dockerfile
+
+  - version: 5.8.0
+    majorVersion: '5.8'
+    prerelease: false
+    date: '2016-03-09T11:51:58'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.8.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e2a8292ab4c6a07831ca825cc65cda088960fa0b//Dockerfile
+
+  - version: 5.7.1
+    majorVersion: '5.7'
+    prerelease: false
+    date: '2016-03-03T11:46:03'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.7.1-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7086128cff08076abc34acf5b4f16c3c43f85d51//Dockerfile
+
+  - version: 5.7.0
+    majorVersion: '5.7'
+    prerelease: false
+    date: '2016-02-23T18:25:11'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.7.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/644dd33fcf80d0c7694b42f48b9e164e10cab4ea//Dockerfile
+
+  - version: 5.6.0
+    majorVersion: '5.6'
+    prerelease: false
+    date: '2016-02-10T12:20:48'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.6.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2b8fffad4076cf39f88301273bb5427fc304ec64//Dockerfile
+
+  - version: 5.5.0
+    majorVersion: '5.5'
+    prerelease: false
+    date: '2016-01-20T23:35:47'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 5.5.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d4c390a5774af3e8ac12a9be78c68e51f720c504//Dockerfile
+
+  - version: 5.4.1
+    majorVersion: '5.4'
+    prerelease: false
+    date: '2016-01-12T21:06:20'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 5.4.1-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9a3520abeda1367706d1e0842d4cfcfb11d371da//Dockerfile
+
+  - version: 5.4.0
+    majorVersion: '5.4'
+    prerelease: false
+    date: '2016-01-06T23:57:34'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 5.4.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6a3ce9c87cfa109e0dc934a36e00e6707c28697a//Dockerfile
+
+  - version: 5.3.0
+    majorVersion: '5.3'
+    prerelease: false
+    date: '2015-12-16T21:48:43'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 5.3.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/0fbc2bd45cce5f890b03a134da9c8c3b45d7b486//Dockerfile
+
+  - version: 5.2.0
+    majorVersion: '5.2'
+    prerelease: false
+    date: '2015-12-09T12:15:08'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 5.2.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/370b355a1d19fd3ec19d1bb58451dbcf957dd06f//Dockerfile
+
+  - version: 5.1.1
+    majorVersion: '5.1'
+    prerelease: false
+    date: '2015-12-04T00:12:11'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 5.1.1-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5388dc6202537e25ae98fc43b44efec4d8ad98fe//Dockerfile
+
+  - version: 5.1.0
+    majorVersion: '5.1'
+    prerelease: false
+    date: '2015-11-17T20:27:03'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 5.1.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/dc0380a2982955df4fad73a8ecc0fd952ed0ad73//Dockerfile
+
+  - version: 5.0.0
+    majorVersion: '5.0'
+    prerelease: false
+    date: '2015-10-30T01:11:47'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 5.0.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4c2b4dca22756ca246d6b3917e6626af2db26580//Dockerfile
+
+  - version: 4.9.1
+    majorVersion: '4.9'
+    prerelease: false
+    date: '2018-04-06T11:08:15'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.9.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4f4721a7dbcba80417e863bf2c8c8be7b98a1647//Dockerfile
+
+  - version: 4.9.0
+    majorVersion: '4.9'
+    prerelease: false
+    date: '2018-03-28T16:07:30'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.9.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4951c80da21aa26c8a0e296fffef067fa822b3a4//Dockerfile
+
+  - version: 4.8.7
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-12-09T11:53:19'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.7-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/50e444f05f97e7c20646bdd7d8568d73d17bd382//Dockerfile
+
+  - version: 4.8.6
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-11-07T16:20:24'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.6-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/eb7088fbb8849fe8a50153258646bf3afdece9ca//Dockerfile
+
+  - version: 4.8.5
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-10-24T19:56:36'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.5-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1c3f38c477ffd236d706a0feb60dd3335f872315//Dockerfile
+
+  - version: 4.8.4
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-07-11T16:43:42'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.4-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/875daf35bc6cc587cd0e77caa439dfdf92657524//Dockerfile
+
+  - version: 4.8.3
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-05-02T17:53:37'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.3-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/09443874a7478107ac9c8c0234444293bac08d6a//Dockerfile
+
+  - version: 4.8.2
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-04-04T10:13:31'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/c39942436f1b8c1284b17d5f229f2aa092cf95e2//Dockerfile
+
+  - version: 4.8.1
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-03-21T23:08:43'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7212fda0f2f285a7ac2151af60c27256e9e9e124//Dockerfile
+
+  - version: 4.8.0
+    majorVersion: '4.8'
+    prerelease: false
+    date: '2017-02-22T00:03:16'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.8.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3e3e668177f1643a8ef768cc02a5ac4f911bb313//Dockerfile
+
+  - version: 4.7.3
+    majorVersion: '4.7'
+    prerelease: false
+    date: '2017-02-01T10:44:50'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.7.3-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d09665e7e3f517a6be16f991b91ecfd17ef9fae0//Dockerfile
+
+  - version: 4.7.2
+    majorVersion: '4.7'
+    prerelease: false
+    date: '2017-01-05T21:28:19'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.7.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/098e2c9547ef96f50b79490649471d868e6e74e5//Dockerfile
+
+  - version: 4.7.1
+    majorVersion: '4.7'
+    prerelease: false
+    date: '2017-01-03T22:56:05'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.7.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/998c0ca5e143d837510d2fae08316b3ea41c9d66//Dockerfile
+
+  - version: 4.7.0
+    majorVersion: '4.7'
+    prerelease: false
+    date: '2016-12-06T18:00:32'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.7.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/638e7eb8d79c7c1eb33144d41e157d5626c64c06//Dockerfile
+
+  - version: 4.6.2
+    majorVersion: '4.6'
+    prerelease: false
+    date: '2016-11-08T16:41:23'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.6.2-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/743c32a74d319a9a8d6fe1cb19fa1ccc8938737a//Dockerfile
+
+  - version: 4.6.1
+    majorVersion: '4.6'
+    prerelease: false
+    date: '2016-10-18T15:46:42'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.6.1-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/890563dd2c31708f22f145267951e892ca9ff40a//Dockerfile
+
+  - version: 4.6.0
+    majorVersion: '4.6'
+    prerelease: false
+    date: '2016-09-28T10:08:28'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.6.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/b791f215b0774bf24900a05a111369e5ca12efc3//Dockerfile
+
+  - version: 4.5.0
+    majorVersion: '4.5'
+    prerelease: false
+    date: '2016-08-16T14:32:47'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.5.0-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3df1aa2ddd26d04f0d81d86ca6a1c74ceaac5880//Dockerfile
+
+  - version: 4.4.7
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-06-28T21:01:26'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.4.7-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/0f635b671d68220b5431dec78d1f9736257fb901//Dockerfile
+
+  - version: 4.4.6
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-06-23T21:37:04'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 4.4.6-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/feb0adaeae8611fe11eefb959f095db636b764f1//Dockerfile
+
+  - version: 4.4.5
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-06-14T16:55:36'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.4.5-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/23690536eeb2b7d72d93de2b15ea66f8902a7321//Dockerfile
+
+  - version: 4.4.5
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-06-14T16:55:21'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.4.5-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/943fcecce7fc7534fd5619c17fb850641c6b9b8c//Dockerfile
+
+  - version: 4.4.4
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-05-09T11:56:05'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.4.4-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/a6f288b875e1cafaf62933ac042b98b7f3612f60//Dockerfile
+
+  - version: 4.4.3
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-04-12T22:33:45'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.4.3-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/cd74f8fad8bb746ee790f58b377ce2ad823b7eea//Dockerfile
+
+  - version: 4.4.2
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-04-01T10:53:39'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.4.2-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4609d5ff4a30116027192e0c36805b24e2a0088a//Dockerfile
+
+  - version: 4.4.1
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-03-22T23:22:56'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.4.1-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/09db7ae6a708c1cd10ebee1de597003a6cc34e4e//Dockerfile
+
+  - version: 4.4.0
+    majorVersion: '4.4'
+    prerelease: false
+    date: '2016-03-09T10:54:14'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.4.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/25205f29c2006afff46cda8d366b1130f683de47//Dockerfile
+
+  - version: 4.3.2
+    majorVersion: '4.3'
+    prerelease: false
+    date: '2016-03-03T09:35:51'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.3.2-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/88e4e68cf7b632ca812024f24e677817fc4d0723//Dockerfile
+
+  - version: 4.3.1
+    majorVersion: '4.3'
+    prerelease: false
+    date: '2016-02-17T16:59:08'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.3.1-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/db3c2af5a7dff5ed9600d79a211f49f391ec47f9//Dockerfile
+
+  - version: 4.3.0
+    majorVersion: '4.3'
+    prerelease: false
+    date: '2016-02-10T10:56:38'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 4.3.0-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3caff71748fdd821dae26fbf22b39bdc0354506e//Dockerfile
+
+  - version: 4.2.6
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2016-01-22T10:11:57'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.2.6-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/97ee28f3d7c3b851d44a7615091168da1d5fd97b//Dockerfile
+
+  - version: 4.2.5
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2016-01-20T17:40:17'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.2.5-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/a9617b57359ae141313a1ceb8d58b704f25f2d9b//Dockerfile
+
+  - version: 4.2.4
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2015-12-23T17:15:47'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.2.4-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/62a9f713f713d58bb7af682401dc364f31cdaa62//Dockerfile
+
+  - version: 4.2.3
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2015-12-04T00:11:19'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.2.3-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3689e3d3335c8d1d36dd04225306ed1ec82d66cd//Dockerfile
+
+  - version: 4.2.2
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2015-11-04T10:37:04'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.2.2-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/f8583048d6921df6e3e7a42d122ae208c859fc44//Dockerfile
+
+  - version: 4.2.1
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2015-10-13T12:34:28'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.2.1-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/fbefd558cfba7478ee1a52166c2472af51fca5c3//Dockerfile
+
+  - version: 4.2.0
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2015-10-12T16:47:02'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.2.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/28ab97c93a436e89f8093cfbf610fc95b44613c1//Dockerfile
+
+  - version: 4.1.2
+    majorVersion: '4.1'
+    prerelease: false
+    date: '2015-10-05T16:28:15'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.1.2-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/b2edab13f573dbd0787df44e0734c5b8ab1d2934//Dockerfile
+
+  - version: 4.1.1
+    majorVersion: '4.1'
+    prerelease: false
+    date: '2015-09-23T00:04:14'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.1.1-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2a1a6f7408b72a3c0a3d3f76a76e052c80f7dfc6//Dockerfile
+
+  - version: 4.1.0
+    majorVersion: '4.1'
+    prerelease: false
+    date: '2015-09-17T10:27:57'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.1.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/70b709a60a0ff3af81b21d83b95ebfad2f9a26d2//Dockerfile
+
+  - version: 4.0.0
+    majorVersion: '4.0'
+    prerelease: false
+    date: '2015-09-08T15:48:50'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 4.0.0-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/84ca297a3e302eec4f7e613cc1afc4a90a1cd1a6//Dockerfile
+
+  - version: 3.3.1
+    majorVersion: '3.3'
+    prerelease: false
+    date: '2015-09-15T11:32:42'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 3.3.1-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/94eb834ca0451104d0c0c8cd6992ba7b829a2559//Dockerfile
+
+  - version: 3.3.0
+    majorVersion: '3.3'
+    prerelease: false
+    date: '2015-09-02T12:17:49'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 3.3.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/f1da6c60d2fdfe70aef0ee04694d55b6b4599629//Dockerfile
+
+  - version: 3.2.0
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2015-08-31T19:31:24'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 3.2.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/5d99ba0bef07a4febd53a806202db4a7272f88c9//Dockerfile
+
+  - version: 3.1.0
+    majorVersion: '3.1'
+    prerelease: false
+    date: '2015-08-19T20:51:04'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 3.1.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/715c8d86c6017f6b51b86ee8c70d2d912669eca7//Dockerfile
+
+  - version: 3.0.0
+    majorVersion: '3.0'
+    prerelease: false
+    date: '2015-08-04T18:02:05'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 3.0.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/f88bb755e0f57cd388e581f45ee5b54f4df65185//Dockerfile
+
+  - version: 2.5.0
+    majorVersion: '2.5'
+    prerelease: false
+    date: '2015-07-29T00:39:09'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.5.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e1899ded2363adf6cc24f0aa1ac24d8cf33c4633//Dockerfile
+
+  - version: 2.4.0
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2015-07-18T12:12:56'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.4.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/202b850a24cb0a8471e6f4ab9e1cdde45fc68931//Dockerfile
+
+  - version: 2.3.4
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2015-07-12T21:17:41'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.3.4-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1b8ef3c3d647985ea00cde059f5b357553729167//Dockerfile
+
+  - version: 2.3.3
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2015-07-03T23:35:15'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.3.3-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6d34fe4cf07ae1faabb65a677bbcf63b10c55b52//Dockerfile
+
+  - version: 2.3.2
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2015-07-02T14:13:40'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.3.2-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1b8eeed79640e490c36c5019b9d1d65e20748b18//Dockerfile
+
+  - version: 2.3.1
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2015-06-23T11:41:51'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.3.1-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4f9a100935a33a855dddbe16a2f7a4493a100409//Dockerfile
+
+  - version: 2.3.0
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2015-06-14T01:07:39'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.3.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/97af23b7c536cb036370922906abd166c08b7670//Dockerfile
+
+  - version: 2.2.1
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2015-06-01T10:16:06'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.2.1-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6e193d4d740591b9c25e018d12f63479d2a7579b//Dockerfile
+
+  - version: 2.1.0
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2015-05-24T10:35:46'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 2.1.0-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ec586d664d2b7c0d6ec6bdcf11a0eac9d0bc586f//Dockerfile
+
+  - version: 2.1.0
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2015-06-01T09:34:43'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 2.1.0-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9a374766a02fcc97d1da509d28073692b46f7a15//Dockerfile
+
+  - version: 2.0.2
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2015-05-16T10:26:21'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 2.0.2-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/7330ae958a1f46284c0609c5927dc2854bb290bb//Dockerfile
+
+  - version: 2.0.1
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2015-05-08T13:50:47'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 2.0.1-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/31a771acfda7d72d93768f4ad2c2c964258320a5//Dockerfile
+
+  - version: 2.0.0
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2015-05-04T19:07:11'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 2.0.0-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/64fb71aada5b8653036a98c4e697639d3405c1c2//Dockerfile
+
+  - version: 1.8.4
+    majorVersion: '1.8'
+    prerelease: false
+    date: '2015-07-12T21:01:05'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 1.8.4-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ae2ef0be17e8a25eaacbe1232c02f1606fc226b0//Dockerfile
+
+  - version: 1.8.3
+    majorVersion: '1.8'
+    prerelease: false
+    date: '2015-07-04T00:16:12'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 1.8.3-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/8888ba16651789e1200be3d1a9c7eb76c997fe1c//Dockerfile
+
+  - version: 1.8.2
+    majorVersion: '1.8'
+    prerelease: false
+    date: '2015-05-18T10:28:46'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 1.8.2-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/4f781531add2354da49f1734d170b8c755234dd1//Dockerfile
+
+  - version: 1.8.1
+    majorVersion: '1.8'
+    prerelease: false
+    date: '2015-04-30T18:20:44'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 1.8.1-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/35eee90b85da83deceaa0bad44e6cc32fe84d4be//Dockerfile
+
+  - version: 0.12.18
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-12-21T11:05:33'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 0.12.18-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d28f1add009347bfdf4fcd450fd95421033f5e03//Dockerfile
+
+  - version: 0.12.17
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-10-18T16:33:13'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 0.12.17-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/79cee86a682ee22742f359fea3929b864cb043de//Dockerfile
+
+  - version: 0.12.16
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-09-28T11:12:30'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 0.12.16-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/df47275295ed2090b5d68d8f31a34e5cad484abd//Dockerfile
+
+  - version: 0.12.15
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-06-23T22:14:16'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 0.12.15-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/1bc3d7b26cafe335ad9d122235f1ff6a42bfdeba//Dockerfile
+
+  - version: 0.12.14
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-06-14T16:56:00'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.12.14-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e439745ed3634eb362e2856a4afb8fa275dbe01a//Dockerfile
+
+  - version: 0.12.14
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-06-14T16:56:18'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.12.14-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/acb124ff42a2bb6d5e243ccc63f415950fdd58d4//Dockerfile
+
+  - version: 0.12.13
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-04-01T11:21:16'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.12.13-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9113c4eae4e1ffd3a1c9024b0f2cb9134a2613e4//Dockerfile
+
+  - version: 0.12.12
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-03-08T23:23:23'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.12.12-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ab28717d5ba1ef0abd043626369c58cec1007ad0//Dockerfile
+
+  - version: 0.12.11
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-03-03T14:04:06'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.12.11-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6913a9be0a5c762b1f93962470d03c9504009f2e//Dockerfile
+
+  - version: 0.12.10
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2016-03-04T00:27:26'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.12.10-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/22cd8e865b2c582223db7d66643871b86de20448//Dockerfile
+
+  - version: 0.12.9
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-12-04T00:12:44'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.12.9-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/62594a016d300159dafd9f5244bc2ef96b55c71b//Dockerfile
+
+  - version: 0.12.8
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-11-24T22:16:22'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.12.8-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/6e7747b3f498442d5c202742ed831907c9dc365b//Dockerfile
+
+  - version: 0.12.7
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-07-13T00:36:37'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.12.7-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/2a9d2953f9e48f35d34735d97b3a114bcbc3fa63//Dockerfile
+
+  - version: 0.12.6
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-07-03T23:55:28'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.12.6-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/cfe09e42e247df9395cc6a969faaf23c35748aa3//Dockerfile
+
+  - version: 0.12.5
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-06-22T17:21:24'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.12.5-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/bc416ea046f7f298eac387bf2a7d19d4732307bd//Dockerfile
+
+  - version: 0.12.4
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-05-23T11:35:34'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 0.12.4-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/d9321cd820aaefd7d8cc8094d513fa59c90fc2d2//Dockerfile
+
+  - version: 0.12.4
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-06-01T10:43:47'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.12.4-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/34e79a0976ac10465aeeb3a912fefcbeffa2ca02//Dockerfile
+
+  - version: 0.12.3
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-05-14T12:17:35'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 0.12.3-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/8c15efba0d03053af40052d44167b3d8f1cbb36d//Dockerfile
+
+  - version: 0.12.2
+    majorVersion: '0.12'
+    prerelease: false
+    date: '2015-04-30T18:12:06'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 0.12.2-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/308deb2955378a42400687d65d39e950f9e2260f//Dockerfile
+
+  - version: 0.10.48
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-10-19T23:50:04'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 0.10.48-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/58e55b5bdba4b57d3bd0335447164c769cbfd96f//Dockerfile
+
+  - version: 0.10.47
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-09-28T11:26:34'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 0.10.47-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ef01dd290b996c5d8afa450a84b42bdf0beae562//Dockerfile
+
+  - version: 0.10.46
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-06-23T22:28:33'
+    plataform: Alpine
+    release: '3.4'
+    tags:
+      - 0.10.46-alpine:3.4
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/9c4ac58c56d82e2fe1193d4e8aefbf871810ae71//Dockerfile
+
+  - version: 0.10.45
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-06-14T16:56:31'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.10.45-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e355361c54ff226d77ed68da3d8b997c2dea56df//Dockerfile
+
+  - version: 0.10.45
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-06-14T16:56:44'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.10.45-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/b20602311926f64b954fb9be81217adbde179770//Dockerfile
+
+  - version: 0.10.44
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-04-01T11:34:17'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.10.44-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/ead2a599527a8a9d15470879eb496d0b8e0fc31a//Dockerfile
+
+  - version: 0.10.43
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-03-03T21:08:37'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.10.43-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/e836ca1c4c321c387daacf11d9874b5cd80192ff//Dockerfile
+
+  - version: 0.10.42
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2016-02-10T13:56:48'
+    plataform: Alpine
+    release: '3.3'
+    tags:
+      - 0.10.42-alpine:3.3
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/3f73e5f82eac93ce1f0d57ef3bd4349118ee7f98//Dockerfile
+
+  - version: 0.10.41
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2015-12-04T00:13:34'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.10.41-alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/613771f3b8edc19810c87e6eaa8ca96806d38a06//Dockerfile
+
+  - version: 0.10.40
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2015-07-13T00:20:47'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.10.40-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/69255ff5fdb8742679e677a19b89325919aeddbb//Dockerfile
+
+  - version: 0.10.39
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2015-06-22T13:30:39'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.10.39-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/996a3b0eac53e12a16fbf4803bee6aed59424996//Dockerfile
+
+  - version: 0.10.38
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2015-04-30T18:06:49'
+    plataform: Alpine
+    release: '3.1'
+    tags:
+      - 0.10.38-gliderlabs/alpine:3.1
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/f85e9c3d32f5f962f8576f923e405750e18ce821//Dockerfile
+
+  - version: 0.10.38
+    majorVersion: '0.10'
+    prerelease: false
+    date: '2015-06-01T13:58:44'
+    plataform: Alpine
+    release: '3.2'
+    tags:
+      - 0.10.38-gliderlabs/alpine:3.2
+    urlRepository: https://raw.githubusercontent.com/mhart/alpine-node/29d2e81788b336d38a564fbefe8701d9a794ccc8//Dockerfile

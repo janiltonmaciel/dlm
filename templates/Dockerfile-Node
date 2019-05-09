@@ -1,6 +1,0 @@
-##### NODE ######
-# Official Docker Image for Node.js
-# https://github.com/nodejs/docker-node
-
-FROM node:{{ .NODE_VERSION }}-alpine
-ENV PATH node_modules/.bin:$PATH

@@ -1,0 +1,24 @@
+FROM {{ .From }}
+
+{{ range .BeforeBlocks -}}
+{{ . }}
+{{ end -}}
+
+{{ range .Blocks -}}
+{{ .Description }}
+
+{{ range .Before -}}
+{{ . }}
+{{ end -}}
+
+{{ .Data }}
+
+{{ range .After -}}
+{{ . }}
+{{ end -}}
+
+{{ end }}
+
+{{ range .AfterBlocks -}}
+{{ . }}
+{{ end }}

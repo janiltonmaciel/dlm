@@ -1,0 +1,2468 @@
+
+  - version: 2.6.3
+    majorVersion: '2.6'
+    prerelease: false
+    date: '2019-04-17T17:03:14'
+    distributionReleases: Alpine 3.8, Alpine 3.9, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2-slim
+          - 2-slim-stretch
+          - 2.6-slim
+          - 2.6-slim-stretch
+          - 2.6.3-slim
+          - 2.6.3-slim-stretch
+          - slim
+          - slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ae0943fa2935b3a13c72ae7d6afa2439145d7fa/2.6/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '2'
+          - 2-stretch
+          - '2.6'
+          - 2.6-stretch
+          - 2.6.3
+          - 2.6.3-stretch
+          - latest
+          - stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ae0943fa2935b3a13c72ae7d6afa2439145d7fa/2.6/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2-alpine
+          - 2-alpine3.9
+          - 2.6-alpine
+          - 2.6-alpine3.9
+          - 2.6.3-alpine
+          - 2.6.3-alpine3.9
+          - alpine
+          - alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ae0943fa2935b3a13c72ae7d6afa2439145d7fa/2.6/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2-alpine3.8
+          - 2.6-alpine3.8
+          - 2.6.3-alpine3.8
+          - alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ae0943fa2935b3a13c72ae7d6afa2439145d7fa/2.6/alpine3.8/Dockerfile
+
+  - version: 2.6.2
+    majorVersion: '2.6'
+    prerelease: false
+    date: '2019-04-04T13:56:52'
+    distributionReleases: Alpine 3.8, Alpine 3.9, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.6.2-slim
+          - 2.6.2-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/995719add69339b78bd8cde46183b4902b761add/2.6/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.6.2
+          - 2.6.2-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/995719add69339b78bd8cde46183b4902b761add/2.6/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2.6.2-alpine
+          - 2.6.2-alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/995719add69339b78bd8cde46183b4902b761add/2.6/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.6.2-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/995719add69339b78bd8cde46183b4902b761add/2.6/alpine3.8/Dockerfile
+
+  - version: 2.6.1
+    majorVersion: '2.6'
+    prerelease: false
+    date: '2019-03-07T15:54:56'
+    distributionReleases: Alpine 3.8, Alpine 3.9, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.6.1-slim
+          - 2.6.1-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/96fc06fb331a20ba823ecc11563a99d1eb94203f/2.6/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.6.1
+          - 2.6.1-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/96fc06fb331a20ba823ecc11563a99d1eb94203f/2.6/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2.6.1-alpine
+          - 2.6.1-alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/96fc06fb331a20ba823ecc11563a99d1eb94203f/2.6/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.6.1-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/96fc06fb331a20ba823ecc11563a99d1eb94203f/2.6/alpine3.8/Dockerfile
+
+  - version: 2.6.0
+    majorVersion: '2.6'
+    prerelease: false
+    date: '2019-01-10T13:34:01'
+    distributionReleases: Alpine 3.7, Alpine 3.8, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.6.0-slim
+          - 2.6.0-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/da4b249e4ad5e521ba8c3d8b17119e9ac5af8df0/2.6/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.6.0
+          - 2.6.0-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/84db4691c080384c8fbce44c722d46cedd6a384b/2.6/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.6.0-alpine
+          - 2.6.0-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/84db4691c080384c8fbce44c722d46cedd6a384b/2.6/alpine3.8/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2-alpine3.7
+          - 2.6-alpine3.7
+          - 2.6.0-alpine3.7
+          - alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/84db4691c080384c8fbce44c722d46cedd6a384b/2.6/alpine3.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.6-rc-slim
+          - 2.6-rc-slim-stretch
+          - 2.6.0-rc2-slim
+          - 2.6.0-rc2-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.6-rc
+          - 2.6-rc-stretch
+          - 2.6.0-rc2
+          - 2.6.0-rc2-stretch
+          - rc
+          - rc-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.6-rc-alpine
+          - 2.6-rc-alpine3.8
+          - 2.6.0-rc2-alpine
+          - 2.6.0-rc2-alpine3.8
+          - rc-alpine
+          - rc-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/alpine3.8/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.6-rc-alpine3.7
+          - 2.6.0-rc2-alpine3.7
+          - rc-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/alpine3.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.6.0-rc1-slim
+          - 2.6.0-rc1-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2a42895d9fbb839e456f2f3624117761f86bcf43/2.6-rc/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.6.0-rc1
+          - 2.6.0-rc1-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2a42895d9fbb839e456f2f3624117761f86bcf43/2.6-rc/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.6.0-rc1-alpine
+          - 2.6.0-rc1-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2a42895d9fbb839e456f2f3624117761f86bcf43/2.6-rc/alpine3.8/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.6.0-rc1-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2a42895d9fbb839e456f2f3624117761f86bcf43/2.6-rc/alpine3.7/Dockerfile
+
+  - version: 2.5.5
+    majorVersion: '2.5'
+    prerelease: false
+    date: '2019-04-17T17:03:14'
+    distributionReleases: Alpine 3.8, Alpine 3.9, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.5-slim
+          - 2.5-slim-stretch
+          - 2.5.5-slim
+          - 2.5.5-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6f3497e40d44651802e1ec8a4647b23a3a63b355/2.5/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '2.5'
+          - 2.5-stretch
+          - 2.5.5
+          - 2.5.5-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6f3497e40d44651802e1ec8a4647b23a3a63b355/2.5/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2.5-alpine
+          - 2.5-alpine3.9
+          - 2.5.5-alpine
+          - 2.5.5-alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6f3497e40d44651802e1ec8a4647b23a3a63b355/2.5/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.5-alpine3.8
+          - 2.5.5-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6f3497e40d44651802e1ec8a4647b23a3a63b355/2.5/alpine3.8/Dockerfile
+
+  - version: 2.5.4
+    majorVersion: '2.5'
+    prerelease: false
+    date: '2019-03-14T11:02:05'
+    distributionReleases: Alpine 3.8, Alpine 3.9, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.5.4-slim
+          - 2.5.4-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/0e7baa45a1ff640f8b6a744b8e9b76adb206aeb4/2.5/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.5.4
+          - 2.5.4-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/0e7baa45a1ff640f8b6a744b8e9b76adb206aeb4/2.5/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2.5.4-alpine
+          - 2.5.4-alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/0e7baa45a1ff640f8b6a744b8e9b76adb206aeb4/2.5/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.5.4-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/0e7baa45a1ff640f8b6a744b8e9b76adb206aeb4/2.5/alpine3.8/Dockerfile
+
+  - version: 2.5.3
+    majorVersion: '2.5'
+    prerelease: false
+    date: '2019-01-10T13:34:01'
+    distributionReleases: Alpine 3.7, Alpine 3.8, Alpine 3.9, Debian 9 (stretch)
+    distributions:
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.5-alpine3.7
+          - 2.5.3-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/84db4691c080384c8fbce44c722d46cedd6a384b/2.5/alpine3.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.5.3-slim
+          - 2.5.3-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.5/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.5.3
+          - 2.5.3-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.5/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2.5.3-alpine
+          - 2.5.3-alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.5/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.5.3-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.5/alpine3.8/Dockerfile
+
+  - version: 2.5.1
+    majorVersion: '2.5'
+    prerelease: false
+    date: '2018-10-05T10:08:11'
+    distributionReleases: Alpine 3.7, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.5.1-slim
+          - 2.5.1-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccf00a6b31abe14d27bdda498707a2ce338ef019/2.5/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.5.1
+          - 2.5.1-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccf00a6b31abe14d27bdda498707a2ce338ef019/2.5/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.5.1-alpine
+          - 2.5.1-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccf00a6b31abe14d27bdda498707a2ce338ef019/2.5/alpine3.7/Dockerfile
+
+  - version: 2.5.0
+    majorVersion: '2.5'
+    prerelease: false
+    date: '2017-12-22T18:27:23'
+    distributionReleases: Alpine 3.7, Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.5-rc-slim
+          - 2.5-rc-slim-stretch
+          - 2.5.0-rc1-slim
+          - 2.5.0-rc1-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f4d5c084fab6c9a2bc55bf25257887d53e4eff87/2.5-rc/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.5-rc
+          - 2.5-rc-stretch
+          - 2.5.0-rc1
+          - 2.5.0-rc1-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f4d5c084fab6c9a2bc55bf25257887d53e4eff87/2.5-rc/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.5-rc-alpine
+          - 2.5-rc-alpine3.7
+          - 2.5.0-rc1-alpine
+          - 2.5.0-rc1-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f4d5c084fab6c9a2bc55bf25257887d53e4eff87/2.5-rc/alpine3.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.5.0-slim
+          - 2.5.0-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6bccf4bd0c6aa158b4a842c29f78c335ec9dc41b/2.5/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.5.0
+          - 2.5.0-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6bccf4bd0c6aa158b4a842c29f78c335ec9dc41b/2.5/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.5.0-alpine
+          - 2.5.0-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6bccf4bd0c6aa158b4a842c29f78c335ec9dc41b/2.5/alpine3.7/Dockerfile
+
+  - version: 2.4.6
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2019-04-17T17:03:14'
+    distributionReleases: Alpine 3.8, Alpine 3.9, Debian 8 (jessie), Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.4-slim
+          - 2.4-slim-stretch
+          - 2.4.6-slim
+          - 2.4.6-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/802421922ef50cfa05c89a3c619992acf4329986/2.4/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '2.4'
+          - 2.4-stretch
+          - 2.4.6
+          - 2.4.6-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/802421922ef50cfa05c89a3c619992acf4329986/2.4/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 2.4-slim-jessie
+          - 2.4.6-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/802421922ef50cfa05c89a3c619992acf4329986/2.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4-jessie
+          - 2.4.6-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/802421922ef50cfa05c89a3c619992acf4329986/2.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2.4-alpine
+          - 2.4-alpine3.9
+          - 2.4.6-alpine
+          - 2.4.6-alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/802421922ef50cfa05c89a3c619992acf4329986/2.4/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.4-alpine3.8
+          - 2.4.6-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/802421922ef50cfa05c89a3c619992acf4329986/2.4/alpine3.8/Dockerfile
+
+  - version: 2.4.5
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2019-01-10T13:34:01'
+    distributionReleases: Alpine 3.6, Alpine 3.7, Alpine 3.8, Alpine 3.9, Debian 8
+      (jessie), Debian 9 (stretch)
+    distributions:
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.4-alpine3.7
+          - 2.4.5-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/84db4691c080384c8fbce44c722d46cedd6a384b/2.4/alpine3.7/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2.4-alpine3.6
+          - 2.4.5-alpine3.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/58cbeeb8ea937737eeb8f358472add230b6ded30/2.4/alpine3.6/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.4.5-slim
+          - 2.4.5-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.4/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.4.5
+          - 2.4.5-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.4/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 2.4.5-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4.5-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2.4.5-alpine
+          - 2.4.5-alpine3.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.4/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.4.5-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.4/alpine3.8/Dockerfile
+
+  - version: 2.4.4
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2018-10-05T10:08:11'
+    distributionReleases: Alpine 3.4, Alpine 3.6, Alpine 3.7, Debian 8 (jessie), Debian
+      9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.4.4-slim
+          - 2.4.4-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.4.4
+          - 2.4.4-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.4.4-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4.4-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.4.4-alpine
+          - 2.4.4-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/alpine3.7/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2.4.4-alpine3.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.4-alpine3.4
+          - 2.4.4-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1bd8b466277668bff50528b26360e6e451e4dae4/2.4/alpine3.4/Dockerfile
+
+  - version: 2.4.3
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2017-12-22T18:27:23'
+    distributionReleases: Alpine 3.4, Alpine 3.6, Alpine 3.7, Debian 8 (jessie), Debian
+      9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2-slim-jessie
+          - slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/342c5bc6f7a6d5cdfb90e8dd0197a55a18cebe54/2.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2-jessie
+          - jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/342c5bc6f7a6d5cdfb90e8dd0197a55a18cebe54/2.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2-alpine3.6
+          - alpine3.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/342c5bc6f7a6d5cdfb90e8dd0197a55a18cebe54/2.4/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2-alpine3.4
+          - alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/342c5bc6f7a6d5cdfb90e8dd0197a55a18cebe54/2.4/alpine3.4/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.4.3-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/83c60cc26a1efb0ea581b3343a97df7508481fcf/2.4/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.4.3-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/83c60cc26a1efb0ea581b3343a97df7508481fcf/2.4/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.4.3-slim
+          - 2.4.3-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/83c60cc26a1efb0ea581b3343a97df7508481fcf/2.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4.3
+          - 2.4.3-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/83c60cc26a1efb0ea581b3343a97df7508481fcf/2.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.4.3-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/83c60cc26a1efb0ea581b3343a97df7508481fcf/2.4/alpine3.7/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2.4.3-alpine3.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/83c60cc26a1efb0ea581b3343a97df7508481fcf/2.4/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.4.3-alpine
+          - 2.4.3-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/83c60cc26a1efb0ea581b3343a97df7508481fcf/2.4/alpine3.4/Dockerfile
+
+  - version: 2.4.2
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2017-12-11T18:54:17'
+    distributionReleases: Alpine 3.4, Alpine 3.6, Alpine 3.7, Debian 8 (jessie), Debian
+      9 (stretch)
+    distributions:
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.4.2-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ee2df55c3abd3d0eccea5733f7041b733f8a5a62/2.4/alpine3.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.4.2-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ecd8dcd7c5303b1c5772446d8fea938f3cd233c/2.4/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.4.2-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ecd8dcd7c5303b1c5772446d8fea938f3cd233c/2.4/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.4.2-slim
+          - 2.4.2-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ecd8dcd7c5303b1c5772446d8fea938f3cd233c/2.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4.2
+          - 2.4.2-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ecd8dcd7c5303b1c5772446d8fea938f3cd233c/2.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2.4.2-alpine3.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ecd8dcd7c5303b1c5772446d8fea938f3cd233c/2.4/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.4.2-alpine
+          - 2.4.2-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ecd8dcd7c5303b1c5772446d8fea938f3cd233c/2.4/alpine3.4/Dockerfile
+
+  - version: 2.4.1
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2017-09-05T10:20:22'
+    distributionReleases: Alpine 3.4, Alpine 3.6, Debian 8 (jessie), Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.4.1-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/135c84979b1401a6963e75f3c95161bfe5be2336/2.4/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.4.1-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/135c84979b1401a6963e75f3c95161bfe5be2336/2.4/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.4.1-slim
+          - 2.4.1-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/135c84979b1401a6963e75f3c95161bfe5be2336/2.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4.1
+          - 2.4.1-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/135c84979b1401a6963e75f3c95161bfe5be2336/2.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2.4.1-alpine3.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/135c84979b1401a6963e75f3c95161bfe5be2336/2.4/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.4.1-alpine
+          - 2.4.1-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/135c84979b1401a6963e75f3c95161bfe5be2336/2.4/alpine3.4/Dockerfile
+
+  - version: 2.4.0
+    majorVersion: '2.4'
+    prerelease: false
+    date: '2016-12-21T16:57:27'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.4-rc-slim
+          - 2.4.0-rc1-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6103b0a0779fdbc9906ee6d14b118a807114d32d/2.4-rc/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.4-rc-alpine
+          - 2.4.0-rc1-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6103b0a0779fdbc9906ee6d14b118a807114d32d/2.4-rc/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4-rc
+          - 2.4.0-rc1
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6103b0a0779fdbc9906ee6d14b118a807114d32d/2.4-rc/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.4.0-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/5a967fab59319d95fd80e3956d1eeb54a66f9d77/2.4/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.4.0-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/5a967fab59319d95fd80e3956d1eeb54a66f9d77/2.4/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.4.0
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/5a967fab59319d95fd80e3956d1eeb54a66f9d77/2.4/Dockerfile
+
+  - version: 2.3.8
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2019-04-03T12:39:40'
+    distributionReleases: Alpine 3.7, Alpine 3.8, Debian 8 (jessie), Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2.3-slim
+          - 2.3-slim-stretch
+          - 2.3.8-slim
+          - 2.3.8-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.3/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - '2.3'
+          - 2.3-stretch
+          - 2.3.8
+          - 2.3.8-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.3/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 2.3-slim-jessie
+          - 2.3.8-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.3/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3-jessie
+          - 2.3.8-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.3/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.3-alpine
+          - 2.3-alpine3.8
+          - 2.3.8-alpine
+          - 2.3.8-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.3/alpine3.8/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.3-alpine3.7
+          - 2.3.8-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/31f66490fdb837ddcc5896e3275f2188f2b7b6dd/2.3/alpine3.7/Dockerfile
+
+  - version: 2.3.7
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2018-10-05T10:08:11'
+    distributionReleases: Alpine 3.4, Alpine 3.7, Alpine 3.8, Debian 8 (jessie), Debian
+      9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.3.7-slim
+          - 2.3.7-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/676eadd43f87bdb1d3f033ea31ae69e45d11ee5b/2.3/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.3.7
+          - 2.3.7-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/676eadd43f87bdb1d3f033ea31ae69e45d11ee5b/2.3/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.7-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/676eadd43f87bdb1d3f033ea31ae69e45d11ee5b/2.3/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.7-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/676eadd43f87bdb1d3f033ea31ae69e45d11ee5b/2.3/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2.3.7-alpine
+          - 2.3.7-alpine3.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/676eadd43f87bdb1d3f033ea31ae69e45d11ee5b/2.3/alpine3.8/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2.3.7-alpine3.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/676eadd43f87bdb1d3f033ea31ae69e45d11ee5b/2.3/alpine3.7/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.3-alpine3.4
+          - 2.3.7-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/78ecfcb108930a94eded6dfe1be50246052dc632/2.3/alpine3.4/Dockerfile
+
+  - version: 2.3.6
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2018-02-16T14:36:05'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie), Debian 9 (stretch)
+    distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        tags:
+          - 2.3.6-slim-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/019b9214a571d4dcb5a7e9e43ef192ca75ff27b8/2.3/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2.3.6-stretch
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/019b9214a571d4dcb5a7e9e43ef192ca75ff27b8/2.3/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.6-slim
+          - 2.3.6-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/019b9214a571d4dcb5a7e9e43ef192ca75ff27b8/2.3/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.6
+          - 2.3.6-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/019b9214a571d4dcb5a7e9e43ef192ca75ff27b8/2.3/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.3.6-alpine
+          - 2.3.6-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/019b9214a571d4dcb5a7e9e43ef192ca75ff27b8/2.3/alpine3.4/Dockerfile
+
+  - version: 2.3.5
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2017-12-11T18:54:17'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.5-slim
+          - 2.3.5-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e23879898862f2426e6714324c912d14db1067b5/2.3/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.5
+          - 2.3.5-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e23879898862f2426e6714324c912d14db1067b5/2.3/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.3.5-alpine
+          - 2.3.5-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e23879898862f2426e6714324c912d14db1067b5/2.3/alpine3.4/Dockerfile
+
+  - version: 2.3.4
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2017-09-05T10:20:22'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.4-slim
+          - 2.3.4-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d2a85bf5a3799c0592140ff66b269c823b813998/2.3/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.4
+          - 2.3.4-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d2a85bf5a3799c0592140ff66b269c823b813998/2.3/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.3.4-alpine
+          - 2.3.4-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d2a85bf5a3799c0592140ff66b269c823b813998/2.3/alpine3.4/Dockerfile
+
+  - version: 2.3.3
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2017-03-22T12:57:48'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.3-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/7a3e1295bbc840c350fc37d406692301b27f4e86/2.3/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.3.3-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/7a3e1295bbc840c350fc37d406692301b27f4e86/2.3/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.3
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/7a3e1295bbc840c350fc37d406692301b27f4e86/2.3/Dockerfile
+
+  - version: 2.3.2
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2016-11-17T10:22:57'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.2-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9b3ffd5380f085847c4d0d885bc366f58a85a64a/2.3/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.3.2-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9b3ffd5380f085847c4d0d885bc366f58a85a64a/2.3/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.2
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9b3ffd5380f085847c4d0d885bc366f58a85a64a/2.3/Dockerfile
+
+  - version: 2.3.1
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2016-10-31T15:20:53'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.1-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ec068a416df98e3c01b47f07a314b12a6412cfc5/2.3/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.3.1-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ec068a416df98e3c01b47f07a314b12a6412cfc5/2.3/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.1
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ec068a416df98e3c01b47f07a314b12a6412cfc5/2.3/Dockerfile
+
+  - version: 2.3.0
+    majorVersion: '2.3'
+    prerelease: false
+    date: '2016-04-05T15:17:22'
+    distributionReleases: Alpine 3.3, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.3.0-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.3/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 2.3.0-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.3/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.3.0
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.3/Dockerfile
+
+  - version: 2.2.10
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2018-04-27T13:08:11'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2-slim
+          - 2.2-slim-jessie
+          - 2.2.10-slim
+          - 2.2.10-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e48cb2431e5cdcd99ce8d8c236d7b73e7d4452f2/2.2/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '2.2'
+          - 2.2-jessie
+          - 2.2.10
+          - 2.2.10-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e48cb2431e5cdcd99ce8d8c236d7b73e7d4452f2/2.2/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.2-alpine
+          - 2.2-alpine3.4
+          - 2.2.10-alpine
+          - 2.2.10-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e48cb2431e5cdcd99ce8d8c236d7b73e7d4452f2/2.2/alpine3.4/Dockerfile
+
+  - version: 2.2.9
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2018-02-16T14:36:05'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.9-slim
+          - 2.2.9-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/127b99a6f22e43c3b9e0b9544dd77d85aa299906/2.2/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.9
+          - 2.2.9-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/127b99a6f22e43c3b9e0b9544dd77d85aa299906/2.2/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.2.9-alpine
+          - 2.2.9-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/127b99a6f22e43c3b9e0b9544dd77d85aa299906/2.2/alpine3.4/Dockerfile
+
+  - version: 2.2.8
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2017-12-11T18:54:17'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.8-slim
+          - 2.2.8-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1d57c363d6b25099cac5472c30632e2f92ddab61/2.2/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.8
+          - 2.2.8-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1d57c363d6b25099cac5472c30632e2f92ddab61/2.2/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.2.8-alpine
+          - 2.2.8-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1d57c363d6b25099cac5472c30632e2f92ddab61/2.2/alpine3.4/Dockerfile
+
+  - version: 2.2.7
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2017-09-05T10:20:22'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.7-slim
+          - 2.2.7-slim-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ab1275096a39d8952d1ede12d0a701cef9cb77d3/2.2/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.7
+          - 2.2.7-jessie
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ab1275096a39d8952d1ede12d0a701cef9cb77d3/2.2/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.2.7-alpine
+          - 2.2.7-alpine3.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ab1275096a39d8952d1ede12d0a701cef9cb77d3/2.2/alpine3.4/Dockerfile
+
+  - version: 2.2.6
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2017-03-22T12:57:48'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.6-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f59d1d363dd65945a1feae08da2518ea934c334/2.2/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.2.6-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f59d1d363dd65945a1feae08da2518ea934c334/2.2/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f59d1d363dd65945a1feae08da2518ea934c334/2.2/Dockerfile
+
+  - version: 2.2.5
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2016-10-31T15:20:53'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.5-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9898bab20a28b2df0b279dcca4b8dee399a4b4d0/2.2/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.2.5-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9898bab20a28b2df0b279dcca4b8dee399a4b4d0/2.2/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.5
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9898bab20a28b2df0b279dcca4b8dee399a4b4d0/2.2/Dockerfile
+
+  - version: 2.2.4
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2016-04-05T15:17:22'
+    distributionReleases: Alpine 3.3, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.4-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.2/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 2.2.4-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.2/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.2/Dockerfile
+
+  - version: 2.2.3
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2015-11-04T14:14:27'
+    distributionReleases: Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.3-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.2/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.3
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.2/Dockerfile
+
+  - version: 2.2.2
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2015-08-11T15:14:57'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.2-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.2/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.2
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.2/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.2.2-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.2/wheezy/Dockerfile
+
+  - version: 2.2.1
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2015-04-01T15:16:22'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.1-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.2/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.1
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.2/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.2.1-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/90c4e3be58d565007c518d311d4bd05086a1638c/2.2/wheezy/Dockerfile
+
+  - version: 2.2.0
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2015-02-05T14:10:32'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.2.0-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8164fe030868a3fc680dc53277b9572feedf112a/2.2/slim/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.2.0-rc1-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/991bdc9cfbf6b1f1bc93dbcc9fc24d3507192afb/2.2/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.0-rc1
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/991bdc9cfbf6b1f1bc93dbcc9fc24d3507192afb/2.2/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.2.0-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8c8394eebfff558f3aa00780e09f73f04e8eca56/2.2/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.2.0
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f5d7ef4e2659596e007871db90b80b2f235b845/2.2/Dockerfile
+
+  - version: '2.2'
+    majorVersion: '2.2'
+    prerelease: false
+    date: '2015-07-23T09:29:40'
+    distributionReleases: Debian 7 (wheezy)
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.2-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.2/wheezy/Dockerfile
+
+  - version: 2.1.10
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2017-07-03T10:33:27'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.1-slim
+          - 2.1.10-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c5693b25aa865489fee130e572a3f11bccebd21b/2.1/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.1-alpine
+          - 2.1.10-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c5693b25aa865489fee130e572a3f11bccebd21b/2.1/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '2.1'
+          - 2.1.10
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c5693b25aa865489fee130e572a3f11bccebd21b/2.1/Dockerfile
+
+  - version: 2.1.9
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2016-06-23T14:01:38'
+    distributionReleases: Alpine 3.4, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.1.9-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2d6449f03976ededa14be5cac1e9e070b74e4de4/2.1/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.1.9-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2d6449f03976ededa14be5cac1e9e070b74e4de4/2.1/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.9
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2d6449f03976ededa14be5cac1e9e070b74e4de4/2.1/Dockerfile
+
+  - version: 2.1.8
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2016-03-30T16:44:59'
+    distributionReleases: Alpine 3.3, Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.1.8-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c88f3a67da720bfa9fb1717960d90fd5db11c757/2.1/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.8
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c88f3a67da720bfa9fb1717960d90fd5db11c757/2.1/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 2.1.8-alpine
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8185fd390fb283e0eef9e1687d652ef8b5d9c52e/2.1/alpine/Dockerfile
+
+  - version: 2.1.7
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2015-11-04T14:14:27'
+    distributionReleases: Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.1.7-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.1/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.7
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.1/Dockerfile
+
+  - version: 2.1.6
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2015-08-11T15:14:57'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.1.6-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.1/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.6
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.1/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.1.6-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.1/wheezy/Dockerfile
+
+  - version: 2.1.5
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2015-04-01T15:16:22'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.1.5-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.1/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.5
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.1/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.1.5-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8c8394eebfff558f3aa00780e09f73f04e8eca56/2.1/wheezy/Dockerfile
+
+  - version: 2.1.4
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2014-10-28T20:19:43'
+    distributionReleases: Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.4
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/2.1/Dockerfile
+
+  - version: 2.1.3
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2014-10-20T10:37:06'
+    distributionReleases: Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.3
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f9a2625e38d17238b61b3eb084d84da2a1a4ea66/2.1/Dockerfile
+
+  - version: 2.1.2
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2014-09-13T18:21:50'
+    distributionReleases: Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.1.2
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/2701609004b336feff4e88e73ef32e8700d1c668/2.1/Dockerfile
+
+  - version: '2.1'
+    majorVersion: '2.1'
+    prerelease: false
+    date: '2015-07-23T09:29:40'
+    distributionReleases: Debian 7 (wheezy)
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.1-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.1/wheezy/Dockerfile
+
+  - version: 2.0.0
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2014-10-20T10:37:06'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.0.0-p576
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f9a2625e38d17238b61b3eb084d84da2a1a4ea66/2.0/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.0.0-p645-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.0/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.0.0-p645
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.0/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.0.0-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c387c6c3a2505060514e31c247cb37d22c944e55/2.0/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.0.0
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c387c6c3a2505060514e31c247cb37d22c944e55/2.0/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.0.0-p643-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.0/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.0.0-p643
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.0/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.0.0-p598-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8164fe030868a3fc680dc53277b9572feedf112a/2.0/slim/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.0.0-p643-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.0.0-p647-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.0/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.0.0-p647
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.0/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.0.0-p594
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/2.0/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.0.0-p598-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8c8394eebfff558f3aa00780e09f73f04e8eca56/2.0/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.0.0-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.0/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.0.0-p598
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f5d7ef4e2659596e007871db90b80b2f235b845/2.0/Dockerfile
+
+  - version: '2.0'
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2016-02-26T15:52:15'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.0-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c387c6c3a2505060514e31c247cb37d22c944e55/2.0/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '2.0'
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c387c6c3a2505060514e31c247cb37d22c944e55/2.0/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.0-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.0/wheezy/Dockerfile
+
+  - version: 1.9.3
+    majorVersion: '1.9'
+    prerelease: false
+    date: '2014-10-20T10:37:06'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 1.9.3-p547
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f9a2625e38d17238b61b3eb084d84da2a1a4ea66/1.9/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 1.9.3-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8164fe030868a3fc680dc53277b9572feedf112a/1.9/slim/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 1.9.3-p550
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/1.9/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 1.9.3-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8c8394eebfff558f3aa00780e09f73f04e8eca56/1.9/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 1.9.3
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f5d7ef4e2659596e007871db90b80b2f235b845/1.9/Dockerfile
+
+  - version: '1.9'
+    majorVersion: '1.9'
+    prerelease: false
+    date: '2015-03-03T10:38:16'
+    distributionReleases: Debian 7 (wheezy), Debian 8 (jessie)
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 1.9-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8164fe030868a3fc680dc53277b9572feedf112a/1.9/slim/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 1.9-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8c8394eebfff558f3aa00780e09f73f04e8eca56/1.9/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '1.9'
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f5d7ef4e2659596e007871db90b80b2f235b845/1.9/Dockerfile

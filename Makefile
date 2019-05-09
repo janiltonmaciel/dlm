@@ -1,4 +1,4 @@
-.SILENT:
+.SILENT: help
 
 COLOR_RESET = \033[0m
 COLOR_COMMAND = \033[36m
@@ -18,6 +18,18 @@ DATE := `date -u +"%Y-%m-%dT%H:%M:%SZ"`
 COMMIT := ""
 
 LDFLAGS := -X main.version=$(TAG) -X main.commit=$(COMMIT) -X main.date=$(DATE)
+
+LANGUAGES := $(shell grep language config/languages.yml | awk '{print $$3}')
+
+
+## Generate versions language yml. Ex: make generate-node
+generate-%:
+	@printf "\nGenerate $*\n"
+	python versions/official-images.py /tmp/all_versions_exported/$*/ $* False save
+
+generate-all:
+	@printf "Generate: $(LANGUAGES)\n"
+	@for lang in $(LANGUAGES); do make generate-$$lang; done;
 
 packr:
 	@packr clean && packr
@@ -55,38 +67,31 @@ release: packr git-tag
 
 ## Setup of the project
 setup:
-	@go get -u github.com/alecthomas/gometalinter
+	@go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
 	@go get -u github.com/golang/dep/...
-	@brew install goreleaser/tap/goreleaser
+	@go get -u github.com/gobuffalo/packr/packr
+	@brew install -u goreleaser/tap/goreleaser
 	@make vendor-install
-	gometalinter --install --update
 
 ## Install dependencies of the project
 vendor-install:
 	@dep ensure -v
 
+## Update dependencies of the project
+vendor-update:
+	@dep ensure -update
+
 ## Visualizing dependencies status of the project
 vendor-status:
 	@dep status
 
+## Visualizing dependencies 
+vendor-view:
+	@brew install graphviz
+	@dep status -dot | dot -T png | open -f -a /Applications/Preview.app
+
 lint: ## Run all the linters
-	gometalinter --vendor --disable-all \
-		--enable=deadcode \
-		--enable=ineffassign \
-		--enable=gosimple \
-		--enable=staticcheck \
-		--enable=gofmt \
-		--enable=goimports \
-		--enable=dupl \
-		--enable=misspell \
-		--enable=errcheck \
-		--enable=vet \
-		--enable=vetshadow \
-		--deadline=10m \
-		--aggregate \
-		./...
-
-
+	golangci-lint run --skip-dirs official-images
 
 ## Prints this help
 help:

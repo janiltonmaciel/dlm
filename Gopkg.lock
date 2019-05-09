@@ -2,54 +2,219 @@
 
 
 [[projects]]
-  name = "github.com/gobuffalo/packr"
+  digest = "1:b24d38b282bacf9791408a080f606370efa3d364e4b5fd9ba0f7b87786d3b679"
+  name = "github.com/codegangsta/cli"
   packages = ["."]
-  revision = "bd47f2894846e32edcf9aa37290fef76c327883f"
-  version = "v1.11.1"
-
-[[projects]]
-  name = "github.com/mattn/go-colorable"
-  packages = ["."]
-  revision = "167de6bfdfba052fa6b2d3664c8f5272e23c9072"
-  version = "v0.0.9"
-
-[[projects]]
-  name = "github.com/mattn/go-isatty"
-  packages = ["."]
-  revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
-  version = "v0.0.3"
+  pruneopts = "UT"
+  revision = "cfb38830724cc34fedffe9a2a29fb54fa9169cd1"
+  version = "v1.20.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:5b21c817b69bc36694a193bf27a3da9f1bd408b12e14b63046b3876b5f1d52ac"
+  name = "github.com/docker-library/go-dockerlibrary"
+  packages = [
+    "architecture",
+    "manifest",
+    "pkg/execpipe",
+    "pkg/stripper",
+    "pkg/templatelib",
+  ]
+  pruneopts = "UT"
+  revision = "7e50189a05d4ff8233197dc948cc8fb11a780e33"
+
+[[projects]]
+  digest = "1:d29ee5ef14a7e0253facd0bcebe6a69a7a4e02a67eb24d2aacd8ccb4a7cea6fc"
+  name = "github.com/gobuffalo/envy"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "043cb4b8af871b49563291e32c66bb84378a60ac"
+  version = "v1.7.0"
+
+[[projects]]
+  digest = "1:1342bed0d7aded5e5c1c958675f0662c9dbaf2d61fa0a8c5918a144737cff3e4"
+  name = "github.com/gobuffalo/packd"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "9efbb667f2024a9370cadda45a57a0657c88a6fb"
+  version = "v0.1.0"
+
+[[projects]]
+  digest = "1:3624897aef11246e65ae23a2cdb62ca8bd954e5fdceec7134300d8eb67a26b9d"
+  name = "github.com/gobuffalo/packr"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "cda4ac25577350dac682c8715dc6659327232596"
+  version = "v2.2.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:b90ac64448d67ef218124185a8524f3c665fb7f51f096d5dd51ce950a1775d89"
+  name = "github.com/gobuffalo/syncx"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "33c29581e754bd354236e977dfe426e55331c45d"
+
+[[projects]]
+  digest = "1:ecd9aa82687cf31d1585d4ac61d0ba180e42e8a6182b85bd785fcca8dfeefc1b"
+  name = "github.com/joho/godotenv"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "23d116af351c84513e1946b527c88823e476be13"
+  version = "v1.3.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:400e113a367b511b9b09ca642ee11d9885485a93838526d697033af334a2fdde"
+  name = "github.com/kballard/go-shellquote"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "95032a82bc518f77982ea72343cc1ade730072f0"
+
+[[projects]]
+  digest = "1:2fa7b0155cd54479a755c629de26f888a918e13f8857a2c442205d825368e084"
+  name = "github.com/mattn/go-colorable"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "3a70a971f94a22f2fa562ffcc7a0eb45f5daf045"
+  version = "v0.1.1"
+
+[[projects]]
+  digest = "1:e150b5fafbd7607e2d638e4e5cf43aa4100124e5593385147b0a74e2733d8b0d"
+  name = "github.com/mattn/go-isatty"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c2a7a6ca930a4cd0bc33a3f298eb71960732a3a7"
+  version = "v0.0.7"
+
+[[projects]]
+  branch = "master"
+  digest = "1:2b32af4d2a529083275afc192d1067d8126b578c7a9613b26600e4df9c735155"
   name = "github.com/mgutz/ansi"
   packages = ["."]
+  pruneopts = "UT"
   revision = "9520e82c474b0a04dd04f8a40959027271bab992"
 
 [[projects]]
+  digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
   name = "github.com/pkg/errors"
   packages = ["."]
-  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
-  version = "v0.8.0"
+  pruneopts = "UT"
+  revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
+  version = "v0.8.1"
+
+[[projects]]
+  digest = "1:e09ada96a5a41deda4748b1659cc8953961799e798aea557257b56baee4ecaf3"
+  name = "github.com/rogpeppe/go-internal"
+  packages = [
+    "modfile",
+    "module",
+    "semver",
+  ]
+  pruneopts = "UT"
+  revision = "438578804ca6f31be148c27683afc419ce47c06e"
+  version = "v1.3.0"
+
+[[projects]]
+  digest = "1:b24d38b282bacf9791408a080f606370efa3d364e4b5fd9ba0f7b87786d3b679"
+  name = "github.com/urfave/cli"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "cfb38830724cc34fedffe9a2a29fb54fa9169cd1"
+  version = "v1.20.0"
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/sys"
-  packages = ["unix"]
-  revision = "bff228c7b664c5fce602223a05fb708fd8654986"
+  digest = "1:8379382cf20a5a7507d3df826cb2ddef832be77a7ca43779268edc265a2eec4b"
+  name = "golang.org/x/crypto"
+  packages = [
+    "cast5",
+    "openpgp",
+    "openpgp/armor",
+    "openpgp/clearsign",
+    "openpgp/elgamal",
+    "openpgp/errors",
+    "openpgp/packet",
+    "openpgp/s2k",
+  ]
+  pruneopts = "UT"
+  revision = "a29dc8fdc73485234dbef99ebedb95d2eced08de"
 
 [[projects]]
+  branch = "master"
+  digest = "1:dcd2e9de31e20e01b156288ce4fc239498564295bdbb59d8aaf591af94778162"
+  name = "golang.org/x/sys"
+  packages = ["unix"]
+  pruneopts = "UT"
+  revision = "804c0c7841b595338f049388006a3945cb3cfad1"
+
+[[projects]]
+  digest = "1:b28cea6601b3c5d0d69ca00cbaa2537dec5c0247bf047cfcc4496918f209dbbd"
   name = "gopkg.in/AlecAivazis/survey.v1"
   packages = [
     ".",
     "core",
-    "terminal"
+    "terminal",
   ]
-  revision = "e752db451e07e09c7d7dc8cada807a44bdb0fd47"
-  version = "v1.5.3"
+  pruneopts = "UT"
+  revision = "a84846dc69f1fbe032f4534f92e937684b9a3710"
+  version = "v1.8.3"
+
+[[projects]]
+  digest = "1:a0cc264456743e2c8f9798dbe251c28bacbc3e60a4fbcf140997e8aaae5a0cf8"
+  name = "gopkg.in/gookit/color.v1"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "55e2fd773974775d0bda6daef1fe74bd47ccc260"
+  version = "v1.1.7"
+
+[[projects]]
+  branch = "v3"
+  digest = "1:779222b9ba282af681a4a202584a7cfd3cc811ce5a25de45f0c7eb35b320b577"
+  name = "gopkg.in/yaml.v3"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "cdc409dda467df8d60dc5c7d18f38e810979de95"
+
+[[projects]]
+  digest = "1:046dd4aa8ad6c5df93c8f6e937ca4d6fdb688db6c766e2ab3110f2b33565c70a"
+  name = "pault.ag/go/debian"
+  packages = [
+    "control",
+    "dependency",
+    "hashio",
+    "internal",
+    "version",
+  ]
+  pruneopts = "UT"
+  revision = "ad65362815e98e5ff4ce1c4816598bd039264a39"
+  version = "0.9"
+
+[[projects]]
+  branch = "master"
+  digest = "1:8683a1d02cceed1cca72e7a95a19067d088e93d7c676712ba0bd45e5322fa99c"
+  name = "pault.ag/go/topsort"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "f98d2ad46e1adcbf8fa59a95a3b5509a7da9c6b5"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "7e1a1b3c25125bdc22f2bc0714da4c6eeed36d6c1b61729bbf0f9dea3b2b0675"
+  input-imports = [
+    "github.com/codegangsta/cli",
+    "github.com/docker-library/go-dockerlibrary/architecture",
+    "github.com/docker-library/go-dockerlibrary/manifest",
+    "github.com/docker-library/go-dockerlibrary/pkg/execpipe",
+    "github.com/docker-library/go-dockerlibrary/pkg/stripper",
+    "github.com/docker-library/go-dockerlibrary/pkg/templatelib",
+    "github.com/gobuffalo/packr",
+    "github.com/urfave/cli",
+    "gopkg.in/AlecAivazis/survey.v1",
+    "gopkg.in/gookit/color.v1",
+    "gopkg.in/yaml.v3",
+    "pault.ag/go/debian/control",
+    "pault.ag/go/topsort",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
