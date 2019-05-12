@@ -1,0 +1,6 @@
+[submodule "submodules/official-images"]
+	path = submodules/official-images
+	url = https://github.com/docker-library/official-images.git
+[submodule "submodules/mhart"]
+	path = submodules/mhart
+	url = https://github.com/mhart/alpine-node.git
