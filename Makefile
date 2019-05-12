@@ -20,16 +20,29 @@ COMMIT := ""
 LDFLAGS := -X main.version=$(TAG) -X main.commit=$(COMMIT) -X main.date=$(DATE)
 
 LANGUAGES := $(shell grep language config/languages.yml | awk '{print $$3}')
+HOME = $(shell pwd)
 
-
-## Generate versions language yml. Ex: make generate-node
+## Generate versions language yml.
+# Ex: make generate-node
+#     make generate-python
 generate-%:
 	@printf "\nGenerate $*\n"
-	python versions/official-images.py /tmp/all_versions_exported/$*/ $* False save
+	python generate-versions.py tmp/manifest/$*/ $* False save
 
-generate-all:
+generate-versions:
 	@printf "Generate: $(LANGUAGES)\n"
-	@for lang in $(LANGUAGES); do make generate-$$lang; done;
+	@for lang in $(LANGUAGES) ; do make generate-$$lang; done;
+	@make generate-mhart
+	@make generate-distributions
+
+generate-manifests:
+	@cd submodules/official-images && \
+	 for lang in $(LANGUAGES); do git_export_all_file_versions.sh library/$$lang $$lang $(HOME)/tmp/manifest  ; done;
+	@cd submodules/mhart && \
+	 git_export_all_file_versions.sh Dockerfile mhart $(HOME)/tmp/manifest
+
+submodules-update:
+	git submodule update --recursive --remote
 
 packr:
 	@packr clean && packr
@@ -85,7 +98,7 @@ vendor-update:
 vendor-status:
 	@dep status
 
-## Visualizing dependencies 
+## Visualizing dependencies
 vendor-view:
 	@brew install graphviz
 	@dep status -dot | dot -T png | open -f -a /Applications/Preview.app

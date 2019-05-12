@@ -1,90 +1,7 @@
-
-  - version: 3.8.0a3
-    majorVersion: '3.8'
-    prerelease: true
-    date: '2019-04-24T03:25:18'
-    distributionReleases: Alpine, Debian
-    distributions:
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 1
-        image: debian:stretch-slim
-        tags:
-          - 3.8-rc-slim
-          - 3.8-rc-slim-stretch
-          - 3.8.0a3-slim
-          - 3.8.0a3-slim-stretch
-          - rc-slim
-          - rc-slim-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4e284ff8ad5458518743188afa3e64d83ea9986c/3.8-rc/stretch/slim/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        tags:
-          - 3.8-rc-stretch
-          - 3.8.0a3-stretch
-          - rc-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4e284ff8ad5458518743188afa3e64d83ea9986c/3.8-rc/stretch/Dockerfile
-      - name: Alpine
-        releaseName: '3.9'
-        release: 3.9
-        weight: 1
-        image: alpine:3.9
-        tags:
-          - 3.8-rc-alpine
-          - 3.8-rc-alpine3.9
-          - 3.8.0a3-alpine
-          - 3.8.0a3-alpine3.9
-          - rc-alpine
-          - rc-alpine3.9
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4e284ff8ad5458518743188afa3e64d83ea9986c/3.8-rc/alpine3.9/Dockerfile
-
-  - version: 3.8.0a1
-    majorVersion: '3.8'
-    prerelease: true
-    date: '2019-02-21T13:40:04'
-    distributionReleases: Alpine, Debian
-    distributions:
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 1
-        image: debian:stretch-slim
-        tags:
-          - 3.8.0a1-slim
-          - 3.8.0a1-slim-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6c42dbe19061cb1abcda541dc0c7a4d0aef5aacf/3.8-rc/stretch/slim/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        tags:
-          - 3.8.0a1-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6c42dbe19061cb1abcda541dc0c7a4d0aef5aacf/3.8-rc/stretch/Dockerfile
-      - name: Alpine
-        releaseName: '3.9'
-        release: 3.9
-        weight: 1
-        image: alpine:3.9
-        tags:
-          - 3.8.0a1-alpine
-          - 3.8.0a1-alpine3.9
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6c42dbe19061cb1abcda541dc0c7a4d0aef5aacf/3.8-rc/alpine3.9/Dockerfile
-
   - version: 3.7.3
     majorVersion: '3.7'
     prerelease: false
-    date: '2019-04-24T03:25:18'
+    date: '2019-03-27T08:28:29'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -102,7 +19,7 @@
           - slim
           - slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/65b5603fdf177c6d90df6ea6f3bd6e23839c63a4/3.7/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ce69fc6369feb8ec757b019035ddad7bac20562c/3.7/stretch/slim/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
@@ -114,7 +31,7 @@
           - 3.7.3-stretch
           - stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/65b5603fdf177c6d90df6ea6f3bd6e23839c63a4/3.7/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ce69fc6369feb8ec757b019035ddad7bac20562c/3.7/stretch/Dockerfile
       - name: Alpine
         releaseName: '3.9'
         release: 3.9
@@ -130,7 +47,7 @@
           - alpine
           - alpine3.9
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/65b5603fdf177c6d90df6ea6f3bd6e23839c63a4/3.7/alpine3.9/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ce69fc6369feb8ec757b019035ddad7bac20562c/3.7/alpine3.9/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
@@ -142,14 +59,58 @@
           - 3.7.3-alpine3.8
           - alpine3.8
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/65b5603fdf177c6d90df6ea6f3bd6e23839c63a4/3.7/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ce69fc6369feb8ec757b019035ddad7bac20562c/3.7/alpine3.8/Dockerfile
 
   - version: 3.7.2
     majorVersion: '3.7'
     prerelease: false
-    date: '2019-01-25T14:44:00'
+    date: '2018-12-24T14:28:18'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 3-slim
+          - 3-slim-stretch
+          - 3.7-slim
+          - 3.7-slim-stretch
+          - 3.7.2-slim
+          - 3.7.2-slim-stretch
+          - slim
+          - slim-stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ab8b829cfefdb460ebc17e570332f0479039e918/3.7/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 3-stretch
+          - 3.7-stretch
+          - 3.7.2-stretch
+          - stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ab8b829cfefdb460ebc17e570332f0479039e918/3.7/stretch/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 3-alpine
+          - 3-alpine3.8
+          - 3.7-alpine
+          - 3.7-alpine3.8
+          - 3.7.2-alpine
+          - 3.7.2-alpine3.8
+          - alpine
+          - alpine3.8
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ab8b829cfefdb460ebc17e570332f0479039e918/3.7/alpine3.8/Dockerfile
       - name: Alpine
         releaseName: '3.7'
         release: 3.7
@@ -161,50 +122,28 @@
           - 3.7.2-alpine3.7
           - alpine3.7
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/344fd4f05b1e81dd97f8334e30035c0359dfde7f/3.7/alpine3.7/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 1
-        image: debian:stretch-slim
-        tags:
-          - 3.7.2-slim
-          - 3.7.2-slim-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9bb5d46dbcf16250a2d292ddc1e0b7a792aa275f/3.7/stretch/slim/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        tags:
-          - 3.7.2-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9bb5d46dbcf16250a2d292ddc1e0b7a792aa275f/3.7/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ab8b829cfefdb460ebc17e570332f0479039e918/3.7/alpine3.7/Dockerfile
       - name: Alpine
         releaseName: '3.9'
         release: 3.9
         weight: 1
         image: alpine:3.9
         tags:
+          - 3-alpine
+          - 3-alpine3.9
+          - 3.7-alpine
+          - 3.7-alpine3.9
           - 3.7.2-alpine
           - 3.7.2-alpine3.9
+          - alpine
+          - alpine3.9
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9bb5d46dbcf16250a2d292ddc1e0b7a792aa275f/3.7/alpine3.9/Dockerfile
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        tags:
-          - 3.7.2-alpine3.8
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9bb5d46dbcf16250a2d292ddc1e0b7a792aa275f/3.7/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/662514b58264cff440912d93648ecf202a43f31c/3.7/alpine3.9/Dockerfile
 
   - version: 3.7.1
     majorVersion: '3.7'
     prerelease: false
-    date: '2018-12-06T16:50:32'
+    date: '2018-10-23T14:52:35'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -213,43 +152,61 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3-slim
+          - 3-slim-stretch
+          - 3.7-slim
+          - 3.7-slim-stretch
           - 3.7.1-slim
           - 3.7.1-slim-stretch
+          - slim
+          - slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.7/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4437475f468147e441561c3906806ef2cceea409/3.7/stretch/slim/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3-stretch
+          - 3.7-stretch
           - 3.7.1-stretch
+          - stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.7/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4437475f468147e441561c3906806ef2cceea409/3.7/stretch/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
         weight: 1
         image: alpine:3.8
         tags:
+          - 3-alpine
+          - 3-alpine3.8
+          - 3.7-alpine
+          - 3.7-alpine3.8
           - 3.7.1-alpine
           - 3.7.1-alpine3.8
+          - alpine
+          - alpine3.8
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.7/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4437475f468147e441561c3906806ef2cceea409/3.7/alpine3.8/Dockerfile
       - name: Alpine
         releaseName: '3.7'
         release: 3.7
         weight: 1
         image: alpine:3.7
         tags:
+          - 3-alpine3.7
+          - 3.7-alpine3.7
           - 3.7.1-alpine3.7
+          - alpine3.7
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.7/alpine3.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4437475f468147e441561c3906806ef2cceea409/3.7/alpine3.7/Dockerfile
 
   - version: 3.7.0b5
     majorVersion: '3.7'
     prerelease: true
-    date: '2018-06-27T10:25:47'
+    date: '2018-06-05T12:41:50'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -262,6 +219,8 @@
           - 3.7-rc-slim-stretch
           - 3.7.0b5-slim
           - 3.7.0b5-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f38c92b3fc2db507290e443b3e7b2844ebf16ab9/3.7-rc/stretch/slim/Dockerfile
       - name: Debian
@@ -272,6 +231,7 @@
         tags:
           - 3.7-rc-stretch
           - 3.7.0b5-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f38c92b3fc2db507290e443b3e7b2844ebf16ab9/3.7-rc/stretch/Dockerfile
       - name: Alpine
@@ -284,6 +244,7 @@
           - 3.7-rc-alpine3.7
           - 3.7.0b5-alpine
           - 3.7.0b5-alpine3.7
+          - rc-alpine
           - rc-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bbbc37fff3411a34deef30dd9b34dc938fe7b134/3.7-rc/alpine3.7/Dockerfile
@@ -291,7 +252,7 @@
   - version: 3.7.0b4
     majorVersion: '3.7'
     prerelease: true
-    date: '2018-05-23T10:13:17'
+    date: '2018-05-03T14:26:42'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -300,7 +261,9 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.7-rc-stretch
           - 3.7.0b4-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ba5711fb564133bf9c8b870b431682a4db427219/3.7-rc/stretch/Dockerfile
       - name: Alpine
@@ -309,8 +272,12 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.7
           - 3.7.0b4-alpine
           - 3.7.0b4-alpine3.7
+          - rc-alpine
+          - rc-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ba5711fb564133bf9c8b870b431682a4db427219/3.7-rc/alpine3.7/Dockerfile
       - name: Debian
@@ -319,15 +286,19 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.7-rc-slim
+          - 3.7-rc-slim-stretch
           - 3.7.0b4-slim
           - 3.7.0b4-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b8c94a31a98a535477200482a32c95192f85af5b/3.7-rc/stretch/slim/Dockerfile
 
   - version: 3.7.0b3
     majorVersion: '3.7'
     prerelease: true
-    date: '2018-04-26T10:23:08'
+    date: '2018-04-20T10:55:51'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -336,8 +307,12 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.7-rc-slim
+          - 3.7-rc-slim-stretch
           - 3.7.0b3-slim
           - 3.7.0b3-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/886a292a44ec78ab8052d3bd0731f9bdaddcd3f9/3.7-rc/stretch/slim/Dockerfile
       - name: Debian
@@ -346,7 +321,9 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.7-rc-stretch
           - 3.7.0b3-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/886a292a44ec78ab8052d3bd0731f9bdaddcd3f9/3.7-rc/stretch/Dockerfile
       - name: Alpine
@@ -355,25 +332,47 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.7
           - 3.7.0b3-alpine
           - 3.7.0b3-alpine3.7
+          - rc-alpine
+          - rc-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/886a292a44ec78ab8052d3bd0731f9bdaddcd3f9/3.7-rc/alpine3.7/Dockerfile
 
   - version: 3.7.0b2
     majorVersion: '3.7'
     prerelease: true
-    date: '2018-03-29T12:32:54'
+    date: '2018-03-05T09:48:53'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.7
+          - 3.7.0b2-alpine
+          - 3.7.0b2-alpine3.7
+          - rc-alpine
+          - rc-alpine3.7
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e1900dbb63610e54fadd2c2fea6a88b52bb98813/3.7-rc/alpine3.7/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.7-rc-slim
+          - 3.7-rc-slim-stretch
           - 3.7.0b2-slim
           - 3.7.0b2-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b9ecbb7d3ad02696a764c81b3625a9c71fd9bea5/3.7-rc/stretch/slim/Dockerfile
       - name: Debian
@@ -382,24 +381,16 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.7-rc-stretch
           - 3.7.0b2-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b9ecbb7d3ad02696a764c81b3625a9c71fd9bea5/3.7-rc/stretch/Dockerfile
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        tags:
-          - 3.7.0b2-alpine
-          - 3.7.0b2-alpine3.7
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b9ecbb7d3ad02696a764c81b3625a9c71fd9bea5/3.7-rc/alpine3.7/Dockerfile
 
   - version: 3.7.0b1
     majorVersion: '3.7'
     prerelease: true
-    date: '2018-02-08T13:36:22'
+    date: '2018-02-06T09:09:18'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -408,8 +399,12 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.7-rc-slim
+          - 3.7-rc-slim-stretch
           - 3.7.0b1-slim
           - 3.7.0b1-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/1dcbfcceba5dc2d3ebf0a414926f2645aec0150e/3.7-rc/stretch/slim/Dockerfile
       - name: Debian
@@ -418,7 +413,9 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.7-rc-stretch
           - 3.7.0b1-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/1dcbfcceba5dc2d3ebf0a414926f2645aec0150e/3.7-rc/stretch/Dockerfile
       - name: Alpine
@@ -427,8 +424,12 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.7
           - 3.7.0b1-alpine
           - 3.7.0b1-alpine3.7
+          - rc-alpine
+          - rc-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/1dcbfcceba5dc2d3ebf0a414926f2645aec0150e/3.7-rc/alpine3.7/Dockerfile
 
@@ -444,8 +445,12 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.7-rc-slim
+          - 3.7-rc-slim-stretch
           - 3.7.0a4-slim
           - 3.7.0a4-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/stretch/slim/Dockerfile
       - name: Debian
@@ -454,7 +459,9 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.7-rc-stretch
           - 3.7.0a4-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/stretch/Dockerfile
       - name: Alpine
@@ -463,15 +470,19 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.7
           - 3.7.0a4-alpine
           - 3.7.0a4-alpine3.7
+          - rc-alpine
+          - rc-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/alpine3.7/Dockerfile
 
   - version: 3.7.0a3
     majorVersion: '3.7'
     prerelease: true
-    date: '2017-12-20T16:08:48'
+    date: '2017-12-06T16:11:31'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -480,8 +491,12 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.7-rc-slim
+          - 3.7-rc-slim-stretch
           - 3.7.0a3-slim
           - 3.7.0a3-slim-stretch
+          - rc-slim
+          - rc-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/stretch/slim/Dockerfile
       - name: Debian
@@ -490,7 +505,9 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.7-rc-stretch
           - 3.7.0a3-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/stretch/Dockerfile
       - name: Alpine
@@ -499,53 +516,75 @@
         weight: 1
         image: alpine:3.6
         tags:
+          - 3.7-rc-alpine
           - 3.7-rc-alpine3.6
           - 3.7.0a3-alpine
           - 3.7.0a3-alpine3.6
+          - rc-alpine
           - rc-alpine3.6
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.7
+          - 3.7.0a3-alpine
+          - 3.7.0a3-alpine3.7
+          - rc-alpine
+          - rc-alpine3.7
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8717dc2523c8093990cb958bb8c47ade6f851c05/3.7-rc/alpine3.7/Dockerfile
 
   - version: 3.7.0a2
     majorVersion: '3.7'
     prerelease: true
-    date: '2017-11-22T15:38:29'
+    date: '2017-11-02T10:48:51'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
-        weight: 1
-        image: debian:stretch-slim
+        weight: 3
+        image: buildpack-deps:stretch-scm
         tags:
-          - 3.7.0a2-slim
-          - 3.7.0a2-slim-stretch
+          - '1.9'
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a4ce69de053337ec22d7f322cd997398eeba2350/3.7-rc/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/stretch/slim/Dockerfile
+
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
+        weight: 2
+        image: debian:stretch
         tags:
-          - 3.7.0a2-stretch
+          - 3.7-rc-slim
+          - 3.7.0a2-slim
+          - rc-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/stretch/slim/Dockerfile
       - name: Alpine
         releaseName: '3.6'
         release: 3.6
         weight: 1
         image: alpine:3.6
         tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.6
           - 3.7.0a2-alpine
           - 3.7.0a2-alpine3.6
+          - rc-alpine
+          - rc-alpine3.6
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/alpine3.6/Dockerfile
 
   - version: 3.7.0a1
     majorVersion: '3.7'
     prerelease: true
-    date: '2017-10-10T09:16:21'
+    date: '2017-09-20T14:35:38'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -554,7 +593,9 @@
         weight: 2
         image: debian:stretch
         tags:
+          - 3.7-rc-slim
           - 3.7.0a1-slim
+          - rc-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/45685613e1189227b91affba86dfcb2c764d7fa4/3.7-rc/stretch/slim/Dockerfile
       - name: Debian
@@ -563,7 +604,9 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.7-rc-stretch
           - 3.7.0a1-stretch
+          - rc-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/45685613e1189227b91affba86dfcb2c764d7fa4/3.7-rc/stretch/Dockerfile
       - name: Alpine
@@ -572,15 +615,19 @@
         weight: 1
         image: alpine:3.6
         tags:
+          - 3.7-rc-alpine
+          - 3.7-rc-alpine3.6
           - 3.7.0a1-alpine
           - 3.7.0a1-alpine3.6
+          - rc-alpine
+          - rc-alpine3.6
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/45685613e1189227b91affba86dfcb2c764d7fa4/3.7-rc/alpine3.6/Dockerfile
 
   - version: 3.7.0
     majorVersion: '3.7'
     prerelease: false
-    date: '2018-10-09T11:03:13'
+    date: '2018-07-03T16:53:32'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -589,38 +636,60 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3-slim
+          - 3-slim-stretch
+          - 3.7-slim
+          - 3.7-slim-stretch
           - 3.7.0-slim
           - 3.7.0-slim-stretch
+          - slim
+          - slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/38dcdb4320c8668416205e044ee50489c059da18/3.7/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4cfc4299e8b5ea35257d5daf3f93aaf94df0230/3.7/stretch/slim/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3-stretch
+          - 3.7-stretch
           - 3.7.0-stretch
+          - stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/38dcdb4320c8668416205e044ee50489c059da18/3.7/stretch/Dockerfile
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        tags:
-          - 3.7.0-alpine
-          - 3.7.0-alpine3.8
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/38dcdb4320c8668416205e044ee50489c059da18/3.7/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4cfc4299e8b5ea35257d5daf3f93aaf94df0230/3.7/stretch/Dockerfile
       - name: Alpine
         releaseName: '3.7'
         release: 3.7
         weight: 1
         image: alpine:3.7
         tags:
+          - 3-alpine
+          - 3-alpine3.7
+          - 3.7-alpine
+          - 3.7-alpine3.7
+          - 3.7.0-alpine
           - 3.7.0-alpine3.7
+          - alpine
+          - alpine3.7
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/38dcdb4320c8668416205e044ee50489c059da18/3.7/alpine3.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4cfc4299e8b5ea35257d5daf3f93aaf94df0230/3.7/alpine3.7/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 3-alpine
+          - 3-alpine3.8
+          - 3.7-alpine
+          - 3.7-alpine3.8
+          - 3.7.0-alpine
+          - 3.7.0-alpine3.8
+          - alpine
+          - alpine3.8
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ccfb4c011e1db901c167c8d4c3611263bd68e65c/3.7/alpine3.8/Dockerfile
 
   - version: 3.6.8
     majorVersion: '3.6'
@@ -716,7 +785,7 @@
   - version: 3.6.7
     majorVersion: '3.6'
     prerelease: false
-    date: '2018-12-06T16:50:32'
+    date: '2018-10-23T14:52:35'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -725,78 +794,121 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.6-slim
+          - 3.6-slim-stretch
           - 3.6.7-slim
           - 3.6.7-slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.6/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/stretch/slim/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.6-stretch
           - 3.6.7-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.6/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/stretch/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3.6-slim-jessie
           - 3.6.7-slim-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.6/jessie/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.6-jessie
           - 3.6.7-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.6/jessie/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/jessie/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
         weight: 1
         image: alpine:3.8
         tags:
+          - 3.6-alpine
+          - 3.6-alpine3.8
           - 3.6.7-alpine
           - 3.6.7-alpine3.8
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.6/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/alpine3.8/Dockerfile
       - name: Alpine
         releaseName: '3.7'
         release: 3.7
         weight: 1
         image: alpine:3.7
         tags:
+          - 3.6-alpine3.7
           - 3.6.7-alpine3.7
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.6/alpine3.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/alpine3.7/Dockerfile
       - name: Alpine
         releaseName: '3.6'
         release: 3.6
         weight: 1
         image: alpine:3.6
         tags:
+          - 3.6-alpine3.6
           - 3.6.7-alpine3.6
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/39c500cc8aefcb67a76d518d789441ef85fc771f/3.6/alpine3.6/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/alpine3.6/Dockerfile
 
   - version: 3.6.6
     majorVersion: '3.6'
     prerelease: false
-    date: '2018-10-09T11:03:13'
+    date: '2018-07-26T13:05:02'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 3.6-alpine
+          - 3.6-alpine3.8
+          - 3.6.6-alpine
+          - 3.6.6-alpine3.8
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/3.6/alpine3.8/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 3.6-alpine3.7
+          - 3.6.6-alpine3.7
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/3.6/alpine3.7/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 3.6-alpine3.6
+          - 3.6.6-alpine3.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/3.6/alpine3.6/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.6-slim
+          - 3.6-slim-stretch
           - 3.6.6-slim
           - 3.6.6-slim-stretch
         urlRepository: https://github.com/docker-library/python
@@ -807,6 +919,7 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.6-stretch
           - 3.6.6-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/stretch/Dockerfile
@@ -816,6 +929,7 @@
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3.6-slim-jessie
           - 3.6.6-slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/jessie/slim/Dockerfile
@@ -825,72 +939,15 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.6-jessie
           - 3.6.6-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        tags:
-          - 3.6.6-alpine
-          - 3.6.6-alpine3.8
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/alpine3.8/Dockerfile
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        tags:
-          - 3.6.6-alpine3.7
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/alpine3.7/Dockerfile
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        tags:
-          - 3.6.6-alpine3.6
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/alpine3.6/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 1
-        image: debian:jessie-slim
-        tags:
-          - 3-slim-jessie
-          - slim-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/341c752e5435f4cf4c008fbae67ae4b5b6209a02/3.6/jessie/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 3-jessie
-          - jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/341c752e5435f4cf4c008fbae67ae4b5b6209a02/3.6/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        tags:
-          - 3-alpine3.6
-          - alpine3.6
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/341c752e5435f4cf4c008fbae67ae4b5b6209a02/3.6/alpine3.6/Dockerfile
 
   - version: 3.6.5
     majorVersion: '3.6'
     prerelease: false
-    date: '2018-06-05T12:41:50'
+    date: '2018-04-03T12:29:51'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Alpine
@@ -899,68 +956,92 @@
         weight: 1
         image: alpine:3.7
         tags:
-          - 3.6.5-alpine
+          - 3-alpine3.7
+          - 3.6-alpine3.7
           - 3.6.5-alpine3.7
+          - alpine3.7
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c71ea7995d68c3219f2d251768a384d9995d4af0/3.6/alpine3.7/Dockerfile
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        tags:
-          - 3.6.5-alpine3.6
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c71ea7995d68c3219f2d251768a384d9995d4af0/3.6/alpine3.6/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        tags:
-          - 3.6.5-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b99b66406ebe728fb4da64548066ad0be6582e08/3.6/stretch/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 3.6.5-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b99b66406ebe728fb4da64548066ad0be6582e08/3.6/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 3-alpine3.4
-          - 3.6-alpine3.4
-          - 3.6.5-alpine3.4
-          - alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b99b66406ebe728fb4da64548066ad0be6582e08/3.6/alpine3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e48c9718ef52d14df2ac46e674b0fb55523d8284/3.6/alpine3.7/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
         tags:
-          - 3.6.5-slim
+          - 3-slim-stretch
+          - 3.6-slim-stretch
           - 3.6.5-slim-stretch
+          - slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b8c94a31a98a535477200482a32c95192f85af5b/3.6/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/caba688d74997c2d063907e35f5439b1b1811d9e/3.6/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 3-stretch
+          - 3.6-stretch
+          - 3.6.5-stretch
+          - stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/caba688d74997c2d063907e35f5439b1b1811d9e/3.6/stretch/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3-slim
+          - 3-slim-jessie
+          - 3.6-slim
+          - 3.6-slim-jessie
+          - 3.6.5-slim
           - 3.6.5-slim-jessie
+          - slim
+          - slim-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b8c94a31a98a535477200482a32c95192f85af5b/3.6/jessie/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/caba688d74997c2d063907e35f5439b1b1811d9e/3.6/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 3-jessie
+          - 3.6-jessie
+          - 3.6.5-jessie
+          - jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/caba688d74997c2d063907e35f5439b1b1811d9e/3.6/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 3-alpine3.6
+          - 3.6-alpine3.6
+          - 3.6.5-alpine3.6
+          - alpine3.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/caba688d74997c2d063907e35f5439b1b1811d9e/3.6/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3-alpine
+          - 3-alpine3.4
+          - 3.6-alpine
+          - 3.6-alpine3.4
+          - 3.6.5-alpine
+          - 3.6.5-alpine3.4
+          - alpine
+          - alpine3.4
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/caba688d74997c2d063907e35f5439b1b1811d9e/3.6/alpine3.4/Dockerfile
 
   - version: 3.6.4
     majorVersion: '3.6'
@@ -974,7 +1055,10 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3-slim-stretch
+          - 3.6-slim-stretch
           - 3.6.4-slim-stretch
+          - slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9a08272dbcbcd8f917ac98f494e6f0e3e7d929e/3.6/stretch/slim/Dockerfile
       - name: Debian
@@ -983,7 +1067,10 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3-stretch
+          - 3.6-stretch
           - 3.6.4-stretch
+          - stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9a08272dbcbcd8f917ac98f494e6f0e3e7d929e/3.6/stretch/Dockerfile
       - name: Debian
@@ -992,8 +1079,14 @@
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3-slim
+          - 3-slim-jessie
+          - 3.6-slim
+          - 3.6-slim-jessie
           - 3.6.4-slim
           - 3.6.4-slim-jessie
+          - slim
+          - slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9a08272dbcbcd8f917ac98f494e6f0e3e7d929e/3.6/jessie/slim/Dockerfile
       - name: Debian
@@ -1002,7 +1095,10 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3-jessie
+          - 3.6-jessie
           - 3.6.4-jessie
+          - jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9a08272dbcbcd8f917ac98f494e6f0e3e7d929e/3.6/jessie/Dockerfile
       - name: Alpine
@@ -1011,7 +1107,10 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3-alpine3.7
+          - 3.6-alpine3.7
           - 3.6.4-alpine3.7
+          - alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9a08272dbcbcd8f917ac98f494e6f0e3e7d929e/3.6/alpine3.7/Dockerfile
       - name: Alpine
@@ -1020,7 +1119,10 @@
         weight: 1
         image: alpine:3.6
         tags:
+          - 3-alpine3.6
+          - 3.6-alpine3.6
           - 3.6.4-alpine3.6
+          - alpine3.6
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9a08272dbcbcd8f917ac98f494e6f0e3e7d929e/3.6/alpine3.6/Dockerfile
       - name: Alpine
@@ -1029,15 +1131,21 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3-alpine
+          - 3-alpine3.4
+          - 3.6-alpine
+          - 3.6-alpine3.4
           - 3.6.4-alpine
           - 3.6.4-alpine3.4
+          - alpine
+          - alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9a08272dbcbcd8f917ac98f494e6f0e3e7d929e/3.6/alpine3.4/Dockerfile
 
   - version: 3.6.3
     majorVersion: '3.6'
     prerelease: false
-    date: '2017-12-19T13:25:09'
+    date: '2017-12-18T14:21:55'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Alpine
@@ -1046,7 +1154,10 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3-alpine3.7
+          - 3.6-alpine3.7
           - 3.6.3-alpine3.7
+          - alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f45e1fb3d57ccce5042d22f4fb618c4dc56d1819/3.6/alpine3.7/Dockerfile
       - name: Debian
@@ -1055,25 +1166,74 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3-stretch
+          - 3.6-stretch
           - 3.6.3-stretch
+          - stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3-slim
+          - 3.6-slim
+          - 3.6.3-slim
+          - slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3-jessie
+          - 3.6-jessie
           - 3.6.3-jessie
+          - jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 3-alpine3.6
+          - 3.6-alpine3.6
+          - 3.6.3-alpine3.6
+          - alpine3.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3-alpine
+          - 3-alpine3.4
+          - 3.6-alpine
+          - 3.6-alpine3.4
+          - 3.6.3-alpine
+          - 3.6.3-alpine3.4
+          - alpine
+          - alpine3.4
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/alpine3.4/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3-slim-stretch
+          - 3.6-slim-stretch
           - 3.6.3-slim-stretch
+          - slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a4ce69de053337ec22d7f322cd997398eeba2350/3.6/stretch/slim/Dockerfile
       - name: Debian
@@ -1082,29 +1242,16 @@
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3-slim
+          - 3-slim-jessie
+          - 3.6-slim
+          - 3.6-slim-jessie
           - 3.6.3-slim
           - 3.6.3-slim-jessie
+          - slim
+          - slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a4ce69de053337ec22d7f322cd997398eeba2350/3.6/jessie/slim/Dockerfile
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        tags:
-          - 3.6.3-alpine3.6
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8717dc2523c8093990cb958bb8c47ade6f851c05/3.6/alpine3.6/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 3.6.3-alpine
-          - 3.6.3-alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8717dc2523c8093990cb958bb8c47ade6f851c05/3.6/alpine3.4/Dockerfile
 
   - version: 3.6.2rc2
     majorVersion: '3.6'
@@ -1120,6 +1267,7 @@
         tags:
           - 3.6-rc-slim
           - 3.6.2rc2-slim
+          - rc-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/slim/Dockerfile
       - name: Alpine
@@ -1130,6 +1278,7 @@
         tags:
           - 3.6-rc-alpine
           - 3.6.2rc2-alpine
+          - rc-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/alpine/Dockerfile
       - name: Alpine
@@ -1140,6 +1289,7 @@
         tags:
           - 3.6-rc-alpine3.6
           - 3.6.2rc2-alpine3.6
+          - rc-alpine3.6
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/alpine3.6/Dockerfile
       - name: Debian
@@ -1154,12 +1304,75 @@
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/Dockerfile
 
+  - version: 3.6.2rc1
+    majorVersion: '3.6'
+    prerelease: true
+    date: '2017-06-19T09:38:34'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.6-rc-slim
+          - 3.6.2rc1-slim
+          - rc-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.6-rc-alpine
+          - 3.6.2rc1-alpine
+          - rc-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/alpine/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 3.6-rc-alpine3.6
+          - 3.6.2rc1-alpine3.6
+          - rc-alpine3.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/alpine3.6/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 3.6-rc
+          - 3.6.2rc1
+          - rc
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/Dockerfile
+
   - version: 3.6.2
     majorVersion: '3.6'
     prerelease: false
-    date: '2017-09-19T15:12:52'
+    date: '2017-07-18T11:13:27'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3-slim
+          - 3.6-slim
+          - 3.6.2-slim
+          - slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.6/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -1167,8 +1380,12 @@
         image: buildpack-deps:jessie
         tags:
           - '3'
+          - 3-jessie
           - '3.6'
+          - 3.6-jessie
           - 3.6.2
+          - 3.6.2-jessie
+          - jessie
           - latest
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.6/jessie/Dockerfile
@@ -1178,8 +1395,14 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3-alpine
+          - 3-alpine3.4
+          - 3.6-alpine
+          - 3.6-alpine3.4
           - 3.6.2-alpine
           - 3.6.2-alpine3.4
+          - alpine
+          - alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.6/alpine3.4/Dockerfile
       - name: Debian
@@ -1188,75 +1411,84 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3-stretch
+          - 3.6-stretch
           - 3.6.2-stretch
+          - stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9954b06c8b178d7888bc1626bed5a14e43a9203/3.6/stretch/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.6.2-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/45685613e1189227b91affba86dfcb2c764d7fa4/3.6/jessie/slim/Dockerfile
       - name: Alpine
         releaseName: '3.6'
         release: 3.6
         weight: 1
         image: alpine:3.6
         tags:
+          - 3-alpine3.6
+          - 3.6-alpine3.6
           - 3.6.2-alpine3.6
+          - alpine3.6
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/3.6/alpine3.6/Dockerfile
 
   - version: 3.6.1
     majorVersion: '3.6'
     prerelease: false
-    date: '2017-07-10T10:50:08'
+    date: '2017-06-06T10:27:26'
     distributionReleases: Alpine, Debian
     distributions:
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.6.1-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88ba87d31a3033d4dbefecf44ce25aa1b69ab3e5/3.6/slim/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 3.6.1-alpine
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88ba87d31a3033d4dbefecf44ce25aa1b69ab3e5/3.6/alpine/Dockerfile
       - name: Alpine
         releaseName: '3.6'
         release: 3.6
         weight: 1
         image: alpine:3.6
         tags:
+          - 3-alpine3.6
+          - 3.6-alpine3.6
           - 3.6.1-alpine3.6
+          - alpine3.6
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88ba87d31a3033d4dbefecf44ce25aa1b69ab3e5/3.6/alpine3.6/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e81758e60c9214db0ab9da54c0e741b2a2d62e31/3.6/alpine3.6/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3-slim
+          - 3.6-slim
+          - 3.6.1-slim
+          - slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.6/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3-alpine
+          - 3.6-alpine
+          - 3.6.1-alpine
+          - alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.6/alpine/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '3'
+          - '3.6'
           - 3.6.1
+          - latest
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/88ba87d31a3033d4dbefecf44ce25aa1b69ab3e5/3.6/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.6/Dockerfile
 
   - version: 3.6.0rc2
     majorVersion: '3.6'
     prerelease: true
-    date: '2016-12-21T16:57:27'
+    date: '2016-12-19T08:31:05'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -1265,7 +1497,9 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-rc-slim
           - 3.6.0rc2-slim
+          - rc-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/26ac1ac8c63ddd479c869845c16261c527fe9945/3.6-rc/slim/Dockerfile
       - name: Alpine
@@ -1274,7 +1508,9 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-rc-alpine
           - 3.6.0rc2-alpine
+          - rc-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/26ac1ac8c63ddd479c869845c16261c527fe9945/3.6-rc/alpine/Dockerfile
       - name: Debian
@@ -1283,7 +1519,9 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.6-rc
           - 3.6.0rc2
+          - rc
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/26ac1ac8c63ddd479c869845c16261c527fe9945/3.6-rc/Dockerfile
 
@@ -1299,7 +1537,9 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-rc-slim
           - 3.6.0rc1-slim
+          - rc-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12bf960914ceaec59562cf49cf048b971e54399a/3.6-rc/slim/Dockerfile
       - name: Alpine
@@ -1308,7 +1548,9 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-rc-alpine
           - 3.6.0rc1-alpine
+          - rc-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12bf960914ceaec59562cf49cf048b971e54399a/3.6-rc/alpine/Dockerfile
       - name: Debian
@@ -1317,7 +1559,9 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.6-rc
           - 3.6.0rc1
+          - rc
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12bf960914ceaec59562cf49cf048b971e54399a/3.6-rc/Dockerfile
 
@@ -1333,7 +1577,9 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-rc-slim
           - 3.6.0b4-slim
+          - rc-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d8aac61bc3abddfd7ba58724446cf9b0e949ffa4/3.6-rc/slim/Dockerfile
       - name: Alpine
@@ -1342,7 +1588,9 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-rc-alpine
           - 3.6.0b4-alpine
+          - rc-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d8aac61bc3abddfd7ba58724446cf9b0e949ffa4/3.6-rc/alpine/Dockerfile
       - name: Debian
@@ -1351,7 +1599,9 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.6-rc
           - 3.6.0b4
+          - rc
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d8aac61bc3abddfd7ba58724446cf9b0e949ffa4/3.6-rc/Dockerfile
 
@@ -1367,7 +1617,9 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-rc-slim
           - 3.6.0b3-slim
+          - rc-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.6-rc/slim/Dockerfile
       - name: Alpine
@@ -1376,7 +1628,9 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-rc-alpine
           - 3.6.0b3-alpine
+          - rc-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.6-rc/alpine/Dockerfile
       - name: Debian
@@ -1385,48 +1639,53 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.6-rc
           - 3.6.0b3
+          - rc
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.6-rc/Dockerfile
 
   - version: 3.6.0b2
     majorVersion: '3.6'
     prerelease: true
-    date: '2016-10-27T14:14:03'
+    date: '2016-10-12T08:46:16'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
+        weight: 2
+        image: debian:jessie
         tags:
-          - 3.6.0b2
+          - 3.6-slim
+          - 3.6.0b2-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a29d327288ff02b2f54be0d2b7340736e2329bdc/3.6/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/aa533a4879c13944d62a5029929ffae78075d212/3.6/slim/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-alpine
           - 3.6.0b2-alpine
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/83b8e044aa38ab97b5427a9591e0537464e976e6/3.6/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/aa533a4879c13944d62a5029929ffae78075d212/3.6/alpine/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
-        weight: 2
-        image: debian:jessie
+        weight: 5
+        image: buildpack-deps:jessie
         tags:
-          - 3.6.0b2-slim
+          - '3.6'
+          - 3.6.0b2
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6b24d8cd0ad4c5a01874d094d92cd79518b3d490/3.6/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/aa533a4879c13944d62a5029929ffae78075d212/3.6/Dockerfile
 
   - version: 3.6.0b1
     majorVersion: '3.6'
     prerelease: true
-    date: '2016-09-16T12:01:10'
+    date: '2016-09-16T09:06:18'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -1435,6 +1694,7 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-slim
           - 3.6.0b1-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/slim/Dockerfile
@@ -1444,6 +1704,7 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-alpine
           - 3.6.0b1-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/alpine/Dockerfile
@@ -1453,6 +1714,7 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '3.6'
           - 3.6.0b1
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/Dockerfile
@@ -1469,6 +1731,7 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-slim
           - 3.6.0a4-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/855b85c8309e925814dfa97d61310080dcd08db6/3.6/slim/Dockerfile
@@ -1478,6 +1741,7 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-alpine
           - 3.6.0a4-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/855b85c8309e925814dfa97d61310080dcd08db6/3.6/alpine/Dockerfile
@@ -1487,6 +1751,7 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '3.6'
           - 3.6.0a4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/855b85c8309e925814dfa97d61310080dcd08db6/3.6/Dockerfile
@@ -1503,6 +1768,7 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-slim
           - 3.6.0a3-slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/3.6/slim/Dockerfile
@@ -1512,6 +1778,7 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-alpine
           - 3.6.0a3-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/3.6/alpine/Dockerfile
@@ -1521,6 +1788,7 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '3.6'
           - 3.6.0a3
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/3.6/Dockerfile
@@ -1528,50 +1796,68 @@
   - version: 3.6.0a2
     majorVersion: '3.6'
     prerelease: true
-    date: '2016-08-01T10:19:43'
+    date: '2016-07-05T10:09:28'
     distributionReleases: Alpine, Debian
     distributions:
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.6.0a2-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.6/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 3.6.0a2
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.6/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.6-alpine
           - 3.6.0a2-alpine
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8ab2af26df98ddbcd7ce7d39b0ee343dd8d86d41/3.6/alpine/Dockerfile
-
-  - version: 3.6.0
-    majorVersion: '3.6'
-    prerelease: false
-    date: '2017-01-23T15:54:00'
-    distributionReleases: Alpine, Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d92b2e00353ad8f20f6d5c658802741c33ebbd7d/3.6/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '3.6'
+          - 3.6.0a2
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d92b2e00353ad8f20f6d5c658802741c33ebbd7d/3.6/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
         tags:
+          - 3.6-slim
+          - 3.6.0a2-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.6/slim/Dockerfile
+
+  - version: 3.6.0
+    majorVersion: '3.6'
+    prerelease: false
+    date: '2017-01-05T13:39:08'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3-alpine
+          - 3.6-alpine
+          - 3.6.0-alpine
+          - alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ad4706ad7d23ef13472d2ee340aa43f3b9573e3d/3.6/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3-slim
+          - 3.6-slim
           - 3.6.0-slim
+          - slim
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/7eca63adca38729424a9bab957f006f5caad870f/3.6/slim/Dockerfile
       - name: Debian
@@ -1580,7 +1866,10 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '3'
+          - '3.6'
           - 3.6.0
+          - latest
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/7eca63adca38729424a9bab957f006f5caad870f/3.6/Dockerfile
       - name: Alpine
@@ -1589,14 +1878,17 @@
         weight: 1
         image: alpine:3.5
         tags:
+          - 3-alpine
+          - 3.6-alpine
           - 3.6.0-alpine
+          - alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db43ca0155da8cafdd9001b1bebc8a08052c2bf/3.6/alpine/Dockerfile
 
   - version: 3.5.7
     majorVersion: '3.5'
     prerelease: false
-    date: '2019-04-24T03:25:18'
+    date: '2019-03-18T21:49:36'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -1610,7 +1902,7 @@
           - 3.5.7-slim
           - 3.5.7-slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2dcc8166bd1be451f3c17e71ee710a03d94fd5cf/3.5/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f991b3773d8f50486cfdd06a6f5c208ce38e1ed3/3.5/stretch/slim/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
@@ -1620,7 +1912,7 @@
           - 3.5-stretch
           - 3.5.7-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2dcc8166bd1be451f3c17e71ee710a03d94fd5cf/3.5/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f991b3773d8f50486cfdd06a6f5c208ce38e1ed3/3.5/stretch/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -1630,7 +1922,7 @@
           - 3.5-slim-jessie
           - 3.5.7-slim-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2dcc8166bd1be451f3c17e71ee710a03d94fd5cf/3.5/jessie/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f991b3773d8f50486cfdd06a6f5c208ce38e1ed3/3.5/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -1640,7 +1932,7 @@
           - 3.5-jessie
           - 3.5.7-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2dcc8166bd1be451f3c17e71ee710a03d94fd5cf/3.5/jessie/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f991b3773d8f50486cfdd06a6f5c208ce38e1ed3/3.5/jessie/Dockerfile
       - name: Alpine
         releaseName: '3.9'
         release: 3.9
@@ -1652,7 +1944,7 @@
           - 3.5.7-alpine
           - 3.5.7-alpine3.9
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2dcc8166bd1be451f3c17e71ee710a03d94fd5cf/3.5/alpine3.9/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f991b3773d8f50486cfdd06a6f5c208ce38e1ed3/3.5/alpine3.9/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
@@ -1662,20 +1954,44 @@
           - 3.5-alpine3.8
           - 3.5.7-alpine3.8
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2dcc8166bd1be451f3c17e71ee710a03d94fd5cf/3.5/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f991b3773d8f50486cfdd06a6f5c208ce38e1ed3/3.5/alpine3.8/Dockerfile
 
   - version: 3.5.6
     majorVersion: '3.5'
     prerelease: false
-    date: '2019-03-08T19:14:00'
+    date: '2018-08-02T12:12:38'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 3.5-alpine
+          - 3.5-alpine3.8
+          - 3.5.6-alpine
+          - 3.5.6-alpine3.8
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bc999321f00459f8fedb9f42142395d211173713/3.5/alpine3.8/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 3.5-alpine3.7
+          - 3.5.6-alpine3.7
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bc999321f00459f8fedb9f42142395d211173713/3.5/alpine3.7/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.5-slim
+          - 3.5-slim-stretch
           - 3.5.6-slim
           - 3.5.6-slim-stretch
         urlRepository: https://github.com/docker-library/python
@@ -1686,6 +2002,7 @@
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.5-stretch
           - 3.5.6-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/af2cf72d9c6c304d041c88db3e79242fd8c9ce60/3.5/stretch/Dockerfile
@@ -1695,6 +2012,7 @@
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3.5-slim-jessie
           - 3.5.6-slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/af2cf72d9c6c304d041c88db3e79242fd8c9ce60/3.5/jessie/slim/Dockerfile
@@ -1704,6 +2022,7 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.5-jessie
           - 3.5.6-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/af2cf72d9c6c304d041c88db3e79242fd8c9ce60/3.5/jessie/Dockerfile
@@ -1713,42 +2032,61 @@
         weight: 1
         image: alpine:3.9
         tags:
+          - 3.5-alpine
+          - 3.5-alpine3.9
           - 3.5.6-alpine
           - 3.5.6-alpine3.9
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/af2cf72d9c6c304d041c88db3e79242fd8c9ce60/3.5/alpine3.9/Dockerfile
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        tags:
-          - 3.5.6-alpine3.8
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/af2cf72d9c6c304d041c88db3e79242fd8c9ce60/3.5/alpine3.8/Dockerfile
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        tags:
-          - 3.5-alpine3.7
-          - 3.5.6-alpine3.7
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/72cda33211d4718c347a381625cf0ea59e20040c/3.5/alpine3.7/Dockerfile
 
   - version: 3.5.5
     majorVersion: '3.5'
     prerelease: false
-    date: '2018-07-31T13:22:56'
+    date: '2018-02-06T09:09:18'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 3.5-slim
+          - 3.5-slim-jessie
+          - 3.5.5-slim
+          - 3.5.5-slim-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cd844bc3a3f49b1a9624df3c4a71a0b5e0106752/3.5/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 3.5-jessie
+          - 3.5.5-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cd844bc3a3f49b1a9624df3c4a71a0b5e0106752/3.5/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.5-alpine
+          - 3.5-alpine3.4
+          - 3.5.5-alpine
+          - 3.5.5-alpine3.4
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cd844bc3a3f49b1a9624df3c4a71a0b5e0106752/3.5/alpine3.4/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
         weight: 1
         image: alpine:3.8
         tags:
+          - 3.5-alpine
+          - 3.5-alpine3.8
           - 3.5.5-alpine
           - 3.5.5-alpine3.8
         urlRepository: https://github.com/docker-library/python
@@ -1759,61 +2097,37 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3.5-alpine3.7
           - 3.5.5-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/3.5/alpine3.7/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 3.5-alpine3.4
-          - 3.5.5-alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a652f35d6ce77f02ca268d67f39e7dfa24cf08c5/3.5/alpine3.4/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        tags:
-          - 3.5.5-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/48284b41a887508cae25d1040bf44abcd1ed2c91/3.5/stretch/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 3.5.5-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/48284b41a887508cae25d1040bf44abcd1ed2c91/3.5/jessie/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.5-slim
+          - 3.5-slim-stretch
           - 3.5.5-slim
           - 3.5.5-slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8350b865d28bc0f4a05111398392ec701d449058/3.5/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/48284b41a887508cae25d1040bf44abcd1ed2c91/3.5/stretch/slim/Dockerfile
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 1
-        image: debian:jessie-slim
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
         tags:
-          - 3.5.5-slim-jessie
+          - 3.5-stretch
+          - 3.5.5-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8350b865d28bc0f4a05111398392ec701d449058/3.5/jessie/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/48284b41a887508cae25d1040bf44abcd1ed2c91/3.5/stretch/Dockerfile
 
   - version: 3.5.4
     majorVersion: '3.5'
     prerelease: false
-    date: '2018-01-09T13:07:55'
+    date: '2017-11-02T10:48:51'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -1822,16 +2136,30 @@
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3.5-slim
+          - 3.5-slim-jessie
           - 3.5.4-slim
           - 3.5.4-slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a4ce69de053337ec22d7f322cd997398eeba2350/3.5/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.5-slim
+          - 3.5.4-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/45685613e1189227b91affba86dfcb2c764d7fa4/3.5/jessie/slim/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.5-alpine
+          - 3.5-alpine3.4
           - 3.5.4-alpine
           - 3.5.4-alpine3.4
         urlRepository: https://github.com/docker-library/python
@@ -1843,14 +2171,16 @@
         image: buildpack-deps:jessie
         tags:
           - '3.5'
+          - 3.5-jessie
           - 3.5.4
+          - 3.5.4-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6ebbaa8a56cdf4021c78e87b3872be3861ac072a/3.5/jessie/Dockerfile
 
   - version: 3.5.3
     majorVersion: '3.5'
     prerelease: false
-    date: '2017-07-18T11:13:27'
+    date: '2017-04-26T07:09:02'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -1859,34 +2189,35 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3.5-slim
           - 3.5.3-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.5/jessie/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 3.5.3
-          - 3.5.3-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.5/jessie/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.5/slim/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.5-alpine
           - 3.5.3-alpine
-          - 3.5.3-alpine3.4
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.5/alpine3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.5/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '3.5'
+          - 3.5.3
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.5/Dockerfile
 
   - version: 3.5.2
     majorVersion: '3.5'
     prerelease: false
-    date: '2017-01-19T16:56:41'
+    date: '2017-01-05T13:39:08'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Alpine
@@ -1895,6 +2226,7 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.5-alpine
           - 3.5.2-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ad4706ad7d23ef13472d2ee340aa43f3b9573e3d/3.5/alpine/Dockerfile
@@ -1904,23 +2236,39 @@
         weight: 2
         image: debian:jessie
         tags:
+          - 3-slim
+          - 3.5-slim
           - 3.5.2-slim
+          - slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.5/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.5/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '3'
+          - '3.5'
           - 3.5.2
+          - latest
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.5/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.5/Dockerfile
+      - name: Alpine
+        releaseName: '3.5'
+        release: 3.5
+        weight: 1
+        image: alpine:3.5
+        tags:
+          - 3.5-alpine
+          - 3.5.2-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db43ca0155da8cafdd9001b1bebc8a08052c2bf/3.5/alpine/Dockerfile
 
   - version: 3.5.1
     majorVersion: '3.5'
     prerelease: false
-    date: '2016-06-09T12:08:41'
+    date: '2016-03-08T14:13:39'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -1931,7 +2279,16 @@
         tags:
           - 3.5.1-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9383f7d4d2f96068e8957651aa3588fee8b48f71/3.5/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.5/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 3.5.1-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.5/alpine/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -1940,7 +2297,7 @@
         tags:
           - 3.5.1
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9383f7d4d2f96068e8957651aa3588fee8b48f71/3.5/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.5/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
@@ -1954,7 +2311,7 @@
   - version: 3.5.0b3
     majorVersion: '3.5'
     prerelease: true
-    date: '2015-08-24T10:12:21'
+    date: '2015-07-17T14:38:07'
     distributionReleases: Debian
     distributions:
       - name: Debian
@@ -1979,7 +2336,7 @@
   - version: 3.5.0
     majorVersion: '3.5'
     prerelease: false
-    date: '2015-08-24T10:12:21'
+    date: '2015-09-14T09:44:59'
     distributionReleases: Debian
     distributions:
       - name: Debian
@@ -1990,7 +2347,7 @@
         tags:
           - 3.5.0-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0fa3202789648132971160f686f5a37595108f44/3.5/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4a0ed26c086a48a75e9ea2b163c8262dcdff2af/3.5/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -1999,7 +2356,50 @@
         tags:
           - 3.5.0
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0fa3202789648132971160f686f5a37595108f44/3.5/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4a0ed26c086a48a75e9ea2b163c8262dcdff2af/3.5/Dockerfile
+
+  - version: '3.5'
+    majorVersion: '3.5'
+    prerelease: false
+    date: '2015-09-14T09:44:59'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.5-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4a0ed26c086a48a75e9ea2b163c8262dcdff2af/3.5/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '3.5'
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4a0ed26c086a48a75e9ea2b163c8262dcdff2af/3.5/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 3.5-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.5/alpine/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.5-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0610d9ccc2dc8ad4ab6038f775e7a28cadf12114/3.5/alpine/Dockerfile
 
   - version: 3.4.10
     majorVersion: '3.4'
@@ -2085,7 +2485,7 @@
   - version: 3.4.9
     majorVersion: '3.4'
     prerelease: false
-    date: '2019-03-08T19:14:00'
+    date: '2019-02-11T15:46:57'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -2094,65 +2494,74 @@
         weight: 5
         image: buildpack-deps:wheezy
         tags:
+          - 3.4-wheezy
           - 3.4.9-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ae9270e7cab01ce5cde6efe89694d04dd9ef9f65/3.4/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/wheezy/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.4-slim
+          - 3.4-slim-stretch
           - 3.4.9-slim
           - 3.4.9-slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ae9270e7cab01ce5cde6efe89694d04dd9ef9f65/3.4/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/stretch/slim/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.4-stretch
           - 3.4.9-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ae9270e7cab01ce5cde6efe89694d04dd9ef9f65/3.4/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/stretch/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3.4-slim-jessie
           - 3.4.9-slim-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ae9270e7cab01ce5cde6efe89694d04dd9ef9f65/3.4/jessie/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - 3.4-jessie
           - 3.4.9-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ae9270e7cab01ce5cde6efe89694d04dd9ef9f65/3.4/jessie/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/jessie/Dockerfile
       - name: Alpine
         releaseName: '3.9'
         release: 3.9
         weight: 1
         image: alpine:3.9
         tags:
+          - 3.4-alpine
+          - 3.4-alpine3.9
           - 3.4.9-alpine
           - 3.4.9-alpine3.9
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ae9270e7cab01ce5cde6efe89694d04dd9ef9f65/3.4/alpine3.9/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/alpine3.9/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
         weight: 1
         image: alpine:3.8
         tags:
+          - 3.4-alpine3.8
           - 3.4.9-alpine3.8
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ae9270e7cab01ce5cde6efe89694d04dd9ef9f65/3.4/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/alpine3.8/Dockerfile
       - name: Alpine
         releaseName: '3.7'
         release: 3.7
@@ -2162,20 +2571,66 @@
           - 3.4-alpine3.7
           - 3.4.9-alpine3.7
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/408f7b8130a44463119acfd66d28430f8b4a1f06/3.4/alpine3.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bc999321f00459f8fedb9f42142395d211173713/3.4/alpine3.7/Dockerfile
 
   - version: 3.4.8
     majorVersion: '3.4'
     prerelease: false
-    date: '2018-07-31T13:22:56'
+    date: '2018-04-18T13:38:40'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 3.4-wheezy
+          - 3.4.8-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d4af596595307d6d940569fab727199a8f8e92b1/3.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 3.4-slim
+          - 3.4-slim-jessie
+          - 3.4.8-slim
+          - 3.4.8-slim-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d4af596595307d6d940569fab727199a8f8e92b1/3.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 3.4-jessie
+          - 3.4.8-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d4af596595307d6d940569fab727199a8f8e92b1/3.4/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.4-alpine
+          - 3.4-alpine3.4
+          - 3.4.8-alpine
+          - 3.4.8-alpine3.4
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d4af596595307d6d940569fab727199a8f8e92b1/3.4/alpine3.4/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
         weight: 1
         image: alpine:3.8
         tags:
+          - 3.4-alpine
+          - 3.4-alpine3.8
           - 3.4.8-alpine
           - 3.4.8-alpine3.8
         urlRepository: https://github.com/docker-library/python
@@ -2186,6 +2641,7 @@
         weight: 1
         image: alpine:3.7
         tags:
+          - 3.4-alpine3.7
           - 3.4.8-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/3.4/alpine3.7/Dockerfile
@@ -2195,61 +2651,27 @@
         weight: 1
         image: debian:stretch-slim
         tags:
+          - 3.4-slim
+          - 3.4-slim-stretch
           - 3.4.8-slim
           - 3.4.8-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8350b865d28bc0f4a05111398392ec701d449058/3.4/stretch/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 1
-        image: debian:jessie-slim
-        tags:
-          - 3.4.8-slim-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8350b865d28bc0f4a05111398392ec701d449058/3.4/jessie/slim/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 3.4-alpine3.4
-          - 3.4.8-alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/92b33f97f0e1f1faabca46aee0f5520c1b038ed5/3.4/alpine3.4/Dockerfile
-      - name: Debian
-        releaseName: 7 (wheezy)
-        release: 7.0
-        weight: 5
-        image: buildpack-deps:wheezy
-        tags:
-          - 3.4.8-wheezy
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/34eb5b14953c4359205644790c3c8979a347f662/3.4/wheezy/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 3.4-stretch
           - 3.4.8-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/34eb5b14953c4359205644790c3c8979a347f662/3.4/stretch/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 3.4.8-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/34eb5b14953c4359205644790c3c8979a347f662/3.4/jessie/Dockerfile
 
   - version: 3.4.7
     majorVersion: '3.4'
     prerelease: false
-    date: '2018-01-09T13:07:55'
+    date: '2017-11-02T10:48:51'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -2258,16 +2680,29 @@
         weight: 1
         image: debian:jessie-slim
         tags:
+          - 3.4-slim
+          - 3.4-slim-jessie
           - 3.4.7-slim
           - 3.4.7-slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a4ce69de053337ec22d7f322cd997398eeba2350/3.4/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.4-slim
+          - 3.4.7-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/45685613e1189227b91affba86dfcb2c764d7fa4/3.4/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
         weight: 5
         image: buildpack-deps:wheezy
         tags:
+          - 3.4-wheezy
           - 3.4.7-wheezy
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/27516b7347b3236a3accd4b2e1242a53fb54d04c/3.4/wheezy/Dockerfile
@@ -2278,7 +2713,9 @@
         image: buildpack-deps:jessie
         tags:
           - '3.4'
+          - 3.4-jessie
           - 3.4.7
+          - 3.4.7-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/27516b7347b3236a3accd4b2e1242a53fb54d04c/3.4/jessie/Dockerfile
       - name: Alpine
@@ -2287,55 +2724,59 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.4-alpine
+          - 3.4-alpine3.4
           - 3.4.7-alpine
           - 3.4.7-alpine3.4
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8717dc2523c8093990cb958bb8c47ade6f851c05/3.4/alpine3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/27516b7347b3236a3accd4b2e1242a53fb54d04c/3.4/alpine3.4/Dockerfile
 
   - version: 3.4.6
     majorVersion: '3.4'
     prerelease: false
-    date: '2017-07-18T11:13:27'
+    date: '2017-04-26T07:09:02'
     distributionReleases: Alpine, Debian
     distributions:
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.4.6-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.4/jessie/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 3.4.6
-          - 3.4.6-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.4/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 3.4.6-alpine
-          - 3.4.6-alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.4/alpine3.4/Dockerfile
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
         weight: 5
         image: buildpack-deps:wheezy
         tags:
+          - 3.4-wheezy
           - 3.4.6-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/3.4/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.4-slim
+          - 3.4.6-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.4/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.4-alpine
+          - 3.4.6-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.4/alpine/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '3.4'
+          - 3.4.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.4/Dockerfile
 
   - version: 3.4.5
     majorVersion: '3.4'
@@ -2349,6 +2790,7 @@
         weight: 1
         image: alpine:3.4
         tags:
+          - 3.4-alpine
           - 3.4.5-alpine
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ad4706ad7d23ef13472d2ee340aa43f3b9573e3d/3.4/alpine/Dockerfile
@@ -2358,52 +2800,47 @@
         weight: 5
         image: buildpack-deps:wheezy
         tags:
+          - 3.4-wheezy
           - 3.4.5-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/855b85c8309e925814dfa97d61310080dcd08db6/3.4/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.4-slim
+          - 3.4.5-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.4/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '3.4'
           - 3.4.5
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/855b85c8309e925814dfa97d61310080dcd08db6/3.4/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a819c92949e182901df10e52d41bc57c6ca73bd5/3.4/Dockerfile
+      - name: Alpine
+        releaseName: '3.5'
+        release: 3.5
+        weight: 1
+        image: alpine:3.5
         tags:
-          - 3.4.5-slim
+          - 3.4-alpine
+          - 3.4.5-alpine
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6b24d8cd0ad4c5a01874d094d92cd79518b3d490/3.4/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db43ca0155da8cafdd9001b1bebc8a08052c2bf/3.4/alpine/Dockerfile
 
   - version: 3.4.4
     majorVersion: '3.4'
     prerelease: false
-    date: '2016-04-26T14:16:36'
+    date: '2015-12-22T09:02:13'
     distributionReleases: Alpine, Debian
     distributions:
-      - name: Debian
-        releaseName: 7 (wheezy)
-        release: 7.0
-        weight: 5
-        image: buildpack-deps:wheezy
-        tags:
-          - 3.4.4-wheezy
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/3232863ad5aba683fb084cb00097723c8c9efb47/3.4/wheezy/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.4.4-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9383f7d4d2f96068e8957651aa3588fee8b48f71/3.4/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2412,7 +2849,34 @@
         tags:
           - 3.4.4
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9383f7d4d2f96068e8957651aa3588fee8b48f71/3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f9739c6da575c450aaed8628c1e0bfa97bf1ba18/3.4/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 3.4.4-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.4.4-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.4/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 3.4.4-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.4/alpine/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
@@ -2426,7 +2890,7 @@
   - version: 3.4.3
     majorVersion: '3.4'
     prerelease: false
-    date: '2015-12-08T13:02:08'
+    date: '2015-03-03T10:38:16'
     distributionReleases: Debian
     distributions:
       - name: Debian
@@ -2437,7 +2901,7 @@
         tags:
           - 3.4.3-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/15798abb6cfb145344462a345db4b572227fb859/3.4/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c6e8f0d345bd475a80d3c85c13861bb9dc2ea116/3.4/wheezy/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2446,7 +2910,7 @@
         tags:
           - 3.4.3-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/15798abb6cfb145344462a345db4b572227fb859/3.4/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c6e8f0d345bd475a80d3c85c13861bb9dc2ea116/3.4/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2455,32 +2919,14 @@
         tags:
           - 3.4.3
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/15798abb6cfb145344462a345db4b572227fb859/3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c6e8f0d345bd475a80d3c85c13861bb9dc2ea116/3.4/Dockerfile
 
   - version: 3.4.2
     majorVersion: '3.4'
     prerelease: false
-    date: '2015-02-17T08:42:31'
+    date: '2014-12-02T13:51:11'
     distributionReleases: Debian
     distributions:
-      - name: Debian
-        releaseName: 7 (wheezy)
-        release: 7.0
-        weight: 5
-        image: buildpack-deps:wheezy
-        tags:
-          - 3.4.2-wheezy
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/25134c1757699a357936b94924a97536f9526040/3.4/wheezy/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.4.2-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/25134c1757699a357936b94924a97536f9526040/3.4/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2489,7 +2935,34 @@
         tags:
           - 3.4.2
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/25134c1757699a357936b94924a97536f9526040/3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fa713180402eeb7bf782d484c510b6c32418b45f/3.4/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - 3.4.2
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.4.2-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c0c674911c50ca3e21ba5379541f70c1b42685b4/3.4/slim/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 3.4.2-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/771697823173d2270f9c2494890dcfa65243877a/3.4/wheezy/Dockerfile
 
   - version: 3.4.1
     majorVersion: '3.4'
@@ -2507,10 +2980,71 @@
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a30ed3056ee58ca3df4fd5b51e3d30849dcb7e32/3.4/Dockerfile
 
+  - version: '3.4'
+    majorVersion: '3.4'
+    prerelease: false
+    date: '2014-12-02T13:51:11'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '3.4'
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fa713180402eeb7bf782d484c510b6c32418b45f/3.4/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - '3.4'
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 3.4-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.4/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.4-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.4/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 3.4-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.4/alpine/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.4-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0610d9ccc2dc8ad4ab6038f775e7a28cadf12114/3.4/alpine/Dockerfile
+
   - version: 3.3.7rc1
     majorVersion: '3.3'
     prerelease: true
-    date: '2017-09-18T09:22:06'
+    date: '2017-09-07T11:27:02'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -2539,9 +3073,7 @@
         weight: 5
         image: buildpack-deps:jessie
         tags:
-          - 3.3-rc
           - 3.3-rc-jessie
-          - 3.3.7rc1
           - 3.3.7rc1-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/20a35d083b77466fe1de7ceb0cf40528fc9f6b1f/3.3-rc/jessie/Dockerfile
@@ -2551,9 +3083,7 @@
         weight: 1
         image: alpine:3.4
         tags:
-          - 3.3-rc-alpine
           - 3.3-rc-alpine3.4
-          - 3.3.7rc1-alpine
           - 3.3.7rc1-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/20a35d083b77466fe1de7ceb0cf40528fc9f6b1f/3.3-rc/alpine3.4/Dockerfile
@@ -2561,7 +3091,7 @@
   - version: 3.3.7
     majorVersion: '3.3'
     prerelease: false
-    date: '2017-09-28T11:05:46'
+    date: '2017-09-19T15:12:52'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -2577,11 +3107,23 @@
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.3-slim
+          - 3.3.7-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/eb5fcfeb040c4ecdb32fd79caa547943e18f9c97/3.3/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
           - '3.3'
+          - 3.3-jessie
           - 3.3.7
+          - 3.3.7-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/eb5fcfeb040c4ecdb32fd79caa547943e18f9c97/3.3/jessie/Dockerfile
       - name: Alpine
@@ -2596,32 +3138,13 @@
           - 3.3.7-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/eb5fcfeb040c4ecdb32fd79caa547943e18f9c97/3.3/alpine3.4/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.3-slim
-          - 3.3.7-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/45685613e1189227b91affba86dfcb2c764d7fa4/3.3/jessie/slim/Dockerfile
 
   - version: 3.3.6
     majorVersion: '3.3'
     prerelease: false
-    date: '2017-09-18T09:22:06'
+    date: '2014-12-02T13:51:11'
     distributionReleases: Alpine, Debian
     distributions:
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 3.3.6-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.3/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2629,33 +3152,71 @@
         image: buildpack-deps:jessie
         tags:
           - 3.3.6
-          - 3.3.6-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.3/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 3.3.6-alpine
-          - 3.3.6-alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.3/alpine3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fa713180402eeb7bf782d484c510b6c32418b45f/3.3/Dockerfile
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
         weight: 5
         image: buildpack-deps:wheezy
         tags:
+          - 3.3-wheezy
           - 3.3.6-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/3.3/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.3/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.3-slim
+          - 3.3.6-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.3/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.3-alpine
+          - 3.3.6-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dc016eb55d86dd6e23ec5ee2a537ee60ab11c795/3.3/alpine/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 3.3.6-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.3/alpine/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - 3.3.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ce7da0b874784e6b69e3966b5d7ba995e873163e/3.3/Dockerfile
+      - name: Alpine
+        releaseName: '3.5'
+        release: 3.5
+        weight: 1
+        image: alpine:3.5
+        tags:
+          - 3.3-alpine
+          - 3.3.6-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db43ca0155da8cafdd9001b1bebc8a08052c2bf/3.3/alpine/Dockerfile
 
   - version: 3.3.5
     majorVersion: '3.3'
     prerelease: false
-    date: '2014-10-08T10:42:37'
+    date: '2014-10-03T10:23:54'
     distributionReleases: Debian
     distributions:
       - name: Debian
@@ -2666,23 +3227,75 @@
         tags:
           - 3.3.5
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/5da3b09cc56f1a431c912dcb1dc1d72efbd17409/3.3/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dbe3e241f4c3263a81a888896f5126861807b3db/3.3/Dockerfile
 
-  - version: 3.2.6
-    majorVersion: '3.2'
+  - version: '3.3'
+    majorVersion: '3.3'
     prerelease: false
-    date: '2016-01-18T09:07:09'
-    distributionReleases: Debian
+    date: '2014-12-02T13:51:11'
+    distributionReleases: Alpine, Debian
     distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '3.3'
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fa713180402eeb7bf782d484c510b6c32418b45f/3.3/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - '3.3'
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dbe3e241f4c3263a81a888896f5126861807b3db/3.3/Dockerfile
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
         weight: 5
         image: buildpack-deps:wheezy
         tags:
-          - 3.2.6-wheezy
+          - 3.3-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12db3f7b07f9704719657a0652357a3ae4cdc1c1/3.2/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.3/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 3.3-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.3/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 3.3-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/3.3/alpine/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 3.3-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0610d9ccc2dc8ad4ab6038f775e7a28cadf12114/3.3/alpine/Dockerfile
+
+  - version: 3.2.6
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2015-06-16T16:22:14'
+    distributionReleases: Debian
+    distributions:
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2691,7 +3304,7 @@
         tags:
           - 3.2.6-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12db3f7b07f9704719657a0652357a3ae4cdc1c1/3.2/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.2/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2700,23 +3313,23 @@
         tags:
           - 3.2.6
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12db3f7b07f9704719657a0652357a3ae4cdc1c1/3.2/Dockerfile
-
-  - version: '3.2'
-    majorVersion: '3.2'
-    prerelease: false
-    date: '2016-01-18T09:07:09'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.2/Dockerfile
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
         weight: 5
         image: buildpack-deps:wheezy
         tags:
-          - 3.2-wheezy
+          - 3.2.6-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12db3f7b07f9704719657a0652357a3ae4cdc1c1/3.2/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/7663560df7547e69d13b1b548675502f4e0917d1/3.2/wheezy/Dockerfile
+
+  - version: '3.2'
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2015-06-16T16:22:14'
+    distributionReleases: Debian
+    distributions:
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2725,7 +3338,7 @@
         tags:
           - 3.2-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12db3f7b07f9704719657a0652357a3ae4cdc1c1/3.2/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.2/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2734,12 +3347,21 @@
         tags:
           - '3.2'
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/12db3f7b07f9704719657a0652357a3ae4cdc1c1/3.2/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.2/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 3.2-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/7663560df7547e69d13b1b548675502f4e0917d1/3.2/wheezy/Dockerfile
 
   - version: 2.7.16
     majorVersion: '2.7'
     prerelease: false
-    date: '2019-03-21T14:31:04'
+    date: '2019-03-04T12:57:45'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -2766,7 +3388,7 @@
           - 2.7.16-slim
           - 2.7.16-slim-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/10c3bd9dba7bd6c14ca85924caa9a27a61ed3c9e/2.7/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/stretch/slim/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
@@ -2777,7 +3399,7 @@
           - 2.7-stretch
           - 2.7.16-stretch
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/10c3bd9dba7bd6c14ca85924caa9a27a61ed3c9e/2.7/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/stretch/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2788,7 +3410,7 @@
           - 2.7-slim-jessie
           - 2.7.16-slim-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/10c3bd9dba7bd6c14ca85924caa9a27a61ed3c9e/2.7/jessie/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/jessie/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2799,7 +3421,7 @@
           - 2.7-jessie
           - 2.7.16-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/10c3bd9dba7bd6c14ca85924caa9a27a61ed3c9e/2.7/jessie/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/jessie/Dockerfile
       - name: Alpine
         releaseName: '3.9'
         release: 3.9
@@ -2813,7 +3435,7 @@
           - 2.7.16-alpine
           - 2.7.16-alpine3.9
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/10c3bd9dba7bd6c14ca85924caa9a27a61ed3c9e/2.7/alpine3.9/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/alpine3.9/Dockerfile
       - name: Alpine
         releaseName: '3.8'
         release: 3.8
@@ -2824,14 +3446,97 @@
           - 2.7-alpine3.8
           - 2.7.16-alpine3.8
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/10c3bd9dba7bd6c14ca85924caa9a27a61ed3c9e/2.7/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/alpine3.8/Dockerfile
 
   - version: 2.7.15
     majorVersion: '2.7'
     prerelease: false
-    date: '2019-01-25T14:44:00'
+    date: '2019-02-21T13:40:04'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2-wheezy
+          - 2.7-wheezy
+          - 2.7.15-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2-slim
+          - 2-slim-stretch
+          - 2.7-slim
+          - 2.7-slim-stretch
+          - 2.7.15-slim
+          - 2.7.15-slim-stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2-stretch
+          - 2.7-stretch
+          - 2.7.15-stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 2-slim-jessie
+          - 2.7-slim-jessie
+          - 2.7.15-slim-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2-jessie
+          - 2.7-jessie
+          - 2.7.15-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        tags:
+          - 2-alpine
+          - 2-alpine3.9
+          - 2.7-alpine
+          - 2.7-alpine3.9
+          - 2.7.15-alpine
+          - 2.7.15-alpine3.9
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/alpine3.9/Dockerfile
+      - name: Alpine
+        releaseName: '3.8'
+        release: 3.8
+        weight: 1
+        image: alpine:3.8
+        tags:
+          - 2-alpine3.8
+          - 2.7-alpine3.8
+          - 2.7.15-alpine3.8
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/alpine3.8/Dockerfile
       - name: Alpine
         releaseName: '3.7'
         release: 3.7
@@ -2842,7 +3547,7 @@
           - 2.7-alpine3.7
           - 2.7.15-alpine3.7
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/24860503e8c7d1fba51e352bfdd25474d56a7ab7/2.7/alpine3.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/2.7/alpine3.7/Dockerfile
       - name: Alpine
         releaseName: '3.6'
         release: 3.6
@@ -2853,80 +3558,18 @@
           - 2.7-alpine3.6
           - 2.7.15-alpine3.6
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/24860503e8c7d1fba51e352bfdd25474d56a7ab7/2.7/alpine3.6/Dockerfile
-      - name: Debian
-        releaseName: 7 (wheezy)
-        release: 7.0
-        weight: 5
-        image: buildpack-deps:wheezy
-        tags:
-          - 2.7.15-wheezy
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/275aea55602ac3aa7beb9e346d713c0732e11195/2.7/wheezy/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 1
-        image: debian:stretch-slim
-        tags:
-          - 2.7.15-slim
-          - 2.7.15-slim-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/275aea55602ac3aa7beb9e346d713c0732e11195/2.7/stretch/slim/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        tags:
-          - 2.7.15-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/275aea55602ac3aa7beb9e346d713c0732e11195/2.7/stretch/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 1
-        image: debian:jessie-slim
-        tags:
-          - 2.7.15-slim-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/275aea55602ac3aa7beb9e346d713c0732e11195/2.7/jessie/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 2.7.15-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/275aea55602ac3aa7beb9e346d713c0732e11195/2.7/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.9'
-        release: 3.9
-        weight: 1
-        image: alpine:3.9
-        tags:
-          - 2.7.15-alpine
-          - 2.7.15-alpine3.9
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/275aea55602ac3aa7beb9e346d713c0732e11195/2.7/alpine3.9/Dockerfile
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        tags:
-          - 2.7.15-alpine3.8
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/275aea55602ac3aa7beb9e346d713c0732e11195/2.7/alpine3.8/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/2.7/alpine3.6/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
         weight: 1
         image: alpine:3.4
         tags:
+          - 2-alpine
           - 2-alpine3.4
+          - 2.7-alpine
           - 2.7-alpine3.4
+          - 2.7.15-alpine
           - 2.7.15-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4d640edc8df64b9cf050904f60ac03765e05d3f6/2.7/alpine3.4/Dockerfile
@@ -2934,9 +3577,165 @@
   - version: 2.7.14
     majorVersion: '2.7'
     prerelease: false
-    date: '2017-09-19T15:12:52'
+    date: '2018-03-22T10:21:00'
     distributionReleases: Alpine, Debian
     distributions:
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2-wheezy
+          - 2.7-wheezy
+          - 2.7.14-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        tags:
+          - 2-slim-stretch
+          - 2.7-slim-stretch
+          - 2.7.14-slim-stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/stretch/slim/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        tags:
+          - 2-stretch
+          - 2.7-stretch
+          - 2.7.14-stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/stretch/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        tags:
+          - 2-slim
+          - 2-slim-jessie
+          - 2.7-slim
+          - 2.7-slim-jessie
+          - 2.7.14-slim
+          - 2.7.14-slim-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/jessie/slim/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2-jessie
+          - 2.7-jessie
+          - 2.7.14-jessie
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/jessie/Dockerfile
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        tags:
+          - 2-alpine3.7
+          - 2.7-alpine3.7
+          - 2.7.14-alpine3.7
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/alpine3.7/Dockerfile
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2-alpine3.6
+          - 2.7-alpine3.6
+          - 2.7.14-alpine3.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/alpine3.6/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2-alpine
+          - 2-alpine3.4
+          - 2.7-alpine
+          - 2.7-alpine3.4
+          - 2.7.14-alpine
+          - 2.7.14-alpine3.4
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/alpine3.4/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2-slim
+          - 2.7-slim
+          - 2.7.14-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b1512ead24c6b111506a8d4229134a29da240597/2.7/jessie/slim/Dockerfile
+
+  - version: 2.7.13
+    majorVersion: '2.7'
+    prerelease: false
+    date: '2017-06-06T10:27:26'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Alpine
+        releaseName: '3.6'
+        release: 3.6
+        weight: 1
+        image: alpine:3.6
+        tags:
+          - 2-alpine3.6
+          - 2.7-alpine3.6
+          - 2.7.13-alpine3.6
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e81758e60c9214db0ab9da54c0e741b2a2d62e31/2.7/alpine3.6/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2-wheezy
+          - 2.7-wheezy
+          - 2.7.13-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/db2d58d73043c85ceecc8e675372b4dc6a77d136/2.7/wheezy/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2-slim
+          - 2.7-slim
+          - 2.7.13-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/db2d58d73043c85ceecc8e675372b4dc6a77d136/2.7/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2-alpine
+          - 2.7-alpine
+          - 2.7.13-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/db2d58d73043c85ceecc8e675372b4dc6a77d136/2.7/alpine/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -2945,151 +3744,36 @@
         tags:
           - '2'
           - '2.7'
-          - 2.7.14
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/b1512ead24c6b111506a8d4229134a29da240597/2.7/jessie/Dockerfile
-      - name: Debian
-        releaseName: 7 (wheezy)
-        release: 7.0
-        weight: 5
-        image: buildpack-deps:wheezy
-        tags:
-          - 2.7.14-wheezy
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/wheezy/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 1
-        image: debian:stretch-slim
-        tags:
-          - 2.7.14-slim-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/stretch/slim/Dockerfile
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        tags:
-          - 2.7.14-stretch
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/stretch/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 1
-        image: debian:jessie-slim
-        tags:
-          - 2.7.14-slim
-          - 2.7.14-slim-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/jessie/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 2.7.14-jessie
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        tags:
-          - 2.7.14-alpine3.7
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/alpine3.7/Dockerfile
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        tags:
-          - 2.7.14-alpine3.6
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/alpine3.6/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 2.7.14-alpine
-          - 2.7.14-alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2c06746f8a82729f9265c1e17c29b1e937af7441/2.7/alpine3.4/Dockerfile
-
-  - version: 2.7.13
-    majorVersion: '2.7'
-    prerelease: false
-    date: '2017-09-07T12:30:31'
-    distributionReleases: Alpine, Debian
-    distributions:
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 2.7.13-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/2.7/jessie/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
           - 2.7.13
-          - 2.7.13-jessie
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/2.7/jessie/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 2.7.13-alpine
-          - 2.7.13-alpine3.4
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/2.7/alpine3.4/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/db2d58d73043c85ceecc8e675372b4dc6a77d136/2.7/Dockerfile
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
         tags:
+          - 2-stretch
+          - 2.7-stretch
           - 2.7.13-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c9954b06c8b178d7888bc1626bed5a14e43a9203/2.7/stretch/Dockerfile
-      - name: Debian
-        releaseName: 7 (wheezy)
-        release: 7.0
-        weight: 5
-        image: buildpack-deps:wheezy
-        tags:
-          - 2.7.13-wheezy
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/2.7/wheezy/Dockerfile
       - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
+        releaseName: '3.5'
+        release: 3.5
         weight: 1
-        image: alpine:3.6
+        image: alpine:3.5
         tags:
-          - 2.7.13-alpine3.6
+          - 2-alpine
+          - 2.7-alpine
+          - 2.7.13-alpine
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/2.7/alpine3.6/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6db43ca0155da8cafdd9001b1bebc8a08052c2bf/2.7/alpine/Dockerfile
 
   - version: 2.7.12
     majorVersion: '2.7'
     prerelease: false
-    date: '2016-12-19T08:31:05'
+    date: '2016-08-09T10:07:01'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -3098,41 +3782,49 @@
         weight: 5
         image: buildpack-deps:wheezy
         tags:
+          - 2-wheezy
+          - 2.7-wheezy
           - 2.7.12-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/wheezy/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 2.7.12-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/slim/Dockerfile
-      - name: Alpine
-        releaseName: '3.4'
-        release: 3.4
-        weight: 1
-        image: alpine:3.4
-        tags:
-          - 2.7.12-alpine
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/2.7/wheezy/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         tags:
+          - '2'
+          - '2.7'
           - 2.7.12
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/2.7/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2-slim
+          - 2.7-slim
+          - 2.7.12-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc63f456f57b0537d03ff3362252d40091654c85/2.7/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2-alpine
+          - 2.7-alpine
+          - 2.7.12-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc63f456f57b0537d03ff3362252d40091654c85/2.7/alpine/Dockerfile
 
   - version: 2.7.11
     majorVersion: '2.7'
     prerelease: false
-    date: '2016-06-09T12:08:41'
+    date: '2016-03-08T14:13:39'
     distributionReleases: Alpine, Debian
     distributions:
       - name: Debian
@@ -3143,7 +3835,7 @@
         tags:
           - 2.7.11-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9383f7d4d2f96068e8957651aa3588fee8b48f71/2.7/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/2.7/wheezy/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -3152,7 +3844,16 @@
         tags:
           - 2.7.11-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9383f7d4d2f96068e8957651aa3588fee8b48f71/2.7/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/2.7/slim/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 2.7.11-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/2.7/alpine/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -3161,7 +3862,7 @@
         tags:
           - 2.7.11
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/9383f7d4d2f96068e8957651aa3588fee8b48f71/2.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/2.7/Dockerfile
       - name: Alpine
         releaseName: '3.4'
         release: 3.4
@@ -3175,18 +3876,9 @@
   - version: 2.7.10
     majorVersion: '2.7'
     prerelease: false
-    date: '2015-10-19T11:11:31'
+    date: '2015-06-16T16:22:14'
     distributionReleases: Debian
     distributions:
-      - name: Debian
-        releaseName: 7 (wheezy)
-        release: 7.0
-        weight: 5
-        image: buildpack-deps:wheezy
-        tags:
-          - 2.7.10-wheezy
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/15798abb6cfb145344462a345db4b572227fb859/2.7/wheezy/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -3195,7 +3887,7 @@
         tags:
           - 2.7.10-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/15798abb6cfb145344462a345db4b572227fb859/2.7/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/89890623a062f79d5dd6d8f5e1ecc6d823bff588/2.7/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -3204,23 +3896,23 @@
         tags:
           - 2.7.10
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/15798abb6cfb145344462a345db4b572227fb859/2.7/Dockerfile
-
-  - version: 2.7.9
-    majorVersion: '2.7'
-    prerelease: false
-    date: '2015-05-22T16:50:08'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/89890623a062f79d5dd6d8f5e1ecc6d823bff588/2.7/Dockerfile
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
         weight: 5
         image: buildpack-deps:wheezy
         tags:
-          - 2.7.9-wheezy
+          - 2.7.10-wheezy
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0255766eee048e5e31934b8a230fa513574a0f31/2.7/wheezy/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/7663560df7547e69d13b1b548675502f4e0917d1/2.7/wheezy/Dockerfile
+
+  - version: 2.7.9
+    majorVersion: '2.7'
+    prerelease: false
+    date: '2014-12-11T14:04:38'
+    distributionReleases: Debian
+    distributions:
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -3229,7 +3921,7 @@
         tags:
           - 2.7.9-slim
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0255766eee048e5e31934b8a230fa513574a0f31/2.7/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d550e292eec57e83af58e05410243d387d6483a8/2.7/slim/Dockerfile
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
@@ -3238,7 +3930,16 @@
         tags:
           - 2.7.9
         urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0255766eee048e5e31934b8a230fa513574a0f31/2.7/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d550e292eec57e83af58e05410243d387d6483a8/2.7/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.7.9-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a467ae88510bf64dd4f35253d9a41af3b3cef7b6/2.7/wheezy/Dockerfile
 
   - version: 2.7.8
     majorVersion: '2.7'
@@ -3246,6 +3947,33 @@
     date: '2014-12-02T13:51:11'
     distributionReleases: Debian
     distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - 2.7.8
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fa713180402eeb7bf782d484c510b6c32418b45f/2.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - 2.7.8
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dbe3e241f4c3263a81a888896f5126861807b3db/2.7/Dockerfile
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        tags:
+          - 2.7.8-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c0c674911c50ca3e21ba5379541f70c1b42685b4/2.7/slim/Dockerfile
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
@@ -3255,24 +3983,6 @@
           - 2.7.8-wheezy
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/57be1a3fd72a87419aea35d6aacc873e9de9d447/2.7/wheezy/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        tags:
-          - 2.7.8-slim
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/01d97288839cc467b848dc425138a865568fe25c/2.7/slim/Dockerfile
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        tags:
-          - 2.7.8
-        urlRepository: https://github.com/docker-library/python
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/01d97288839cc467b848dc425138a865568fe25c/2.7/Dockerfile
 
   - version: 2.7.7
     majorVersion: '2.7'
@@ -3289,3 +3999,64 @@
           - 2.7.7
         urlRepository: https://github.com/docker-library/docker-python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/docker-python/771cb8f39dee0850092b978346a8c95ba0d9c273/2/Dockerfile
+
+  - version: '2.7'
+    majorVersion: '2.7'
+    prerelease: false
+    date: '2014-12-02T13:51:11'
+    distributionReleases: Alpine, Debian
+    distributions:
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        tags:
+          - '2.7'
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fa713180402eeb7bf782d484c510b6c32418b45f/2.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        tags:
+          - '2.7'
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/dbe3e241f4c3263a81a888896f5126861807b3db/2.7/Dockerfile
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:jessie
+        tags:
+          - 2.7-slim
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d550e292eec57e83af58e05410243d387d6483a8/2.7/slim/Dockerfile
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        tags:
+          - 2.7-wheezy
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/2.7/wheezy/Dockerfile
+      - name: Alpine
+        releaseName: '3.3'
+        release: 3.3
+        weight: 1
+        image: alpine:3.3
+        tags:
+          - 2.7-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d2b679d44bcfc2cbc2c1f483b1b8c2a6e5452c80/2.7/alpine/Dockerfile
+      - name: Alpine
+        releaseName: '3.4'
+        release: 3.4
+        weight: 1
+        image: alpine:3.4
+        tags:
+          - 2.7-alpine
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/0610d9ccc2dc8ad4ab6038f775e7a28cadf12114/2.7/alpine/Dockerfile

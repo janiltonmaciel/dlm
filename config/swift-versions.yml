@@ -2,8 +2,8 @@
   - version: 5.0.1
     majorVersion: '5.0'
     prerelease: false
-    date: '2019-04-24T13:37:42'
-    distributionReleases: Ubuntu 16.04 (xenial), Ubuntu 18.04 (bionic)
+    date: '2019-04-23T13:41:28'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 18.04 (bionic)
@@ -11,8 +11,6 @@
         weight: 2
         image: ubuntu:18.04
         tags:
-          - '5.0'
-          - 5.0-bionic
           - 5.0.1
           - 5.0.1-bionic
           - bionic
@@ -25,17 +23,45 @@
         weight: 2
         image: ubuntu:16.04
         tags:
-          - 5.0-xenial
           - 5.0.1-xenial
           - xenial
         urlRepository: https://github.com/apple/swift-docker
         urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/0aafffef619fb3b1824c968cbbe2fba4ba41bd26/5.0/ubuntu/16.04/Dockerfile
 
+  - version: '5.0'
+    majorVersion: '5.0'
+    prerelease: false
+    date: '2019-03-27T10:26:37'
+    distributionReleases: Ubuntu
+    distributions:
+      - name: Ubuntu
+        releaseName: 18.04 (bionic)
+        release: 18.04
+        weight: 2
+        image: ubuntu:18.04
+        tags:
+          - '5.0'
+          - 5.0-bionic
+          - bionic
+          - latest
+        urlRepository: https://github.com/apple/swift-docker
+        urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/0d3ffbb7885c8731970fc294be96ce91153840d9/5.0/ubuntu/18.04/Dockerfile
+      - name: Ubuntu
+        releaseName: 16.04 (xenial)
+        release: 16.04
+        weight: 2
+        image: ubuntu:16.04
+        tags:
+          - 5.0-xenial
+          - xenial
+        urlRepository: https://github.com/apple/swift-docker
+        urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/0d3ffbb7885c8731970fc294be96ce91153840d9/5.0/ubuntu/16.04/Dockerfile
+
   - version: 4.2.4
     majorVersion: '4.2'
     prerelease: false
-    date: '2019-04-24T13:37:42'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2019-04-01T10:44:24'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -52,8 +78,8 @@
   - version: 4.2.3
     majorVersion: '4.2'
     prerelease: false
-    date: '2019-04-23T13:41:28'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2019-03-04T10:14:55'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -61,15 +87,20 @@
         weight: 2
         image: ubuntu:16.04
         tags:
+          - '4'
+          - '4.2'
+          - 4.2.1
+          - 4.2.2
           - 4.2.3
+          - latest
         urlRepository: https://github.com/apple/swift-docker
         urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/75dde01ef86e98437b1206c6a58d0428dfb345a4/4.2/ubuntu/16.04/Dockerfile
 
   - version: 4.2.2
     majorVersion: '4.2'
     prerelease: false
-    date: '2019-04-23T13:41:28'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2019-03-04T18:33:39'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -84,8 +115,8 @@
   - version: 4.2.1
     majorVersion: '4.2'
     prerelease: false
-    date: '2019-04-23T13:41:28'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2018-11-08T13:22:59'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -93,15 +124,36 @@
         weight: 2
         image: ubuntu:16.04
         tags:
+          - '4'
+          - '4.2'
           - 4.2.1
-        urlRepository: https://github.com/apple/swift-docker
-        urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/34aa283f9b3473ab22b2282f71773781b121af19/4.2/Dockerfile
+          - latest
+        urlRepository: https://github.com/swiftdocker/docker-swift
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/963f282c4dd242a5f90c909532692dd102420a04/4.2/Dockerfile
+
+  - version: '4.2'
+    majorVersion: '4.2'
+    prerelease: false
+    date: '2018-09-18T19:35:29'
+    distributionReleases: Ubuntu
+    distributions:
+      - name: Ubuntu
+        releaseName: 16.04 (xenial)
+        release: 16.04
+        weight: 2
+        image: ubuntu:16.04
+        tags:
+          - '4'
+          - '4.2'
+          - latest
+        urlRepository: https://github.com/swiftdocker/docker-swift
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/7fbe6bf4018c6853e4996c4f28a8da331ae0de2c/4.2/Dockerfile
 
   - version: 4.1.3
     majorVersion: '4.1'
     prerelease: false
-    date: '2019-04-24T13:37:42'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2018-08-03T11:16:45'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -109,16 +161,74 @@
         weight: 2
         image: ubuntu:16.04
         tags:
+          - '4'
           - '4.1'
           - 4.1.3
-        urlRepository: https://github.com/apple/swift-docker
-        urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile
+          - latest
+        urlRepository: https://github.com/swiftdocker/docker-swift
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/3fa417a500b6dc45f2588a2e1cf7d24c147a4581/4.1/Dockerfile
+
+  - version: '4.1'
+    majorVersion: '4.1'
+    prerelease: false
+    date: '2018-04-06T19:59:37'
+    distributionReleases: Ubuntu
+    distributions:
+      - name: Ubuntu
+        releaseName: 16.04 (xenial)
+        release: 16.04
+        weight: 2
+        image: ubuntu:16.04
+        tags:
+          - '4'
+          - '4.1'
+          - latest
+        urlRepository: https://github.com/swiftdocker/docker-swift
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/49f192d9218dbbc6438224ccc776e21b08e5dabe/4.1/Dockerfile
 
   - version: 4.0.3
     majorVersion: '4.0'
     prerelease: false
-    date: '2019-04-24T13:37:42'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2017-12-11T10:05:53'
+    distributionReleases: Ubuntu
+    distributions:
+      - name: Ubuntu
+        releaseName: 16.04 (xenial)
+        release: 16.04
+        weight: 2
+        image: ubuntu:16.04
+        tags:
+          - '4'
+          - '4.0'
+          - 4.0.3
+          - latest
+        urlRepository: https://github.com/swiftdocker/docker-swift
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/bc8cb3032ffd6a05d3eddf9cf885139277c11642/4.0/Dockerfile
+
+  - version: 4.0.2
+    majorVersion: '4.0'
+    prerelease: false
+    date: '2017-11-10T17:30:30'
+    distributionReleases: Ubuntu
+    distributions:
+      - name: Ubuntu
+        releaseName: 16.04 (xenial)
+        release: 16.04
+        weight: 2
+        image: ubuntu:16.04
+        tags:
+          - '4'
+          - '4.0'
+          - 4.0.2
+          - latest
+        urlRepository: https://github.com/swiftdocker/docker-swift
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/5c83628d4696bca62aec3136a4ee9b854e8d548e/4.0/Dockerfile
+
+  - version: '4.0'
+    majorVersion: '4.0'
+    prerelease: false
+    date: '2017-09-22T10:47:50'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -127,31 +237,15 @@
         image: ubuntu:16.04
         tags:
           - '4.0'
-          - 4.0.3
-        urlRepository: https://github.com/apple/swift-docker
-        urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/34aa283f9b3473ab22b2282f71773781b121af19/4.0/Dockerfile
-
-  - version: 4.0.2
-    majorVersion: '4.0'
-    prerelease: false
-    date: '2017-11-10T17:30:30'
-    distributionReleases: Ubuntu 16.04 (xenial)
-    distributions:
-      - name: Ubuntu
-        releaseName: 16.04 (xenial)
-        release: 16.04
-        weight: 2
-        image: ubuntu:16.04
-        tags:
-          - 4.0.2
+          - latest
         urlRepository: https://github.com/swiftdocker/docker-swift
-        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/5c83628d4696bca62aec3136a4ee9b854e8d548e/4.0/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/545b8629ffe1f9785298203cf1382711cc2ac302/Dockerfile
 
   - version: 3.1.1
     majorVersion: '3.1'
     prerelease: false
-    date: '2019-04-24T13:37:42'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2017-12-11T10:05:53'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -162,14 +256,14 @@
           - '3'
           - '3.1'
           - 3.1.1
-        urlRepository: https://github.com/apple/swift-docker
-        urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/34aa283f9b3473ab22b2282f71773781b121af19/3.1/Dockerfile
+        urlRepository: https://github.com/swiftdocker/docker-swift
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/bc8cb3032ffd6a05d3eddf9cf885139277c11642/3.1/Dockerfile
 
   - version: 3.1.0
     majorVersion: '3.1'
     prerelease: false
-    date: '2017-10-03T16:52:47'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2017-03-28T16:51:31'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -177,15 +271,18 @@
         weight: 2
         image: ubuntu:16.04
         tags:
+          - '3'
+          - '3.1'
           - 3.1.0
+          - latest
         urlRepository: https://github.com/swiftdocker/docker-swift
-        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/ef9aa534705fc8ab4258c539f6304072ebae9613//Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/ef9aa534705fc8ab4258c539f6304072ebae9613/Dockerfile
 
   - version: 3.0.2
     majorVersion: '3.0'
     prerelease: false
-    date: '2017-10-03T16:52:47'
-    distributionReleases: Ubuntu 16.04 (xenial)
+    date: '2016-12-31T15:24:27'
+    distributionReleases: Ubuntu
     distributions:
       - name: Ubuntu
         releaseName: 16.04 (xenial)
@@ -193,7 +290,9 @@
         weight: 2
         image: ubuntu:16.04
         tags:
+          - '3'
           - '3.0'
           - 3.0.2
+          - latest
         urlRepository: https://github.com/swiftdocker/docker-swift
-        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/94a43272fe6411c12045414cfc797d3c0bcf2823//Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/swiftdocker/docker-swift/cc3654e99ab82f21fd7ab8a427932e19f433d8ee/Dockerfile

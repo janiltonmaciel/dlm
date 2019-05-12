@@ -8,6 +8,7 @@ import (
 )
 
 func init() {
+	loadDistributionConfig()
 	languageConfig := loadLanguageConfig()
 	setLanguages(languageConfig)
 	setVersions(languageChoices)
@@ -26,48 +27,10 @@ const (
 	LangNode = "NODE"
 )
 
-var (
-	languageChoices map[string]Language
-	languages       []string
-
-	DistributionBuild = map[string]map[string][]string{
-		DistroDebian: {
-			"Before": []string{
-				"# DISABLE GPG IPV6",
-				"RUN mkdir ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf",
-			},
-			"After": []string{
-				`RUN apt-get update && apt-get install -y --no-install-recommends bash \
-				&& rm -rf /var/lib/apt/lists/*`,
-			},
-		},
-
-		DistroUbuntu: {
-			"Before": []string{},
-			"After":  []string{},
-		},
-
-		DistroAlpine: {
-			"Before": []string{},
-			"After":  []string{},
-		},
-	}
-
-	LanguageBuild = map[string]map[string][]string{
-		LangNode: {
-			"Before": []string{
-				"ENV PATH node_modules/.bin:$PATH",
-			},
-			"After": []string{},
-		},
-	}
-)
-
 type (
 	Config interface {
 		Parse(data []byte) error
 	}
-
 	Block struct {
 		Description string
 		Data        string
@@ -113,8 +76,47 @@ type (
 		Distributions        []Distribution `yaml:"distributions"`
 	}
 
-	LanguageConfig []Language
-	VersionConfig  []Version
+	LanguageConfig     []Language
+	VersionConfig      []Version
+	DistributionConfig []Distribution
+)
+
+var (
+	languageChoices map[string]Language
+	languages       []string
+	distributions   []Distribution
+
+	DistributionBuild = map[string]map[string][]string{
+		DistroDebian: {
+			"Before": []string{
+				"# DISABLE GPG IPV6",
+				"RUN mkdir ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf",
+			},
+			"After": []string{
+				`RUN apt-get update && apt-get install -y --no-install-recommends bash \
+				&& rm -rf /var/lib/apt/lists/*`,
+			},
+		},
+
+		DistroUbuntu: {
+			"Before": []string{},
+			"After":  []string{},
+		},
+
+		DistroAlpine: {
+			"Before": []string{},
+			"After":  []string{},
+		},
+	}
+
+	LanguageBuild = map[string]map[string][]string{
+		LangNode: {
+			"Before": []string{
+				"ENV PATH node_modules/.bin:$PATH",
+			},
+			"After": []string{},
+		},
+	}
 )
 
 func (lc *LanguageConfig) Parse(data []byte) error {
@@ -123,6 +125,10 @@ func (lc *LanguageConfig) Parse(data []byte) error {
 
 func (vc *VersionConfig) Parse(data []byte) error {
 	return yaml.Unmarshal(data, vc)
+}
+
+func (dc *DistributionConfig) Parse(data []byte) error {
+	return yaml.Unmarshal(data, dc)
 }
 
 func (d Distribution) Description(languageName string) string {
@@ -185,6 +191,9 @@ func getLanguageBuild(languageName string) map[string][]string {
 func GetLanguages() []string {
 	return languages
 }
+func GetDistributions() []Distribution {
+	return distributions
+}
 
 func GetLanguage(name string) *Language {
 	if lang, found := languageChoices[strings.ToLower(name)]; found {
@@ -208,6 +217,12 @@ func loadConfig(fileName string, config Config) {
 	if err := config.Parse(data); err != nil {
 		panic(err)
 	}
+}
+
+func loadDistributionConfig() {
+	var dc DistributionConfig
+	loadConfig("distributions.yml", &dc)
+	distributions = dc
 }
 
 func setLanguages(config LanguageConfig) {

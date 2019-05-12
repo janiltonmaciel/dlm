@@ -41,24 +41,26 @@ func (this create) Action(c *cli.Context) error {
 		return err
 	}
 
-	distributions, distribution := this.distributionLanguage(answersVersions, answerDistro, c)
+	this.distributionLanguage(answersVersions, answerDistro, c)
 
-	context := core.NewContext(distribution.Name)
-	context.From = distribution.Image
-	for languageName, distro := range distributions {
-		data, err := core.SanitizeDockerfile(distro.UrlDockerfile)
-		if err != nil {
-			return err
-		}
-		block := core.NewBlock(languageName, distro, data)
-		context.Blocks = append(context.Blocks, block)
-	}
+	// distributions, distribution := this.distributionLanguage(answersVersions, answerDistro, c)
 
-	contentDockerfile := core.ParseTemplate(context)
-	if contentDockerfile == "" {
-		return nil
-	}
-	this.saveDockerfile(contentDockerfile)
+	// context := core.NewContext(distribution.Name)
+	// context.From = distribution.Image
+	// for _, distro := range distributions {
+	// 	data, err := core.SanitizeDockerfile(distro.UrlDockerfile)
+	// 	if err != nil {
+	// 		return err
+	// 	}
+	// 	block := core.NewBlock("LANG", distro, data)
+	// 	context.Blocks = append(context.Blocks, block)
+	// }
+
+	// contentDockerfile := core.ParseTemplate(context)
+	// if contentDockerfile == "" {
+	// 	return nil
+	// }
+	// this.saveDockerfile(contentDockerfile)
 
 	// ExtraLibs := "tar make git ca-certificates curl openssh"
 	// libs := ""
@@ -73,33 +75,189 @@ func (this create) Action(c *cli.Context) error {
 	return nil
 }
 
-func (this create) distributionLanguage(answersVersions []core.AnswerVersion, answerDistro string, c *cli.Context) (map[string]core.Distribution, core.Distribution) {
+func IntersectionRelease(a, b []core.Distribution, answerDistro string) (c []core.Distribution) {
+	m := make(map[float32]core.Distribution)
+	for _, itemA := range a {
+		if strings.ToLower(itemA.Name) != answerDistro {
+			continue
+		}
+		// fmt.Printf("A: Release: %f - image: %s - rep: %s \n", itemA.Release, itemA.Image, itemA.UrlRepository)
+		if item, ok := m[itemA.Release]; ok {
+			if itemA.Weight < item.Weight {
+				m[itemA.Release] = itemA
+			}
+		} else {
+			m[itemA.Release] = itemA
+		}
+	}
+	println()
+	for r, v := range m {
+		fmt.Printf("A: Release: %f - image: %s - rep: %s \n", r, v.Image, v.UrlRepository)
+	}
+	println()
 
-	distros := make(map[string]core.Distribution)
-	for _, av := range answersVersions {
-		for _, distro := range av.Version.Distributions {
-			if strings.ToLower(distro.Name) == answerDistro {
-				if d, found := distros[av.Language.Name]; found {
-					if distro.Release > d.Release {
-						distros[av.Language.Name] = distro
-					}
-				} else {
-					distros[av.Language.Name] = distro
+	m2 := make(map[float32][]core.Distribution)
+	for _, itemB := range b {
+		fmt.Printf("B: Release: %f - image: %s - rep: %s \n", itemB.Release, itemB.Image, itemB.UrlRepository)
+		if itemA, ok := m[itemB.Release]; ok && strings.ToLower(itemB.Name) == answerDistro {
+			if item, ok := m2[itemA.Release]; ok {
+				if itemB.Weight < item[0].Weight {
+					item[0] = itemB
 				}
+			} else {
+				m2[itemA.Release] = []core.Distribution{itemB, itemA}
 			}
 		}
 	}
+	for _, v := range m2 {
+		c = append(c, v...)
+	}
+
+	return
+}
+
+func IntersectionImage(a, b []core.Distribution, answerDistro string) (c []core.Distribution) {
+	m := make(map[string]core.Distribution)
+	for _, item := range a {
+		m[item.Image] = item
+	}
+
+	for _, item := range b {
+		if _, ok := m[item.Image]; ok && strings.ToLower(item.Name) == answerDistro {
+			c = append(c, item)
+		}
+	}
+	return
+}
+
+func distributionLight(distros []core.Distribution, answerDistro string) (distribution core.Distribution) {
+	for _, distro := range distros {
+		if strings.ToLower(distro.Name) == answerDistro {
+			if distribution.Name == "" ||
+				(distro.Release >= distribution.Release && distro.Weight <= distribution.Weight) {
+				distribution = distro
+			}
+		}
+	}
+	return
+}
+
+func Filter(answersVersions []core.AnswerVersion, answerDistro string,
+	functionFilter func(a, b []core.Distribution, answerDistro string) (c []core.Distribution)) []core.Distribution {
+
+	var distributions []core.Distribution
+	tam := len(answersVersions)
+	if tam == 1 {
+		distributions = answersVersions[0].Version.Distributions
+	} else {
+		distributions = functionFilter(
+			answersVersions[0].Version.Distributions,
+			answersVersions[1].Version.Distributions,
+			answerDistro,
+		)
+		// printDistros(distributions)
+		for i := 2; i < tam; i++ {
+			distributions = functionFilter(
+				distributions,
+				answersVersions[i].Version.Distributions,
+				answerDistro,
+			)
+		}
+	}
+	return distributions
+}
+
+func printDistros(distros []core.Distribution) {
+	println()
+	for _, distro := range distros {
+		fmt.Printf("Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", distro.Image, distro.UrlDockerfile, distro.Release, distro.Weight)
+	}
+}
+
+func printDistro(distro core.Distribution) {
+	println()
+	fmt.Printf("FROM %s\n", distro.Image)
+}
+
+func FilterByImage(answersVersions []core.AnswerVersion, answerDistro string) (distros []core.Distribution, distribution core.Distribution) {
+	distrosImage := Filter(answersVersions, answerDistro, IntersectionImage)
+	if len(distrosImage) < 0 {
+		return
+	}
+
+	distribution = distributionLight(distrosImage, answerDistro)
+
+	distros = make([]core.Distribution, 0)
+	for _, av := range answersVersions {
+		for _, distro := range av.Version.Distributions {
+			if distro.Image == distribution.Image {
+				distros = append(distros, distro)
+				break
+			}
+		}
+	}
+	return
+}
+
+func FilterByRelease(answersVersions []core.AnswerVersion, answerDistro string) (distros []core.Distribution, distribution core.Distribution) {
+	distrosImage := Filter(answersVersions, answerDistro, IntersectionRelease)
+	printDistros(distrosImage)
+	if len(distrosImage) < 0 {
+		return
+	}
+	return
+}
+
+func (this create) distributionLanguage(answersVersions []core.AnswerVersion, answerDistro string, c *cli.Context) ([]core.Distribution, core.Distribution) {
+	distros, distribution := FilterByImage(answersVersions, answerDistro)
+	if len(distros) > 0 {
+		printDistro(distribution)
+		printDistros(distros)
+		return distros, distribution
+	}
+	println("VAZIO: FilterByImage")
+
+	distros, distribution = FilterByRelease(answersVersions, answerDistro)
+	if len(distros) > 0 {
+		printDistro(distribution)
+		printDistros(distros)
+		return distros, distribution
+	}
+	println("VAZIO: FilterByRelease")
+
+	return nil, core.Distribution{}
+
+	// distros := make(map[string][]core.Distribution)
+	// for _, av := range answersVersions {
+	// 	for _, distro := range av.Version.Distributions {
+	// 		if strings.ToLower(distro.Name) == answerDistro {
+	// 			if d, found := distros[av.Language.Name]; found {
+	// 				distros[av.Language.Name] = append(d, distro)
+	// 			} else {
+	// 				d := make([]core.Distribution, 0)
+	// 				distros[av.Language.Name] = append(d, distro)
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// for _, distro := range distros {
+	// 	if distribution.Name == "" || (distro.Release <= distribution.Release && distro.Weight > distribution.Weight) ||
+	// 		(distro.Release > distribution.Release && distro.Weight >= distribution.Weight) {
+	// 		distribution = distro
+	// 	}
+	// }
 
 	// # buildpack-deps:stretch > buildpack-deps:stretch-scm > buildpack-deps:stretch-curl > debian:stretch > debian:stretch-slim
 
-	var distribution core.Distribution
-	for _, distro := range distros {
-		if distribution.Name == "" || (distro.Release <= distribution.Release && distro.Weight > distribution.Weight) ||
-			(distro.Release > distribution.Release && distro.Weight >= distribution.Weight) {
-			distribution = distro
-		}
-	}
-	return distros, distribution
+	// var distribution core.Distribution
+	// for _, distro := range distros {
+	// 	if distribution.Name == "" || (distro.Release <= distribution.Release && distro.Weight > distribution.Weight) ||
+	// 		(distro.Release > distribution.Release && distro.Weight >= distribution.Weight) {
+	// 		distribution = distro
+	// 	}
+	// }
+	// return distros, distribution
 }
 
 func (this create) languagesQuestion(c *cli.Context) (answersLanguages []core.Language, err error) {
@@ -130,9 +288,21 @@ func (this create) versionsQuestion(answersLanguages []core.Language, c *cli.Con
 			strings.ToLower(language.Name),
 			strings.ToLower(language.Name),
 		)
+
+		valueDefault := ""
+		switch strings.ToLower(language.Name) {
+		case "node":
+			valueDefault = "12.2.0"
+			// valueDefault = "11.4.0"
+
+		case "python":
+			valueDefault = "3.7.0a2"
+		}
+
 		prompt := &survey.Input{
 			Message: fmt.Sprintf("Docker %s version:", color.FgGreen.Render(language.Name)),
 			Help:    help,
+			Default: valueDefault,
 		}
 
 		version = ""

@@ -1,5 +1,76 @@
+
+  - name: Ubuntu
+    release_name: 19.04 (disco)
+    release: 19.04
+
+  - name: Ubuntu
+    release_name: 18.10 (cosmic)
+    release: 18.1
+
+  - name: Ubuntu
+    release_name: 18.04 (bionic)
+    release: 18.04
+
+  - name: Ubuntu
+    release_name: 16.04 (xenial)
+    release: 16.04
+
+  - name: Ubuntu
+    release_name: 14.04 (trusty)
+    release: 14.04
+
   - name: Debian
-    releaseName: 9 (stretch)
-    release: 9.0
-    weight: 4
-    image: buildpack-deps:stretch-scm
+    release_name: 10 (buster)
+    release: 10
+
+  - name: Debian
+    release_name: 9 (stretch)
+    release: 9
+
+  - name: Debian
+    release_name: 8 (jessie)
+    release: 8
+
+  - name: Debian
+    release_name: 7 (wheezy)
+    release: 7
+
+  - name: Debian
+    release_name: 6 (squeeze)
+    release: 6
+
+  - name: Alpine
+    release_name: '4.0'
+    release: 4.0
+
+  - name: Alpine
+    release_name: '3.9'
+    release: 3.9
+
+  - name: Alpine
+    release_name: '3.8'
+    release: 3.8
+
+  - name: Alpine
+    release_name: '3.7'
+    release: 3.7
+
+  - name: Alpine
+    release_name: '3.6'
+    release: 3.6
+
+  - name: Alpine
+    release_name: '3.5'
+    release: 3.5
+
+  - name: Alpine
+    release_name: '3.4'
+    release: 3.4
+
+  - name: Alpine
+    release_name: '3.3'
+    release: 3.3
+
+  - name: Alpine
+    release_name: '3.2'
+    release: 3.2

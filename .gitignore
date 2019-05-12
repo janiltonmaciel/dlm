@@ -6,4 +6,4 @@ vendor
 dockerfile-gen
 dockerfile-gen-*.tar.gz
 dist/
-
+tmp/
