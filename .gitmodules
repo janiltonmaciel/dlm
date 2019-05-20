@@ -1,0 +1,6 @@
+[submodule "dobi-gen"]
+	path = dobi-gen
+	url = git@gitlab.com:janiltonmaciel/dobi-gen.git
+[submodule "official-images"]
+	path = official-images
+	url = https://github.com/docker-library/official-images.git
