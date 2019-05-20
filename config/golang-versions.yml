@@ -20,7 +20,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: golang:1.12rc1-alpine
+        imageRepository: golang:1.12rc1-alpine3.9
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/d9eeb1f6fa4d19f63dc1e845c01442738f22320f/1.12-rc/alpine3.9/Dockerfile
 
@@ -188,7 +188,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: golang:1.12.2-alpine
+        imageRepository: golang:1.12.2-alpine3.9
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/alpine3.9/Dockerfile
 
@@ -213,7 +213,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: golang:1.12.1-alpine
+        imageRepository: golang:1.12.1-alpine3.9
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/fd272b2b72db82a0bd516ce3d09bba624651516c/1.12/alpine3.9/Dockerfile
 
@@ -288,7 +288,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11rc1-alpine
+        imageRepository: golang:1.11rc1-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/fd09bcfba2f2ec52318834df502b1a1907fa04f5/1.11-rc/alpine3.8/Dockerfile
 
@@ -365,7 +365,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11beta2-alpine
+        imageRepository: golang:1.11beta2-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/9d80ad8bdf0abe15bdd3fbc77f92b17e69fe9284/1.11-rc/alpine3.8/Dockerfile
 
@@ -390,7 +390,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11beta1-alpine
+        imageRepository: golang:1.11beta1-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/b7a4a48a142ef2ada9c5794ba054fd008656c779/1.11-rc/alpine3.8/Dockerfile
 
@@ -467,7 +467,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: golang:1.11.9-alpine
+        imageRepository: golang:1.11.9-alpine3.9
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/631c9d2f3a2c2bbfa77cbc0b8824890ca7ab7bac/1.11/alpine3.9/Dockerfile
 
@@ -569,7 +569,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: golang:1.11.6-alpine
+        imageRepository: golang:1.11.6-alpine3.9
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/3d4a6797603e2688369b556f61a29a470055a164/1.11/alpine3.9/Dockerfile
 
@@ -612,7 +612,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11.5-alpine
+        imageRepository: golang:1.11.5-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/2e795f515357c575359f0720acaf7f5490f8bcf5/1.11/alpine3.8/Dockerfile
 
@@ -646,7 +646,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11.4-alpine
+        imageRepository: golang:1.11.4-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/304174c7c604cbb7dd445ab58f479efe98f3bbf4/1.11/alpine3.8/Dockerfile
 
@@ -680,7 +680,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11.3-alpine
+        imageRepository: golang:1.11.3-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/b55a09cd54a0e1ecb2f4ea00764c07be6511d522/1.11/alpine3.8/Dockerfile
 
@@ -714,7 +714,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11.2-alpine
+        imageRepository: golang:1.11.2-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/f441baf15c3e7397c2c3f6f712b4d4ba374f1948/1.11/alpine3.8/Dockerfile
 
@@ -748,7 +748,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11.1-alpine
+        imageRepository: golang:1.11.1-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/ed78459fac108dab72556146b759516cc65ee109/1.11/alpine3.8/Dockerfile
 
@@ -782,7 +782,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.11.0-alpine
+        imageRepository: golang:1.11.0-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/e06b00cbe4974436ee00eaec215d7fbb123cbc24/1.11/alpine3.8/Dockerfile
 
@@ -816,7 +816,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: golang:1.10rc2-alpine
+        imageRepository: golang:1.10rc2-alpine3.7
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/75759d6b5bea61ea8347069221f2b03a48ee3f88/1.10-rc/alpine3.7/Dockerfile
 
@@ -841,7 +841,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: golang:1.10rc1-alpine
+        imageRepository: golang:1.10rc1-alpine3.7
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/ddb3ecbe839dfc9d6a3e321fec5ba41284201cec/1.10-rc/alpine3.7/Dockerfile
 
@@ -959,7 +959,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.10.7-alpine
+        imageRepository: golang:1.10.7-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/592ba6d666abe8698b915749723498451060a919/1.10/alpine3.8/Dockerfile
 
@@ -993,7 +993,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: golang:1.10.6-alpine
+        imageRepository: golang:1.10.6-alpine3.8
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/f422f45cf334bc50a286047f4afb9c03de8ea325/1.10/alpine3.8/Dockerfile
 
@@ -1179,7 +1179,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: golang:1.10.0-alpine
+        imageRepository: golang:1.10.0-alpine3.7
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/9bf6daddb324a4d8e82b0613cf348a6eff363f95/1.10/alpine3.7/Dockerfile
 
@@ -1195,7 +1195,7 @@
         release: 9.0
         weight: 4
         image: buildpack-deps:stretch-scm
-        imageRepository: golang:1.9rc2
+        imageRepository: golang:1.9rc2-stretch
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/cf5669b0a1d3411c32896075bfabebafda12adbf/1.9-rc/stretch/Dockerfile
 
@@ -1204,7 +1204,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: golang:1.9rc2-alpine
+        imageRepository: golang:1.9rc2-alpine3.6
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/cf5669b0a1d3411c32896075bfabebafda12adbf/1.9-rc/alpine3.6/Dockerfile
 
@@ -1229,7 +1229,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: golang:1.9rc1-alpine
+        imageRepository: golang:1.9rc1-alpine3.6
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/347de3fe79db411821e841f782c156f6fe1d9704/1.9-rc/alpine3.6/Dockerfile
 
@@ -1390,7 +1390,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: golang:1.9.5-alpine
+        imageRepository: golang:1.9.5-alpine3.6
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/97535d47a7c8312b25fc98418771f943c0bbdfb3/1.9/alpine3.6/Dockerfile
 
@@ -1424,7 +1424,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: golang:1.9.4-alpine
+        imageRepository: golang:1.9.4-alpine3.6
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/366fe83ed839938cd04b2d546a06e2aee25a39a2/1.9/alpine3.6/Dockerfile
 
@@ -1483,7 +1483,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: golang:1.9.2-alpine
+        imageRepository: golang:1.9.2-alpine3.6
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/alpine3.6/Dockerfile
 
@@ -1517,7 +1517,7 @@
         release: 9.0
         weight: 4
         image: buildpack-deps:stretch-scm
-        imageRepository: golang:1.9.1
+        imageRepository: golang:1.9.1-stretch
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/221ee92559f2963c1fe55646d3516f5b8f4c91a4/1.9/stretch/Dockerfile
 
@@ -1533,7 +1533,7 @@
         release: 9.0
         weight: 4
         image: buildpack-deps:stretch-scm
-        imageRepository: golang:1.9.0
+        imageRepository: golang:1.9.0-stretch
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/f34c645c8402bd8f6b70f530545ad7845dfefbcc/1.9/stretch/Dockerfile
 
@@ -1859,7 +1859,7 @@
         release: 3.5
         weight: 1
         image: alpine:3.5
-        imageRepository: golang:1.8.5-alpine
+        imageRepository: golang:1.8.5-alpine3.5
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/alpine3.5/Dockerfile
 
@@ -1893,7 +1893,7 @@
         release: 8.0
         weight: 4
         image: buildpack-deps:jessie-scm
-        imageRepository: golang:1.8.4
+        imageRepository: golang:1.8.4-jessie
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/1116b4262228428be20d7e9413ad277c716adb16/1.8/jessie/Dockerfile
 
@@ -1902,7 +1902,7 @@
         release: 3.5
         weight: 1
         image: alpine:3.5
-        imageRepository: golang:1.8.4-alpine
+        imageRepository: golang:1.8.4-alpine3.5
         urlRepository: https://github.com/docker-library/golang
         urlDockerfile: https://raw.githubusercontent.com/docker-library/golang/1116b4262228428be20d7e9413ad277c716adb16/1.8/alpine3.5/Dockerfile
 

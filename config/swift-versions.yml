@@ -11,7 +11,7 @@
         release: 18.04
         weight: 2
         image: ubuntu:18.04
-        imageRepository: swift:5.0.1
+        imageRepository: swift:5.0.1-bionic
         urlRepository: https://github.com/apple/swift-docker
         urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/0aafffef619fb3b1824c968cbbe2fba4ba41bd26/5.0/ubuntu/18.04/Dockerfile
 
@@ -36,7 +36,7 @@
         release: 18.04
         weight: 2
         image: ubuntu:18.04
-        imageRepository: swift:5.0
+        imageRepository: swift:5.0-bionic
         urlRepository: https://github.com/apple/swift-docker
         urlDockerfile: https://raw.githubusercontent.com/apple/swift-docker/0d3ffbb7885c8731970fc294be96ce91153840d9/5.0/ubuntu/18.04/Dockerfile
 
@@ -68,7 +68,7 @@
   - version: 4.2.3
     majorVersion: '4.2'
     prerelease: false
-    date: '2019-03-04T10:14:55'
+    date: '2019-03-04T18:33:39'
     distributionReleases: Ubuntu
     distributions:
 

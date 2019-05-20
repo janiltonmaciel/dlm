@@ -45,7 +45,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.5-fpm
+        imageRepository: php:7.3.5-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/85b2af63546309c3c7b895524db10ef02aa4edba/7.3/stretch/fpm/Dockerfile
 
@@ -54,7 +54,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.3.5-fpm-alpine
+        imageRepository: php:7.3.5-fpm-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/85b2af63546309c3c7b895524db10ef02aa4edba/7.3/alpine3.9/fpm/Dockerfile
 
@@ -79,7 +79,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.5-cli
+        imageRepository: php:7.3.5-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/85b2af63546309c3c7b895524db10ef02aa4edba/7.3/stretch/cli/Dockerfile
 
@@ -88,7 +88,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.3.5-cli-alpine
+        imageRepository: php:7.3.5-cli-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/85b2af63546309c3c7b895524db10ef02aa4edba/7.3/alpine3.9/cli/Dockerfile
 
@@ -113,7 +113,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.5-apache
+        imageRepository: php:7.3.5-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/85b2af63546309c3c7b895524db10ef02aa4edba/7.3/stretch/apache/Dockerfile
 
@@ -197,7 +197,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.4-cli
+        imageRepository: php:7.3.4-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a5c895da277a71578af9561b0e282e6cb0764434/7.3/stretch/cli/Dockerfile
 
@@ -231,7 +231,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.4-apache
+        imageRepository: php:7.3.4-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a5c895da277a71578af9561b0e282e6cb0764434/7.3/stretch/apache/Dockerfile
 
@@ -290,7 +290,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.3.3-fpm-alpine
+        imageRepository: php:7.3.3-fpm-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/bb16de8a711d1ba1dc76adf4665b3b1c06a06922/7.3/alpine3.9/fpm/Dockerfile
 
@@ -315,7 +315,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.3-cli
+        imageRepository: php:7.3.3-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/bb16de8a711d1ba1dc76adf4665b3b1c06a06922/7.3/stretch/cli/Dockerfile
 
@@ -365,7 +365,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.2-zts
+        imageRepository: php:7.3.2-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.3/stretch/zts/Dockerfile
 
@@ -374,7 +374,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.3.2-zts-alpine
+        imageRepository: php:7.3.2-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.3/alpine3.9/zts/Dockerfile
 
@@ -399,7 +399,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.2-fpm
+        imageRepository: php:7.3.2-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.3/stretch/fpm/Dockerfile
 
@@ -492,7 +492,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.3.1-zts-alpine
+        imageRepository: php:7.3.1-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.3/alpine3.8/zts/Dockerfile
 
@@ -501,7 +501,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.3.1-zts-alpine
+        imageRepository: php:7.3.1-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/90beb19f3889260f6f622012218e33bd643f08a9/7.3/alpine3.9/zts/Dockerfile
 
@@ -535,7 +535,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.3.1-fpm-alpine
+        imageRepository: php:7.3.1-fpm-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/90beb19f3889260f6f622012218e33bd643f08a9/7.3/alpine3.9/fpm/Dockerfile
 
@@ -551,7 +551,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.1-cli
+        imageRepository: php:7.3.1-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.3/stretch/cli/Dockerfile
 
@@ -560,7 +560,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.3.1-cli-alpine
+        imageRepository: php:7.3.1-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.3/alpine3.8/cli/Dockerfile
 
@@ -635,7 +635,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.3.0-fpm-alpine
+        imageRepository: php:7.3.0-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a280ab8e8790052338ce59a1fee739df8f831f16/7.3/alpine3.8/fpm/Dockerfile
 
@@ -651,7 +651,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.3.0-cli
+        imageRepository: php:7.3.0-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a280ab8e8790052338ce59a1fee739df8f831f16/7.3/stretch/cli/Dockerfile
 
@@ -660,7 +660,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.3.0-cli-alpine
+        imageRepository: php:7.3.0-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a280ab8e8790052338ce59a1fee739df8f831f16/7.3/alpine3.8/cli/Dockerfile
 
@@ -701,7 +701,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.18-zts-alpine
+        imageRepository: php:7.2.18-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d9352e08aa39f699cfedb2b564aeb60955b06469/7.2/alpine3.9/zts/Dockerfile
 
@@ -735,7 +735,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.18-fpm-alpine
+        imageRepository: php:7.2.18-fpm-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d9352e08aa39f699cfedb2b564aeb60955b06469/7.2/alpine3.9/fpm/Dockerfile
 
@@ -760,7 +760,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.18-cli
+        imageRepository: php:7.2.18-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d9352e08aa39f699cfedb2b564aeb60955b06469/7.2/stretch/cli/Dockerfile
 
@@ -794,7 +794,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.18-apache
+        imageRepository: php:7.2.18-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d9352e08aa39f699cfedb2b564aeb60955b06469/7.2/stretch/apache/Dockerfile
 
@@ -853,7 +853,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.17-fpm-alpine
+        imageRepository: php:7.2.17-fpm-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cf02ea0f79cf7cff3853f6d4254b95b65d44cc12/7.2/alpine3.9/fpm/Dockerfile
 
@@ -878,7 +878,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.17-cli
+        imageRepository: php:7.2.17-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cf02ea0f79cf7cff3853f6d4254b95b65d44cc12/7.2/stretch/cli/Dockerfile
 
@@ -887,7 +887,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.17-cli-alpine
+        imageRepository: php:7.2.17-cli-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cf02ea0f79cf7cff3853f6d4254b95b65d44cc12/7.2/alpine3.9/cli/Dockerfile
 
@@ -928,7 +928,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.16-zts
+        imageRepository: php:7.2.16-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/873725e57ec2fc5f2642dc0023676597bcc4bea9/7.2/stretch/zts/Dockerfile
 
@@ -937,7 +937,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.16-zts-alpine
+        imageRepository: php:7.2.16-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/873725e57ec2fc5f2642dc0023676597bcc4bea9/7.2/alpine3.9/zts/Dockerfile
 
@@ -962,7 +962,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.16-fpm
+        imageRepository: php:7.2.16-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/873725e57ec2fc5f2642dc0023676597bcc4bea9/7.2/stretch/fpm/Dockerfile
 
@@ -1005,7 +1005,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.16-cli-alpine
+        imageRepository: php:7.2.16-cli-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/873725e57ec2fc5f2642dc0023676597bcc4bea9/7.2/alpine3.9/cli/Dockerfile
 
@@ -1046,7 +1046,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.15-zts
+        imageRepository: php:7.2.15-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.2/stretch/zts/Dockerfile
 
@@ -1055,7 +1055,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.15-zts-alpine
+        imageRepository: php:7.2.15-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.2/alpine3.9/zts/Dockerfile
 
@@ -1080,7 +1080,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.15-fpm
+        imageRepository: php:7.2.15-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.2/stretch/fpm/Dockerfile
 
@@ -1114,7 +1114,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.15-cli
+        imageRepository: php:7.2.15-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.2/stretch/cli/Dockerfile
 
@@ -1148,7 +1148,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.15-apache
+        imageRepository: php:7.2.15-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.2/stretch/apache/Dockerfile
 
@@ -1173,7 +1173,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.14-zts-alpine
+        imageRepository: php:7.2.14-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.2/alpine3.8/zts/Dockerfile
 
@@ -1182,7 +1182,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.2.14-zts-alpine
+        imageRepository: php:7.2.14-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/90beb19f3889260f6f622012218e33bd643f08a9/7.2/alpine3.9/zts/Dockerfile
 
@@ -1198,7 +1198,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.14-fpm
+        imageRepository: php:7.2.14-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.2/stretch/fpm/Dockerfile
 
@@ -1207,7 +1207,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.14-fpm-alpine
+        imageRepository: php:7.2.14-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.2/alpine3.8/fpm/Dockerfile
 
@@ -1241,7 +1241,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.14-cli-alpine
+        imageRepository: php:7.2.14-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.2/alpine3.8/cli/Dockerfile
 
@@ -1266,7 +1266,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.14-apache
+        imageRepository: php:7.2.14-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.2/stretch/apache/Dockerfile
 
@@ -1282,7 +1282,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.13-zts
+        imageRepository: php:7.2.13-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c88c3d52f41a370f3a62e3ded62b7b223b4cb846/7.2/stretch/zts/Dockerfile
 
@@ -1291,7 +1291,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.13-zts-alpine
+        imageRepository: php:7.2.13-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c88c3d52f41a370f3a62e3ded62b7b223b4cb846/7.2/alpine3.8/zts/Dockerfile
 
@@ -1332,7 +1332,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.13-cli
+        imageRepository: php:7.2.13-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c88c3d52f41a370f3a62e3ded62b7b223b4cb846/7.2/stretch/cli/Dockerfile
 
@@ -1357,7 +1357,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.13-apache
+        imageRepository: php:7.2.13-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c88c3d52f41a370f3a62e3ded62b7b223b4cb846/7.2/stretch/apache/Dockerfile
 
@@ -1373,7 +1373,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.12-zts
+        imageRepository: php:7.2.12-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/7.2/stretch/zts/Dockerfile
 
@@ -1407,7 +1407,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.12-fpm-alpine
+        imageRepository: php:7.2.12-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/7.2/alpine3.8/fpm/Dockerfile
 
@@ -1423,7 +1423,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.12-cli
+        imageRepository: php:7.2.12-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/7.2/stretch/cli/Dockerfile
 
@@ -1464,7 +1464,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.11-zts
+        imageRepository: php:7.2.11-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f363b9f8a0e23e79faaa624ff5bf160b9dec18f4/7.2/stretch/zts/Dockerfile
 
@@ -1473,7 +1473,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.11-zts-alpine
+        imageRepository: php:7.2.11-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f363b9f8a0e23e79faaa624ff5bf160b9dec18f4/7.2/alpine3.8/zts/Dockerfile
 
@@ -1507,7 +1507,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.11-fpm
+        imageRepository: php:7.2.11-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f363b9f8a0e23e79faaa624ff5bf160b9dec18f4/7.2/stretch/fpm/Dockerfile
 
@@ -1516,7 +1516,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.11-fpm-alpine
+        imageRepository: php:7.2.11-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f363b9f8a0e23e79faaa624ff5bf160b9dec18f4/7.2/alpine3.8/fpm/Dockerfile
 
@@ -1593,7 +1593,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.11-apache
+        imageRepository: php:7.2.11-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f363b9f8a0e23e79faaa624ff5bf160b9dec18f4/7.2/stretch/apache/Dockerfile
 
@@ -1609,7 +1609,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.10-zts
+        imageRepository: php:7.2.10-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d97098c8c6af46ae1211e65ff052278ab39ba45c/7.2/stretch/zts/Dockerfile
 
@@ -1806,7 +1806,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.2.9-fpm-alpine
+        imageRepository: php:7.2.9-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e92dfe4847c9fe74ea309e66f9d3ef0217f8525d/7.2/alpine3.8/fpm/Dockerfile
 
@@ -1908,7 +1908,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.2.8-zts-alpine
+        imageRepository: php:7.2.8-zts-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/85af0c14e3f23689f0851d3164ab3b630e7f016f/7.2/alpine3.7/zts/Dockerfile
 
@@ -1967,7 +1967,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.8-cli
+        imageRepository: php:7.2.8-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/85af0c14e3f23689f0851d3164ab3b630e7f016f/7.2/stretch/cli/Dockerfile
 
@@ -2017,7 +2017,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.7-zts
+        imageRepository: php:7.2.7-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4af0a8734a48ab84ee96de513aabc45418b63dc5/7.2/stretch/zts/Dockerfile
 
@@ -2051,7 +2051,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.7-fpm
+        imageRepository: php:7.2.7-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4af0a8734a48ab84ee96de513aabc45418b63dc5/7.2/stretch/fpm/Dockerfile
 
@@ -2060,7 +2060,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.2.7-fpm-alpine
+        imageRepository: php:7.2.7-fpm-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4af0a8734a48ab84ee96de513aabc45418b63dc5/7.2/alpine3.7/fpm/Dockerfile
 
@@ -2094,7 +2094,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.2.7-cli-alpine
+        imageRepository: php:7.2.7-cli-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4af0a8734a48ab84ee96de513aabc45418b63dc5/7.2/alpine3.7/cli/Dockerfile
 
@@ -2135,7 +2135,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.6-zts
+        imageRepository: php:7.2.6-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.2/stretch/zts/Dockerfile
 
@@ -2144,7 +2144,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.2.6-zts-alpine
+        imageRepository: php:7.2.6-zts-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.2/alpine3.7/zts/Dockerfile
 
@@ -2169,7 +2169,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.6-fpm
+        imageRepository: php:7.2.6-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.2/stretch/fpm/Dockerfile
 
@@ -2178,7 +2178,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.2.6-fpm-alpine
+        imageRepository: php:7.2.6-fpm-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.2/alpine3.7/fpm/Dockerfile
 
@@ -2203,7 +2203,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.6-cli
+        imageRepository: php:7.2.6-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.2/stretch/cli/Dockerfile
 
@@ -2212,7 +2212,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.2.6-cli-alpine
+        imageRepository: php:7.2.6-cli-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.2/alpine3.7/cli/Dockerfile
 
@@ -2237,7 +2237,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.6-apache
+        imageRepository: php:7.2.6-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.2/stretch/apache/Dockerfile
 
@@ -2253,7 +2253,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.5-zts
+        imageRepository: php:7.2.5-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.2/stretch/zts/Dockerfile
 
@@ -2287,7 +2287,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.5-fpm
+        imageRepository: php:7.2.5-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.2/stretch/fpm/Dockerfile
 
@@ -2305,7 +2305,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.5-fpm-alpine
+        imageRepository: php:7.2.5-fpm-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.2/alpine3.6/fpm/Dockerfile
 
@@ -2371,7 +2371,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.4-zts
+        imageRepository: php:7.2.4-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.2/stretch/zts/Dockerfile
 
@@ -2389,7 +2389,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.4-zts-alpine
+        imageRepository: php:7.2.4-zts-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.2/alpine3.6/zts/Dockerfile
 
@@ -2423,7 +2423,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.4-fpm-alpine
+        imageRepository: php:7.2.4-fpm-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.2/alpine3.6/fpm/Dockerfile
 
@@ -2439,7 +2439,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.4-cli
+        imageRepository: php:7.2.4-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.2/stretch/cli/Dockerfile
 
@@ -2457,7 +2457,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.4-cli-alpine
+        imageRepository: php:7.2.4-cli-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.2/alpine3.6/cli/Dockerfile
 
@@ -2541,7 +2541,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.3-fpm-alpine
+        imageRepository: php:7.2.3-fpm-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/7707290c53077c0fbdbe8c768e98c51ba06025f1/7.2/alpine3.6/fpm/Dockerfile
 
@@ -2557,7 +2557,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.3-cli
+        imageRepository: php:7.2.3-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/7707290c53077c0fbdbe8c768e98c51ba06025f1/7.2/stretch/cli/Dockerfile
 
@@ -2575,7 +2575,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.3-cli-alpine
+        imageRepository: php:7.2.3-cli-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/7707290c53077c0fbdbe8c768e98c51ba06025f1/7.2/alpine3.6/cli/Dockerfile
 
@@ -2625,7 +2625,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.2-zts-alpine
+        imageRepository: php:7.2.2-zts-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fd8e15250a0c7667b161c34a25f7916b01f72367/7.2/alpine3.6/zts/Dockerfile
 
@@ -2641,7 +2641,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.2-fpm
+        imageRepository: php:7.2.2-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fd8e15250a0c7667b161c34a25f7916b01f72367/7.2/stretch/fpm/Dockerfile
 
@@ -2693,7 +2693,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.2-cli-alpine
+        imageRepository: php:7.2.2-cli-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fd8e15250a0c7667b161c34a25f7916b01f72367/7.2/alpine3.6/cli/Dockerfile
 
@@ -2709,7 +2709,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.2-apache
+        imageRepository: php:7.2.2-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fd8e15250a0c7667b161c34a25f7916b01f72367/7.2/stretch/apache/Dockerfile
 
@@ -2743,7 +2743,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.1-zts-alpine
+        imageRepository: php:7.2.1-zts-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f4baf0edbc4e05e241938c68bcc7c9635707583d/7.2/alpine3.6/zts/Dockerfile
 
@@ -2759,7 +2759,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.1-fpm
+        imageRepository: php:7.2.1-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f4baf0edbc4e05e241938c68bcc7c9635707583d/7.2/stretch/fpm/Dockerfile
 
@@ -2793,7 +2793,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.1-cli
+        imageRepository: php:7.2.1-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f4baf0edbc4e05e241938c68bcc7c9635707583d/7.2/stretch/cli/Dockerfile
 
@@ -2827,7 +2827,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.1-apache
+        imageRepository: php:7.2.1-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f4baf0edbc4e05e241938c68bcc7c9635707583d/7.2/stretch/apache/Dockerfile
 
@@ -2843,7 +2843,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.2.0-zts
+        imageRepository: php:7.2.0-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f795769559d9ce740e57ebd32f60f8a4569ee5b6/7.2/stretch/zts/Dockerfile
 
@@ -2886,7 +2886,7 @@
         release: 3.6
         weight: 1
         image: alpine:3.6
-        imageRepository: php:7.2.0-fpm-alpine
+        imageRepository: php:7.2.0-fpm-alpine3.6
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f795769559d9ce740e57ebd32f60f8a4569ee5b6/7.2/alpine3.6/fpm/Dockerfile
 
@@ -2961,7 +2961,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.29-zts
+        imageRepository: php:7.1.29-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e63194a0006848edb13b7eff5a7f9d790d679428/7.1/stretch/zts/Dockerfile
 
@@ -2979,7 +2979,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.1.29-zts-alpine
+        imageRepository: php:7.1.29-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e63194a0006848edb13b7eff5a7f9d790d679428/7.1/alpine3.9/zts/Dockerfile
 
@@ -3004,7 +3004,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.29-fpm
+        imageRepository: php:7.1.29-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e63194a0006848edb13b7eff5a7f9d790d679428/7.1/stretch/fpm/Dockerfile
 
@@ -3022,7 +3022,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.1.29-fpm-alpine
+        imageRepository: php:7.1.29-fpm-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e63194a0006848edb13b7eff5a7f9d790d679428/7.1/alpine3.9/fpm/Dockerfile
 
@@ -3090,7 +3090,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.29-apache
+        imageRepository: php:7.1.29-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e63194a0006848edb13b7eff5a7f9d790d679428/7.1/stretch/apache/Dockerfile
 
@@ -3115,7 +3115,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.28-zts
+        imageRepository: php:7.1.28-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4ac9fae8a99dabcd15f660f8c950a51a1fc6b833/7.1/stretch/zts/Dockerfile
 
@@ -3158,7 +3158,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.28-fpm
+        imageRepository: php:7.1.28-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/545a73c9704c5f74b79f4373ffa02776159079a5/7.1/stretch/fpm/Dockerfile
 
@@ -3219,7 +3219,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.1.28-cli-alpine
+        imageRepository: php:7.1.28-cli-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4ac9fae8a99dabcd15f660f8c950a51a1fc6b833/7.1/alpine3.9/cli/Dockerfile
 
@@ -3287,7 +3287,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.1.27-zts-alpine
+        imageRepository: php:7.1.27-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a5cc6ff7d8f14330e55f8df673c69e2f35adf957/7.1/alpine3.9/zts/Dockerfile
 
@@ -3312,7 +3312,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.27-fpm
+        imageRepository: php:7.1.27-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a5cc6ff7d8f14330e55f8df673c69e2f35adf957/7.1/stretch/fpm/Dockerfile
 
@@ -3330,7 +3330,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.1.27-fpm-alpine
+        imageRepository: php:7.1.27-fpm-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a5cc6ff7d8f14330e55f8df673c69e2f35adf957/7.1/alpine3.9/fpm/Dockerfile
 
@@ -3355,7 +3355,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.27-cli
+        imageRepository: php:7.1.27-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a5cc6ff7d8f14330e55f8df673c69e2f35adf957/7.1/stretch/cli/Dockerfile
 
@@ -3423,7 +3423,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.26-zts
+        imageRepository: php:7.1.26-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.1/stretch/zts/Dockerfile
 
@@ -3441,7 +3441,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.26-zts-alpine
+        imageRepository: php:7.1.26-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.1/alpine3.8/zts/Dockerfile
 
@@ -3450,7 +3450,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: php:7.1.26-zts-alpine
+        imageRepository: php:7.1.26-zts-alpine3.9
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/640a30e8ff27b1ad7523a212522472fda84d56ff/7.1/alpine3.9/zts/Dockerfile
 
@@ -3509,7 +3509,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.26-cli
+        imageRepository: php:7.1.26-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ea377551f7527c4e5602bea716c4ba0011dbaee9/7.1/stretch/cli/Dockerfile
 
@@ -3577,7 +3577,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.25-zts
+        imageRepository: php:7.1.25-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4fa4c526cf52725f859d7067006e8d4b3c226a52/7.1/stretch/zts/Dockerfile
 
@@ -3629,7 +3629,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.25-fpm-alpine
+        imageRepository: php:7.1.25-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4fa4c526cf52725f859d7067006e8d4b3c226a52/7.1/alpine3.8/fpm/Dockerfile
 
@@ -3645,7 +3645,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.25-cli
+        imageRepository: php:7.1.25-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4fa4c526cf52725f859d7067006e8d4b3c226a52/7.1/stretch/cli/Dockerfile
 
@@ -3663,7 +3663,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.25-cli-alpine
+        imageRepository: php:7.1.25-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4fa4c526cf52725f859d7067006e8d4b3c226a52/7.1/alpine3.8/cli/Dockerfile
 
@@ -3679,7 +3679,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.25-apache
+        imageRepository: php:7.1.25-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/4fa4c526cf52725f859d7067006e8d4b3c226a52/7.1/stretch/apache/Dockerfile
 
@@ -3704,7 +3704,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.24-zts
+        imageRepository: php:7.1.24-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b99209cc078ebb7bf4614e870c2d69e0b3bed399/7.1/stretch/zts/Dockerfile
 
@@ -3722,7 +3722,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.24-zts-alpine
+        imageRepository: php:7.1.24-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b99209cc078ebb7bf4614e870c2d69e0b3bed399/7.1/alpine3.8/zts/Dockerfile
 
@@ -3738,7 +3738,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.24-fpm
+        imageRepository: php:7.1.24-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b99209cc078ebb7bf4614e870c2d69e0b3bed399/7.1/stretch/fpm/Dockerfile
 
@@ -3756,7 +3756,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.24-fpm-alpine
+        imageRepository: php:7.1.24-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b99209cc078ebb7bf4614e870c2d69e0b3bed399/7.1/alpine3.8/fpm/Dockerfile
 
@@ -3806,7 +3806,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.24-apache
+        imageRepository: php:7.1.24-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c77c579341cfbfee90e669535ea3057679a1005b/7.1/stretch/apache/Dockerfile
 
@@ -3874,7 +3874,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.23-fpm
+        imageRepository: php:7.1.23-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/3f3220a0aa5992cdc08128cbbe0f2490694d6be9/7.1/stretch/fpm/Dockerfile
 
@@ -3892,7 +3892,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.23-fpm-alpine
+        imageRepository: php:7.1.23-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/3f3220a0aa5992cdc08128cbbe0f2490694d6be9/7.1/alpine3.8/fpm/Dockerfile
 
@@ -3917,7 +3917,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.23-cli
+        imageRepository: php:7.1.23-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/3f3220a0aa5992cdc08128cbbe0f2490694d6be9/7.1/stretch/cli/Dockerfile
 
@@ -3935,7 +3935,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.23-cli-alpine
+        imageRepository: php:7.1.23-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/3f3220a0aa5992cdc08128cbbe0f2490694d6be9/7.1/alpine3.8/cli/Dockerfile
 
@@ -3960,7 +3960,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.23-apache
+        imageRepository: php:7.1.23-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/3f3220a0aa5992cdc08128cbbe0f2490694d6be9/7.1/stretch/apache/Dockerfile
 
@@ -3985,7 +3985,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.22-zts
+        imageRepository: php:7.1.22-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c856411d1c21111855a54c5d29f2bfe099d63ce7/7.1/stretch/zts/Dockerfile
 
@@ -4046,7 +4046,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.22-fpm-alpine
+        imageRepository: php:7.1.22-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c856411d1c21111855a54c5d29f2bfe099d63ce7/7.1/alpine3.8/fpm/Dockerfile
 
@@ -4071,7 +4071,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.22-cli
+        imageRepository: php:7.1.22-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c856411d1c21111855a54c5d29f2bfe099d63ce7/7.1/stretch/cli/Dockerfile
 
@@ -4114,7 +4114,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.22-apache
+        imageRepository: php:7.1.22-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/c856411d1c21111855a54c5d29f2bfe099d63ce7/7.1/stretch/apache/Dockerfile
 
@@ -4139,7 +4139,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.21-zts
+        imageRepository: php:7.1.21-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/7.1/stretch/zts/Dockerfile
 
@@ -4157,7 +4157,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:7.1.21-zts-alpine
+        imageRepository: php:7.1.21-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/7.1/alpine3.8/zts/Dockerfile
 
@@ -4268,7 +4268,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.21-apache
+        imageRepository: php:7.1.21-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/7.1/stretch/apache/Dockerfile
 
@@ -4345,7 +4345,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.1.20-fpm-alpine
+        imageRepository: php:7.1.20-fpm-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d6b950cc18b2977a96f472345024bed00cd07814/7.1/alpine3.7/fpm/Dockerfile
 
@@ -4361,7 +4361,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.20-cli
+        imageRepository: php:7.1.20-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d6b950cc18b2977a96f472345024bed00cd07814/7.1/stretch/cli/Dockerfile
 
@@ -4420,7 +4420,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.19-zts
+        imageRepository: php:7.1.19-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b599d7375c12ff69e4d11ea10c3dea56dd670eb9/7.1/stretch/zts/Dockerfile
 
@@ -4438,7 +4438,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.1.19-zts-alpine
+        imageRepository: php:7.1.19-zts-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b599d7375c12ff69e4d11ea10c3dea56dd670eb9/7.1/alpine3.7/zts/Dockerfile
 
@@ -4454,7 +4454,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.19-fpm
+        imageRepository: php:7.1.19-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b599d7375c12ff69e4d11ea10c3dea56dd670eb9/7.1/stretch/fpm/Dockerfile
 
@@ -4472,7 +4472,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.1.19-fpm-alpine
+        imageRepository: php:7.1.19-fpm-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b599d7375c12ff69e4d11ea10c3dea56dd670eb9/7.1/alpine3.7/fpm/Dockerfile
 
@@ -4522,7 +4522,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.19-apache
+        imageRepository: php:7.1.19-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b599d7375c12ff69e4d11ea10c3dea56dd670eb9/7.1/stretch/apache/Dockerfile
 
@@ -4547,7 +4547,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.18-zts
+        imageRepository: php:7.1.18-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.1/stretch/zts/Dockerfile
 
@@ -4581,7 +4581,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.18-fpm
+        imageRepository: php:7.1.18-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.1/stretch/fpm/Dockerfile
 
@@ -4599,7 +4599,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.1.18-fpm-alpine
+        imageRepository: php:7.1.18-fpm-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.1/alpine3.7/fpm/Dockerfile
 
@@ -4615,7 +4615,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.18-cli
+        imageRepository: php:7.1.18-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.1/stretch/cli/Dockerfile
 
@@ -4649,7 +4649,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.18-apache
+        imageRepository: php:7.1.18-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.1/stretch/apache/Dockerfile
 
@@ -4674,7 +4674,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.17-zts
+        imageRepository: php:7.1.17-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.1/jessie/zts/Dockerfile
 
@@ -4683,7 +4683,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.17-zts-alpine
+        imageRepository: php:7.1.17-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.1/alpine3.4/zts/Dockerfile
 
@@ -4692,7 +4692,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.1.17-zts
+        imageRepository: php:7.1.17-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/27c65bbd606d1745765b89bf43f39b06efad1e43/7.1/stretch/zts/Dockerfile
 
@@ -4701,7 +4701,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.1.17-zts-alpine
+        imageRepository: php:7.1.17-zts-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/27c65bbd606d1745765b89bf43f39b06efad1e43/7.1/alpine3.7/zts/Dockerfile
 
@@ -4717,7 +4717,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.17-fpm
+        imageRepository: php:7.1.17-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.1/jessie/fpm/Dockerfile
 
@@ -4726,7 +4726,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.17-fpm-alpine
+        imageRepository: php:7.1.17-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.1/alpine3.4/fpm/Dockerfile
 
@@ -4760,7 +4760,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.17-cli
+        imageRepository: php:7.1.17-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.1/jessie/cli/Dockerfile
 
@@ -4837,7 +4837,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.16-zts-alpine
+        imageRepository: php:7.1.16-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.1/alpine3.4/zts/Dockerfile
 
@@ -4853,7 +4853,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.16-fpm
+        imageRepository: php:7.1.16-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.1/jessie/fpm/Dockerfile
 
@@ -4919,7 +4919,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.15-zts
+        imageRepository: php:7.1.15-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.1/jessie/zts/Dockerfile
 
@@ -4928,7 +4928,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.15-zts-alpine
+        imageRepository: php:7.1.15-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.1/alpine3.4/zts/Dockerfile
 
@@ -4944,7 +4944,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.15-fpm
+        imageRepository: php:7.1.15-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.1/jessie/fpm/Dockerfile
 
@@ -4953,7 +4953,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.15-fpm-alpine
+        imageRepository: php:7.1.15-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.1/alpine3.4/fpm/Dockerfile
 
@@ -4969,7 +4969,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.15-cli
+        imageRepository: php:7.1.15-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.1/jessie/cli/Dockerfile
 
@@ -4978,7 +4978,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.15-cli-alpine
+        imageRepository: php:7.1.15-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.1/alpine3.4/cli/Dockerfile
 
@@ -4994,7 +4994,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.15-apache
+        imageRepository: php:7.1.15-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.1/jessie/apache/Dockerfile
 
@@ -5019,7 +5019,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.14-zts-alpine
+        imageRepository: php:7.1.14-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/499a0e89e73db985874082ea936529b96413ceb0/7.1/alpine3.4/zts/Dockerfile
 
@@ -5035,7 +5035,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.14-fpm
+        imageRepository: php:7.1.14-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/499a0e89e73db985874082ea936529b96413ceb0/7.1/jessie/fpm/Dockerfile
 
@@ -5044,7 +5044,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.14-fpm-alpine
+        imageRepository: php:7.1.14-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/499a0e89e73db985874082ea936529b96413ceb0/7.1/alpine3.4/fpm/Dockerfile
 
@@ -5060,7 +5060,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.14-cli
+        imageRepository: php:7.1.14-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/499a0e89e73db985874082ea936529b96413ceb0/7.1/jessie/cli/Dockerfile
 
@@ -5069,7 +5069,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.14-cli-alpine
+        imageRepository: php:7.1.14-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/499a0e89e73db985874082ea936529b96413ceb0/7.1/alpine3.4/cli/Dockerfile
 
@@ -5110,7 +5110,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.13-zts-alpine
+        imageRepository: php:7.1.13-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/6be205eee15aed27706a958379cec836fe305017/7.1/alpine3.4/zts/Dockerfile
 
@@ -5126,7 +5126,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.13-fpm
+        imageRepository: php:7.1.13-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/57b41cfc2d1e07acab2e60d59a0cb19d83056fc1/7.1/jessie/fpm/Dockerfile
 
@@ -5151,7 +5151,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.13-cli
+        imageRepository: php:7.1.13-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/6be205eee15aed27706a958379cec836fe305017/7.1/jessie/cli/Dockerfile
 
@@ -5160,7 +5160,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.13-cli-alpine
+        imageRepository: php:7.1.13-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/6be205eee15aed27706a958379cec836fe305017/7.1/alpine3.4/cli/Dockerfile
 
@@ -5176,7 +5176,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.13-apache
+        imageRepository: php:7.1.13-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/6be205eee15aed27706a958379cec836fe305017/7.1/jessie/apache/Dockerfile
 
@@ -5192,7 +5192,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.12-zts
+        imageRepository: php:7.1.12-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/6677546d599d3980781b520f84d03ecaad291dd1/7.1/jessie/zts/Dockerfile
 
@@ -5242,7 +5242,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.12-cli
+        imageRepository: php:7.1.12-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/6677546d599d3980781b520f84d03ecaad291dd1/7.1/jessie/cli/Dockerfile
 
@@ -5251,7 +5251,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.12-cli-alpine
+        imageRepository: php:7.1.12-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/287a157544a8e43032ecb2879ff778d10c0d0e37/7.1/alpine3.4/cli/Dockerfile
 
@@ -5267,7 +5267,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.12-apache
+        imageRepository: php:7.1.12-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/6677546d599d3980781b520f84d03ecaad291dd1/7.1/jessie/apache/Dockerfile
 
@@ -5317,7 +5317,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.11-fpm-alpine
+        imageRepository: php:7.1.11-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/05fe6f9eb601984e5f95057578ce830a21d11716/7.1/alpine3.4/fpm/Dockerfile
 
@@ -5333,7 +5333,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.11-cli
+        imageRepository: php:7.1.11-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/bfe27759103fa6050601060165409b5b3be06395/7.1/jessie/cli/Dockerfile
 
@@ -5342,7 +5342,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.11-cli-alpine
+        imageRepository: php:7.1.11-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/05fe6f9eb601984e5f95057578ce830a21d11716/7.1/alpine3.4/cli/Dockerfile
 
@@ -5358,7 +5358,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.1.11-apache
+        imageRepository: php:7.1.11-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/bfe27759103fa6050601060165409b5b3be06395/7.1/jessie/apache/Dockerfile
 
@@ -5433,7 +5433,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.1.10-cli-alpine
+        imageRepository: php:7.1.10-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/0bb4068bd639ba98631bc2999e0d20cae583ec00/7.1/alpine3.4/cli/Dockerfile
 
@@ -6367,7 +6367,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.33-zts
+        imageRepository: php:7.0.33-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b4319e8f767f1200c9013e08baf2c34b9c84e301/7.0/stretch/zts/Dockerfile
 
@@ -6385,7 +6385,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.0.33-zts-alpine
+        imageRepository: php:7.0.33-zts-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b4319e8f767f1200c9013e08baf2c34b9c84e301/7.0/alpine3.7/zts/Dockerfile
 
@@ -6401,7 +6401,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.33-fpm
+        imageRepository: php:7.0.33-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b4319e8f767f1200c9013e08baf2c34b9c84e301/7.0/stretch/fpm/Dockerfile
 
@@ -6435,7 +6435,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.33-cli
+        imageRepository: php:7.0.33-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b4319e8f767f1200c9013e08baf2c34b9c84e301/7.0/stretch/cli/Dockerfile
 
@@ -6453,7 +6453,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.0.33-cli-alpine
+        imageRepository: php:7.0.33-cli-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/b4319e8f767f1200c9013e08baf2c34b9c84e301/7.0/alpine3.7/cli/Dockerfile
 
@@ -6494,7 +6494,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.32-zts
+        imageRepository: php:7.0.32-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/7.0/stretch/zts/Dockerfile
 
@@ -6528,7 +6528,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.32-fpm
+        imageRepository: php:7.0.32-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/7.0/stretch/fpm/Dockerfile
 
@@ -6596,7 +6596,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.32-apache
+        imageRepository: php:7.0.32-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/7.0/stretch/apache/Dockerfile
 
@@ -6655,7 +6655,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.31-fpm
+        imageRepository: php:7.0.31-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/7.0/stretch/fpm/Dockerfile
 
@@ -6707,7 +6707,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:7.0.31-cli-alpine
+        imageRepository: php:7.0.31-cli-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/7.0/alpine3.7/cli/Dockerfile
 
@@ -6748,7 +6748,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.30-zts
+        imageRepository: php:7.0.30-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.0/jessie/zts/Dockerfile
 
@@ -6757,7 +6757,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.30-zts-alpine
+        imageRepository: php:7.0.30-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.0/alpine3.4/zts/Dockerfile
 
@@ -6766,7 +6766,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.30-zts
+        imageRepository: php:7.0.30-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.0/stretch/zts/Dockerfile
 
@@ -6834,7 +6834,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.30-cli
+        imageRepository: php:7.0.30-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.0/jessie/cli/Dockerfile
 
@@ -6843,7 +6843,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.30-cli-alpine
+        imageRepository: php:7.0.30-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.0/alpine3.4/cli/Dockerfile
 
@@ -6852,7 +6852,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.30-cli
+        imageRepository: php:7.0.30-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.0/stretch/cli/Dockerfile
 
@@ -6877,7 +6877,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.30-apache
+        imageRepository: php:7.0.30-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/7.0/jessie/apache/Dockerfile
 
@@ -6886,7 +6886,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:7.0.30-apache
+        imageRepository: php:7.0.30-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/7.0/stretch/apache/Dockerfile
 
@@ -6911,7 +6911,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.29-zts-alpine
+        imageRepository: php:7.0.29-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/7.0/alpine3.4/zts/Dockerfile
 
@@ -6993,7 +6993,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.28-zts
+        imageRepository: php:7.0.28-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.0/jessie/zts/Dockerfile
 
@@ -7002,7 +7002,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.28-zts-alpine
+        imageRepository: php:7.0.28-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.0/alpine3.4/zts/Dockerfile
 
@@ -7027,7 +7027,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.28-fpm-alpine
+        imageRepository: php:7.0.28-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.0/alpine3.4/fpm/Dockerfile
 
@@ -7052,7 +7052,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.28-cli-alpine
+        imageRepository: php:7.0.28-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/7.0/alpine3.4/cli/Dockerfile
 
@@ -7093,7 +7093,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.27-zts-alpine
+        imageRepository: php:7.0.27-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/2eb7af007026493eb02f5e87c082ab78543a1f2d/7.0/alpine3.4/zts/Dockerfile
 
@@ -7109,7 +7109,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.27-fpm
+        imageRepository: php:7.0.27-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/57b41cfc2d1e07acab2e60d59a0cb19d83056fc1/7.0/jessie/fpm/Dockerfile
 
@@ -7134,7 +7134,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.27-cli
+        imageRepository: php:7.0.27-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/2eb7af007026493eb02f5e87c082ab78543a1f2d/7.0/jessie/cli/Dockerfile
 
@@ -7159,7 +7159,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.27-apache
+        imageRepository: php:7.0.27-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/2eb7af007026493eb02f5e87c082ab78543a1f2d/7.0/jessie/apache/Dockerfile
 
@@ -7175,7 +7175,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.26-zts
+        imageRepository: php:7.0.26-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e5a6cb72428ff467674e44f60378a7a4a1d22464/7.0/jessie/zts/Dockerfile
 
@@ -7200,7 +7200,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.26-fpm
+        imageRepository: php:7.0.26-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e5a6cb72428ff467674e44f60378a7a4a1d22464/7.0/jessie/fpm/Dockerfile
 
@@ -7234,7 +7234,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.26-cli-alpine
+        imageRepository: php:7.0.26-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/e5a6cb72428ff467674e44f60378a7a4a1d22464/7.0/alpine3.4/cli/Dockerfile
 
@@ -7300,7 +7300,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:7.0.25-fpm-alpine
+        imageRepository: php:7.0.25-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/89894ff2da4da406d52931f1acebf9a2f349a898/7.0/alpine3.4/fpm/Dockerfile
 
@@ -7341,7 +7341,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:7.0.25-apache
+        imageRepository: php:7.0.25-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/bfe27759103fa6050601060165409b5b3be06395/7.0/jessie/apache/Dockerfile
 
@@ -9548,7 +9548,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:5.6.40-zts-alpine
+        imageRepository: php:5.6.40-zts-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/783878384a8f3953ed571e5a34ba0fe546726c85/5.6/alpine3.8/zts/Dockerfile
 
@@ -9582,7 +9582,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:5.6.40-fpm-alpine
+        imageRepository: php:5.6.40-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/783878384a8f3953ed571e5a34ba0fe546726c85/5.6/alpine3.8/fpm/Dockerfile
 
@@ -9616,7 +9616,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:5.6.40-cli-alpine
+        imageRepository: php:5.6.40-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/783878384a8f3953ed571e5a34ba0fe546726c85/5.6/alpine3.8/cli/Dockerfile
 
@@ -9657,7 +9657,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.39-zts
+        imageRepository: php:5.6.39-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fa4ef89d7ce591df63584cb81853db2f5fdd0659/5.6/stretch/zts/Dockerfile
 
@@ -9743,7 +9743,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:5.6.39-cli-alpine
+        imageRepository: php:5.6.39-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fa4ef89d7ce591df63584cb81853db2f5fdd0659/5.6/alpine3.8/cli/Dockerfile
 
@@ -9759,7 +9759,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.39-apache
+        imageRepository: php:5.6.39-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fa4ef89d7ce591df63584cb81853db2f5fdd0659/5.6/stretch/apache/Dockerfile
 
@@ -9784,7 +9784,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.38-zts
+        imageRepository: php:5.6.38-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/5.6/stretch/zts/Dockerfile
 
@@ -9870,7 +9870,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.38-cli
+        imageRepository: php:5.6.38-cli-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/5.6/stretch/cli/Dockerfile
 
@@ -9888,7 +9888,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:5.6.38-cli-alpine
+        imageRepository: php:5.6.38-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/5.6/alpine3.8/cli/Dockerfile
 
@@ -9913,7 +9913,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.38-apache
+        imageRepository: php:5.6.38-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/d5bdcd6f8ca2f71db83d556b90e5c2802fa01ede/5.6/stretch/apache/Dockerfile
 
@@ -9947,7 +9947,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.37-zts
+        imageRepository: php:5.6.37-zts-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/5.6/stretch/zts/Dockerfile
 
@@ -9981,7 +9981,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:5.6.37-fpm-alpine
+        imageRepository: php:5.6.37-fpm-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a370a1ed553bddbae08f2aa1364b45b60d6f54fa/5.6/alpine3.8/fpm/Dockerfile
 
@@ -9990,7 +9990,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.37-fpm
+        imageRepository: php:5.6.37-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/5.6/stretch/fpm/Dockerfile
 
@@ -10024,7 +10024,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: php:5.6.37-cli-alpine
+        imageRepository: php:5.6.37-cli-alpine3.8
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a370a1ed553bddbae08f2aa1364b45b60d6f54fa/5.6/alpine3.8/cli/Dockerfile
 
@@ -10067,7 +10067,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.37-apache
+        imageRepository: php:5.6.37-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/88189f016803224152e3b1d96b11a573b3762559/5.6/stretch/apache/Dockerfile
 
@@ -10101,7 +10101,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.36-zts-alpine
+        imageRepository: php:5.6.36-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/5.6/alpine3.4/zts/Dockerfile
 
@@ -10119,7 +10119,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: php:5.6.36-zts-alpine
+        imageRepository: php:5.6.36-zts-alpine3.7
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/5.6/alpine3.7/zts/Dockerfile
 
@@ -10144,7 +10144,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.36-fpm-alpine
+        imageRepository: php:5.6.36-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fbb775a087dfcb456b94f3308d0711b7e3fc9e56/5.6/alpine3.4/fpm/Dockerfile
 
@@ -10153,7 +10153,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.36-fpm
+        imageRepository: php:5.6.36-fpm-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/5.6/stretch/fpm/Dockerfile
 
@@ -10230,7 +10230,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: php:5.6.36-apache
+        imageRepository: php:5.6.36-apache-stretch
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/cff4da8fdbf0461c855a63d18431e18eed4cbcdc/5.6/stretch/apache/Dockerfile
 
@@ -10246,7 +10246,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.35-zts
+        imageRepository: php:5.6.35-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/5.6/jessie/zts/Dockerfile
 
@@ -10255,7 +10255,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.35-zts-alpine
+        imageRepository: php:5.6.35-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/5.6/alpine3.4/zts/Dockerfile
 
@@ -10271,7 +10271,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.35-fpm
+        imageRepository: php:5.6.35-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/5.6/jessie/fpm/Dockerfile
 
@@ -10280,7 +10280,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.35-fpm-alpine
+        imageRepository: php:5.6.35-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/5.6/alpine3.4/fpm/Dockerfile
 
@@ -10296,7 +10296,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.35-cli
+        imageRepository: php:5.6.35-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/5.6/jessie/cli/Dockerfile
 
@@ -10305,7 +10305,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.35-cli-alpine
+        imageRepository: php:5.6.35-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/f504394473ea762a02a707325a9114df02987e71/5.6/alpine3.4/cli/Dockerfile
 
@@ -10337,7 +10337,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.34-zts
+        imageRepository: php:5.6.34-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/5.6/jessie/zts/Dockerfile
 
@@ -10346,7 +10346,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.34-zts-alpine
+        imageRepository: php:5.6.34-zts-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/5.6/alpine3.4/zts/Dockerfile
 
@@ -10362,7 +10362,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.34-fpm
+        imageRepository: php:5.6.34-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/5.6/jessie/fpm/Dockerfile
 
@@ -10371,7 +10371,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.34-fpm-alpine
+        imageRepository: php:5.6.34-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/5.6/alpine3.4/fpm/Dockerfile
 
@@ -10396,7 +10396,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.34-cli-alpine
+        imageRepository: php:5.6.34-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/5.6/alpine3.4/cli/Dockerfile
 
@@ -10412,7 +10412,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.34-apache
+        imageRepository: php:5.6.34-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/fe07cedc05d84a6af374dabdee82f213464ad3c5/5.6/jessie/apache/Dockerfile
 
@@ -10428,7 +10428,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.33-zts
+        imageRepository: php:5.6.33-zts-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a37af189869968236a8b832beac950b78b26b471/5.6/jessie/zts/Dockerfile
 
@@ -10462,7 +10462,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.33-fpm-alpine
+        imageRepository: php:5.6.33-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a37af189869968236a8b832beac950b78b26b471/5.6/alpine3.4/fpm/Dockerfile
 
@@ -10478,7 +10478,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.33-cli
+        imageRepository: php:5.6.33-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a37af189869968236a8b832beac950b78b26b471/5.6/jessie/cli/Dockerfile
 
@@ -10487,7 +10487,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.33-cli-alpine
+        imageRepository: php:5.6.33-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a37af189869968236a8b832beac950b78b26b471/5.6/alpine3.4/cli/Dockerfile
 
@@ -10503,7 +10503,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.33-apache
+        imageRepository: php:5.6.33-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/a37af189869968236a8b832beac950b78b26b471/5.6/jessie/apache/Dockerfile
 
@@ -10544,7 +10544,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.32-fpm
+        imageRepository: php:5.6.32-fpm-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ec6b6e60b42c283d48775596f722f5250c1f5ca5/5.6/jessie/fpm/Dockerfile
 
@@ -10553,7 +10553,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.32-fpm-alpine
+        imageRepository: php:5.6.32-fpm-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ec6b6e60b42c283d48775596f722f5250c1f5ca5/5.6/alpine3.4/fpm/Dockerfile
 
@@ -10569,7 +10569,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.32-cli
+        imageRepository: php:5.6.32-cli-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ec6b6e60b42c283d48775596f722f5250c1f5ca5/5.6/jessie/cli/Dockerfile
 
@@ -10578,7 +10578,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: php:5.6.32-cli-alpine
+        imageRepository: php:5.6.32-cli-alpine3.4
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ec6b6e60b42c283d48775596f722f5250c1f5ca5/5.6/alpine3.4/cli/Dockerfile
 
@@ -10594,7 +10594,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: php:5.6.32-apache
+        imageRepository: php:5.6.32-apache-jessie
         urlRepository: https://github.com/docker-library/php
         urlDockerfile: https://raw.githubusercontent.com/docker-library/php/ec6b6e60b42c283d48775596f722f5250c1f5ca5/5.6/jessie/apache/Dockerfile
 

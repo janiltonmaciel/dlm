@@ -20,7 +20,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:12.2.0-slim
+        imageRepository: node:12.2.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/8913f934470af3d775a31277e065b9853639e2b2/12/stretch-slim/Dockerfile
 
@@ -181,7 +181,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:11.13.0
+        imageRepository: node:11.13.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch/Dockerfile
 
@@ -190,7 +190,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:11.13.0-slim
+        imageRepository: node:11.13.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch-slim/Dockerfile
 
@@ -224,7 +224,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:11.12.0-slim
+        imageRepository: node:11.12.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/716a6ea32b3a797884c95b838b57ace41f83e96a/11/stretch-slim/Dockerfile
 
@@ -283,7 +283,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:11.10.1
+        imageRepository: node:11.10.1-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/926bddb46b98edf3e1cf75d128afc7cb3b06fb54/11/stretch/Dockerfile
 
@@ -292,7 +292,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:11.10.1-slim
+        imageRepository: node:11.10.1-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/926bddb46b98edf3e1cf75d128afc7cb3b06fb54/11/stretch-slim/Dockerfile
 
@@ -326,7 +326,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:11.10.0-slim
+        imageRepository: node:11.10.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7b643da4aeb3d77f1c26c9f6fadd32b04f8d7bc9/11/stretch-slim/Dockerfile
 
@@ -351,7 +351,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:11.9.0
+        imageRepository: node:11.9.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/08789f4981b86a38cbd2b614a6ccefa5f4be3a4b/11/stretch/Dockerfile
 
@@ -428,7 +428,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:11.7.0-slim
+        imageRepository: node:11.7.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/1656ace58dc5c913d8780e27a6c7478bbf1cb72f/11/stretch-slim/Dockerfile
 
@@ -462,7 +462,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:11.6.0-slim
+        imageRepository: node:11.6.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e9d9c1ce0f4e87b11d7b0ecff529b715038782ae/11/stretch-slim/Dockerfile
 
@@ -496,7 +496,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:11.5.0-slim
+        imageRepository: node:11.5.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/33feb454563058f4d543149956dee373c7b938e4/11/stretch-slim/Dockerfile
 
@@ -555,7 +555,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:11.3.0
+        imageRepository: node:11.3.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/fd2bad889b28587d4722f69c4a51d025df2ae624/11/stretch/Dockerfile
 
@@ -691,7 +691,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:10.15.3
+        imageRepository: node:10.15.3-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch/Dockerfile
 
@@ -700,7 +700,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:10.15.3-slim
+        imageRepository: node:10.15.3-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch-slim/Dockerfile
 
@@ -743,7 +743,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:10.15.2
+        imageRepository: node:10.15.2-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/1d01380b9fa115e26df9430f7c6c591a1643f798/10/stretch/Dockerfile
 
@@ -752,7 +752,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:10.15.2-slim
+        imageRepository: node:10.15.2-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/1d01380b9fa115e26df9430f7c6c591a1643f798/10/stretch-slim/Dockerfile
 
@@ -795,7 +795,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:10.15.1
+        imageRepository: node:10.15.1-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/90043cdde5057865b94fec447ce193fb46b69e18/10/stretch/Dockerfile
 
@@ -899,7 +899,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:10.14.2
+        imageRepository: node:10.14.2-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/3e539e6925a524bf4fda47ea33ed33d0d4fb0e20/10/stretch/Dockerfile
 
@@ -1064,7 +1064,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:10.13.0
+        imageRepository: node:10.13.0-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/336fb229392876a5f0d893436aeccf8c80011eeb/10/jessie/Dockerfile
 
@@ -1107,7 +1107,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:10.12.0
+        imageRepository: node:10.12.0-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/45fa3ebe94598758b9c9e4a382236fc7e879e2e6/10/jessie/Dockerfile
 
@@ -1279,7 +1279,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:10.8.0
+        imageRepository: node:10.8.0-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/387d4d9182566d0e10236d32f60d7a5b23196653/10/jessie/Dockerfile
 
@@ -1451,7 +1451,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:10.4.1
+        imageRepository: node:10.4.1-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e3ec2111af089e31321e76641697e154b3b6a6c3/10/jessie/Dockerfile
 
@@ -1537,7 +1537,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:10.3.0
+        imageRepository: node:10.3.0-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/bbae51a013b0ebef90afcd6d2ea2ac49697d3823/10/jessie/Dockerfile
 
@@ -1770,7 +1770,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:9.11.2
+        imageRepository: node:9.11.2-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e3ec2111af089e31321e76641697e154b3b6a6c3/9/jessie/Dockerfile
 
@@ -2636,7 +2636,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:8.16.0
+        imageRepository: node:8.16.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/stretch/Dockerfile
 
@@ -2740,7 +2740,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:8.15.0
+        imageRepository: node:8.15.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/86b9618674b01fc5549f83696a90d5bc21f38af0/8/stretch/Dockerfile
 
@@ -3000,7 +3000,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:8.11.4
+        imageRepository: node:8.11.4-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/72dd945d29dee5afa73956ebc971bf3a472442f7/8/jessie/Dockerfile
 
@@ -5036,7 +5036,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:6.17.0
+        imageRepository: node:6.17.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch/Dockerfile
 
@@ -5045,7 +5045,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:6.17.0-slim
+        imageRepository: node:6.17.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch-slim/Dockerfile
 
@@ -5088,7 +5088,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: node:6.16.0
+        imageRepository: node:6.16.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/daa131d713cf42ae181292471766879f750b5230/6/stretch/Dockerfile
 
@@ -5149,7 +5149,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: node:6.15.1-slim
+        imageRepository: node:6.15.1-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/50ee09688e28b138b1454a74deaa710d558b6b58/6/stretch-slim/Dockerfile
 
@@ -5305,7 +5305,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: node:6.14.3
+        imageRepository: node:6.14.3-jessie
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e3ec2111af089e31321e76641697e154b3b6a6c3/6/jessie/Dockerfile
 

@@ -1,4 +1,5 @@
-submodules/*
+dobi-gen/*
+official-images/*
 vendor/*
 .git/*
 tmp/*

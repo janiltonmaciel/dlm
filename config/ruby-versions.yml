@@ -29,7 +29,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: ruby:2.6.3-alpine
+        imageRepository: ruby:2.6.3-alpine3.9
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/9ae0943fa2935b3a13c72ae7d6afa2439145d7fa/2.6/alpine3.9/Dockerfile
 
@@ -63,7 +63,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: ruby:2.6.2
+        imageRepository: ruby:2.6.2-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/995719add69339b78bd8cde46183b4902b761add/2.6/stretch/Dockerfile
 
@@ -97,7 +97,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: ruby:2.6.1-alpine
+        imageRepository: ruby:2.6.1-alpine3.9
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f29d8d2181f8450ee1a5f08f82c21f66ebfde2cb/2.6/alpine3.9/Dockerfile
 
@@ -115,7 +115,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: ruby:2.6.1-slim
+        imageRepository: ruby:2.6.1-slim-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/eae22dc2dfe30b48f1633912396110539e1b8d49/2.6/stretch/slim/Dockerfile
 
@@ -124,7 +124,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: ruby:2.6.1
+        imageRepository: ruby:2.6.1-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6301325faf42a96b1fd1be5650e451cae31e0728/2.6/stretch/Dockerfile
 
@@ -158,7 +158,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: ruby:2.6.0
+        imageRepository: ruby:2.6.0-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d4be0c416c61f1de327badb94e629aa993c2e2b4/2.6/stretch/Dockerfile
 
@@ -192,7 +192,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: ruby:2.5.5-slim
+        imageRepository: ruby:2.5.5-slim-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6f3497e40d44651802e1ec8a4647b23a3a63b355/2.5/stretch/slim/Dockerfile
 
@@ -210,7 +210,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: ruby:2.5.5-alpine
+        imageRepository: ruby:2.5.5-alpine3.9
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/6f3497e40d44651802e1ec8a4647b23a3a63b355/2.5/alpine3.9/Dockerfile
 
@@ -235,7 +235,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: ruby:2.5.4-slim
+        imageRepository: ruby:2.5.4-slim-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/0e7baa45a1ff640f8b6a744b8e9b76adb206aeb4/2.5/stretch/slim/Dockerfile
 
@@ -296,7 +296,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: ruby:2.5.3-alpine
+        imageRepository: ruby:2.5.3-alpine3.8
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/fc6fd1e86d41ca7efa2737374ca12f73c3bc42ac/2.5/alpine3.8/Dockerfile
 
@@ -339,7 +339,7 @@
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: ruby:2.5.1-slim
+        imageRepository: ruby:2.5.1-slim-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/eca972d167cf4291de898e85aaf50d9a1929d4c7/2.5/stretch/slim/Dockerfile
 
@@ -348,7 +348,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: ruby:2.5.1
+        imageRepository: ruby:2.5.1-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/eca972d167cf4291de898e85aaf50d9a1929d4c7/2.5/stretch/Dockerfile
 
@@ -373,7 +373,7 @@
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: ruby:2.5.0-rc1-slim
+        imageRepository: ruby:2.5.0-rc1-slim-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f4d5c084fab6c9a2bc55bf25257887d53e4eff87/2.5-rc/stretch/slim/Dockerfile
 
@@ -382,7 +382,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: ruby:2.5.0-rc1
+        imageRepository: ruby:2.5.0-rc1-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f4d5c084fab6c9a2bc55bf25257887d53e4eff87/2.5-rc/stretch/Dockerfile
 
@@ -391,7 +391,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: ruby:2.5.0-rc1-alpine
+        imageRepository: ruby:2.5.0-rc1-alpine3.7
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f4d5c084fab6c9a2bc55bf25257887d53e4eff87/2.5-rc/alpine3.7/Dockerfile
 
@@ -477,7 +477,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: ruby:2.4.5
+        imageRepository: ruby:2.4.5-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/fec6089b541d8de9abc8646781785293f8e051d3/2.4/stretch/Dockerfile
 
@@ -565,7 +565,7 @@
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: ruby:2.4.4-slim
+        imageRepository: ruby:2.4.4-slim-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/stretch/slim/Dockerfile
 
@@ -574,7 +574,7 @@
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: ruby:2.4.4
+        imageRepository: ruby:2.4.4-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/ccacdf5eb9e69b6f249a890c87621679410e7d74/2.4/stretch/Dockerfile
 
@@ -619,7 +619,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: ruby:2.4.4-alpine
+        imageRepository: ruby:2.4.4-alpine3.4
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1bd8b466277668bff50528b26360e6e451e4dae4/2.4/alpine3.4/Dockerfile
 
@@ -653,7 +653,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: ruby:2.4.3-slim
+        imageRepository: ruby:2.4.3-slim-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c9a4472a019d18aba1fdab6a63b96474b40ca191/2.4/jessie/slim/Dockerfile
 
@@ -662,7 +662,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: ruby:2.4.3
+        imageRepository: ruby:2.4.3-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c9a4472a019d18aba1fdab6a63b96474b40ca191/2.4/jessie/Dockerfile
 
@@ -723,7 +723,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: ruby:2.4.2-alpine
+        imageRepository: ruby:2.4.2-alpine3.4
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c9838b69af941637d68bbbaff70fee4402b715cb/2.4/alpine3.4/Dockerfile
 
@@ -958,7 +958,7 @@
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: ruby:2.3.7-slim
+        imageRepository: ruby:2.3.7-slim-stretch
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/fe47510c8d16c9a149c4b167a267ac18d5c5ae33/2.3/stretch/slim/Dockerfile
 
@@ -994,7 +994,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: ruby:2.3.7-alpine
+        imageRepository: ruby:2.3.7-alpine3.7
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/fe47510c8d16c9a149c4b167a267ac18d5c5ae33/2.3/alpine3.7/Dockerfile
 
@@ -1012,7 +1012,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: ruby:2.3.7-alpine
+        imageRepository: ruby:2.3.7-alpine3.4
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/78ecfcb108930a94eded6dfe1be50246052dc632/2.3/alpine3.4/Dockerfile
 
@@ -1046,7 +1046,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: ruby:2.3.6-slim
+        imageRepository: ruby:2.3.6-slim-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d5cab201f7f689688b121cd4831aeb8e23becf96/2.3/jessie/slim/Dockerfile
 
@@ -1064,7 +1064,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: ruby:2.3.6-alpine
+        imageRepository: ruby:2.3.6-alpine3.4
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d5cab201f7f689688b121cd4831aeb8e23becf96/2.3/alpine3.4/Dockerfile
 
@@ -1080,7 +1080,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: ruby:2.3.5-slim
+        imageRepository: ruby:2.3.5-slim-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e23879898862f2426e6714324c912d14db1067b5/2.3/jessie/slim/Dockerfile
 
@@ -1354,7 +1354,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: ruby:2.2.10
+        imageRepository: ruby:2.2.10-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e48cb2431e5cdcd99ce8d8c236d7b73e7d4452f2/2.2/jessie/Dockerfile
 
@@ -1363,7 +1363,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: ruby:2.2.10-alpine
+        imageRepository: ruby:2.2.10-alpine3.4
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/e48cb2431e5cdcd99ce8d8c236d7b73e7d4452f2/2.2/alpine3.4/Dockerfile
 
@@ -1388,7 +1388,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: ruby:2.2.9
+        imageRepository: ruby:2.2.9-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c7145524ca5294bca43e12648e817ec4d8e7927f/2.2/jessie/Dockerfile
 
@@ -1397,7 +1397,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: ruby:2.2.9-alpine
+        imageRepository: ruby:2.2.9-alpine3.4
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c7145524ca5294bca43e12648e817ec4d8e7927f/2.2/alpine3.4/Dockerfile
 
@@ -1413,7 +1413,7 @@
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: ruby:2.2.8-slim
+        imageRepository: ruby:2.2.8-slim-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f0d425c10d680eecb9845db709005eb276bb1860/2.2/jessie/slim/Dockerfile
 
@@ -1422,7 +1422,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: ruby:2.2.8
+        imageRepository: ruby:2.2.8-jessie
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f0d425c10d680eecb9845db709005eb276bb1860/2.2/jessie/Dockerfile
 
@@ -1431,7 +1431,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: ruby:2.2.8-alpine
+        imageRepository: ruby:2.2.8-alpine3.4
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f0d425c10d680eecb9845db709005eb276bb1860/2.2/alpine3.4/Dockerfile
 

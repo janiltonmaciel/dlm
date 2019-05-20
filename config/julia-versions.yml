@@ -1,4 +1,20 @@
 
+  - version: 1.1.1
+    majorVersion: '1.1'
+    prerelease: false
+    date: '2019-05-17T05:59:09'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: julia:1.1.1-stretch
+        urlRepository: https://github.com/docker-library/julia
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/36c40cb93c8ca5c717ab7395a775f5683f176e97/1.1/stretch/Dockerfile
+
   - version: 1.1.0
     majorVersion: '1.1'
     prerelease: false
@@ -14,6 +30,22 @@
         imageRepository: julia:1.1.0-stretch
         urlRepository: https://github.com/docker-library/julia
         urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/stretch/Dockerfile
+
+  - version: 1.0.4
+    majorVersion: '1.0'
+    prerelease: false
+    date: '2019-05-17T05:59:09'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: julia:1.0.4-stretch
+        urlRepository: https://github.com/docker-library/julia
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/092cb514a9994ee61ae883f53d56ea03c89a3c0c/1.0/stretch/Dockerfile
 
   - version: 1.0.3
     majorVersion: '1.0'

@@ -52,17 +52,17 @@
   alias: Swift
   url: https://github.com/apple/swift/releases
 
-- language: jruby
-  alias: Jruby
-  url: https://github.com/jruby/jruby/releases
+# language: jruby
+# alias: Jruby
+# url: https://github.com/jruby/jruby/releases
 
 - language: pypy
   alias: Pypy
   url: http://doc.pypy.org/en/latest/index-of-release-notes.html
 
-- language: r-base
-  alias: R
-  url: https://www.r-project.org/
+# language: r-base
+# alias: R
+# url: https://www.r-project.org/
 
 
 

@@ -45,7 +45,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.8.0a3-slim
+        imageRepository: python:3.8.0a3-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c437cb9efa5f8e62b45b1fa287416dbe678c6fdf/3.8-rc/stretch/slim/Dockerfile
 
@@ -63,7 +63,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: python:3.8.0a3-alpine
+        imageRepository: python:3.8.0a3-alpine3.9
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/c437cb9efa5f8e62b45b1fa287416dbe678c6fdf/3.8-rc/alpine3.9/Dockerfile
 
@@ -97,7 +97,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: python:3.8.0a2-alpine
+        imageRepository: python:3.8.0a2-alpine3.9
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fc2b02ab98f1d24e149758b05273d5f712a8946e/3.8-rc/alpine3.9/Dockerfile
 
@@ -113,7 +113,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.8.0a1-slim
+        imageRepository: python:3.8.0a1-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/6c42dbe19061cb1abcda541dc0c7a4d0aef5aacf/3.8-rc/stretch/slim/Dockerfile
 
@@ -147,7 +147,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.3-slim
+        imageRepository: python:3.7.3-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ce69fc6369feb8ec757b019035ddad7bac20562c/3.7/stretch/slim/Dockerfile
 
@@ -190,7 +190,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.2-slim
+        imageRepository: python:3.7.2-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ab8b829cfefdb460ebc17e570332f0479039e918/3.7/stretch/slim/Dockerfile
 
@@ -285,7 +285,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.0b5-slim
+        imageRepository: python:3.7.0b5-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f38c92b3fc2db507290e443b3e7b2844ebf16ab9/3.7-rc/stretch/slim/Dockerfile
 
@@ -328,7 +328,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: python:3.7.0b4-alpine
+        imageRepository: python:3.7.0b4-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ba5711fb564133bf9c8b870b431682a4db427219/3.7-rc/alpine3.7/Dockerfile
 
@@ -353,7 +353,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.0b3-slim
+        imageRepository: python:3.7.0b3-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/886a292a44ec78ab8052d3bd0731f9bdaddcd3f9/3.7-rc/stretch/slim/Dockerfile
 
@@ -387,7 +387,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: python:3.7.0b2-alpine
+        imageRepository: python:3.7.0b2-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e1900dbb63610e54fadd2c2fea6a88b52bb98813/3.7-rc/alpine3.7/Dockerfile
 
@@ -421,7 +421,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.0b1-slim
+        imageRepository: python:3.7.0b1-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/1dcbfcceba5dc2d3ebf0a414926f2645aec0150e/3.7-rc/stretch/slim/Dockerfile
 
@@ -455,7 +455,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.0a4-slim
+        imageRepository: python:3.7.0a4-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/stretch/slim/Dockerfile
 
@@ -489,7 +489,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.0a3-slim
+        imageRepository: python:3.7.0a3-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/stretch/slim/Dockerfile
 
@@ -532,7 +532,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.0a2-slim
+        imageRepository: python:3.7.0a2-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/a4ce69de053337ec22d7f322cd997398eeba2350/3.7-rc/stretch/slim/Dockerfile
 
@@ -609,7 +609,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.7.0-slim
+        imageRepository: python:3.7.0-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4cfc4299e8b5ea35257d5daf3f93aaf94df0230/3.7/stretch/slim/Dockerfile
 
@@ -627,7 +627,7 @@
         release: 3.7
         weight: 1
         image: alpine:3.7
-        imageRepository: python:3.7.0-alpine
+        imageRepository: python:3.7.0-alpine3.7
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e4cfc4299e8b5ea35257d5daf3f93aaf94df0230/3.7/alpine3.7/Dockerfile
 
@@ -767,7 +767,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: python:3.6.7-alpine
+        imageRepository: python:3.6.7-alpine3.8
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bf1acb4f1caad419ff290d700044240b4e8cb0df/3.6/alpine3.8/Dockerfile
 
@@ -801,7 +801,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: python:3.6.6-alpine
+        imageRepository: python:3.6.6-alpine3.8
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/3.6/alpine3.8/Dockerfile
 
@@ -925,7 +925,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: python:3.6.5-alpine
+        imageRepository: python:3.6.5-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/caba688d74997c2d063907e35f5439b1b1811d9e/3.6/alpine3.4/Dockerfile
 
@@ -1194,7 +1194,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: python:3.6.2-alpine
+        imageRepository: python:3.6.2-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.6/alpine3.4/Dockerfile
 
@@ -1681,7 +1681,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: python:3.5.6-alpine
+        imageRepository: python:3.5.6-alpine3.8
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/bc999321f00459f8fedb9f42142395d211173713/3.5/alpine3.8/Dockerfile
 
@@ -1751,7 +1751,7 @@
         release: 8.0
         weight: 1
         image: debian:jessie-slim
-        imageRepository: python:3.5.5-slim
+        imageRepository: python:3.5.5-slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cd844bc3a3f49b1a9624df3c4a71a0b5e0106752/3.5/jessie/slim/Dockerfile
 
@@ -1769,7 +1769,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: python:3.5.5-alpine
+        imageRepository: python:3.5.5-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cd844bc3a3f49b1a9624df3c4a71a0b5e0106752/3.5/alpine3.4/Dockerfile
 
@@ -1778,7 +1778,7 @@
         release: 3.8
         weight: 1
         image: alpine:3.8
-        imageRepository: python:3.5.5-alpine
+        imageRepository: python:3.5.5-alpine3.8
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cc8d2323a87f82ab67a982ee00eca1a3a463d18e/3.5/alpine3.8/Dockerfile
 
@@ -1796,7 +1796,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.5.5-slim
+        imageRepository: python:3.5.5-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/48284b41a887508cae25d1040bf44abcd1ed2c91/3.5/stretch/slim/Dockerfile
 
@@ -1839,7 +1839,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: python:3.5.4-alpine
+        imageRepository: python:3.5.4-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8717dc2523c8093990cb958bb8c47ade6f851c05/3.5/alpine3.4/Dockerfile
 
@@ -2086,7 +2086,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.4.10-slim
+        imageRepository: python:3.4.10-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/cd7d18f5e1eff40186b496ca214e330ea02edb07/3.4/stretch/slim/Dockerfile
 
@@ -2156,7 +2156,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.4.9-slim
+        imageRepository: python:3.4.9-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/stretch/slim/Dockerfile
 
@@ -2192,7 +2192,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: python:3.4.9-alpine
+        imageRepository: python:3.4.9-alpine3.9
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/e86b089fc7c39d4c6ec5bcca1e1f11a40673893f/3.4/alpine3.9/Dockerfile
 
@@ -2235,7 +2235,7 @@
         release: 8.0
         weight: 1
         image: debian:jessie-slim
-        imageRepository: python:3.4.8-slim
+        imageRepository: python:3.4.8-slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/d4af596595307d6d940569fab727199a8f8e92b1/3.4/jessie/slim/Dockerfile
 
@@ -2280,7 +2280,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:3.4.8-slim
+        imageRepository: python:3.4.8-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/8350b865d28bc0f4a05111398392ec701d449058/3.4/stretch/slim/Dockerfile
 
@@ -2719,7 +2719,7 @@
         release: 8.0
         weight: 5
         image: buildpack-deps:jessie
-        imageRepository: python:3.3.7
+        imageRepository: python:3.3.7-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/eb5fcfeb040c4ecdb32fd79caa547943e18f9c97/3.3/jessie/Dockerfile
 
@@ -2728,7 +2728,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: python:3.3.7-alpine
+        imageRepository: python:3.3.7-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/eb5fcfeb040c4ecdb32fd79caa547943e18f9c97/3.3/alpine3.4/Dockerfile
 
@@ -2968,7 +2968,7 @@
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: python:2.7.16-slim
+        imageRepository: python:2.7.16-slim-stretch
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/stretch/slim/Dockerfile
 
@@ -3004,7 +3004,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: python:2.7.16-alpine
+        imageRepository: python:2.7.16-alpine3.9
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/636e02777ea417851942e6e826fe5a6b4dee6f74/2.7/alpine3.9/Dockerfile
 
@@ -3074,7 +3074,7 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: python:2.7.15-alpine
+        imageRepository: python:2.7.15-alpine3.9
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/f444edd8a36e828ddf9d72aa3d3282725db0e48b/2.7/alpine3.9/Dockerfile
 
@@ -3110,7 +3110,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: python:2.7.15-alpine
+        imageRepository: python:2.7.15-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4d640edc8df64b9cf050904f60ac03765e05d3f6/2.7/alpine3.4/Dockerfile
 
@@ -3153,7 +3153,7 @@
         release: 8.0
         weight: 1
         image: debian:jessie-slim
-        imageRepository: python:2.7.14-slim
+        imageRepository: python:2.7.14-slim-jessie
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/jessie/slim/Dockerfile
 
@@ -3189,7 +3189,7 @@
         release: 3.4
         weight: 1
         image: alpine:3.4
-        imageRepository: python:2.7.14-alpine
+        imageRepository: python:2.7.14-alpine3.4
         urlRepository: https://github.com/docker-library/python
         urlDockerfile: https://raw.githubusercontent.com/docker-library/python/fb58b39c5ac1cfd5c901fde02b0bf08f8a6b4990/2.7/alpine3.4/Dockerfile
 
