@@ -1,0 +1,353 @@
+
+  - version: 5.28.2
+    majorVersion: '5.28'
+    prerelease: false
+    date: '2019-04-27T13:48:34'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: perl:5.28.2-slim
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.028.002-slim/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.28.2
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.028.002-main/Dockerfile
+
+  - version: 5.28.1
+    majorVersion: '5.28'
+    prerelease: false
+    date: '2019-01-28T14:26:15'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: perl:5.28.1-slim-threaded
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/65ea3a9754a5b99ffbc84fde515cfa289cffee45/5.028.001-slim,threaded/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.28.1
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/65ea3a9754a5b99ffbc84fde515cfa289cffee45/5.028.001-main/Dockerfile
+
+  - version: 5.28.0
+    majorVersion: '5.28'
+    prerelease: false
+    date: '2018-06-25T20:42:37'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.28.0
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/c3e4a229b3423f7db683fb53882473689d9f6112/5.028.000-64bit/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: perl:5.28.0-slim
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/892e2b4fbb58c48ee802cd13b34017300c630f18/5.028.000-slim/Dockerfile
+
+  - version: 5.26.3
+    majorVersion: '5.26'
+    prerelease: false
+    date: '2019-01-28T14:26:15'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: perl:5.26.3-slim
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/65ea3a9754a5b99ffbc84fde515cfa289cffee45/5.026.003-slim/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.26.3
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/65ea3a9754a5b99ffbc84fde515cfa289cffee45/5.026.003-main/Dockerfile
+
+  - version: 5.26.2
+    majorVersion: '5.26'
+    prerelease: false
+    date: '2018-06-25T20:42:37'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.26.2
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/c3e4a229b3423f7db683fb53882473689d9f6112/5.026.002-64bit/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: perl:5.26.2-slim
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/892e2b4fbb58c48ee802cd13b34017300c630f18/5.026.002-slim/Dockerfile
+
+  - version: 5.26.1
+    majorVersion: '5.26'
+    prerelease: false
+    date: '2017-12-04T12:08:42'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.26.1
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.026.001-64bit/Dockerfile
+
+  - version: 5.26.0
+    majorVersion: '5.26'
+    prerelease: false
+    date: '2017-08-27T01:54:33'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.26.0
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.026.000-64bit/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.26.0
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/904ec9505b3d6b71e559d7e1c1d9629a15e3f2ef/5.026.000-64bit/Dockerfile
+
+  - version: 5.24.4
+    majorVersion: '5.24'
+    prerelease: false
+    date: '2018-06-25T20:42:37'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.24.4
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/c3e4a229b3423f7db683fb53882473689d9f6112/5.024.004-64bit/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: perl:5.24.4-slim
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/892e2b4fbb58c48ee802cd13b34017300c630f18/5.024.004-slim/Dockerfile
+
+  - version: 5.24.3
+    majorVersion: '5.24'
+    prerelease: false
+    date: '2017-12-04T12:08:42'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.24.3
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.024.003-64bit/Dockerfile
+
+  - version: 5.24.2
+    majorVersion: '5.24'
+    prerelease: false
+    date: '2017-08-27T01:54:33'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.24.2
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.024.002-64bit/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.24.2
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/904ec9505b3d6b71e559d7e1c1d9629a15e3f2ef/5.024.002-64bit/Dockerfile
+
+  - version: 5.24.1
+    majorVersion: '5.24'
+    prerelease: false
+    date: '2017-03-04T09:36:48'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.24.1
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.024.001-64bit/Dockerfile
+
+  - version: 5.22.4
+    majorVersion: '5.22'
+    prerelease: false
+    date: '2017-12-04T12:08:42'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: perl:5.22.4
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.022.004-64bit/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.22.4
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/904ec9505b3d6b71e559d7e1c1d9629a15e3f2ef/5.022.004-64bit/Dockerfile
+
+  - version: 5.22.3
+    majorVersion: '5.22'
+    prerelease: false
+    date: '2017-03-04T09:36:48'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.22.3
+        urlRepository: https://github.com/perl/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/perl/docker-perl/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.022.003-64bit/Dockerfile
+
+  - version: 5.20.0
+    majorVersion: '5.20'
+    prerelease: false
+    date: '2014-07-07T00:05:26'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.20.0
+        urlRepository: https://github.com/petermartini/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/petermartini/docker-perl/a2e267efb9943a7695dadfe7a152c4c1620710ea/5.020.000-64bit/Dockerfile
+
+  - version: '5.20'
+    majorVersion: '5.20'
+    prerelease: false
+    date: '2014-07-07T00:05:26'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.20
+        urlRepository: https://github.com/petermartini/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/petermartini/docker-perl/a2e267efb9943a7695dadfe7a152c4c1620710ea/5.020.000-64bit/Dockerfile
+
+  - version: 5.18.2
+    majorVersion: '5.18'
+    prerelease: false
+    date: '2014-07-07T00:05:26'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.18.2
+        urlRepository: https://github.com/petermartini/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/petermartini/docker-perl/a2e267efb9943a7695dadfe7a152c4c1620710ea/5.018.002-64bit/Dockerfile
+
+  - version: '5.18'
+    majorVersion: '5.18'
+    prerelease: false
+    date: '2014-07-07T00:05:26'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps
+        imageRepository: perl:5.18
+        urlRepository: https://github.com/petermartini/docker-perl
+        urlDockerfile: https://raw.githubusercontent.com/petermartini/docker-perl/a2e267efb9943a7695dadfe7a152c4c1620710ea/5.018.002-64bit/Dockerfile

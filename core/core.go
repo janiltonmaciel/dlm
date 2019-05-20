@@ -5,13 +5,8 @@ import (
 	"io"
 	"net/http"
 	"os"
-	"regexp"
 	"strings"
 )
-
-var RE_FROM_CMD = regexp.MustCompile(`(^(\s+)?FROM(.*)|^(\s+)?CMD(.*))`)
-var RE_FROM = regexp.MustCompile(`^(\s+)?FROM(.*)`)
-var RE_CMD = regexp.MustCompile(`^(\s+)?CMD(.*)`)
 
 func CheckErr(err error) {
 	if err != nil {
@@ -28,17 +23,22 @@ func HasDockerfile() bool {
 	}
 }
 
-func SanitizeDockerfile(url string) (string, error) {
-	data, err := GetUrl(url)
+func SanitizeDockerfile(distribution Distribution) (string, error) {
+	data, err := GetUrl(distribution.UrlDockerfile)
 	if err != nil {
 		return "", err
 	}
 
+	sanitizeAll := getLanguageSanitizeDockerfile(distribution.Language.Name)
 	newData := make([]string, 0)
 	for _, line := range data {
-		if !RE_FROM_CMD.MatchString(line) {
-			newData = append(newData, line)
+		for _, sanitize := range sanitizeAll {
+			if result := sanitize.Pattern.MatchString(line); result {
+				line = sanitize.Replace(distribution)
+				break
+			}
 		}
+		newData = append(newData, line)
 	}
 	return strings.Join(newData, "\n"), nil
 }

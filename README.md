@@ -1,3 +1,32 @@
+Installation
+The easiest way to install the latest binaries for Linux and Mac is to run this in a shell:
+
+curl -sSf https://moncho.github.io/dry/dryup.sh | sudo sh
+sudo chmod 755 /usr/local/bin/dry
+Binaries
+If you dont like to curl | sh, binaries are provided.
+
+darwin 386 / amd64
+freebsd 386 / amd64
+linux 386 / amd64
+windows 386 / amd64
+Mac OS X / Homebrew
+If you're on OS X and want to use homebrew:
+
+brew tap moncho/dry
+brew install dry
+
+Copyright and license
+Code released under the MIT license. See LICENSE for the full license text.
+
+Credits
+Built on top of:
+
+termbox
+termui
+Docker
+Docker CLI
+
 # dockerfile-gen
 
 Generator Dockerfile
@@ -34,15 +63,15 @@ $ docker run -it --rm \
 Creating Dockerfile
 
 ![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/assets/img/dc-gen-create.gif)
-  
----  
-Building docker image  
-   
+
+---
+Building docker image
+
 
 ![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/assets/img/dc-gen-build.gif)
 
----  
-Running docker image  
-   
+---
+Running docker image
+
 
 ![](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/assets/img/dc-gen-run.gif)

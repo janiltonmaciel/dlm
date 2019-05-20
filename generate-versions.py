@@ -66,9 +66,12 @@ class Hub():
                         "release": float(vs.distribution["release"]),
                         "weight": vs.distribution["weight"],
                         "image": vs.image_name,
-                        "tags": natsorted(list(vs.stags)),
+                        "imageRepository": vs.image_repository,
+                        # "tags": natsorted(list(vs.stags)),
                         "urlRepository": vs.url_repository,
                         "urlDockerfile": vs.url_dockerfile,
+                        # "urlFilePath": vs.filepath,
+                        # "prefix_image_repository": vs.prefix_image_repository,
                     })
                     distributions_hash[key] = True
 
@@ -80,6 +83,7 @@ class Hub():
                 # "tags": natsorted(list(stags)),
                 # "distributionReleases": ", ".join(natsorted(set(["{} {}".format(vs.distribution["name"], vs.distribution["release_name"]) for vs in v["distributions"]]))),
                 "distributionReleases": ", ".join(natsorted(set([vs["name"].title() for vs in distributions]))),
+                # "distributionReleases": ", ".join(natsorted(set([vs["prefix_image_repository"] for vs in distributions]))),
                 "distributions": distributions,
             }
             data.append(data_version)
@@ -123,6 +127,8 @@ class Distribution():
     DISTRIBUTIONS = {}
 
     DEBIAN = {
+        # "TESTING": {"name": "Debian", "release_name": "9 (stretch)", "release": 9},
+
         "SQUEEZE": {"name": "Debian", "release_name": "6 (squeeze)", "release": 6},
         "WHEEZY": {"name": "Debian", "release_name": "7 (wheezy)", "release": 7},
         "JESSIE": {"name": "Debian", "release_name": "8 (jessie)", "release": 8},
@@ -150,6 +156,7 @@ class Distribution():
         **DEBIAN,
         **UBUNTU
     }
+
     DISTRIBUTIONS["buildpack-deps"] = {**DEBIAN["STRETCH"], "weight": 5}
     for k, d in BUILD_PACK_DEPS.items():
         key_buildpack ="buildpack-deps:{}".format(k).lower()
@@ -202,11 +209,11 @@ class Image():
         # "ruby": re.compile(r"^(([.\d]+)(-p\d+)?)"),
         # "python": re.compile(r"^(([.\d]+)(\w\d+)?)"),
         # "golang": re.compile(r"^(([.\d]+)((beta|rc)\d+)?)"),
-        # "default": re.compile(r"^([.\d]+)"),
+        "php": re.compile(r"^([.\d]+-(cli|apache|zts|fpm))"),
         "default": re.compile(r"^(\d+[^-]+)"),
     }
 
-    def __init__(self, language, git_datetime, tags, directory, git_commit, repository, filepath):
+    def __init__(self, language, git_datetime, tags, directory, git_commit, repository, filepath, prefix_image_repository):
         self.language = language
         self.tags = tags
         self.stags = set(map(str.strip, tags.split(",")))
@@ -215,11 +222,13 @@ class Image():
         self.directory = directory
         self.repository = repository
         self.filepath = filepath
+        self.prefix_image_repository = prefix_image_repository
 
         self.re_versions = self.RE_VERSIONS.get(self.language) or self.RE_VERSIONS["default"]
         self.url_repository = "https://github.com{}".format(repository)
         self.url_dockerfile = self.format_url()
 
+        self.image_repository = None
         self.distribution = None
         self.version = None
         self.major_version = None
@@ -234,34 +243,40 @@ class Image():
 
     def _proccess(self):
         try:
-            self.version, self.major_version = self._versions(self.tags)
+            self.version, version_tag, self.major_version = self._versions(self.tags)
         except Exception as e:
             print(e)
 
-        if not self.version or not self.major_version:
+        if not self.version or not self.major_version or not version_tag:
             log_debug("INVALID VERSION:", date=self.git_datetime.isoformat(), tags=self.tags)
             self.valid = False
             return
 
+        self.image_repository = "{}:{}".format(self.prefix_image_repository, version_tag)
         self.distribution, self.image_name = self.get_distribution_release()
 
         if not self.distribution or not self.image_name:
-            print("INVALID IMAGE:", self.image_name, self.url_dockerfile)
             self.valid = False
             return
+        # else:
+        #     print("VALID IMAGE:", self.image_name, self.url_dockerfile)
 
     def _versions(self, tags):
         stags = set(map(str.strip, tags.split(",")))
         versions = []
+        versions_tag = {}
         for tag in stags:
             resp = self.re_versions.search(tag)
             if resp :
-                versions.append(resp.groups()[0])
+                version = resp.groups()[0]
+                versions_tag[version] = tag
+                versions.append(version)
 
         if not versions:
-            return None, None
+            return None, None, None
 
         version = max(versions, key=len)
+        version_tag = versions_tag.get(version, None)
 
         match = self.RE_MAJOR_VERSION.match(version)
         if match:
@@ -270,18 +285,24 @@ class Image():
         else:
             major = version[0:3]
 
-        return version, major
+        return version, version_tag, major
 
     def get_distribution_release(self):
         text = self.download(self.url_dockerfile)
         # import pdb; pdb.set_trace()
         resp = self.RE_FROM_IMAGE.search(text)
         if resp:
-            image_name = resp.groups()[0]
+            image_name_from = resp.groups()[0]
             # print("IMAGE:", image_name)
-            # print("TAGS:", image_name, " - ", self.tags)
-            # print(self.tags)
-            return self.find_distribution_release(image_name)
+            distribution, image_name = self.find_distribution_release(image_name_from)
+            if not distribution or not image_name:
+                msg = "INVALID IMAGE: {} - DISTRIBUTION: {} - URL: {}".format(image_name_from, distribution, self.url_dockerfile)
+                print(msg)
+
+            return distribution, image_name
+
+            return
+
 
         print("REGEX IMAGE NOT FOUND", self.url_dockerfile)
         return None, None
@@ -382,6 +403,7 @@ class OfficialImages():
     def _parser(self):
         for d in self.data:
             repository = self.get_value(d["data"], r"^GitRepo:(.*)")
+            git_commit = self.get_value(d["data"], r"^GitCommit:(.*)")
             blocks = self._blocks(content=d["data"], re_start=r"^Tags:", re_stop=r"^\s+")
             if blocks:
                 for block in blocks:
@@ -390,8 +412,13 @@ class OfficialImages():
                         "git_datetime": d["git_datetime"],
                         "repository": self._repository(repository),
                         "filepath": d["filepath"],
+                        "prefix_image_repository": self.language,
                     }
+
                     fields_kwargs = self.get_value_fields(block, self.FIELDS, ["tags", "git_commit", "directory"])
+                    if not fields_kwargs.get("git_commit"):
+                        fields_kwargs["git_commit"] = git_commit.strip()
+
                     image_kwargs.update(fields_kwargs)
 
                     image = Image(**image_kwargs)
@@ -411,6 +438,7 @@ class OfficialImages():
                             "directory": directory,
                             "repository": self._repository(repository),
                             "filepath": d["filepath"],
+                            "prefix_image_repository": self.language,
                         }
                         image = Image(**image_kwargs)
                         if image.is_valid():
@@ -535,12 +563,14 @@ class MhartNode(OfficialImages):
                 "directory": self.directory,
                 "repository": self.repository,
                 "filepath": d["filepath"],
+                "prefix_image_repository": "mhart/alpine-node",
             }
             image = Image(**image_kwargs)
             if image.is_valid():
                 self.hub.add_image(image)
 
     def save(self):
+        self.hub.save()
         self.hub_join.save()
 
 def log_debug(*args, **kwags):

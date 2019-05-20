@@ -9,26 +9,21 @@ import (
 	"gopkg.in/gookit/color.v1"
 )
 
-type list struct {
-	Name      string
-	Usage     string
-	UsageText string
-	Flags     []cli.Flag
-}
-
-func NewCommandList() list {
-	return list{
-		Name:  "ls",
-		Usage: "List versions available for docker",
+func NewCommandList() cli.Command {
+	return cli.Command{
+		Name:  "list",
+		Usage: "List versions available for docker language",
 		UsageText: `
-    dfm ls <language>                 # List versions available for docker
+    dfm list <language>                 # List versions available for docker
         --pre-release                   When listing, show pre-release version
-    dfm ls <language> <version>       # List versions available for docker, matching a given <version>
+    dfm list <language> <version>       # List versions available for docker, matching a given <version>
         --pre-release                   When listing, show pre-release version
 
 Examples:
-   dfm ls python --pre-release        # List versions available for docker python with pre-release
-   dfm ls node 8.15                   # List versions available for docker node, matching version 8.15
+   dfm list golang --pre-release        # List versions available for docker golang with pre-release
+   dfm list python 3.7                  # List versions available for docker python, matching version 3.7
+   dfm list python 3 --pre-release      # List versions available for docker python, matching version 3
+   dfm list node 8                      # List versions available for docker node, matching version 8.15
 `,
 		Flags: []cli.Flag{
 			cli.BoolFlag{
@@ -36,17 +31,18 @@ Examples:
 				Usage: "# Show pre-release versions",
 			},
 		},
+		Action: listAction,
 	}
 }
 
-func (this list) Action(c *cli.Context) error {
+func listAction(c *cli.Context) error {
 	if c.NArg() <= 0 {
-		return this.showCommandHelp(c)
+		return showCommandHelp(c)
 	}
 
 	languageInput := strings.TrimSpace(c.Args().Get(0))
 	if languageInput == "" {
-		return this.showCommandHelp(c)
+		return showCommandHelp(c)
 	}
 
 	language := core.GetLanguage(languageInput)
@@ -61,7 +57,7 @@ func (this list) Action(c *cli.Context) error {
 
 	versionInput := strings.TrimSpace(c.Args().Get(1))
 	withPrerelease := c.Bool("pre-release")
-	versions := core.FindVersions(languageInput, withPrerelease, versionInput)
+	versions := core.FindVersions(language.Name, withPrerelease, versionInput)
 
 	for _, version := range versions {
 		fmt.Printf("%25s   %s\n",
@@ -71,7 +67,7 @@ func (this list) Action(c *cli.Context) error {
 	return nil
 }
 
-func (this list) showCommandHelp(c *cli.Context) error {
+func showCommandHelp(c *cli.Context) error {
 	fmt.Fprintln(c.App.Writer, color.FgRed.Render("Incorrect usage!"))
 	fmt.Fprintln(c.App.Writer)
 	return cli.ShowCommandHelp(c, c.Command.Name)

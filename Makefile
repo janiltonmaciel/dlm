@@ -22,27 +22,36 @@ LDFLAGS := -X main.version=$(TAG) -X main.commit=$(COMMIT) -X main.date=$(DATE)
 LANGUAGES := $(shell grep language config/languages.yml | awk '{print $$3}')
 HOME = $(shell pwd)
 
+upgrade-all: submodules-update generate-manifests generate-versions packr
+
 ## Generate versions language yml.
-# Ex: make generate-node
-#     make generate-python
-generate-%:
+# Ex: make generate-versions-node
+generate-versions-%:
 	@printf "\nGenerate $*\n"
 	python generate-versions.py tmp/manifest/$*/ $* False save
 
 generate-versions:
 	@printf "Generate: $(LANGUAGES)\n"
-	@for lang in $(LANGUAGES) ; do make generate-$$lang; done;
-	@make generate-mhart
-	@make generate-distributions
+	@for lang in $(LANGUAGES); do make generate-versions-$$lang; done;
+# @make generate-mhart
+# @make generate-distributions
+
+## Generate manifest language
+# Ex: make generate-manifests-python
+generate-manifests-%:
+	@cd submodules/official-images && \
+	 	git_export_all_file_versions.sh library/$* $* $(HOME)/tmp/manifest
 
 generate-manifests:
 	@cd submodules/official-images && \
-	 for lang in $(LANGUAGES); do git_export_all_file_versions.sh library/$$lang $$lang $(HOME)/tmp/manifest  ; done;
-	@cd submodules/mhart && \
-	 git_export_all_file_versions.sh Dockerfile mhart $(HOME)/tmp/manifest
+	 for lang in $(LANGUAGES); do git_export_all_file_versions.sh library/$$lang $$lang $(HOME)/tmp/manifest; done;
+
+#@cd submodules/mhart && \
+# git_export_all_file_versions.sh Dockerfile mhart $(HOME)/tmp/manifest
 
 submodules-update:
 	git submodule update --recursive --remote
+
 
 packr:
 	@packr clean && packr

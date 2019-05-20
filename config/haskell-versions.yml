@@ -5,16 +5,13 @@
     date: '2019-01-07T07:42:28'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        tags:
-          - '8'
-          - '8.6'
-          - 8.6.3
-          - latest
+        imageRepository: haskell:8.6.3
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/03467e1a14543d83d33833e669249a3c42f7b7c8/8.6/Dockerfile
 
@@ -24,16 +21,13 @@
     date: '2018-11-28T23:24:57'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        tags:
-          - '8'
-          - '8.6'
-          - 8.6.2
-          - latest
+        imageRepository: haskell:8.6.2
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/5362898713c831feb18b57f106385cac2b5daa1a/8.6/Dockerfile
 
@@ -43,14 +37,13 @@
     date: '2018-11-28T23:24:57'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        tags:
-          - '8.4'
-          - 8.4.4
+        imageRepository: haskell:8.4.4
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/5362898713c831feb18b57f106385cac2b5daa1a/8.4/Dockerfile
 
@@ -60,16 +53,13 @@
     date: '2018-06-04T11:01:04'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        tags:
-          - '8'
-          - '8.4'
-          - 8.4.3
-          - latest
+        imageRepository: haskell:8.4.3
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/af83447feb6ebeabbc0cbad27adb3895e6262951/8.4/Dockerfile
 
@@ -79,14 +69,13 @@
     date: '2018-06-04T11:01:04'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        tags:
-          - '8.2'
-          - 8.2.2
+        imageRepository: haskell:8.2.2
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/af83447feb6ebeabbc0cbad27adb3895e6262951/8.2/Dockerfile
 
@@ -96,16 +85,13 @@
     date: '2017-09-18T14:38:44'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - '8'
-          - '8.2'
-          - 8.2.1
-          - latest
+        imageRepository: haskell:8.2.1
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/ea501abb24273d6dab3121bb6373f6903f1a3c71/8.2/Dockerfile
 
@@ -115,16 +101,13 @@
     date: '2017-02-14T09:55:26'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - '8'
-          - '8.0'
-          - 8.0.2
-          - latest
+        imageRepository: haskell:8.0.2
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/5f1ae82bd27501322100b915c9ae6cc9f9aea129/8.0/Dockerfile
 
@@ -134,13 +117,13 @@
     date: '2016-06-16T14:46:22'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - 8.0.1
+        imageRepository: haskell:8.0.1
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/e0efde5504642864811a7697ab945067bb6a042e/8.0/Dockerfile
 
@@ -150,13 +133,13 @@
     date: '2016-06-16T14:46:22'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - '8.0'
+        imageRepository: haskell:8.0
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/e0efde5504642864811a7697ab945067bb6a042e/8.0/Dockerfile
 
@@ -166,13 +149,13 @@
     date: '2016-01-28T19:35:30'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - 7.10.3
+        imageRepository: haskell:7.10.3
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/a396f0d9b35cabeb60920abd87a8b2612530cb1b/7.10/Dockerfile
 
@@ -182,13 +165,13 @@
     date: '2015-06-06T15:30:17'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - 7.10.2
+        imageRepository: haskell:7.10.2
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.10/Dockerfile
 
@@ -198,13 +181,13 @@
     date: '2015-04-07T16:33:54'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - 7.10.1
+        imageRepository: haskell:7.10.1
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/8ebd12bf273855afabc2d270b8c0a7aa233b0ea4/7.10/Dockerfile
 
@@ -214,13 +197,13 @@
     date: '2015-06-06T15:30:17'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - '7.10'
+        imageRepository: haskell:7.10
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.10/Dockerfile
 
@@ -230,13 +213,13 @@
     date: '2015-06-06T15:30:17'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - 7.8.4
+        imageRepository: haskell:7.8.4
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.8/Dockerfile
 
@@ -246,21 +229,21 @@
     date: '2015-06-06T15:30:17'
     distributionReleases: Debian
     distributions:
+
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        tags:
-          - '7.8'
+        imageRepository: haskell:7.8
         urlRepository: https://github.com/freebroccolo/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/freebroccolo/docker-haskell/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.8/Dockerfile
+
       - name: Debian
         releaseName: 7 (wheezy)
         release: 7.0
         weight: 2
         image: debian:wheezy
-        tags:
-          - '7.8'
+        imageRepository: haskell:7.8
         urlRepository: https://github.com/darinmorrison/docker-haskell
         urlDockerfile: https://raw.githubusercontent.com/darinmorrison/docker-haskell/399ec9abffb3c86d6747d7ab5dc40556d6de9e4b/7.8/Dockerfile

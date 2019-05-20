@@ -2,6 +2,9 @@ package core
 
 import (
 	"fmt"
+	"regexp"
+	"sort"
+	"strconv"
 	"strings"
 
 	"gopkg.in/yaml.v3"
@@ -12,20 +15,8 @@ func init() {
 	languageConfig := loadLanguageConfig()
 	setLanguages(languageConfig)
 	setVersions(languageChoices)
+	// fmt.Printf("languageChoices: %+v", languageChoices)
 }
-
-// # Replace shell with bash so we can source files
-// RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-
-const (
-	DistroDebian = "DEBIAN"
-	DistroUbuntu = "UBUNTU"
-	DistroAlpine = "ALPINE"
-)
-
-const (
-	LangNode = "NODE"
-)
 
 type (
 	Config interface {
@@ -39,32 +30,40 @@ type (
 	}
 
 	Context struct {
-		From         string
-		BeforeBlocks []string
-		Blocks       []Block
-		AfterBlocks  []string
+		From      Block
+		Before    []string
+		Languages []Block
+		After     []string
 	}
 
 	AnswerVersion struct {
 		Language Language
 		Version  Version
 	}
+	LanguageSanitize struct {
+		Pattern *regexp.Regexp
+		Replace func(d Distribution) string
+	}
 
 	Language struct {
-		Name string `yaml:"language"`
-		Url  string `yaml:"url"`
+		Name       string   `yaml:"language"`
+		Alias      string   `yaml:"alias"`
+		Url        string   `yaml:"url"`
+		Sort       []string `yaml:"sort"`
+		sortDistro map[string]int
 	}
 
 	Distribution struct {
-		Name          string   `yaml:"name"`
-		ReleaseName   string   `yaml:"releaseName"`
-		Release       float32  `yaml:"release"`
-		Image         string   `yaml:"image"`
-		Weight        int      `yaml:"weight"`
-		Tags          []string `yaml:"tags"`
-		UrlRepository string   `yaml:"urlRepository"`
-		UrlDockerfile string   `yaml:"urlDockerfile"`
-		Language      Language
+		Name            string   `yaml:"name"`
+		ReleaseName     string   `yaml:"releaseName"`
+		Release         float32  `yaml:"release"`
+		Image           string   `yaml:"image"`
+		Weight          int      `yaml:"weight"`
+		Tags            []string `yaml:"tags"`
+		UrlRepository   string   `yaml:"urlRepository"`
+		UrlDockerfile   string   `yaml:"urlDockerfile"`
+		ImageRepository string   `yaml:"imageRepository"`
+		Language        Language
 	}
 
 	Version struct {
@@ -81,40 +80,113 @@ type (
 	DistributionConfig []Distribution
 )
 
+const (
+	DistributionDebian = "DEBIAN"
+	DistributionUbuntu = "UBUNTU"
+	DistributionALpine = "ALPINE"
+)
+
 var (
 	languageChoices map[string]Language
 	languages       []string
 	distributions   []Distribution
 
-	DistributionBuild = map[string]map[string][]string{
-		DistroDebian: {
-			"Before": []string{
-				"# DISABLE GPG IPV6",
-				"RUN mkdir ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf",
-			},
+	DisableGpgIPV6 = `
+# DISABLE GPG IPV6
+RUN mkdir ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf`
+
+	DistributionContext = map[string]map[string][]string{
+		DistributionDebian: {
+			"Before": []string{},
 			"After": []string{
 				`RUN apt-get update && apt-get install -y --no-install-recommends bash \
 				&& rm -rf /var/lib/apt/lists/*`,
 			},
 		},
-
-		DistroUbuntu: {
-			"Before": []string{},
-			"After":  []string{},
-		},
-
-		DistroAlpine: {
-			"Before": []string{},
-			"After":  []string{},
-		},
 	}
 
-	LanguageBuild = map[string]map[string][]string{
-		LangNode: {
+	LanguageContext = map[string]map[string][]string{
+		"NODE": {
 			"Before": []string{
 				"ENV PATH node_modules/.bin:$PATH",
 			},
 			"After": []string{},
+		},
+	}
+
+	LanguageSanitizeDockerfile = map[string][]LanguageSanitize{
+		"ALL": []LanguageSanitize{
+			{Pattern: regexp.MustCompile(`(^(\s+)?FROM(.*)|^(\s+)?CMD(.*))`),
+				Replace: func(d Distribution) string {
+					return ""
+				},
+			},
+		},
+
+		"PHP": []LanguageSanitize{
+			{Pattern: regexp.MustCompile(`\s*gpg.*--keyserver.*--recv-keys.*\\`),
+				Replace: func(d Distribution) string {
+					return `  gpg --batch --keyserver p80.pool.sks-keyservers.net --recv-keys "$key" || \
+		  gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" || \
+		  gpg --batch --keyserver ipv4.pool.sks-keyservers.net --recv-keys "$key" || \
+		  gpg --batch --keyserver pgp.mit.edu --recv-keys "$key" || \
+		  gpg --batch --keyserver keyserver.pgp.com --recv-keys "$key"; \`
+				},
+			},
+			{Pattern: regexp.MustCompile(`(\s*COPY.*docker-php-source.*/usr/local/bin/)`),
+				Replace: func(d Distribution) string {
+					respository := strings.TrimSuffix(d.UrlDockerfile, "/Dockerfile")
+					runCmd := `RUN %s && \
+						curl -fs -o /usr/local/bin/docker-php-source %s/docker-php-source && \
+						chmod +x /usr/local/bin/docker-php-source && \
+						%s`
+					cmds := make(map[string]string)
+					switch strings.ToUpper(d.Name) {
+					case DistributionALpine:
+						cmds["ADD"] = `apk add --no-cache --virtual .fetch-deps curl`
+						cmds["DEL"] = `apk del .fetch-deps`
+					default:
+						cmds["ADD"] = `apt-get update && apt-get install -y --no-install-recommends curl`
+						cmds["DEL"] = ``
+					}
+					return fmt.Sprintf(runCmd, cmds["ADD"], respository, cmds["DEL"])
+				},
+			},
+
+			{Pattern: regexp.MustCompile(`(\s*COPY.*docker-php-ext.*/usr/local/bin/)`),
+				Replace: func(d Distribution) string {
+					respository := strings.TrimSuffix(d.UrlDockerfile, "/Dockerfile")
+					runCmd := `RUN %s && \
+					curl -fs -o /usr/local/bin/docker-php-entrypoint %s/docker-php-entrypoint && \
+					curl -fs -o /usr/local/bin/docker-php-ext-configure %s/docker-php-ext-configure && \
+					curl -fs -o /usr/local/bin/docker-php-ext-enable %s/docker-php-ext-enable && \
+					curl -fs -o /usr/local/bin/docker-php-ext-install %s/docker-php-ext-install && \
+					chmod +x /usr/local/bin/docker-php-* && \
+						%s`
+					cmds := make(map[string]string)
+					switch strings.ToUpper(d.Name) {
+					case DistributionALpine:
+						cmds["ADD"] = `apk add --no-cache --virtual .fetch-deps curl`
+						cmds["DEL"] = `apk del .fetch-deps`
+					default:
+						cmds["ADD"] = `apt-get update && apt-get install -y --no-install-recommends curl`
+						cmds["DEL"] = ``
+					}
+					return fmt.Sprintf(runCmd, cmds["ADD"], respository, respository, respository, respository, cmds["DEL"])
+				},
+			},
+		},
+
+		"PYTHON": []LanguageSanitize{
+			{Pattern: regexp.MustCompile(`.*&&.*gpg\s+--keyserver.*--recv-keys`),
+				Replace: func(d Distribution) string {
+					return `  && gpg --keyserver p80.pool.sks-keyservers.net --recv-keys "$GPG_KEY" || \
+		  gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" || \
+		  gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys "$GPG_KEY" || \
+		  gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" || \
+		  gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY" \`
+				},
+			},
 		},
 	}
 )
@@ -131,61 +203,97 @@ func (dc *DistributionConfig) Parse(data []byte) error {
 	return yaml.Unmarshal(data, dc)
 }
 
-func (d Distribution) Description(languageName string) string {
-	desc := fmt.Sprintf(`
-##### %s ######
+func (d Distribution) Description() string {
+	desc := fmt.Sprintf(`##### %s ######
 # Official Docker Image for %s
 # repository: %s
 # dockerfile: %s
 # image: %s
-	`, strings.ToUpper(languageName), languageName, d.UrlRepository, d.UrlDockerfile, d.Image)
+# tag: %s`,
+		strings.ToUpper(d.Language.Name), d.Language.Name, d.UrlRepository, d.UrlDockerfile, d.Image, d.ImageRepository)
 
 	return desc
 }
 
-func NewContext(distributionName string) Context {
-	distroBuild := getDistributionBuild(distributionName)
+func (d Distribution) Sort() int {
+	return d.Language.SortDistro(d.Name)
+}
+
+func (d Distribution) Hash() string {
+	return fmt.Sprintf("%s-%s-%s", d.Language.Name, d.UrlRepository, d.UrlDockerfile)
+}
+
+func (l Language) SortDistro(distributionName string) int {
+	return l.sortDistro[strings.ToLower(distributionName)]
+}
+
+func NewContext(distros []Distribution, distro Distribution) Context {
+	distroContext := getDistributionContext(distro.Name)
+
+	before := make([]string, 0)
+	if len(distros) > 1 {
+		before = append(before, DisableGpgIPV6)
+	}
+	before = append(before, distroContext["Before"]...)
 	return Context{
-		BeforeBlocks: distroBuild["Before"],
-		Blocks:       make([]Block, 0),
-		AfterBlocks:  distroBuild["After"],
+		From: Block{
+			Description: distro.Description(),
+			Data:        fmt.Sprintf("FROM %s", distro.ImageRepository),
+		},
+		Before:    before,
+		Languages: make([]Block, 0),
+		After:     distroContext["After"],
 	}
 }
 
-func NewBlock(languageName string, distro Distribution, data string) Block {
-	langBuild := getLanguageBuild(languageName)
+func NewLanguageBlock(distro Distribution, data string, isFrom bool) Block {
+	langContext := getLanguageContext(distro.Language.Name)
+	description := distro.Description()
+	if isFrom {
+		description = ""
+	}
 	block := Block{
-		Description: distro.Description(languageName),
+		Description: description,
 		Data:        data,
-		Before:      langBuild["Before"],
-		After:       langBuild["After"],
+		Before:      langContext["Before"],
+		After:       langContext["After"],
 	}
 	return block
 }
 
-func getDistributionBuild(distributionName string) map[string][]string {
-	distroBuild, found := DistributionBuild[strings.ToUpper(distributionName)]
+func getDistributionContext(distributionName string) map[string][]string {
+	distroContext, found := DistributionContext[strings.ToUpper(distributionName)]
 	if found {
-		return distroBuild
+		return distroContext
 	}
-	distroBuild = map[string][]string{
+	distroContext = map[string][]string{
 		"Before": []string{},
 		"After":  []string{},
 	}
-	return distroBuild
+	return distroContext
 }
 
-func getLanguageBuild(languageName string) map[string][]string {
-	langBuild, found := LanguageBuild[strings.ToUpper(languageName)]
+func getLanguageContext(languageName string) map[string][]string {
+	langContext, found := LanguageContext[strings.ToUpper(languageName)]
 	if found {
-		return langBuild
+		return langContext
 	}
 
-	langBuild = map[string][]string{
+	langContext = map[string][]string{
 		"Before": []string{},
 		"After":  []string{},
 	}
-	return langBuild
+	return langContext
+}
+
+func getLanguageSanitizeDockerfile(languageName string) (data []LanguageSanitize) {
+	data = append(data, LanguageSanitizeDockerfile["ALL"]...)
+	lsd, found := LanguageSanitizeDockerfile[strings.ToUpper(languageName)]
+	if found {
+		data = append(data, lsd...)
+		return
+	}
+	return
 }
 
 func GetLanguages() []string {
@@ -195,8 +303,8 @@ func GetDistributions() []Distribution {
 	return distributions
 }
 
-func GetLanguage(name string) *Language {
-	if lang, found := languageChoices[strings.ToLower(name)]; found {
+func GetLanguage(alias string) *Language {
+	if lang, found := languageChoices[strings.ToLower(alias)]; found {
 		return &lang
 	}
 	return nil
@@ -222,13 +330,29 @@ func loadConfig(fileName string, config Config) {
 func loadDistributionConfig() {
 	var dc DistributionConfig
 	loadConfig("distributions.yml", &dc)
+	sort.Slice(dc, func(i, j int) bool {
+		return dc[i].Sort() < dc[j].Sort()
+	})
 	distributions = dc
 }
 
 func setLanguages(config LanguageConfig) {
 	languageChoices = make(map[string]Language)
-	for _, lang := range config {
-		languageChoices[strings.ToLower(lang.Name)] = lang
-		languages = append(languages, strings.Title(lang.Name))
+	for i := 0; i < len(config); i++ {
+		lang := config[i]
+		if len(lang.Sort) > 0 {
+			lang.sortDistro = make(map[string]int)
+			for _, sort := range lang.Sort {
+				data := strings.Split(sort, ":")
+				key := data[0]
+				value, _ := strconv.Atoi(data[1])
+				lang.sortDistro[key] = value
+			}
+		}
+
+		languageChoices[strings.ToLower(lang.Alias)] = lang
+		languages = append(languages, lang.Alias)
 	}
+
+	sort.Strings(languages)
 }

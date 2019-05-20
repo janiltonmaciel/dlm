@@ -1,0 +1,111 @@
+
+  - version: '3.6'
+    majorVersion: '3.6'
+    prerelease: false
+    date: '2019-05-06T16:07:30'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: pypy:3.6-slim
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/eb8f5a1379cb955c32678e5b4824f1263af8ab09/3.6/slim/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: pypy:3.6-7.1
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/eb8f5a1379cb955c32678e5b4824f1263af8ab09/3.6/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        imageRepository: pypy:3.6-slim
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/ca73fc5b08ad6ff2d6fb69dce2942a0ea51766d3/3.6/slim/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: pypy:3.6-7-jessie
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/ca73fc5b08ad6ff2d6fb69dce2942a0ea51766d3/3.6/Dockerfile
+
+  - version: '3.5'
+    majorVersion: '3.5'
+    prerelease: false
+    date: '2019-02-13T08:38:55'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        imageRepository: pypy:3.5-7-slim
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/ca73fc5b08ad6ff2d6fb69dce2942a0ea51766d3/3.5/slim/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: pypy:3.5-7-jessie
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/ca73fc5b08ad6ff2d6fb69dce2942a0ea51766d3/3.5/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: pypy:3.5-7.0-stretch
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/b3ee440a1a459e63001454e5a9e1f20da439edab/3.5/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: pypy:3.5-7.0.0-slim-stretch
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/abb5b517964511ac622572f07f54c21d58849dfe/3.5/slim/Dockerfile
+
+  - version: '2.7'
+    majorVersion: '2.7'
+    prerelease: false
+    date: '2019-04-16T22:07:24'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        imageRepository: pypy:2.7-7.1-slim
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/f1cf0a1612c182313f93ab54bf0b1d288b95cf3d/2.7/slim/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: pypy:2.7-7.1.1
+        urlRepository: https://github.com/docker-library/pypy
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/pypy/f1cf0a1612c182313f93ab54bf0b1d288b95cf3d/2.7/Dockerfile

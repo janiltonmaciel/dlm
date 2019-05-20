@@ -1,10 +1,19 @@
-FROM {{ .From }}
+{{- range .From.Before -}}
+{{ . }}
+{{- end -}}
 
-{{ range .BeforeBlocks -}}
+{{ .From.Description }}
+{{ .From.Data }}
+
+{{- range .From.After -}}
 {{ . }}
 {{ end -}}
 
-{{ range .Blocks -}}
+{{ range .Before }}
+{{ . }}
+{{ end -}}
+
+{{ range .Languages -}}
 {{ .Description }}
 
 {{ range .Before -}}
@@ -16,9 +25,8 @@ FROM {{ .From }}
 {{ range .After -}}
 {{ . }}
 {{ end -}}
+{{ end -}}
 
-{{ end }}
-
-{{ range .AfterBlocks -}}
+{{- range .After -}}
 {{ . }}
-{{ end }}
+{{ end -}}

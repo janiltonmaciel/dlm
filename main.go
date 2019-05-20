@@ -26,10 +26,6 @@ func init() {
 
 func main() {
 	appCmd := cmd.NewCommandApp()
-	createCmd := cmd.NewCommandCreate()
-	listCmd := cmd.NewCommandList()
-	languageCmd := cmd.NewCommandLanguage()
-
 	app := cli.NewApp()
 	app.Name = appCmd.HelpName
 	app.HelpName = appCmd.HelpName
@@ -39,24 +35,9 @@ func main() {
 	app.Version = version
 
 	app.Commands = []cli.Command{
-		{
-			Name:   createCmd.Name,
-			Usage:  createCmd.Usage,
-			Action: createCmd.Action,
-		},
-		{
-			Name:      listCmd.Name,
-			Usage:     listCmd.Usage,
-			UsageText: listCmd.UsageText,
-			Action:    listCmd.Action,
-			Flags:     listCmd.Flags,
-		},
-		{
-			Name:      languageCmd.Name,
-			Usage:     languageCmd.Usage,
-			UsageText: languageCmd.UsageText,
-			Action:    languageCmd.Action,
-		},
+		cmd.NewCommandCreate(),
+		cmd.NewCommandList(),
+		cmd.NewCommandLanguage(),
 	}
 
 	err := app.Run(os.Args)

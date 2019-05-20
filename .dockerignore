@@ -1,0 +1,4 @@
+submodules/*
+vendor/*
+.git/*
+tmp/*

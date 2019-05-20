@@ -9,23 +9,17 @@ import (
 	"github.com/janiltonmaciel/dockerfile-gen/core"
 )
 
-type language struct {
-	Name      string
-	Usage     string
-	UsageText string
-}
-
-func NewCommandLanguage() language {
-	return language{
+func NewCommandLanguage() cli.Command {
+	return cli.Command{
 		Name:  "languages",
 		Usage: "List all supported languages",
 		UsageText: `
-   dfm languages                    # List all supported languages
-`,
+   dfm languages                    # List all supported languages\n`,
+		Action: languageAction,
 	}
 }
 
-func (this language) Action(c *cli.Context) error {
+func languageAction(c *cli.Context) error {
 	languages := core.GetLanguages()
 	fmt.Println("Supported languages:")
 	for _, lang := range languages {

@@ -1,0 +1,377 @@
+
+  - version: 3.6.0
+    majorVersion: '3.6'
+    prerelease: false
+    date: '2019-04-27T08:04:07'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.6.0
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/81766dfd355860d733d1cac98f583c2f3aa430ac/r-base/Dockerfile
+
+  - version: 3.5.3
+    majorVersion: '3.5'
+    prerelease: false
+    date: '2019-03-23T07:25:45'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.5.3
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/ab427992a183729b2698e06d078eca53853c8044/r-base/Dockerfile
+
+  - version: 3.5.2
+    majorVersion: '3.5'
+    prerelease: false
+    date: '2018-12-22T08:02:32'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.5.2
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/a7ecee9111f3b5dde35555d338a0e30401f5c095/r-base/Dockerfile
+
+  - version: 3.5.1
+    majorVersion: '3.5'
+    prerelease: false
+    date: '2018-07-10T05:41:14'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.5.1
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/b9f9289ef27f07dc2f2b64d56d12646770b9b233/r-base/Dockerfile
+
+  - version: 3.5.0
+    majorVersion: '3.5'
+    prerelease: false
+    date: '2018-06-21T13:48:59'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.5.0
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/960999dd029454202f59cf4beeaedaceecd27ec6/r-base/Dockerfile
+
+  - version: 3.4.4
+    majorVersion: '3.4'
+    prerelease: false
+    date: '2018-03-16T07:39:27'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.4.4
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/151274f9052f874034489769b94eba834309dc5d/r-base/Dockerfile
+
+  - version: 3.4.3
+    majorVersion: '3.4'
+    prerelease: false
+    date: '2017-12-02T08:03:24'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.4.3
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/3019a8c8c29d9337c23e30ef42fa0c6677a0e264/r-base/Dockerfile
+
+  - version: 3.4.2
+    majorVersion: '3.4'
+    prerelease: false
+    date: '2017-10-01T08:09:07'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.4.2
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/eeeeac041f639377acb9320e6cb1c3154f160dfe/r-base/Dockerfile
+
+  - version: 3.4.1
+    majorVersion: '3.4'
+    prerelease: false
+    date: '2017-07-19T13:46:29'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.4.1
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/541002c788eff3ffce85c16072365bf2bc8bdf67/r-base/Dockerfile
+
+  - version: 3.4.0
+    majorVersion: '3.4'
+    prerelease: false
+    date: '2017-04-25T09:15:45'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.4.0
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/e9758030e435915d5e6f21aaab0fc35a5a8efaae/r-base/Dockerfile
+
+  - version: 3.3.3
+    majorVersion: '3.3'
+    prerelease: false
+    date: '2017-03-15T13:25:42'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.3.3
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/8620b7759022c7860ac54887066b79d224fe01dd/r-base/Dockerfile
+
+  - version: 3.3.2
+    majorVersion: '3.3'
+    prerelease: false
+    date: '2016-11-06T18:28:32'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.3.2
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/b2cdaad0026645c6cb3ed78f460042ed2197449a/r-base/Dockerfile
+
+  - version: 3.3.1
+    majorVersion: '3.3'
+    prerelease: false
+    date: '2016-06-29T09:15:31'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.3.1
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/118be9ab285173237441836d84bab714c0920cca/r-base/Dockerfile
+
+  - version: 3.3.0
+    majorVersion: '3.3'
+    prerelease: false
+    date: '2016-05-10T10:41:55'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.3.0
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/6306669deb6673fa7c53b94586f8f8e624f3c8f8/r-base/Dockerfile
+
+  - version: 3.2.5
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2016-04-20T12:09:41'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.2.5
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/13a345ad18c19e467a6c70cda6687128921292ff/r-base/Dockerfile
+
+  - version: 3.2.4
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2016-03-27T13:19:07'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.2.4
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/0cc8fb084f2b78a00f6741e1080d9b23f32424c8/r-base/Dockerfile
+
+  - version: 3.2.3
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2015-12-26T12:45:49'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.2.3
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/eeb9c8a5f416f7cfe982734440e39fa72abbcb33/r-base/Dockerfile
+
+  - version: 3.2.2
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2015-08-24T06:29:51'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.2.2
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/ee6e1da2e7020978a6aaf3916f8aba9edd16e72d/r-base/Dockerfile
+
+  - version: 3.2.1
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2015-07-12T16:49:19'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.2.1
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/9f26417d0987d0b8517491270da0541aa9b754cc/r-base/Dockerfile
+
+  - version: 3.2.0
+    majorVersion: '3.2'
+    prerelease: false
+    date: '2015-04-18T10:28:49'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: r-base:3.2.0
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/849e42992a3ce5bf6f004bcbfc76605aff3f3c08/r-base/Dockerfile
+
+  - version: 3.1.3
+    majorVersion: '3.1'
+    prerelease: false
+    date: '2015-03-18T19:53:47'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: r-base:3.1.3
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/ee9569326e20d2e46f0f22bcc6a0396a545c37e2/r-base/Dockerfile
+
+  - version: 3.1.2
+    majorVersion: '3.1'
+    prerelease: false
+    date: '2015-02-03T20:12:26'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: r-base:3.1.2
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/fa244c6a6010d41fca568d2469be681959a1f3c4/r-base/Dockerfile
+
+  - version: 3.1.1
+    majorVersion: '3.1'
+    prerelease: false
+    date: '2014-11-18T14:38:11'
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:testing
+        imageRepository: r-base:3.1.1
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/efc246b8d93905fe3d61e1aea58c8f685c14f3b6/debian/r-base/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: r-base:3.1.1
+        urlRepository: https://github.com/rocker-org/rocker
+        urlDockerfile: https://raw.githubusercontent.com/rocker-org/rocker/9786da44e4451c84b70c25c71839e2270333785b/debian/r-base/Dockerfile

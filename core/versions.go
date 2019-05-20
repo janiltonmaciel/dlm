@@ -53,6 +53,13 @@ func setVersions(languageChoices map[string]Language) {
 		versionConfig := VersionConfig{}
 		fileNameVersions := fmt.Sprintf("%s-versions.yml", strings.ToLower(lang.Name))
 		loadConfig(fileNameVersions, &versionConfig)
+
+		for _, version := range versionConfig {
+			for i := 0; i < len(version.Distributions); i++ {
+				version.Distributions[i].Language = lang
+			}
+		}
+
 		versions[strings.ToLower(lang.Name)] = versionConfig
 	}
 }
