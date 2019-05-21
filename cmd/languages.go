@@ -9,7 +9,7 @@ import (
 	"github.com/janiltonmaciel/dockerfile-gen/core"
 )
 
-func NewCommandLanguage() cli.Command {
+func newCommandLanguage() cli.Command {
 	return cli.Command{
 		Name:  "languages",
 		Usage: "List all supported languages",

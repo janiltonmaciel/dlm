@@ -25,20 +25,9 @@ func init() {
 }
 
 func main() {
-	appCmd := cmd.NewCommandApp()
-	app := cli.NewApp()
-	app.Name = appCmd.HelpName
-	app.HelpName = appCmd.HelpName
-	app.Usage = appCmd.Usage
-	app.UsageText = appCmd.UsageText
+	app := cmd.CreateApp()
 	app.Author = author
 	app.Version = version
-
-	app.Commands = []cli.Command{
-		cmd.NewCommandCreate(),
-		cmd.NewCommandList(),
-		cmd.NewCommandLanguage(),
-	}
 
 	err := app.Run(os.Args)
 	if err != nil {
