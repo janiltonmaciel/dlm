@@ -15,7 +15,7 @@ import (
 
 type create struct{}
 
-func NewCommandCreate() cli.Command {
+func newCommandCreate() cli.Command {
 	c := create{}
 	return cli.Command{
 		Name:   "create",
