@@ -3,4 +3,4 @@
 	url = https://github.com/docker-library/official-images.git
 [submodule "version-gen"]
 	path = version-gen
-	url = git@gitlab.com:janiltonmaciel/version-gen.git
+	url = git@github.com:janiltonmaciel/version-gen.git
