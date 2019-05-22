@@ -54,7 +54,7 @@ func listAction(c *cli.Context) error {
 
 	versionInput := strings.TrimSpace(c.Args().Get(1))
 	withPrerelease := c.Bool("pre-release")
-	printVersions(language, withPrerelease, versionInput)
+	printVersions(c, language, withPrerelease, versionInput)
 
 	return nil
 }
@@ -74,11 +74,25 @@ func showLanguageCommandHelp(c *cli.Context, languageInput string) error {
 	return cli.ShowCommandHelp(c, "languages")
 }
 
-func printVersions(language *core.Language, withPrerelease bool, versionInput string) {
+func printVersions(c *cli.Context, language *core.Language, withPrerelease bool, versionInput string) {
 	versions := core.FindVersions(language.Name, withPrerelease, versionInput)
+	fmt.Fprintf(c.App.Writer, "%s:", color.FgLightYellow.Render(language.Alias))
+	fmt.Fprintln(c.App.Writer)
+
+	var versionColor string
 	for _, version := range versions {
+		// if version.Current {
+		// 	versionColor = color.FgGreen.Render(version.Version)
+		// } else {
+		// 	versionColor = color.FgLightYellow.Render(version.Version)
+		// }
+		versionColor = color.FgGreen.Render(version.Version)
+		if version.Prerelease {
+			versionColor = color.FgLightYellow.Render(version.Version)
+		}
+
 		fmt.Printf("%25s   %s\n",
-			color.FgGreen.Render(version.Version),
+			versionColor,
 			color.FgDefault.Render(version.DistributionReleases))
 	}
 }

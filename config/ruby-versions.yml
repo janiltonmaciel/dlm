@@ -1905,6 +1905,197 @@
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.1/wheezy/Dockerfile
 
+  - version: 2.0.0-p648
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2016-02-26T15:52:15'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:2.0.0-p648
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c387c6c3a2505060514e31c247cb37d22c944e55/2.0/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: ruby:2.0.0-p648-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c387c6c3a2505060514e31c247cb37d22c944e55/2.0/slim/Dockerfile
+
+  - version: 2.0.0-p647
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2015-11-04T14:14:27'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:2.0.0-p647
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.0/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: ruby:2.0.0-p647-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/74ee8aec9c17ea2134db8a8ef199cf092c829576/2.0/slim/Dockerfile
+
+  - version: 2.0.0-p645
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2015-08-11T15:14:57'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        imageRepository: ruby:2.0.0-p645-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/3c8701dbc263001651f8a0ac44bfb1c6113b69fa/2.0/wheezy/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:2.0.0-p645
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.0/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: ruby:2.0.0-p645-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/d88c77ea84b114fdfcdaa022a4e43bb067d5ac81/2.0/slim/Dockerfile
+
+  - version: 2.0.0-p643
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2015-04-01T15:16:22'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        imageRepository: ruby:2.0.0-p643-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/wheezy/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:2.0.0-p643
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.0/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: ruby:2.0.0-p643-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.0/slim/Dockerfile
+
+  - version: 2.0.0-p598
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2015-02-05T14:10:32'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        imageRepository: ruby:2.0.0-p598-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8c8394eebfff558f3aa00780e09f73f04e8eca56/2.0/wheezy/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:2.0.0-p598
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f5d7ef4e2659596e007871db90b80b2f235b845/2.0/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: ruby:2.0.0-p598-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8164fe030868a3fc680dc53277b9572feedf112a/2.0/slim/Dockerfile
+
+  - version: 2.0.0-p594
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2014-10-28T20:19:43'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:2.0.0-p594
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/2.0/Dockerfile
+
+  - version: 2.0.0-p576
+    majorVersion: '2.0'
+    prerelease: false
+    date: '2014-10-20T10:37:06'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:2.0.0-p576
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f9a2625e38d17238b61b3eb084d84da2a1a4ea66/2.0/Dockerfile
+
   - version: 2.0.0
     majorVersion: '2.0'
     prerelease: false
@@ -1974,6 +2165,75 @@
         imageRepository: ruby:2.0-slim
         urlRepository: https://github.com/docker-library/ruby
         urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/c387c6c3a2505060514e31c247cb37d22c944e55/2.0/slim/Dockerfile
+
+  - version: 1.9.3-p551
+    majorVersion: '1.9'
+    prerelease: false
+    date: '2015-03-03T10:38:16'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        imageRepository: ruby:1.9.3-p551-wheezy
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8c8394eebfff558f3aa00780e09f73f04e8eca56/1.9/wheezy/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: ruby:1.9.3-p551
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/1f5d7ef4e2659596e007871db90b80b2f235b845/1.9/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: ruby:1.9.3-p551-slim
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/8164fe030868a3fc680dc53277b9572feedf112a/1.9/slim/Dockerfile
+
+  - version: 1.9.3-p550
+    majorVersion: '1.9'
+    prerelease: false
+    date: '2014-10-28T20:19:43'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        imageRepository: ruby:1.9.3-p550
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/1.9/Dockerfile
+
+  - version: 1.9.3-p547
+    majorVersion: '1.9'
+    prerelease: false
+    date: '2014-10-20T10:37:06'
+    current: false
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 7 (wheezy)
+        release: 7.0
+        weight: 5
+        image: buildpack-deps:wheezy
+        imageRepository: ruby:1.9.3-p547
+        urlRepository: https://github.com/docker-library/ruby
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/ruby/f9a2625e38d17238b61b3eb084d84da2a1a4ea66/1.9/Dockerfile
 
   - version: 1.9.3
     majorVersion: '1.9'

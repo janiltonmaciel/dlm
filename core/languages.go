@@ -71,6 +71,7 @@ type (
 		MajorVersion         string         `yaml:"majorVersion"`
 		Prerelease           bool           `yaml:"prerelease"`
 		Date                 string         `yaml:"date"`
+		Current              bool           `yaml:"current"`
 		DistributionReleases string         `yaml:"distributionReleases"`
 		Distributions        []Distribution `yaml:"distributions"`
 	}

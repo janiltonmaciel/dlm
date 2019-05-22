@@ -7,6 +7,7 @@ import (
 	"github.com/urfave/cli"
 
 	"github.com/janiltonmaciel/dockerfile-gen/core"
+	"gopkg.in/gookit/color.v1"
 )
 
 func newCommandLanguage() cli.Command {
@@ -21,9 +22,10 @@ func newCommandLanguage() cli.Command {
 
 func languageAction(c *cli.Context) error {
 	languages := core.GetLanguages()
-	fmt.Println("Supported languages:")
+	fmt.Fprintln(c.App.Writer, color.FgLightYellow.Render("Supported languages:"))
 	for _, lang := range languages {
-		fmt.Printf(" - %s\n", strings.ToLower(lang))
+		fmt.Fprintf(c.App.Writer, "    %s", color.FgGreen.Render(strings.ToLower(lang)))
+		fmt.Fprintln(c.App.Writer)
 	}
 	fmt.Println()
 	return nil
