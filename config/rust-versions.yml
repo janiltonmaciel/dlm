@@ -3,17 +3,9 @@
     majorVersion: '1.34'
     prerelease: false
     date: '2019-05-14T08:56:21'
+    current: true
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 1
-        image: debian:stretch-slim
-        imageRepository: rust:1.34.2-slim-stretch
-        urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/b5bd00496a4b0a349a1b879f4b98ca3307a939df/1.34.2/stretch/slim/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -24,21 +16,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/b5bd00496a4b0a349a1b879f4b98ca3307a939df/1.34.2/stretch/Dockerfile
 
-  - version: 1.34.1
-    majorVersion: '1.34'
-    prerelease: false
-    date: '2019-04-25T15:16:22'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.34.1-slim-stretch
+        imageRepository: rust:1.34.2-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/0ae19e393f5d53bbfd657f48e0cf9ab203059af3/1.34.1/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/b5bd00496a4b0a349a1b879f4b98ca3307a939df/1.34.2/stretch/slim/Dockerfile
+
+  - version: 1.34.1
+    majorVersion: '1.34'
+    prerelease: false
+    date: '2019-04-25T15:16:22'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -49,21 +42,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/0ae19e393f5d53bbfd657f48e0cf9ab203059af3/1.34.1/stretch/Dockerfile
 
-  - version: 1.34.0
-    majorVersion: '1.34'
-    prerelease: false
-    date: '2019-04-11T12:21:29'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.34.0-slim-stretch
+        imageRepository: rust:1.34.1-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/7663b3d6680c62dee26c8c20b03a836fc09b6325/1.34.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/0ae19e393f5d53bbfd657f48e0cf9ab203059af3/1.34.1/stretch/slim/Dockerfile
+
+  - version: 1.34.0
+    majorVersion: '1.34'
+    prerelease: false
+    date: '2019-04-11T12:21:29'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -74,21 +68,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/7663b3d6680c62dee26c8c20b03a836fc09b6325/1.34.0/stretch/Dockerfile
 
-  - version: 1.33.0
-    majorVersion: '1.33'
-    prerelease: false
-    date: '2019-02-28T12:42:34'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.33.0-slim-stretch
+        imageRepository: rust:1.34.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/97a72441aad0ec26edf5175382c3d0022c84ba7d/1.33.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/7663b3d6680c62dee26c8c20b03a836fc09b6325/1.34.0/stretch/slim/Dockerfile
+
+  - version: 1.33.0
+    majorVersion: '1.33'
+    prerelease: false
+    date: '2019-02-28T12:42:34'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -99,21 +94,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/97a72441aad0ec26edf5175382c3d0022c84ba7d/1.33.0/stretch/Dockerfile
 
-  - version: 1.32.0
-    majorVersion: '1.32'
-    prerelease: false
-    date: '2019-01-17T12:17:37'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.32.0-slim-stretch
+        imageRepository: rust:1.33.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/edda09581f7c015c5cc2b8f0e04951a83b6f9727/1.32.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/97a72441aad0ec26edf5175382c3d0022c84ba7d/1.33.0/stretch/slim/Dockerfile
+
+  - version: 1.32.0
+    majorVersion: '1.32'
+    prerelease: false
+    date: '2019-01-17T12:17:37'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -124,21 +120,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/edda09581f7c015c5cc2b8f0e04951a83b6f9727/1.32.0/stretch/Dockerfile
 
-  - version: 1.31.1
-    majorVersion: '1.31'
-    prerelease: false
-    date: '2018-12-20T10:15:20'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.31.1-slim-stretch
+        imageRepository: rust:1.32.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1d112bc218d6b7a5479a05fa652130d8e086564f/1.31.1/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/edda09581f7c015c5cc2b8f0e04951a83b6f9727/1.32.0/stretch/slim/Dockerfile
+
+  - version: 1.31.1
+    majorVersion: '1.31'
+    prerelease: false
+    date: '2018-12-20T10:15:20'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -149,21 +146,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1d112bc218d6b7a5479a05fa652130d8e086564f/1.31.1/stretch/Dockerfile
 
-  - version: 1.31.0
-    majorVersion: '1.31'
-    prerelease: false
-    date: '2018-12-06T10:03:03'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.31.0-slim-stretch
+        imageRepository: rust:1.31.1-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/e7703b2cf525f2525bdf8d131cd66b5b38b1513c/1.31.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1d112bc218d6b7a5479a05fa652130d8e086564f/1.31.1/stretch/slim/Dockerfile
+
+  - version: 1.31.0
+    majorVersion: '1.31'
+    prerelease: false
+    date: '2018-12-06T10:03:03'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -174,21 +172,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/e7703b2cf525f2525bdf8d131cd66b5b38b1513c/1.31.0/stretch/Dockerfile
 
-  - version: 1.30.1
-    majorVersion: '1.30'
-    prerelease: false
-    date: '2018-11-08T10:15:35'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.30.1-slim-stretch
+        imageRepository: rust:1.31.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/c34d6993e8f9403c18f348de85787f1585fd3375/1.30.1/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/e7703b2cf525f2525bdf8d131cd66b5b38b1513c/1.31.0/stretch/slim/Dockerfile
+
+  - version: 1.30.1
+    majorVersion: '1.30'
+    prerelease: false
+    date: '2018-11-08T10:15:35'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -199,21 +198,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/c34d6993e8f9403c18f348de85787f1585fd3375/1.30.1/stretch/Dockerfile
 
-  - version: 1.30.0
-    majorVersion: '1.30'
-    prerelease: false
-    date: '2018-10-25T10:34:08'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.30.0-slim-stretch
+        imageRepository: rust:1.30.1-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/9591b70ba627c079e772a5c00036ce48082fbeda/1.30.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/c34d6993e8f9403c18f348de85787f1585fd3375/1.30.1/stretch/slim/Dockerfile
+
+  - version: 1.30.0
+    majorVersion: '1.30'
+    prerelease: false
+    date: '2018-10-25T10:34:08'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -224,21 +224,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/9591b70ba627c079e772a5c00036ce48082fbeda/1.30.0/stretch/Dockerfile
 
-  - version: 1.29.2
-    majorVersion: '1.29'
-    prerelease: false
-    date: '2018-10-12T10:19:25'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.29.2-slim-stretch
+        imageRepository: rust:1.30.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/5f19dc9303d70f98b5a5c02ad470d551a17f69b2/1.29.2/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/9591b70ba627c079e772a5c00036ce48082fbeda/1.30.0/stretch/slim/Dockerfile
+
+  - version: 1.29.2
+    majorVersion: '1.29'
+    prerelease: false
+    date: '2018-10-12T10:19:25'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -249,21 +250,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/5f19dc9303d70f98b5a5c02ad470d551a17f69b2/1.29.2/stretch/Dockerfile
 
-  - version: 1.29.1
-    majorVersion: '1.29'
-    prerelease: false
-    date: '2018-09-25T13:22:00'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.29.1-slim-stretch
+        imageRepository: rust:1.29.2-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/6b67741c0493c37f6a46b5193dd82ac4b0784bdf/1.29.1/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/5f19dc9303d70f98b5a5c02ad470d551a17f69b2/1.29.2/stretch/slim/Dockerfile
+
+  - version: 1.29.1
+    majorVersion: '1.29'
+    prerelease: false
+    date: '2018-09-25T13:22:00'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -274,21 +276,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/6b67741c0493c37f6a46b5193dd82ac4b0784bdf/1.29.1/stretch/Dockerfile
 
-  - version: 1.29.0
-    majorVersion: '1.29'
-    prerelease: false
-    date: '2018-09-14T12:42:56'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.29.0-slim-stretch
+        imageRepository: rust:1.29.1-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/46d75fee52b77161355ce8a4623d6afbfec0e63f/1.29.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/6b67741c0493c37f6a46b5193dd82ac4b0784bdf/1.29.1/stretch/slim/Dockerfile
+
+  - version: 1.29.0
+    majorVersion: '1.29'
+    prerelease: false
+    date: '2018-09-14T12:42:56'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -299,30 +302,31 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/46d75fee52b77161355ce8a4623d6afbfec0e63f/1.29.0/stretch/Dockerfile
 
-  - version: 1.28.0
-    majorVersion: '1.28'
-    prerelease: false
-    date: '2018-08-02T09:36:28'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.28.0-slim-stretch
+        imageRepository: rust:1.29.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/46d75fee52b77161355ce8a4623d6afbfec0e63f/1.29.0/stretch/slim/Dockerfile
+
+  - version: 1.28.0
+    majorVersion: '1.28'
+    prerelease: false
+    date: '2018-08-02T09:36:28'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: rust:1.28.0-stretch
+        image: buildpack-deps:jessie
+        imageRepository: rust:1.28.0-jessie
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -334,38 +338,39 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/jessie/slim/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
+        releaseName: 9 (stretch)
+        release: 9.0
         weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: rust:1.28.0-jessie
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.28.0-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/jessie/Dockerfile
-
-  - version: 1.27.2
-    majorVersion: '1.27'
-    prerelease: false
-    date: '2018-07-20T10:23:13'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.27.2-slim-stretch
+        imageRepository: rust:1.28.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bc5733067506badf77d25a51871deefa136a0fef/1.27.2/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/stretch/slim/Dockerfile
+
+  - version: 1.27.2
+    majorVersion: '1.27'
+    prerelease: false
+    date: '2018-07-20T10:23:13'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: rust:1.27.2-stretch
+        image: buildpack-deps:jessie
+        imageRepository: rust:1.27.2-jessie
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bc5733067506badf77d25a51871deefa136a0fef/1.27.2/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bc5733067506badf77d25a51871deefa136a0fef/1.27.2/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -377,38 +382,39 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bc5733067506badf77d25a51871deefa136a0fef/1.27.2/jessie/slim/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
+        releaseName: 9 (stretch)
+        release: 9.0
         weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: rust:1.27.2-jessie
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.27.2-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bc5733067506badf77d25a51871deefa136a0fef/1.27.2/jessie/Dockerfile
-
-  - version: 1.27.1
-    majorVersion: '1.27'
-    prerelease: false
-    date: '2018-07-10T11:08:52'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bc5733067506badf77d25a51871deefa136a0fef/1.27.2/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.27.1-slim-stretch
+        imageRepository: rust:1.27.2-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bc5733067506badf77d25a51871deefa136a0fef/1.27.2/stretch/slim/Dockerfile
+
+  - version: 1.27.1
+    majorVersion: '1.27'
+    prerelease: false
+    date: '2018-07-10T11:08:52'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: rust:1.27.1-stretch
+        image: buildpack-deps:jessie
+        imageRepository: rust:1.27.1-jessie
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -420,38 +426,39 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/jessie/slim/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
+        releaseName: 9 (stretch)
+        release: 9.0
         weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: rust:1.27.1-jessie
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.27.1-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/jessie/Dockerfile
-
-  - version: 1.27.0
-    majorVersion: '1.27'
-    prerelease: false
-    date: '2018-06-21T17:33:48'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.27.0-slim-stretch
+        imageRepository: rust:1.27.1-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/stretch/slim/Dockerfile
+
+  - version: 1.27.0
+    majorVersion: '1.27'
+    prerelease: false
+    date: '2018-06-21T17:33:48'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: rust:1.27.0-stretch
+        image: buildpack-deps:jessie
+        imageRepository: rust:1.27.0-jessie
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -463,38 +470,39 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/jessie/slim/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
+        releaseName: 9 (stretch)
+        release: 9.0
         weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: rust:1.27.0-jessie
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.27.0-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/jessie/Dockerfile
-
-  - version: 1.26.2
-    majorVersion: '1.26'
-    prerelease: false
-    date: '2018-06-05T19:43:59'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.26.2-slim-stretch
+        imageRepository: rust:1.27.0-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/175c39bcc1093f7ec410ad8f253bbcd864007317/1.26.2/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/stretch/slim/Dockerfile
+
+  - version: 1.26.2
+    majorVersion: '1.26'
+    prerelease: false
+    date: '2018-06-05T19:43:59'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: rust:1.26.2-stretch
+        image: buildpack-deps:jessie
+        imageRepository: rust:1.26.2-jessie
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/175c39bcc1093f7ec410ad8f253bbcd864007317/1.26.2/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/175c39bcc1093f7ec410ad8f253bbcd864007317/1.26.2/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -506,38 +514,39 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/175c39bcc1093f7ec410ad8f253bbcd864007317/1.26.2/jessie/slim/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
+        releaseName: 9 (stretch)
+        release: 9.0
         weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: rust:1.26.2-jessie
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.26.2-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/175c39bcc1093f7ec410ad8f253bbcd864007317/1.26.2/jessie/Dockerfile
-
-  - version: 1.26.1
-    majorVersion: '1.26'
-    prerelease: false
-    date: '2018-05-29T10:08:26'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/175c39bcc1093f7ec410ad8f253bbcd864007317/1.26.2/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.26.1-slim-stretch
+        imageRepository: rust:1.26.2-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/41090985a9fa770e43f14631ca29b1ae756e19cd/1.26.1/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/175c39bcc1093f7ec410ad8f253bbcd864007317/1.26.2/stretch/slim/Dockerfile
+
+  - version: 1.26.1
+    majorVersion: '1.26'
+    prerelease: false
+    date: '2018-05-29T10:08:26'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: rust:1.26.1-stretch
+        image: buildpack-deps:jessie
+        imageRepository: rust:1.26.1-jessie
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/41090985a9fa770e43f14631ca29b1ae756e19cd/1.26.1/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/41090985a9fa770e43f14631ca29b1ae756e19cd/1.26.1/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -549,38 +558,39 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/41090985a9fa770e43f14631ca29b1ae756e19cd/1.26.1/jessie/slim/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
+        releaseName: 9 (stretch)
+        release: 9.0
         weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: rust:1.26.1-jessie
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.26.1-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/41090985a9fa770e43f14631ca29b1ae756e19cd/1.26.1/jessie/Dockerfile
-
-  - version: 1.26.0
-    majorVersion: '1.26'
-    prerelease: false
-    date: '2018-05-11T08:14:12'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/41090985a9fa770e43f14631ca29b1ae756e19cd/1.26.1/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 1
         image: debian:stretch-slim
-        imageRepository: rust:1.26.0-slim-stretch
+        imageRepository: rust:1.26.1-slim-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1b0f1da9c937cc841228d00cf3224dc69bd18c99/1.26.0/stretch/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/41090985a9fa770e43f14631ca29b1ae756e19cd/1.26.1/stretch/slim/Dockerfile
+
+  - version: 1.26.0
+    majorVersion: '1.26'
+    prerelease: false
+    date: '2018-05-11T08:14:12'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
+        releaseName: 8 (jessie)
+        release: 8.0
         weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: rust:1.26.0-stretch
+        image: buildpack-deps:jessie
+        imageRepository: rust:1.26.0-jessie
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1b0f1da9c937cc841228d00cf3224dc69bd18c99/1.26.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1b0f1da9c937cc841228d00cf3224dc69bd18c99/1.26.0/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -592,29 +602,30 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1b0f1da9c937cc841228d00cf3224dc69bd18c99/1.26.0/jessie/slim/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: rust:1.26.0-jessie
-        urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1b0f1da9c937cc841228d00cf3224dc69bd18c99/1.26.0/jessie/Dockerfile
-
-  - version: 1.25.0
-    majorVersion: '1.25'
-    prerelease: false
-    date: '2018-03-30T09:02:12'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.25.0-stretch
+        imageRepository: rust:1.26.0-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/f18cebe3699016a654da86212fa90afaea7431a1/1.25.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1b0f1da9c937cc841228d00cf3224dc69bd18c99/1.26.0/stretch/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: rust:1.26.0-slim-stretch
+        urlRepository: https://github.com/rust-lang-nursery/docker-rust
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/1b0f1da9c937cc841228d00cf3224dc69bd18c99/1.26.0/stretch/slim/Dockerfile
+
+  - version: 1.25.0
+    majorVersion: '1.25'
+    prerelease: false
+    date: '2018-04-16T19:33:33'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -626,15 +637,6 @@
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/f18cebe3699016a654da86212fa90afaea7431a1/1.25.0/jessie/Dockerfile
 
       - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 1
-        image: debian:stretch-slim
-        imageRepository: rust:1.25.0-slim-stretch
-        urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/d271f62710367d3ccbc83a14093301261b22a831/1.25.0/stretch/slim/Dockerfile
-
-      - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 1
@@ -643,21 +645,31 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/677ebab2c8068d7f691925e0c848fb02ccdc5309/1.25.0/jessie/slim/Dockerfile
 
-  - version: 1.24.1
-    majorVersion: '1.24'
-    prerelease: false
-    date: '2018-03-01T19:34:57'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.24.1-stretch
+        imageRepository: rust:1.25.0-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/d35c26c4749ed882be0118eb725eeb3a91e0968b/1.24.1/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/f18cebe3699016a654da86212fa90afaea7431a1/1.25.0/stretch/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: rust:1.25.0-slim-stretch
+        urlRepository: https://github.com/rust-lang-nursery/docker-rust
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/d271f62710367d3ccbc83a14093301261b22a831/1.25.0/stretch/slim/Dockerfile
+
+  - version: 1.24.1
+    majorVersion: '1.24'
+    prerelease: false
+    date: '2018-03-01T19:34:57'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -668,21 +680,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/d35c26c4749ed882be0118eb725eeb3a91e0968b/1.24.1/jessie/Dockerfile
 
-  - version: 1.24.0
-    majorVersion: '1.24'
-    prerelease: false
-    date: '2018-02-15T13:31:41'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.24.0-stretch
+        imageRepository: rust:1.24.1-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/c481589e552336cffcbe97b6e42a7d1d3e1e9a49/1.24.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/d35c26c4749ed882be0118eb725eeb3a91e0968b/1.24.1/stretch/Dockerfile
+
+  - version: 1.24.0
+    majorVersion: '1.24'
+    prerelease: false
+    date: '2018-02-15T13:31:41'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -693,21 +706,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/c481589e552336cffcbe97b6e42a7d1d3e1e9a49/1.24.0/jessie/Dockerfile
 
-  - version: 1.23.0
-    majorVersion: '1.23'
-    prerelease: false
-    date: '2018-01-04T10:47:31'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.23.0-stretch
+        imageRepository: rust:1.24.0-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/e382ab252c238ab77f0b6e45b0705ba94b4e9e1d/1.23.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/c481589e552336cffcbe97b6e42a7d1d3e1e9a49/1.24.0/stretch/Dockerfile
+
+  - version: 1.23.0
+    majorVersion: '1.23'
+    prerelease: false
+    date: '2018-01-04T10:47:31'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -718,21 +732,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/e382ab252c238ab77f0b6e45b0705ba94b4e9e1d/1.23.0/jessie/Dockerfile
 
-  - version: 1.22.1
-    majorVersion: '1.22'
-    prerelease: false
-    date: '2017-11-23T11:05:46'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.22.1-stretch
+        imageRepository: rust:1.23.0-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/eddbafa6fd373678b680b52cee861609c95a9ea4/1.22.1/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/e382ab252c238ab77f0b6e45b0705ba94b4e9e1d/1.23.0/stretch/Dockerfile
+
+  - version: 1.22.1
+    majorVersion: '1.22'
+    prerelease: false
+    date: '2017-11-23T11:05:46'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -743,21 +758,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/eddbafa6fd373678b680b52cee861609c95a9ea4/1.22.1/jessie/Dockerfile
 
-  - version: 1.21.0
-    majorVersion: '1.21'
-    prerelease: false
-    date: '2017-10-12T19:08:42'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.21.0-stretch
+        imageRepository: rust:1.22.1-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/6424dba66086036a0cedde6c86c281d892305f95/1.21.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/eddbafa6fd373678b680b52cee861609c95a9ea4/1.22.1/stretch/Dockerfile
+
+  - version: 1.21.0
+    majorVersion: '1.21'
+    prerelease: false
+    date: '2017-10-12T19:08:42'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -768,21 +784,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/6424dba66086036a0cedde6c86c281d892305f95/1.21.0/jessie/Dockerfile
 
-  - version: 1.20.0
-    majorVersion: '1.20'
-    prerelease: false
-    date: '2017-08-31T19:07:43'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.20.0-stretch
+        imageRepository: rust:1.21.0-stretch
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bf30ee63bff0a381ccacdb86436bb7da5dc9c853/1.20.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/6424dba66086036a0cedde6c86c281d892305f95/1.21.0/stretch/Dockerfile
+
+  - version: 1.20.0
+    majorVersion: '1.20'
+    prerelease: false
+    date: '2017-09-01T12:15:20'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -793,21 +810,22 @@
         urlRepository: https://github.com/rust-lang-nursery/docker-rust
         urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bf30ee63bff0a381ccacdb86436bb7da5dc9c853/1.20.0/jessie/Dockerfile
 
-  - version: 1.19.0
-    majorVersion: '1.19'
-    prerelease: false
-    date: '2017-08-04T20:31:11'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: rust:1.19.0-stretch
-        urlRepository: https://github.com/sfackler/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/sfackler/docker-rust/01ce3e6230bc87557058a38b342f9e15aae3856c/1.19.0/stretch/Dockerfile
+        imageRepository: rust:1.20.0-stretch
+        urlRepository: https://github.com/rust-lang-nursery/docker-rust
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/bf30ee63bff0a381ccacdb86436bb7da5dc9c853/1.20.0/stretch/Dockerfile
+
+  - version: 1.19.0
+    majorVersion: '1.19'
+    prerelease: false
+    date: '2017-08-31T19:07:43'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -815,5 +833,14 @@
         weight: 5
         image: buildpack-deps:jessie
         imageRepository: rust:1.19.0-jessie
-        urlRepository: https://github.com/sfackler/docker-rust
-        urlDockerfile: https://raw.githubusercontent.com/sfackler/docker-rust/01ce3e6230bc87557058a38b342f9e15aae3856c/1.19.0/jessie/Dockerfile
+        urlRepository: https://github.com/rust-lang-nursery/docker-rust
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/8affdd6599d29fd20f987eef52234267f3c3e668/1.19.0/jessie/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.19.0-stretch
+        urlRepository: https://github.com/rust-lang-nursery/docker-rust
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/8affdd6599d29fd20f987eef52234267f3c3e668/1.19.0/stretch/Dockerfile

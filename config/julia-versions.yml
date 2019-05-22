@@ -3,6 +3,7 @@
     majorVersion: '1.1'
     prerelease: false
     date: '2019-05-17T05:59:09'
+    current: true
     distributionReleases: Debian
     distributions:
 
@@ -18,7 +19,8 @@
   - version: 1.1.0
     majorVersion: '1.1'
     prerelease: false
-    date: '2019-01-25T14:44:00'
+    date: '2019-05-07T17:59:13'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -29,12 +31,13 @@
         image: debian:stretch
         imageRepository: julia:1.1.0-stretch
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/6e478029a0ccb80d4c86f516fdea3f80cb15dce9/1.1/stretch/Dockerfile
 
   - version: 1.0.4
     majorVersion: '1.0'
     prerelease: false
     date: '2019-05-17T05:59:09'
+    current: true
     distributionReleases: Debian
     distributions:
 
@@ -50,7 +53,8 @@
   - version: 1.0.3
     majorVersion: '1.0'
     prerelease: false
-    date: '2018-12-19T16:51:48'
+    date: '2019-05-07T17:59:13'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -66,7 +70,8 @@
   - version: 1.0.2
     majorVersion: '1.0'
     prerelease: false
-    date: '2018-11-12T12:53:03'
+    date: '2018-11-14T16:29:14'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -77,12 +82,13 @@
         image: debian:stretch
         imageRepository: julia:1.0.2-stretch
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/739386e833cc5e839a7bf8e42c4f2e3eed3eb11e/1.0/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/467c652ab40064be58ba83ed4448f139592c7525/1.0/stretch/Dockerfile
 
   - version: 1.0.1
     majorVersion: '1.0'
     prerelease: false
     date: '2018-10-01T16:44:11'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -98,7 +104,8 @@
   - version: 1.0.0
     majorVersion: '1.0'
     prerelease: false
-    date: '2018-08-10T12:32:16'
+    date: '2018-08-27T14:46:38'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -114,18 +121,10 @@
   - version: 0.7.0
     majorVersion: '0.7'
     prerelease: false
-    date: '2018-11-14T16:29:14'
+    date: '2018-12-19T16:51:48'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: julia:0.7.0-stretch
-        urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/467c652ab40064be58ba83ed4448f139592c7525/0/stretch/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -136,21 +135,22 @@
         urlRepository: https://github.com/docker-library/julia
         urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/467c652ab40064be58ba83ed4448f139592c7525/0/jessie/Dockerfile
 
-  - version: 0.6.4
-    majorVersion: '0.6'
-    prerelease: false
-    date: '2018-07-24T14:04:19'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: julia:0.6.4-stretch
+        imageRepository: julia:0.7.0-stretch
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/467c652ab40064be58ba83ed4448f139592c7525/0/stretch/Dockerfile
+
+  - version: 0.6.4
+    majorVersion: '0.6'
+    prerelease: false
+    date: '2018-08-06T12:18:52'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -159,23 +159,24 @@
         image: debian:jessie
         imageRepository: julia:0.6.4-jessie
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/jessie/Dockerfile
-
-  - version: 0.6.3
-    majorVersion: '0.6'
-    prerelease: false
-    date: '2018-06-05T12:41:50'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/4b1b740df34a21fc0edb10770d5991cb3c92d9e8/0/jessie/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: julia:0.6.3-stretch
+        imageRepository: julia:0.6.4-stretch
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/3854279e1ffb49d9e34080d476ffdb7c00035455/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/4b1b740df34a21fc0edb10770d5991cb3c92d9e8/0/stretch/Dockerfile
+
+  - version: 0.6.3
+    majorVersion: '0.6'
+    prerelease: false
+    date: '2018-07-20T11:17:28'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -186,10 +187,20 @@
         urlRepository: https://github.com/docker-library/julia
         urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/3854279e1ffb49d9e34080d476ffdb7c00035455/jessie/Dockerfile
 
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: julia:0.6.3-stretch
+        urlRepository: https://github.com/docker-library/julia
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/3854279e1ffb49d9e34080d476ffdb7c00035455/stretch/Dockerfile
+
   - version: 0.6.2
     majorVersion: '0.6'
     prerelease: false
-    date: '2018-05-10T09:55:57'
+    date: '2018-05-14T12:46:12'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -200,7 +211,7 @@
         image: debian:jessie
         imageRepository: julia:0.6.2-jessie
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/0406b201251d57f571e07f17ab5c3b0bd417c96d/jessie/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/3cb2698ed2475db46cc17d5d1cd309626ef87c1c/jessie/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -215,6 +226,7 @@
     majorVersion: '0.6'
     prerelease: false
     date: '2017-11-02T15:54:46'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -230,7 +242,8 @@
   - version: 0.6.0
     majorVersion: '0.6'
     prerelease: false
-    date: '2017-06-20T11:09:28'
+    date: '2017-08-24T16:31:51'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -241,12 +254,13 @@
         image: debian:jessie
         imageRepository: julia:0.6.0
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/ef0fdf96ba90c0020776bca367cb838910aca339/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/4eff23fd0270ed08c727f1ddb10c497559732c22/Dockerfile
 
   - version: 0.5.2
     majorVersion: '0.5'
     prerelease: false
-    date: '2017-05-10T14:49:21'
+    date: '2017-05-30T09:19:32'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -257,12 +271,13 @@
         image: debian:jessie
         imageRepository: julia:0.5.2
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/61929cae66213ef964e8d23351d7b1a9a0cfc674/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/0b6b28b5b0957cc491d406b798ece911a6fa5b26/Dockerfile
 
   - version: 0.5.1
     majorVersion: '0.5'
     prerelease: false
     date: '2017-03-06T14:42:20'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -278,7 +293,8 @@
   - version: 0.5.0
     majorVersion: '0.5'
     prerelease: false
-    date: '2016-09-21T13:54:15'
+    date: '2016-09-27T16:49:23'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -289,12 +305,13 @@
         image: debian:jessie
         imageRepository: julia:0.5.0
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/1eb5fbfa0d88c831bf70963e39a1ec14f8f64c34/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/0f29b23863e4ff1c99b13a30e845b66c7468f79b/Dockerfile
 
   - version: 0.4.6
     majorVersion: '0.4'
     prerelease: false
     date: '2016-06-23T14:01:38'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -310,7 +327,8 @@
   - version: 0.4.5
     majorVersion: '0.4'
     prerelease: false
-    date: '2016-04-04T09:40:11'
+    date: '2016-06-09T12:08:41'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -326,7 +344,8 @@
   - version: 0.4.3
     majorVersion: '0.4'
     prerelease: false
-    date: '2016-02-04T12:41:58'
+    date: '2016-02-29T16:39:10'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -337,12 +356,13 @@
         image: debian:jessie
         imageRepository: julia:0.4.3
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/ff730c9c2ddf959311a071af9fef5ae15f5125a0/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/4c64514dc0f1aa0aed906af3a9a135d684c7d49e/Dockerfile
 
   - version: 0.4.2
     majorVersion: '0.4'
     prerelease: false
     date: '2015-12-08T13:02:08'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -359,6 +379,7 @@
     majorVersion: '0.4'
     prerelease: false
     date: '2015-11-09T13:56:43'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -375,6 +396,7 @@
     majorVersion: '0.4'
     prerelease: false
     date: '2015-10-14T14:24:25'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -387,26 +409,11 @@
         urlRepository: https://github.com/docker-library/julia
         urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/c40ce9f16118c60bac5ce1db3e06c56d5b983d4a/Dockerfile
 
-  - version: '0.4'
-    majorVersion: '0.4'
-    prerelease: false
-    date: '2016-02-04T12:41:58'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: julia:0.4
-        urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/ff730c9c2ddf959311a071af9fef5ae15f5125a0/Dockerfile
-
   - version: 0.3.11
     majorVersion: '0.3'
     prerelease: false
     date: '2015-07-28T10:04:48'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -423,6 +430,7 @@
     majorVersion: '0.3'
     prerelease: false
     date: '2015-06-26T16:04:56'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -439,6 +447,7 @@
     majorVersion: '0.3'
     prerelease: false
     date: '2015-06-02T14:53:03'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -454,7 +463,8 @@
   - version: 0.3.8
     majorVersion: '0.3'
     prerelease: false
-    date: '2015-05-08T15:32:23'
+    date: '2015-05-22T16:50:08'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -465,12 +475,13 @@
         image: debian:jessie
         imageRepository: julia:0.3.8
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/cfeffd777768134ae9671fd02807e1a48f268037/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/22d68e94ea5e4febf3fc6b2167e9a538e3cad4c1/Dockerfile
 
   - version: 0.3.7
     majorVersion: '0.3'
     prerelease: false
     date: '2015-04-01T15:16:22'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -486,7 +497,8 @@
   - version: 0.3.6
     majorVersion: '0.3'
     prerelease: false
-    date: '2015-03-09T13:46:51'
+    date: '2015-03-09T16:01:35'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -497,12 +509,13 @@
         image: debian:jessie
         imageRepository: julia:0.3.6
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/72599fd1eb47e41982d65118381e164df9e4d6c1/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/3ebca9477c82374d1123574261b369387772de1b/Dockerfile
 
   - version: '0.3'
     majorVersion: '0.3'
     prerelease: false
-    date: '2015-06-02T14:53:03'
+    date: '2015-07-28T10:04:48'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -513,4 +526,4 @@
         image: debian:jessie
         imageRepository: julia:0.3
         urlRepository: https://github.com/docker-library/julia
-        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/d7222c1c8af09b75565ea89fd00658d712823120/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/julia/951fefea3d24b6d60f5e64447a1ee94f0b809448/Dockerfile

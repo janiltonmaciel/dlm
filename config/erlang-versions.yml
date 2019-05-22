@@ -2,18 +2,10 @@
   - version: '22.0'
     majorVersion: '22.0'
     prerelease: false
-    date: '2019-05-14T20:49:37'
+    date: '2019-05-15T23:06:18'
+    current: true
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:22.0-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/97a95ad0b19a8f14ad9a30524d1f7061f6c0bccd/22/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.9'
@@ -33,21 +25,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/97a95ad0b19a8f14ad9a30524d1f7061f6c0bccd/22/Dockerfile
 
-  - version: 21.3.8.1
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-05-15T23:06:18'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.8.1-slim
+        imageRepository: erlang:22.0-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/82a6a9dced87b9f70e7244193fa28892f5aae7d0/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/97a95ad0b19a8f14ad9a30524d1f7061f6c0bccd/22/slim/Dockerfile
+
+  - version: 21.3.8.1
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-05-15T23:06:18'
+    current: true
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -67,55 +60,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/82a6a9dced87b9f70e7244193fa28892f5aae7d0/21/Dockerfile
 
-  - version: 21.3.8
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-05-07T19:13:57'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.8-slim
+        imageRepository: erlang:21.3.8.1-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/dd27e31e37c2187a63f3bb6c01cbb838832e98b6/21/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.9'
-        release: 3.9
-        weight: 1
-        image: alpine:3.9
-        imageRepository: erlang:21.3.8-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/dd27e31e37c2187a63f3bb6c01cbb838832e98b6/21/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:21.3.8
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/dd27e31e37c2187a63f3bb6c01cbb838832e98b6/21/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/82a6a9dced87b9f70e7244193fa28892f5aae7d0/21/slim/Dockerfile
 
   - version: 21.3.7
     majorVersion: '21.3'
     prerelease: false
     date: '2019-04-26T19:16:29'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:21.3.7-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/491aa36fdf85fd04a6c7e47201126fcb956c6d63/21/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.9'
@@ -135,21 +95,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/491aa36fdf85fd04a6c7e47201126fcb956c6d63/21/Dockerfile
 
-  - version: 21.3.6
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-04-18T14:57:58'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.6-slim
+        imageRepository: erlang:21.3.7-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ff0d247f5bbe74e8d9089ea35ce6cd11aac3cb65/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/491aa36fdf85fd04a6c7e47201126fcb956c6d63/21/slim/Dockerfile
+
+  - version: 21.3.6
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-04-18T14:57:58'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -169,21 +130,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ff0d247f5bbe74e8d9089ea35ce6cd11aac3cb65/21/Dockerfile
 
-  - version: 21.3.5
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-04-15T20:59:30'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.5-slim
+        imageRepository: erlang:21.3.6-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/b736b38a32aecb56568d0b751347dbd0568583e9/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ff0d247f5bbe74e8d9089ea35ce6cd11aac3cb65/21/slim/Dockerfile
+
+  - version: 21.3.5
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-04-17T15:35:32'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -203,21 +165,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/b736b38a32aecb56568d0b751347dbd0568583e9/21/Dockerfile
 
-  - version: 21.3.4
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-04-12T15:45:16'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.4-slim
+        imageRepository: erlang:21.3.5-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4e010f565fd72dd4d81c7f8e334a6643f2e6327d/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/b736b38a32aecb56568d0b751347dbd0568583e9/21/slim/Dockerfile
+
+  - version: 21.3.4
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-04-12T15:45:16'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -237,21 +200,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4e010f565fd72dd4d81c7f8e334a6643f2e6327d/21/Dockerfile
 
-  - version: 21.3.3
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-04-02T09:35:18'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.3-slim
+        imageRepository: erlang:21.3.4-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/bc308f69e17349d3088b593d3348e0de61d6d995/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4e010f565fd72dd4d81c7f8e334a6643f2e6327d/21/slim/Dockerfile
+
+  - version: 21.3.3
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-04-02T09:35:18'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -271,21 +235,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/bc308f69e17349d3088b593d3348e0de61d6d995/21/Dockerfile
 
-  - version: 21.3.2
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-03-22T11:43:51'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.2-slim
+        imageRepository: erlang:21.3.3-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/81dc84940c670b01c8b5c5622b02500f4f77a4b9/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/bc308f69e17349d3088b593d3348e0de61d6d995/21/slim/Dockerfile
+
+  - version: 21.3.2
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-03-22T11:43:51'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -305,21 +270,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/81dc84940c670b01c8b5c5622b02500f4f77a4b9/21/Dockerfile
 
-  - version: 21.3.1
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-03-20T09:23:05'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3.1-slim
+        imageRepository: erlang:21.3.2-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/69ebec118339f3959f829dfc11fde0b2ce50670e/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/81dc84940c670b01c8b5c5622b02500f4f77a4b9/21/slim/Dockerfile
+
+  - version: 21.3.1
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-03-21T09:49:51'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -339,55 +305,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/69ebec118339f3959f829dfc11fde0b2ce50670e/21/Dockerfile
 
-  - version: '21.3'
-    majorVersion: '21.3'
-    prerelease: false
-    date: '2019-03-13T09:14:30'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.3-slim
+        imageRepository: erlang:21.3.1-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/c42a42ab5807319b37f168b7d98922a22e6bf241/21/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.9'
-        release: 3.9
-        weight: 1
-        image: alpine:3.9
-        imageRepository: erlang:21.3-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/c42a42ab5807319b37f168b7d98922a22e6bf241/21/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:21.3
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/c42a42ab5807319b37f168b7d98922a22e6bf241/21/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/69ebec118339f3959f829dfc11fde0b2ce50670e/21/slim/Dockerfile
 
   - version: 21.2.7
     majorVersion: '21.2'
     prerelease: false
     date: '2019-03-07T10:35:01'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:21.2.7-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/030a8c915caf1010572424cf1485de4330dbf0dc/21/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.9'
@@ -407,21 +340,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/030a8c915caf1010572424cf1485de4330dbf0dc/21/Dockerfile
 
-  - version: 21.2.6
-    majorVersion: '21.2'
-    prerelease: false
-    date: '2019-02-19T09:39:15'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.2.6-slim
+        imageRepository: erlang:21.2.7-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/2fa8d1d5e7357f086068e2a52159a4568cd472eb/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/030a8c915caf1010572424cf1485de4330dbf0dc/21/slim/Dockerfile
+
+  - version: 21.2.6
+    majorVersion: '21.2'
+    prerelease: false
+    date: '2019-02-19T09:39:15'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -441,21 +375,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/2fa8d1d5e7357f086068e2a52159a4568cd472eb/21/Dockerfile
 
-  - version: 21.2.5
-    majorVersion: '21.2'
-    prerelease: false
-    date: '2019-02-05T00:45:19'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.2.5-slim
+        imageRepository: erlang:21.2.6-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/04c7173c0762eb6432cedc65ecfd35fbb9a44341/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/2fa8d1d5e7357f086068e2a52159a4568cd472eb/21/slim/Dockerfile
+
+  - version: 21.2.5
+    majorVersion: '21.2'
+    prerelease: false
+    date: '2019-02-05T00:45:19'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -475,21 +410,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/04c7173c0762eb6432cedc65ecfd35fbb9a44341/21/Dockerfile
 
-  - version: 21.2.4
-    majorVersion: '21.2'
-    prerelease: false
-    date: '2019-01-25T22:54:19'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.2.4-slim
+        imageRepository: erlang:21.2.5-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a35e84764af1391f174905c7d18db3c1b7c629e6/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/04c7173c0762eb6432cedc65ecfd35fbb9a44341/21/slim/Dockerfile
+
+  - version: 21.2.4
+    majorVersion: '21.2'
+    prerelease: false
+    date: '2019-01-25T22:54:19'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -509,21 +445,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a35e84764af1391f174905c7d18db3c1b7c629e6/21/Dockerfile
 
-  - version: 21.2.3
-    majorVersion: '21.2'
-    prerelease: false
-    date: '2019-01-17T01:34:00'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.2.3-slim
+        imageRepository: erlang:21.2.4-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a7d59f48dddfb74f83e8eaa0d7c5477c7608112c/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a35e84764af1391f174905c7d18db3c1b7c629e6/21/slim/Dockerfile
+
+  - version: 21.2.3
+    majorVersion: '21.2'
+    prerelease: false
+    date: '2019-01-18T02:22:55'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -543,21 +480,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a7d59f48dddfb74f83e8eaa0d7c5477c7608112c/21/Dockerfile
 
-  - version: 21.2.2
-    majorVersion: '21.2'
-    prerelease: false
-    date: '2018-12-29T23:41:58'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.2.2-slim
+        imageRepository: erlang:21.2.3-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e2e804aeeb6e6bc5fd49f66481be1dff829428f5/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a7d59f48dddfb74f83e8eaa0d7c5477c7608112c/21/slim/Dockerfile
+
+  - version: 21.2.2
+    majorVersion: '21.2'
+    prerelease: false
+    date: '2019-01-11T11:28:09'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -577,21 +515,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e2e804aeeb6e6bc5fd49f66481be1dff829428f5/21/Dockerfile
 
-  - version: 21.2.1
-    majorVersion: '21.2'
-    prerelease: false
-    date: '2018-12-21T13:29:11'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.2.1-slim
+        imageRepository: erlang:21.2.2-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/46090afa930be7df637db62f58dffb75b1644faa/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e2e804aeeb6e6bc5fd49f66481be1dff829428f5/21/slim/Dockerfile
+
+  - version: 21.2.1
+    majorVersion: '21.2'
+    prerelease: false
+    date: '2018-12-21T13:29:11'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -611,55 +550,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/46090afa930be7df637db62f58dffb75b1644faa/21/Dockerfile
 
-  - version: '21.2'
-    majorVersion: '21.2'
-    prerelease: false
-    date: '2018-12-12T08:11:03'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.2-slim
+        imageRepository: erlang:21.2.1-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/55fd28c2de29a7a95f6a87d184cb8575f087f758/21/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        imageRepository: erlang:21.2-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/55fd28c2de29a7a95f6a87d184cb8575f087f758/21/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:21.2
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/55fd28c2de29a7a95f6a87d184cb8575f087f758/21/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/46090afa930be7df637db62f58dffb75b1644faa/21/slim/Dockerfile
 
   - version: 21.1.4
     majorVersion: '21.1'
     prerelease: false
-    date: '2018-11-30T22:24:22'
+    date: '2018-12-08T00:10:06'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:21.1.4-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/124b10b36a4e85730df44ea1f49e41ac8ab660fa/21/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.8'
@@ -679,10 +585,20 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/124b10b36a4e85730df44ea1f49e41ac8ab660fa/21/Dockerfile
 
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:21.1.4-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/124b10b36a4e85730df44ea1f49e41ac8ab660fa/21/slim/Dockerfile
+
   - version: 21.1.3
     majorVersion: '21.1'
     prerelease: false
     date: '2018-11-26T15:48:22'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -716,18 +632,10 @@
   - version: 21.1.2
     majorVersion: '21.1'
     prerelease: false
-    date: '2018-11-16T09:57:04'
+    date: '2018-11-22T16:02:21'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:21.1.2-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7e059488ae8eaaffd3a98ee1816796f445a19721/21/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.8'
@@ -747,21 +655,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7e059488ae8eaaffd3a98ee1816796f445a19721/21/Dockerfile
 
-  - version: 21.1.1
-    majorVersion: '21.1'
-    prerelease: false
-    date: '2018-10-15T14:31:13'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.1.1-slim
+        imageRepository: erlang:21.1.2-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/de48e7c91b8a293770c6fcccdd30d2329fcc0414/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7e059488ae8eaaffd3a98ee1816796f445a19721/21/slim/Dockerfile
+
+  - version: 21.1.1
+    majorVersion: '21.1'
+    prerelease: false
+    date: '2018-11-15T10:31:11'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -781,55 +690,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/de48e7c91b8a293770c6fcccdd30d2329fcc0414/21/Dockerfile
 
-  - version: '21.1'
-    majorVersion: '21.1'
-    prerelease: false
-    date: '2018-09-25T18:49:04'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.1-slim
+        imageRepository: erlang:21.1.1-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f99165d5535450f4a78db1e362660046cf605bbd/21/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        imageRepository: erlang:21.1-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f99165d5535450f4a78db1e362660046cf605bbd/21/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:21.1
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f99165d5535450f4a78db1e362660046cf605bbd/21/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/de48e7c91b8a293770c6fcccdd30d2329fcc0414/21/slim/Dockerfile
 
   - version: 21.0.9
     majorVersion: '21.0'
     prerelease: false
-    date: '2018-09-12T22:51:05'
+    date: '2018-09-21T00:19:04'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:21.0.9-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/c88d9cb6f39c253421e5c145fb6da4547101c6c8/21/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.8'
@@ -849,21 +725,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/c88d9cb6f39c253421e5c145fb6da4547101c6c8/21/Dockerfile
 
-  - version: 21.0.8
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-09-07T11:59:47'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0.8-slim
+        imageRepository: erlang:21.0.9-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f9f3ff46a412ce34e62b07bef9b5f7602bf45733/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/c88d9cb6f39c253421e5c145fb6da4547101c6c8/21/slim/Dockerfile
+
+  - version: 21.0.8
+    majorVersion: '21.0'
+    prerelease: false
+    date: '2018-09-07T11:59:47'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -883,21 +760,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f9f3ff46a412ce34e62b07bef9b5f7602bf45733/21/Dockerfile
 
-  - version: 21.0.7
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-08-31T07:22:06'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0.7-slim
+        imageRepository: erlang:21.0.8-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ccaabbdde9c8aa226ddcca4b0473fc8489539bd6/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f9f3ff46a412ce34e62b07bef9b5f7602bf45733/21/slim/Dockerfile
+
+  - version: 21.0.7
+    majorVersion: '21.0'
+    prerelease: false
+    date: '2018-08-31T07:22:06'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -917,21 +795,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ccaabbdde9c8aa226ddcca4b0473fc8489539bd6/21/Dockerfile
 
-  - version: 21.0.6
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-08-25T07:01:33'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0.6-slim
+        imageRepository: erlang:21.0.7-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/cd7ed64405ffbcfa7b9ac32758b219845f87cfe3/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ccaabbdde9c8aa226ddcca4b0473fc8489539bd6/21/slim/Dockerfile
+
+  - version: 21.0.6
+    majorVersion: '21.0'
+    prerelease: false
+    date: '2018-08-29T00:01:48'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -951,21 +830,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/cd7ed64405ffbcfa7b9ac32758b219845f87cfe3/21/Dockerfile
 
-  - version: 21.0.5
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-08-12T07:55:02'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0.5-slim
+        imageRepository: erlang:21.0.6-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/fe505cb6aa9afc509add31825b7f1734a0163c04/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/cd7ed64405ffbcfa7b9ac32758b219845f87cfe3/21/slim/Dockerfile
+
+  - version: 21.0.5
+    majorVersion: '21.0'
+    prerelease: false
+    date: '2018-08-23T20:07:13'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -985,21 +865,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/fe505cb6aa9afc509add31825b7f1734a0163c04/21/Dockerfile
 
-  - version: 21.0.4
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-07-28T14:35:49'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0.4-slim
+        imageRepository: erlang:21.0.5-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/1e1956df112a98d3dc5401abc7d49feb6201b99b/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/fe505cb6aa9afc509add31825b7f1734a0163c04/21/slim/Dockerfile
+
+  - version: 21.0.4
+    majorVersion: '21.0'
+    prerelease: false
+    date: '2018-08-10T21:56:04'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1019,30 +900,40 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/1e1956df112a98d3dc5401abc7d49feb6201b99b/21/Dockerfile
 
-  - version: 21.0.3
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-07-13T21:59:30'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0.3-slim
+        imageRepository: erlang:21.0.4-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f0fffe2ba666a5f31e1de81d80dacdbf405c8e32/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/1e1956df112a98d3dc5401abc7d49feb6201b99b/21/slim/Dockerfile
+
+  - version: 21.0.3
+    majorVersion: '21.0'
+    prerelease: false
+    date: '2018-07-24T17:07:55'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
+        releaseName: '3.8'
+        release: 3.8
         weight: 1
-        image: alpine:3.7
+        image: alpine:3.8
         imageRepository: erlang:21.0.3-alpine
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f0fffe2ba666a5f31e1de81d80dacdbf405c8e32/21/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/70745eada41c444f663484114ab942192b47337b/21/alpine/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: erlang:21.0.3-jessie
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/cdee680cda6403ecb39d5d6858f18f338f67c7d1/21/jessie/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -1054,38 +945,21 @@
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f0fffe2ba666a5f31e1de81d80dacdbf405c8e32/21/Dockerfile
 
       - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:21.0.3-jessie
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:21.0.3-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/cdee680cda6403ecb39d5d6858f18f338f67c7d1/21/jessie/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        imageRepository: erlang:21.0.3-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/70745eada41c444f663484114ab942192b47337b/21/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f0fffe2ba666a5f31e1de81d80dacdbf405c8e32/21/slim/Dockerfile
 
   - version: 21.0.2
     majorVersion: '21.0'
     prerelease: false
     date: '2018-07-06T21:03:59'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:21.0.2-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/060ff7a48c25b7353bfd223ff0d4e6af1c667084/21/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.7'
@@ -1105,21 +979,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/060ff7a48c25b7353bfd223ff0d4e6af1c667084/21/Dockerfile
 
-  - version: 21.0.1
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-06-26T18:47:34'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0.1-slim
+        imageRepository: erlang:21.0.2-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/21/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/060ff7a48c25b7353bfd223ff0d4e6af1c667084/21/slim/Dockerfile
+
+  - version: 21.0.1
+    majorVersion: '21.0'
+    prerelease: false
+    date: '2018-06-30T02:19:40'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.7'
@@ -1139,55 +1014,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/21/Dockerfile
 
-  - version: '21.0'
-    majorVersion: '21.0'
-    prerelease: false
-    date: '2018-06-19T22:51:38'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:21.0-slim
+        imageRepository: erlang:21.0.1-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7b6a78516e79ac2ebf3bfbd591049ec9bfd40cf7/21/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        imageRepository: erlang:21.0-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7b6a78516e79ac2ebf3bfbd591049ec9bfd40cf7/21/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:21.0
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7b6a78516e79ac2ebf3bfbd591049ec9bfd40cf7/21/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/21/slim/Dockerfile
 
   - version: 20.3.8.21
     majorVersion: '20.3'
     prerelease: false
-    date: '2019-04-17T15:35:32'
+    date: '2019-05-15T23:06:18'
+    current: true
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:20.3.8.21-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4c80d1efa8cb9499e9c8f15ecfc2a944dfde8b1f/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.9'
@@ -1207,30 +1049,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4c80d1efa8cb9499e9c8f15ecfc2a944dfde8b1f/20/Dockerfile
 
-  - version: 20.3.8.20
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2019-03-20T09:23:05'
-    distributionReleases: Alpine, Debian
-    distributions:
-
-      - name: Alpine
-        releaseName: '3.8'
-        release: 3.8
-        weight: 1
-        image: alpine:3.8
-        imageRepository: erlang:20.3.8.20-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f581f39cd15aeed548360c8f01b4bfe327236da5/20/alpine/Dockerfile
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:20.3.8.20
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:20.3.8.21-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f581f39cd15aeed548360c8f01b4bfe327236da5/20/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4c80d1efa8cb9499e9c8f15ecfc2a944dfde8b1f/20/slim/Dockerfile
+
+  - version: 20.3.8.20
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2019-04-15T20:59:30'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.9'
@@ -1244,6 +1078,15 @@
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: erlang:20.3.8.20
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f581f39cd15aeed548360c8f01b4bfe327236da5/20/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
         weight: 2
         image: debian:stretch
         imageRepository: erlang:20.3.8.20-slim
@@ -1253,18 +1096,10 @@
   - version: 20.3.8.18
     majorVersion: '20.3'
     prerelease: false
-    date: '2019-01-18T02:22:55'
+    date: '2019-02-05T00:45:19'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:20.3.8.18-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ff81dd677b3bdc3a0e2bbdb1d7efbca524e954ce/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.8'
@@ -1284,21 +1119,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ff81dd677b3bdc3a0e2bbdb1d7efbca524e954ce/20/Dockerfile
 
-  - version: 20.3.8.17
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2019-01-09T13:00:54'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.17-slim
+        imageRepository: erlang:20.3.8.18-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d1d59c1af4e4975e4df6eb31cc50c65b9f9ba83c/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ff81dd677b3bdc3a0e2bbdb1d7efbca524e954ce/20/slim/Dockerfile
+
+  - version: 20.3.8.17
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2019-01-17T01:34:00'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1318,21 +1154,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d1d59c1af4e4975e4df6eb31cc50c65b9f9ba83c/20/Dockerfile
 
-  - version: 20.3.8.16
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2019-01-04T10:54:32'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.16-slim
+        imageRepository: erlang:20.3.8.17-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d2c5221ccdedcf9a72d30da1172ef8f9d70a58fb/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d1d59c1af4e4975e4df6eb31cc50c65b9f9ba83c/20/slim/Dockerfile
+
+  - version: 20.3.8.16
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2019-01-04T10:54:32'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1352,21 +1189,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d2c5221ccdedcf9a72d30da1172ef8f9d70a58fb/20/Dockerfile
 
-  - version: 20.3.8.15
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-12-08T00:10:06'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.15-slim
+        imageRepository: erlang:20.3.8.16-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e72b8a9747906a8cae874f995d2d889f4141fcac/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d2c5221ccdedcf9a72d30da1172ef8f9d70a58fb/20/slim/Dockerfile
+
+  - version: 20.3.8.15
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-12-29T23:41:58'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1375,7 +1213,7 @@
         image: alpine:3.8
         imageRepository: erlang:20.3.8.15-alpine
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e72b8a9747906a8cae874f995d2d889f4141fcac/20/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a89b076b8e2c9ad787d5af4373b629ef59bd75a6/20/alpine/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -1386,10 +1224,20 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e72b8a9747906a8cae874f995d2d889f4141fcac/20/Dockerfile
 
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:20.3.8.15-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e72b8a9747906a8cae874f995d2d889f4141fcac/20/slim/Dockerfile
+
   - version: 20.3.8.14
     majorVersion: '20.3'
     prerelease: false
-    date: '2018-11-26T15:48:22'
+    date: '2018-11-30T22:24:22'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -1424,17 +1272,9 @@
     majorVersion: '20.3'
     prerelease: false
     date: '2018-11-15T10:31:11'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:20.3.8.13-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d299e24c934b01a46af119ca2b139eb4dc648237/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.8'
@@ -1454,21 +1294,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d299e24c934b01a46af119ca2b139eb4dc648237/20/Dockerfile
 
-  - version: 20.3.8.11
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-11-05T19:50:35'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.11-slim
+        imageRepository: erlang:20.3.8.13-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/01bc5270a30887e3b57c5c50bcdefe375b2e5123/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/d299e24c934b01a46af119ca2b139eb4dc648237/20/slim/Dockerfile
+
+  - version: 20.3.8.11
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-11-05T19:50:35'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1488,21 +1329,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/01bc5270a30887e3b57c5c50bcdefe375b2e5123/20/Dockerfile
 
-  - version: 20.3.8.10
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-10-15T14:31:13'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.10-slim
+        imageRepository: erlang:20.3.8.11-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/de63187115802de9bbc10c430c381ac598167af1/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/01bc5270a30887e3b57c5c50bcdefe375b2e5123/20/slim/Dockerfile
+
+  - version: 20.3.8.10
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-10-30T00:55:30'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1522,21 +1364,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/de63187115802de9bbc10c430c381ac598167af1/20/Dockerfile
 
-  - version: 20.3.8.9
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-09-19T21:17:17'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.9-slim
+        imageRepository: erlang:20.3.8.10-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f68855e3c6dc872dbb9703bf4b4f0909fd5a4ef8/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/de63187115802de9bbc10c430c381ac598167af1/20/slim/Dockerfile
+
+  - version: 20.3.8.9
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-09-25T18:49:04'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1556,21 +1399,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f68855e3c6dc872dbb9703bf4b4f0909fd5a4ef8/20/Dockerfile
 
-  - version: 20.3.8.8
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-08-29T00:01:48'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.8-slim
+        imageRepository: erlang:20.3.8.9-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/12907b51e76f9616747c1ab7deba6ce7e3d7856e/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f68855e3c6dc872dbb9703bf4b4f0909fd5a4ef8/20/slim/Dockerfile
+
+  - version: 20.3.8.8
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-09-12T22:51:05'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1590,21 +1434,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/12907b51e76f9616747c1ab7deba6ce7e3d7856e/20/Dockerfile
 
-  - version: 20.3.8.7
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-08-23T20:07:13'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.7-slim
+        imageRepository: erlang:20.3.8.8-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/01f4b0d6e25430d7a0094d382d328dba11fd6243/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/12907b51e76f9616747c1ab7deba6ce7e3d7856e/20/slim/Dockerfile
+
+  - version: 20.3.8.7
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-08-25T07:01:33'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1624,21 +1469,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/01f4b0d6e25430d7a0094d382d328dba11fd6243/20/Dockerfile
 
-  - version: 20.3.8.6
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-08-16T07:14:19'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.6-slim
+        imageRepository: erlang:20.3.8.7-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e1c7426039612eb86d534816baff1ebc1fb8b5b0/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/01f4b0d6e25430d7a0094d382d328dba11fd6243/20/slim/Dockerfile
+
+  - version: 20.3.8.6
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-08-16T07:14:19'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1658,21 +1504,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e1c7426039612eb86d534816baff1ebc1fb8b5b0/20/Dockerfile
 
-  - version: 20.3.8.5
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-08-10T21:56:04'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.5-slim
+        imageRepository: erlang:20.3.8.6-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/9459993131b23ad2d7292ff864db04aab74c7cfb/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e1c7426039612eb86d534816baff1ebc1fb8b5b0/20/slim/Dockerfile
+
+  - version: 20.3.8.5
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-08-12T07:55:02'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1692,21 +1539,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/9459993131b23ad2d7292ff864db04aab74c7cfb/20/Dockerfile
 
-  - version: 20.3.8.4
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-08-03T19:17:50'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.4-slim
+        imageRepository: erlang:20.3.8.5-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/1b5bdefb8a6d72fa5301a343d0ac6ea3471916b8/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/9459993131b23ad2d7292ff864db04aab74c7cfb/20/slim/Dockerfile
+
+  - version: 20.3.8.4
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-08-03T19:17:50'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1726,21 +1574,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/1b5bdefb8a6d72fa5301a343d0ac6ea3471916b8/20/Dockerfile
 
-  - version: 20.3.8.3
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-07-24T17:07:55'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.3-slim
+        imageRepository: erlang:20.3.8.4-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/6f5ce6e24c954e2528b1c780d6cce9775929a640/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/1b5bdefb8a6d72fa5301a343d0ac6ea3471916b8/20/slim/Dockerfile
+
+  - version: 20.3.8.3
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-07-28T14:35:49'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.8'
@@ -1760,10 +1609,20 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/6f5ce6e24c954e2528b1c780d6cce9775929a640/20/Dockerfile
 
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:20.3.8.3-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/6f5ce6e24c954e2528b1c780d6cce9775929a640/20/slim/Dockerfile
+
   - version: 20.3.8.2
     majorVersion: '20.3'
     prerelease: false
     date: '2018-07-22T12:47:06'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -1779,45 +1638,28 @@
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:20.3.8.2-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/2b9b03dc41cbcc8fc94ef8767b89948388143226/20/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        imageRepository: erlang:20.3.8.2-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/2b9b03dc41cbcc8fc94ef8767b89948388143226/20/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
         weight: 5
         image: buildpack-deps:stretch
         imageRepository: erlang:20.3.8.2
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/2b9b03dc41cbcc8fc94ef8767b89948388143226/20/Dockerfile
 
-  - version: 20.3.8.1
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-06-26T18:47:34'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8.1-slim
+        imageRepository: erlang:20.3.8.2-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/2b9b03dc41cbcc8fc94ef8767b89948388143226/20/slim/Dockerfile
+
+  - version: 20.3.8.1
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-06-26T18:47:34'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.7'
@@ -1837,55 +1679,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/20/Dockerfile
 
-  - version: 20.3.8
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-06-14T21:01:29'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.8-slim
+        imageRepository: erlang:20.3.8.1-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f1c135804d24660d850bd1874e44f79a65deb6a9/20/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        imageRepository: erlang:20.3.8-alpine
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f1c135804d24660d850bd1874e44f79a65deb6a9/20/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:20.3.8
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f1c135804d24660d850bd1874e44f79a65deb6a9/20/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/20/slim/Dockerfile
 
   - version: 20.3.7
     majorVersion: '20.3'
     prerelease: false
     date: '2018-06-05T22:12:47'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:20.3.7-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/3871189704a3d3c01b964a5594280e0ee12cc450/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.7'
@@ -1905,21 +1714,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/3871189704a3d3c01b964a5594280e0ee12cc450/20/Dockerfile
 
-  - version: 20.3.6
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-05-09T09:09:45'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.6-slim
+        imageRepository: erlang:20.3.7-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/99ab1e150c3708ce81bc08073cf5793ef67c6a1c/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/3871189704a3d3c01b964a5594280e0ee12cc450/20/slim/Dockerfile
+
+  - version: 20.3.6
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-05-10T09:10:21'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.7'
@@ -1939,21 +1749,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/99ab1e150c3708ce81bc08073cf5793ef67c6a1c/20/Dockerfile
 
-  - version: 20.3.5
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-05-04T09:29:56'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.5-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/16772632915ab5f4a95bde6abdb9d1ad71d53dda/20/slim/Dockerfile
+        imageRepository: erlang:20.3.6-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/99ab1e150c3708ce81bc08073cf5793ef67c6a1c/20/slim/Dockerfile
+
+  - version: 20.3.5
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-05-04T09:29:56'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.7'
@@ -1973,21 +1784,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/16772632915ab5f4a95bde6abdb9d1ad71d53dda/20/Dockerfile
 
-  - version: 20.3.4
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-04-21T09:05:39'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.4-slim
+        imageRepository: erlang:20.3.5-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/4445312ead7e1b449edf7a2eda8d058da7b6a2a7/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/16772632915ab5f4a95bde6abdb9d1ad71d53dda/20/slim/Dockerfile
+
+  - version: 20.3.4
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-04-25T09:06:38'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.7'
@@ -2007,21 +1819,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/4445312ead7e1b449edf7a2eda8d058da7b6a2a7/20/Dockerfile
 
-  - version: 20.3.3
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-04-20T09:04:10'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:20.3.3-slim
+        imageRepository: erlang:20.3.4-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01538b0c835ee527107ed85c6c2f84e7d97b1ec6/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/54c69cb6eff65503f09897072c72ff2d138d1e62/20/slim/Dockerfile
+
+  - version: 20.3.3
+    majorVersion: '20.3'
+    prerelease: false
+    date: '2018-04-20T09:04:10'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.7'
@@ -2041,21 +1854,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01538b0c835ee527107ed85c6c2f84e7d97b1ec6/20/Dockerfile
 
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:20.3.3-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01538b0c835ee527107ed85c6c2f84e7d97b1ec6/20/slim/Dockerfile
+
   - version: 20.3.2
     majorVersion: '20.3'
     prerelease: false
-    date: '2018-03-23T01:03:17'
+    date: '2018-04-06T16:00:10'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.3.2-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/81d14489ed7f740386e2f05d762dc53fe34e6f8b/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.7'
@@ -2065,6 +1879,15 @@
         imageRepository: erlang:20.3.2-alpine
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/81d14489ed7f740386e2f05d762dc53fe34e6f8b/20/alpine/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:20.3.2-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/81d14489ed7f740386e2f05d762dc53fe34e6f8b/20/slim/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -2079,17 +1902,9 @@
     majorVersion: '20.3'
     prerelease: false
     date: '2018-03-16T23:42:20'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.3.1-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a85fe60b7332d669d00e325888cc707566bed46b/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.7'
@@ -2101,6 +1916,15 @@
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a85fe60b7332d669d00e325888cc707566bed46b/20/alpine/Dockerfile
 
       - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:20.3.1-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a85fe60b7332d669d00e325888cc707566bed46b/20/slim/Dockerfile
+
+      - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
@@ -2109,55 +1933,13 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a85fe60b7332d669d00e325888cc707566bed46b/20/Dockerfile
 
-  - version: '20.3'
-    majorVersion: '20.3'
-    prerelease: false
-    date: '2018-03-15T01:16:24'
-    distributionReleases: Alpine, Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.3-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/c8b13d360cdd98070abc9041903ceefb94955963/20/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        imageRepository: erlang:20.3-alpine
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/c8b13d360cdd98070abc9041903ceefb94955963/20/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 5
-        image: buildpack-deps:stretch
-        imageRepository: erlang:20.3
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/c8b13d360cdd98070abc9041903ceefb94955963/20/Dockerfile
-
   - version: 20.2.4
     majorVersion: '20.2'
     prerelease: false
-    date: '2018-02-23T01:36:58'
+    date: '2018-03-05T20:06:22'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.2.4-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/83a747afba739592bb4d3f8a01b5d535c1f2c8dd/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.7'
@@ -2167,6 +1949,15 @@
         imageRepository: erlang:20.2.4-alpine
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/83a747afba739592bb4d3f8a01b5d535c1f2c8dd/20/alpine/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:20.2.4-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/83a747afba739592bb4d3f8a01b5d535c1f2c8dd/20/slim/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -2181,6 +1972,7 @@
     majorVersion: '20.2'
     prerelease: false
     date: '2018-02-14T01:52:11'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -2196,27 +1988,37 @@
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.2.3-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/3945f4cf68ff4b9124835089c1c8470e8dec3b7d/20/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
         weight: 5
         image: buildpack-deps:jessie
         imageRepository: erlang:20.2.3
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/3945f4cf68ff4b9124835089c1c8470e8dec3b7d/20/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:20.2.3-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/3945f4cf68ff4b9124835089c1c8470e8dec3b7d/20/slim/Dockerfile
+
   - version: 20.2.2
     majorVersion: '20.2'
     prerelease: false
     date: '2018-01-28T04:31:29'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
+
+      - name: Alpine
+        releaseName: '3.7'
+        release: 3.7
+        weight: 1
+        image: alpine:3.7
+        imageRepository: erlang:20.2.2-alpine
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7bed62e30a4e6557c146b2865413c9ce924366be/20/alpine/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2236,39 +2038,13 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/91f55f9a69925e7fc16b467c155897bbe8646f12/20/slim/Dockerfile
 
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        imageRepository: erlang:20.2.2-alpine
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/91f55f9a69925e7fc16b467c155897bbe8646f12/20/alpine/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.7'
-        release: 3.7
-        weight: 1
-        image: alpine:3.7
-        imageRepository: erlang:20.2.2-alpine
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7bed62e30a4e6557c146b2865413c9ce924366be/20/alpine/Dockerfile
-
   - version: 20.2.1
     majorVersion: '20.2'
     prerelease: false
-    date: '2017-12-15T18:35:54'
+    date: '2017-12-19T01:39:43'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.2.1-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e9cf70bed0fee9e6391818d05698549ebd05ad73/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.6'
@@ -2288,55 +2064,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e9cf70bed0fee9e6391818d05698549ebd05ad73/20/Dockerfile
 
-  - version: '20.2'
-    majorVersion: '20.2'
-    prerelease: false
-    date: '2017-12-13T10:06:40'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.2-slim
+        imageRepository: erlang:20.2.1-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/81a60bee4a77e6127ef40009d3314f1237799b40/20/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        imageRepository: erlang:20.2-alpine
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/81a60bee4a77e6127ef40009d3314f1237799b40/20/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:20.2
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/81a60bee4a77e6127ef40009d3314f1237799b40/20/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e9cf70bed0fee9e6391818d05698549ebd05ad73/20/slim/Dockerfile
 
   - version: 20.1.7
     majorVersion: '20.1'
     prerelease: false
     date: '2017-11-25T01:34:53'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.1.7-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/b458125e4336680c6de731c09041c9a13813eb50/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.6'
@@ -2356,21 +2099,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/b458125e4336680c6de731c09041c9a13813eb50/20/Dockerfile
 
-  - version: 20.1.6
-    majorVersion: '20.1'
-    prerelease: false
-    date: '2017-11-22T03:03:51'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.1.6-slim
+        imageRepository: erlang:20.1.7-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/4e884cfceac4a6103280c299fc225a8484581e69/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/b458125e4336680c6de731c09041c9a13813eb50/20/slim/Dockerfile
+
+  - version: 20.1.6
+    majorVersion: '20.1'
+    prerelease: false
+    date: '2017-11-22T03:03:51'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2390,21 +2134,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/4e884cfceac4a6103280c299fc225a8484581e69/20/Dockerfile
 
-  - version: 20.1.5
-    majorVersion: '20.1'
-    prerelease: false
-    date: '2017-11-14T01:37:27'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.1.5-slim
+        imageRepository: erlang:20.1.6-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1b5d14663cffa24c255eb19902f6bc3b7f546b49/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/4e884cfceac4a6103280c299fc225a8484581e69/20/slim/Dockerfile
+
+  - version: 20.1.5
+    majorVersion: '20.1'
+    prerelease: false
+    date: '2017-11-16T13:25:51'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2424,21 +2169,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1b5d14663cffa24c255eb19902f6bc3b7f546b49/20/Dockerfile
 
-  - version: 20.1.4
-    majorVersion: '20.1'
-    prerelease: false
-    date: '2017-11-03T09:30:03'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.1.4-slim
+        imageRepository: erlang:20.1.5-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/31d7f264f6b6c85adc105208846f6384d7d80a9b/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1b5d14663cffa24c255eb19902f6bc3b7f546b49/20/slim/Dockerfile
+
+  - version: 20.1.4
+    majorVersion: '20.1'
+    prerelease: false
+    date: '2017-11-03T09:30:03'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2458,21 +2204,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/31d7f264f6b6c85adc105208846f6384d7d80a9b/20/Dockerfile
 
-  - version: 20.1.3
-    majorVersion: '20.1'
-    prerelease: false
-    date: '2017-10-27T04:33:27'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.1.3-slim
+        imageRepository: erlang:20.1.4-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/fbcd7d4f272e6e2d81bfd1206d6c648ce6c7e93c/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/31d7f264f6b6c85adc105208846f6384d7d80a9b/20/slim/Dockerfile
+
+  - version: 20.1.3
+    majorVersion: '20.1'
+    prerelease: false
+    date: '2017-10-27T04:33:27'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2492,21 +2239,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/fbcd7d4f272e6e2d81bfd1206d6c648ce6c7e93c/20/Dockerfile
 
-  - version: 20.1.2
-    majorVersion: '20.1'
-    prerelease: false
-    date: '2017-10-12T01:34:27'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.1.2-slim
+        imageRepository: erlang:20.1.3-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/14e8d92f190e0ec771707be8bf7cd4b35a108272/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/fbcd7d4f272e6e2d81bfd1206d6c648ce6c7e93c/20/slim/Dockerfile
+
+  - version: 20.1.2
+    majorVersion: '20.1'
+    prerelease: false
+    date: '2017-10-12T01:34:27'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2526,21 +2274,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/14e8d92f190e0ec771707be8bf7cd4b35a108272/20/Dockerfile
 
-  - version: 20.1.1
-    majorVersion: '20.1'
-    prerelease: false
-    date: '2017-10-03T13:38:40'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.1.1-slim
+        imageRepository: erlang:20.1.2-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/8a77b857d423a79e43e9daddddcbf3cd1ed4dbcc/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/14e8d92f190e0ec771707be8bf7cd4b35a108272/20/slim/Dockerfile
+
+  - version: 20.1.1
+    majorVersion: '20.1'
+    prerelease: false
+    date: '2017-10-05T13:37:59'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2560,55 +2309,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/8a77b857d423a79e43e9daddddcbf3cd1ed4dbcc/20/Dockerfile
 
-  - version: '20.1'
-    majorVersion: '20.1'
-    prerelease: false
-    date: '2017-09-27T02:02:22'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.1-slim
+        imageRepository: erlang:20.1.1-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/af62064cb2b9480dca006667982ba8a6012a45f6/20/slim/Dockerfile
-
-      - name: Alpine
-        releaseName: '3.6'
-        release: 3.6
-        weight: 1
-        image: alpine:3.6
-        imageRepository: erlang:20.1-alpine
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/af62064cb2b9480dca006667982ba8a6012a45f6/20/alpine/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:20.1
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/af62064cb2b9480dca006667982ba8a6012a45f6/20/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/8a77b857d423a79e43e9daddddcbf3cd1ed4dbcc/20/slim/Dockerfile
 
   - version: 20.0.5
     majorVersion: '20.0'
     prerelease: false
     date: '2017-09-15T18:40:40'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.0.5-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/76e20aa4cedfb91c192759ef4e6c1164cc79aece/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.6'
@@ -2628,21 +2344,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/76e20aa4cedfb91c192759ef4e6c1164cc79aece/20/Dockerfile
 
-  - version: 20.0.4
-    majorVersion: '20.0'
-    prerelease: false
-    date: '2017-09-06T14:34:57'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.0.4-slim
+        imageRepository: erlang:20.0.5-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e7d145c915458e5bbb857a57c9aad7125f95a853/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/76e20aa4cedfb91c192759ef4e6c1164cc79aece/20/slim/Dockerfile
+
+  - version: 20.0.4
+    majorVersion: '20.0'
+    prerelease: false
+    date: '2017-09-06T14:34:57'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2662,10 +2379,20 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e7d145c915458e5bbb857a57c9aad7125f95a853/20/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:20.0.4-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e7d145c915458e5bbb857a57c9aad7125f95a853/20/slim/Dockerfile
+
   - version: 20.0.3
     majorVersion: '20.0'
     prerelease: false
     date: '2017-08-24T12:56:11'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -2700,17 +2427,9 @@
     majorVersion: '20.0'
     prerelease: false
     date: '2017-07-28T03:32:14'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:20.0.2-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1a94b7d23c5e7d4b97e0c210db8ff7c26a60e0ac/20/slim/Dockerfile
 
       - name: Alpine
         releaseName: '3.6'
@@ -2730,21 +2449,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1a94b7d23c5e7d4b97e0c210db8ff7c26a60e0ac/20/Dockerfile
 
-  - version: 20.0.1
-    majorVersion: '20.0'
-    prerelease: false
-    date: '2017-07-05T10:20:08'
-    distributionReleases: Alpine, Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.0.1-slim
+        imageRepository: erlang:20.0.2-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/25224b9f7b11af9db404c97433483619fdfed02b/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1a94b7d23c5e7d4b97e0c210db8ff7c26a60e0ac/20/slim/Dockerfile
+
+  - version: 20.0.1
+    majorVersion: '20.0'
+    prerelease: false
+    date: '2017-07-26T00:14:51'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2753,7 +2473,7 @@
         image: alpine:3.6
         imageRepository: erlang:20.0.1-alpine
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/25224b9f7b11af9db404c97433483619fdfed02b/20/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/24ac339c0857ba7ba1bb98aad9f7898b2f65360c/20/alpine/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2762,23 +2482,24 @@
         image: buildpack-deps:jessie
         imageRepository: erlang:20.0.1
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/25224b9f7b11af9db404c97433483619fdfed02b/20/Dockerfile
-
-  - version: '20.0'
-    majorVersion: '20.0'
-    prerelease: false
-    date: '2017-06-06T10:44:09'
-    distributionReleases: Alpine, Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7671f941c1525c689d53595b1aac66772dc7fabf/20/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:20.0-rc2-slim
+        imageRepository: erlang:20.0.1-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/60279df11f4f11abfdce15599d24ad73c1aefbe1/20/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7671f941c1525c689d53595b1aac66772dc7fabf/20/slim/Dockerfile
+
+  - version: '20.0'
+    majorVersion: '20.0'
+    prerelease: false
+    date: '2017-06-10T02:44:53'
+    current: false
+    distributionReleases: Alpine, Debian
+    distributions:
 
       - name: Alpine
         releaseName: '3.6'
@@ -2798,21 +2519,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/60279df11f4f11abfdce15599d24ad73c1aefbe1/20/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:20.0-rc2-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/60279df11f4f11abfdce15599d24ad73c1aefbe1/20/slim/Dockerfile
+
   - version: 19.3.6.13
     majorVersion: '19.3'
     prerelease: false
-    date: '2019-01-11T11:28:09'
+    date: '2019-05-15T23:06:18'
+    current: true
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 9 (stretch)
-        release: 9.0
-        weight: 2
-        image: debian:stretch
-        imageRepository: erlang:19.3.6.13-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7b9e1d54cf93f53b9ace21b9103588c77c198d2f/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -2823,39 +2545,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7b9e1d54cf93f53b9ace21b9103588c77c198d2f/19/Dockerfile
 
-  - version: 19.3.6.12
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2018-10-15T14:31:13'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.3.6.12-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/dc54fb8d1737f493748176df10c4af1b42e1e7b5/19/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.3.6.12
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/dc54fb8d1737f493748176df10c4af1b42e1e7b5/19/Dockerfile
-
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:19.3.6.12-slim
+        imageRepository: erlang:19.3.6.13-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ba81527544daf50d27a85b1a6001cc541b742089/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/7b9e1d54cf93f53b9ace21b9103588c77c198d2f/19/slim/Dockerfile
+
+  - version: 19.3.6.12
+    majorVersion: '19.3'
+    prerelease: false
+    date: '2019-01-09T13:00:54'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -2864,23 +2569,24 @@
         image: buildpack-deps:stretch
         imageRepository: erlang:19.3.6.12
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/ba81527544daf50d27a85b1a6001cc541b742089/19/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/8815a0c2ce5282dbf08553f602e5214e4e9631ce/19/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:19.3.6.12-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/145d4a0002206e003cc76c8719b6264529165889/19/slim/Dockerfile
 
   - version: 19.3.6.11
     majorVersion: '19.3'
     prerelease: false
-    date: '2018-09-21T00:19:04'
+    date: '2018-09-25T18:49:04'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.3.6.11-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f0010bb16e7f56bdfbbc820572cc241c7272b131/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2891,21 +2597,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f0010bb16e7f56bdfbbc820572cc241c7272b131/19/Dockerfile
 
-  - version: 19.3.6.10
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2018-08-12T07:55:02'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.3.6.10-slim
+        imageRepository: erlang:19.3.6.11-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/fe505cb6aa9afc509add31825b7f1734a0163c04/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f0010bb16e7f56bdfbbc820572cc241c7272b131/19/slim/Dockerfile
+
+  - version: 19.3.6.10
+    majorVersion: '19.3'
+    prerelease: false
+    date: '2018-09-19T21:17:17'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2916,10 +2623,20 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/fe505cb6aa9afc509add31825b7f1734a0163c04/19/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:19.3.6.10-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/fe505cb6aa9afc509add31825b7f1734a0163c04/19/slim/Dockerfile
+
   - version: 19.3.6.9
     majorVersion: '19.3'
     prerelease: false
-    date: '2018-06-05T22:12:47'
+    date: '2018-08-10T21:56:04'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -2930,7 +2647,7 @@
         image: buildpack-deps:jessie
         imageRepository: erlang:19.3.6.9
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e5b033e54c654b78d9da8eb3259c9e3f7382870f/19/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/19/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2945,17 +2662,9 @@
     majorVersion: '19.3'
     prerelease: false
     date: '2018-05-09T09:09:45'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.3.6.8-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a4b3ffe77b67f6330f72f5aef7c639c985fdad94/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2966,21 +2675,22 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a0b9e99ebacfa92a97224a657a88bd67b9877008/19/Dockerfile
 
-  - version: 19.3.6.7
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2018-03-23T01:03:17'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.3.6.7-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/583e51e3a8abf795a99b2613b1967469d4c1e18a/19/slim/Dockerfile
+        imageRepository: erlang:19.3.6.8-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a4b3ffe77b67f6330f72f5aef7c639c985fdad94/19/slim/Dockerfile
+
+  - version: 19.3.6.7
+    majorVersion: '19.3'
+    prerelease: false
+    date: '2018-03-23T01:03:17'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2991,21 +2701,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/583e51e3a8abf795a99b2613b1967469d4c1e18a/19/Dockerfile
 
-  - version: 19.3.6.6
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2018-03-05T20:06:22'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.3.6.6-slim
+        imageRepository: erlang:19.3.6.7-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/bede8199e3263e936687542a0492774b3512296a/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/583e51e3a8abf795a99b2613b1967469d4c1e18a/19/slim/Dockerfile
+
+  - version: 19.3.6.6
+    majorVersion: '19.3'
+    prerelease: false
+    date: '2018-03-16T23:42:20'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3016,10 +2727,20 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/bede8199e3263e936687542a0492774b3512296a/19/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:19.3.6.6-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/bede8199e3263e936687542a0492774b3512296a/19/slim/Dockerfile
+
   - version: 19.3.6.5
     majorVersion: '19.3'
     prerelease: false
-    date: '2018-02-14T01:52:11'
+    date: '2018-02-23T01:36:58'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3044,18 +2765,10 @@
   - version: 19.3.6.4
     majorVersion: '19.3'
     prerelease: false
-    date: '2017-11-25T01:34:53'
+    date: '2017-12-15T18:35:54'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.3.6.4-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/f2a72a89e764bfab03a9f6018f628c63ee7632b8/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3066,12 +2779,31 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/f2a72a89e764bfab03a9f6018f628c63ee7632b8/19/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:19.3.6.4-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/f2a72a89e764bfab03a9f6018f628c63ee7632b8/19/slim/Dockerfile
+
   - version: 19.3.6.3
     majorVersion: '19.3'
     prerelease: false
-    date: '2017-10-05T13:37:59'
+    date: '2017-11-22T03:03:51'
+    current: false
     distributionReleases: Debian
     distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: erlang:19.3.6.3
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/0263180f32d4c3483c3b172137057f71076d60bd/19/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3082,30 +2814,13 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a9d7a0c3cc129f0e3d2f4ec0cf957a432b7d652e/19/slim/Dockerfile
 
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.3.6.3
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a9d7a0c3cc129f0e3d2f4ec0cf957a432b7d652e/19/Dockerfile
-
   - version: 19.3.6.2
     majorVersion: '19.3'
     prerelease: false
-    date: '2017-09-06T14:34:57'
+    date: '2017-10-03T13:38:40'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.3.6.2-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e7d145c915458e5bbb857a57c9aad7125f95a853/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3114,14 +2829,33 @@
         image: buildpack-deps:jessie
         imageRepository: erlang:19.3.6.2
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e7d145c915458e5bbb857a57c9aad7125f95a853/19/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/76e20aa4cedfb91c192759ef4e6c1164cc79aece/19/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:19.3.6.2-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/76e20aa4cedfb91c192759ef4e6c1164cc79aece/19/slim/Dockerfile
 
   - version: 19.3.6.1
     majorVersion: '19.3'
     prerelease: false
-    date: '2017-06-28T18:33:11'
+    date: '2017-07-26T00:14:51'
+    current: false
     distributionReleases: Debian
     distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: erlang:19.3.6.1
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a9e5cdee4909cb1c9c2ea70595f5d32a46da885f/19/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3132,55 +2866,13 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/fd534c28f30861d8536fb0f7452051a17f452243/19/slim/Dockerfile
 
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.3.6.1
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/fd534c28f30861d8536fb0f7452051a17f452243/19/Dockerfile
-
-  - version: 19.3.6
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2017-06-10T02:44:53'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.3.6-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/bd4db4d454e410c92f00125ffd7b4f9db8ff6a8b/19/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.3.6
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/bd4db4d454e410c92f00125ffd7b4f9db8ff6a8b/19/Dockerfile
-
   - version: 19.3.5
     majorVersion: '19.3'
     prerelease: false
     date: '2017-06-06T10:44:09'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.3.5-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7b0e42e619b46d87fe6c41a018dcb7e065e6b0ed/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3191,21 +2883,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7b0e42e619b46d87fe6c41a018dcb7e065e6b0ed/19/Dockerfile
 
-  - version: 19.3.3
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2017-05-03T12:32:53'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.3.3-slim
+        imageRepository: erlang:19.3.5-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/232e8eda4a1f00ffd9f417f86a4212fa4d39e441/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7b0e42e619b46d87fe6c41a018dcb7e065e6b0ed/19/slim/Dockerfile
+
+  - version: 19.3.3
+    majorVersion: '19.3'
+    prerelease: false
+    date: '2017-05-03T12:32:53'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3216,21 +2909,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/232e8eda4a1f00ffd9f417f86a4212fa4d39e441/19/Dockerfile
 
-  - version: 19.3.1
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2017-04-05T22:41:57'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.3.1-slim
+        imageRepository: erlang:19.3.3-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/3d50589fa66aedda3bf11419cd81fdadf5cc6ee3/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/232e8eda4a1f00ffd9f417f86a4212fa4d39e441/19/slim/Dockerfile
+
+  - version: 19.3.1
+    majorVersion: '19.3'
+    prerelease: false
+    date: '2017-04-05T22:41:57'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3241,46 +2935,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/3d50589fa66aedda3bf11419cd81fdadf5cc6ee3/19/Dockerfile
 
-  - version: '19.3'
-    majorVersion: '19.3'
-    prerelease: false
-    date: '2017-03-18T11:38:54'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.3-slim
+        imageRepository: erlang:19.3.1-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/9584350e96a6fed028ed858312d8de43a0e238e0/19/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.3
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/9584350e96a6fed028ed858312d8de43a0e238e0/19/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/3d50589fa66aedda3bf11419cd81fdadf5cc6ee3/19/slim/Dockerfile
 
   - version: 19.2.3
     majorVersion: '19.2'
     prerelease: false
     date: '2017-02-18T15:36:35'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.2.3-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/5962d4d7291b268eff8ff2513637eedabe9fe90f/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3291,21 +2961,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/5962d4d7291b268eff8ff2513637eedabe9fe90f/19/Dockerfile
 
-  - version: 19.2.2
-    majorVersion: '19.2'
-    prerelease: false
-    date: '2017-02-02T23:30:05'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.2.2-slim
+        imageRepository: erlang:19.2.3-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1b03fdd83ec769e7962ec0dce01e25613a46dacf/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/5962d4d7291b268eff8ff2513637eedabe9fe90f/19/slim/Dockerfile
+
+  - version: 19.2.2
+    majorVersion: '19.2'
+    prerelease: false
+    date: '2017-02-02T23:30:05'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3316,46 +2987,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1b03fdd83ec769e7962ec0dce01e25613a46dacf/19/Dockerfile
 
-  - version: '19.2'
-    majorVersion: '19.2'
-    prerelease: false
-    date: '2016-12-15T14:19:02'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.2-slim
+        imageRepository: erlang:19.2.2-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/f52f97dbd128f2eca3eee86b3471b4e6ef6d8594/19/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.2
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/f52f97dbd128f2eca3eee86b3471b4e6ef6d8594/19/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/1b03fdd83ec769e7962ec0dce01e25613a46dacf/19/slim/Dockerfile
 
   - version: 19.1.6
     majorVersion: '19.1'
     prerelease: false
     date: '2016-11-14T13:59:50'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.1.6-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/02c1f6eaae350492bf74a9a261b9639b17ae524e/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3366,21 +3013,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/02c1f6eaae350492bf74a9a261b9639b17ae524e/19/Dockerfile
 
-  - version: 19.1.5
-    majorVersion: '19.1'
-    prerelease: false
-    date: '2016-11-01T20:54:04'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.1.5-slim
+        imageRepository: erlang:19.1.6-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/5e1399b65a48c81595b5ec58b0e3f70444c3067f/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/02c1f6eaae350492bf74a9a261b9639b17ae524e/19/slim/Dockerfile
+
+  - version: 19.1.5
+    majorVersion: '19.1'
+    prerelease: false
+    date: '2016-11-01T20:54:04'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3391,46 +3039,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/5e1399b65a48c81595b5ec58b0e3f70444c3067f/19/Dockerfile
 
-  - version: '19.1'
-    majorVersion: '19.1'
-    prerelease: false
-    date: '2016-09-22T12:05:53'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.1-slim
+        imageRepository: erlang:19.1.5-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/9be249effe93e3c61fa0749078e55ef8d050a16e/19/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.1
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/9be249effe93e3c61fa0749078e55ef8d050a16e/19/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/5e1399b65a48c81595b5ec58b0e3f70444c3067f/19/slim/Dockerfile
 
   - version: 19.0.7
     majorVersion: '19.0'
     prerelease: false
     date: '2016-09-15T14:34:15'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:19.0.7-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/6da7cea045b2603a42db5804cc15e6cffbb65e19/19/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3441,21 +3065,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/6da7cea045b2603a42db5804cc15e6cffbb65e19/19/Dockerfile
 
-  - version: 19.0.5
-    majorVersion: '19.0'
-    prerelease: false
-    date: '2016-08-21T11:27:21'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.0.5-slim
+        imageRepository: erlang:19.0.7-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/6da7cea045b2603a42db5804cc15e6cffbb65e19/19/slim/Dockerfile
+
+  - version: 19.0.5
+    majorVersion: '19.0'
+    prerelease: false
+    date: '2016-08-21T11:27:21'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3466,21 +3091,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/19/Dockerfile
 
-  - version: 19.0.3
-    majorVersion: '19.0'
-    prerelease: false
-    date: '2016-08-10T13:38:57'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.0.3-slim
+        imageRepository: erlang:19.0.5-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/d4b2a7c2bef381344ca28183d625e2db066be22b/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/19/slim/Dockerfile
+
+  - version: 19.0.3
+    majorVersion: '19.0'
+    prerelease: false
+    date: '2016-08-10T13:38:57'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3491,21 +3117,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/d4b2a7c2bef381344ca28183d625e2db066be22b/19/Dockerfile
 
-  - version: 19.0.1
-    majorVersion: '19.0'
-    prerelease: false
-    date: '2016-07-13T22:34:56'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.0.1-slim
+        imageRepository: erlang:19.0.3-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/d4b2a7c2bef381344ca28183d625e2db066be22b/19/slim/Dockerfile
+
+  - version: 19.0.1
+    majorVersion: '19.0'
+    prerelease: false
+    date: '2016-07-13T22:34:56'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3516,35 +3143,20 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/Dockerfile
 
-  - version: '19.0'
-    majorVersion: '19.0'
-    prerelease: false
-    date: '2016-06-22T17:13:31'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:19.0-slim
+        imageRepository: erlang:19.0.1-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/ea32d5f6f1735f9f55bee04b112166da96eb9c73/19/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:19.0
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/ea32d5f6f1735f9f55bee04b112166da96eb9c73/19/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/slim/Dockerfile
 
   - version: 18.3.4.11
     majorVersion: '18.3'
     prerelease: false
-    date: '2018-11-26T15:48:22'
+    date: '2019-05-15T23:06:18'
+    current: true
     distributionReleases: Debian
     distributions:
 
@@ -3569,18 +3181,10 @@
   - version: 18.3.4.10
     majorVersion: '18.3'
     prerelease: false
-    date: '2018-10-30T00:55:30'
+    date: '2018-11-15T10:31:11'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:18.3.4.10-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4fe4caa8ebd01748b50bac745f5e96d872e1db4c/18/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3591,12 +3195,31 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4fe4caa8ebd01748b50bac745f5e96d872e1db4c/18/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:18.3.4.10-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/4fe4caa8ebd01748b50bac745f5e96d872e1db4c/18/slim/Dockerfile
+
   - version: 18.3.4.9
     majorVersion: '18.3'
     prerelease: false
-    date: '2018-05-09T09:09:45'
+    date: '2018-10-15T14:31:13'
+    current: false
     distributionReleases: Debian
     distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: erlang:18.3.4.9
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/208f3d980b992c31d15343653c9b79f24690de09/18/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3607,30 +3230,13 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/f4198d6fc95719ebb3c2c3cd66407c78f4aa3f49/18/slim/Dockerfile
 
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:18.3.4.9
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/e5b033e54c654b78d9da8eb3259c9e3f7382870f/18/Dockerfile
-
   - version: 18.3.4.8
     majorVersion: '18.3'
     prerelease: false
-    date: '2018-03-05T20:06:22'
+    date: '2018-04-21T09:05:39'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:18.3.4.8-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/354f85db09d403e3d970d0731b811c774086ef26/18/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3641,10 +3247,20 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/354f85db09d403e3d970d0731b811c774086ef26/18/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:18.3.4.8-slim
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/354f85db09d403e3d970d0731b811c774086ef26/18/slim/Dockerfile
+
   - version: 18.3.4.7
     majorVersion: '18.3'
     prerelease: false
-    date: '2018-02-14T01:52:11'
+    date: '2018-02-23T01:36:58'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3669,9 +3285,19 @@
   - version: 18.3.4.6
     majorVersion: '18.3'
     prerelease: false
-    date: '2017-11-16T13:25:51'
+    date: '2017-11-22T03:03:51'
+    current: false
     distributionReleases: Debian
     distributions:
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: erlang:18.3.4.6
+        urlRepository: https://github.com/c0b/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/0263180f32d4c3483c3b172137057f71076d60bd/18/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3682,30 +3308,13 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/edf38952cc361ff409f0117ea91581180a80a221/18/slim/Dockerfile
 
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:18.3.4.6
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/edf38952cc361ff409f0117ea91581180a80a221/18/Dockerfile
-
   - version: 18.3.4.5
     majorVersion: '18.3'
     prerelease: false
-    date: '2017-09-06T14:34:57'
+    date: '2017-11-14T01:37:27'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:18.3.4.5-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e7d145c915458e5bbb857a57c9aad7125f95a853/18/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3714,23 +3323,24 @@
         image: buildpack-deps:jessie
         imageRepository: erlang:18.3.4.5
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/e7d145c915458e5bbb857a57c9aad7125f95a853/18/Dockerfile
-
-  - version: 18.3.4.4
-    majorVersion: '18.3'
-    prerelease: false
-    date: '2016-08-21T11:27:21'
-    distributionReleases: Debian
-    distributions:
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a75738f344af1f177f828cbaa6e8a44d15749d5a/18/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:18.3.4.4-slim
+        imageRepository: erlang:18.3.4.5-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/18/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a75738f344af1f177f828cbaa6e8a44d15749d5a/18/slim/Dockerfile
+
+  - version: 18.3.4.4
+    majorVersion: '18.3'
+    prerelease: false
+    date: '2016-12-15T14:19:02'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3741,21 +3351,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/18/Dockerfile
 
-  - version: 18.3.4.3
-    majorVersion: '18.3'
-    prerelease: false
-    date: '2016-08-10T13:38:57'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:18.3.4.3-slim
+        imageRepository: erlang:18.3.4.4-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/d4b2a7c2bef381344ca28183d625e2db066be22b/18/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/18/slim/Dockerfile
+
+  - version: 18.3.4.3
+    majorVersion: '18.3'
+    prerelease: false
+    date: '2016-08-10T13:38:57'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3766,21 +3377,22 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/d4b2a7c2bef381344ca28183d625e2db066be22b/18/Dockerfile
 
-  - version: 18.3.4.1
-    majorVersion: '18.3'
-    prerelease: false
-    date: '2016-07-13T22:34:56'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:18.3.4.1-slim
+        imageRepository: erlang:18.3.4.3-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/d4b2a7c2bef381344ca28183d625e2db066be22b/18/slim/Dockerfile
+
+  - version: 18.3.4.1
+    majorVersion: '18.3'
+    prerelease: false
+    date: '2016-07-13T22:34:56'
+    current: false
+    distributionReleases: Debian
+    distributions:
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3791,35 +3403,20 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/Dockerfile
 
-  - version: 18.3.4
-    majorVersion: '18.3'
-    prerelease: false
-    date: '2016-06-22T17:13:31'
-    distributionReleases: Debian
-    distributions:
-
       - name: Debian
         releaseName: 8 (jessie)
         release: 8.0
         weight: 2
         image: debian:jessie
-        imageRepository: erlang:18.3.4-slim
+        imageRepository: erlang:18.3.4.1-slim
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/aeae7ea95d8f42cb3c810fb962720235e304cb60/18/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:18.3.4
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/aeae7ea95d8f42cb3c810fb962720235e304cb60/18/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/slim/Dockerfile
 
   - version: 18.3.3
     majorVersion: '18.3'
     prerelease: false
     date: '2016-04-27T04:45:08'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3836,6 +3433,7 @@
     majorVersion: '18.3'
     prerelease: false
     date: '2016-04-27T04:45:08'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3848,35 +3446,11 @@
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a9f5121f34deb30cc61e21f0370aa8f16723aa14/18/Dockerfile
 
-  - version: '18.3'
-    majorVersion: '18.3'
-    prerelease: false
-    date: '2016-04-27T04:45:08'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:18.3-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a9f5121f34deb30cc61e21f0370aa8f16723aa14/18/slim/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:18.3
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a9f5121f34deb30cc61e21f0370aa8f16723aa14/18/Dockerfile
-
   - version: 18.2.3
     majorVersion: '18.2'
     prerelease: false
     date: '2016-02-03T11:13:12'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3893,6 +3467,7 @@
     majorVersion: '18.2'
     prerelease: false
     date: '2016-01-27T19:36:29'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3909,6 +3484,7 @@
     majorVersion: '18.2'
     prerelease: false
     date: '2015-12-28T18:15:07'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3924,7 +3500,8 @@
   - version: '18.2'
     majorVersion: '18.2'
     prerelease: false
-    date: '2016-01-27T19:36:29'
+    date: '2016-02-03T11:13:12'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3935,7 +3512,7 @@
         image: buildpack-deps:jessie
         imageRepository: erlang:18.2
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a44b506d60f417c1135257789244f9c3f7941118/18/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7b450cd7f43203d34c10ae0d35e9f8ea67257415/18/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -3950,6 +3527,7 @@
     majorVersion: '18.1'
     prerelease: false
     date: '2015-11-21T00:39:14'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3966,6 +3544,7 @@
     majorVersion: '18.1'
     prerelease: false
     date: '2015-09-11T00:00:00'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3981,7 +3560,8 @@
   - version: '18.1'
     majorVersion: '18.1'
     prerelease: false
-    date: '2015-09-11T00:00:00'
+    date: '2015-11-21T00:39:14'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -3992,48 +3572,15 @@
         image: buildpack-deps:jessie
         imageRepository: erlang:18.1
         urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/70fd1e32745cbc68e894d340b105f30b387966c8/18/Dockerfile
-
-  - version: '18'
-    majorVersion: '18'
-    prerelease: false
-    date: '2016-01-27T19:36:29'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:18
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a44b506d60f417c1135257789244f9c3f7941118/18/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:18-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/a9f5121f34deb30cc61e21f0370aa8f16723aa14/18/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/20e41464075dc0fc76709be77701530eddb6fe33/18/Dockerfile
 
   - version: 17.5.6.9
     majorVersion: '17.5'
     prerelease: false
-    date: '2018-05-09T09:09:45'
+    date: '2018-11-15T10:31:11'
+    current: false
     distributionReleases: Debian
     distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:17.5.6.9-slim
-        urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/slim/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -4044,10 +3591,20 @@
         urlRepository: https://github.com/erlang/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/Dockerfile
 
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 2
+        image: debian:jessie
+        imageRepository: erlang:17.5.6.9-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/slim/Dockerfile
+
   - version: 17.5.6.8
     majorVersion: '17.5'
     prerelease: false
-    date: '2016-02-03T11:13:12'
+    date: '2016-04-27T04:45:08'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -4064,6 +3621,7 @@
     majorVersion: '17.5'
     prerelease: false
     date: '2015-12-28T18:15:07'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -4079,7 +3637,8 @@
   - version: 17.5.6.4
     majorVersion: '17.5'
     prerelease: false
-    date: '2015-09-11T00:00:00'
+    date: '2015-11-21T00:39:14'
+    current: false
     distributionReleases: Debian
     distributions:
 
@@ -4091,53 +3650,3 @@
         imageRepository: erlang:17.5.6.4
         urlRepository: https://github.com/c0b/docker-erlang-otp
         urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/70fd1e32745cbc68e894d340b105f30b387966c8/17/Dockerfile
-
-  - version: '17.5'
-    majorVersion: '17.5'
-    prerelease: false
-    date: '2015-09-11T00:00:00'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:17.5
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/70fd1e32745cbc68e894d340b105f30b387966c8/17/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:17.5-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/slim/Dockerfile
-
-  - version: '17'
-    majorVersion: '17'
-    prerelease: false
-    date: '2015-09-11T00:00:00'
-    distributionReleases: Debian
-    distributions:
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 5
-        image: buildpack-deps:jessie
-        imageRepository: erlang:17
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/70fd1e32745cbc68e894d340b105f30b387966c8/17/Dockerfile
-
-      - name: Debian
-        releaseName: 8 (jessie)
-        release: 8.0
-        weight: 2
-        image: debian:jessie
-        imageRepository: erlang:17-slim
-        urlRepository: https://github.com/c0b/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/c0b/docker-erlang-otp/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/slim/Dockerfile
