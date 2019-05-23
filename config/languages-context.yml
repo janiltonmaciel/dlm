@@ -1,0 +1,4 @@
+- name: NODE
+  before:
+    - ENV PATH node_modules/.bin:$PATH
+  after:

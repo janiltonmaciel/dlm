@@ -1,64 +1,64 @@
 - language: erlang
-  alias: Erlang
+  alias: erlang
   url: https://github.com/erlang/otp/releases
   sort:
     - debian:8
     - alpine:8
 
 - language: golang
-  alias: Golang
+  alias: golang
   url: https://golang.org/doc/devel/release.html
 
 - language: haskell
-  alias: Haskell
+  alias: haskell
   url: https://www.haskell.org/ghc/
 
 - language: julia
-  alias: Julia
+  alias: julia
   url: https://github.com/JuliaLang/julia/releases
 
 - language: node
-  alias: Node
+  alias: node
   url: https://nodejs.org/en/download/releases/
   sort:
     - alpine:10
 
 - language: php
-  alias: PHP
+  alias: php
   url: https://www.php.net/releases/index.php
   sort:
     - debian:9
     - alpine:9
 
 - language: perl
-  alias: Perl
+  alias: perl
   url: http://www.cpan.org/src/
 
 - language: python
-  alias: Python
+  alias: python
   url: https://www.python.org/downloads/
   sort:
     - debian:8
 
 - language: ruby
-  alias: Ruby
+  alias: ruby
   url: https://www.ruby-lang.org/en/downloads/releases/
 
 - language: rust
-  alias: Rust
+  alias: rust
   url: https://github.com/rust-lang/rust/releases
 
 - language: swift
-  alias: Swift
+  alias: swift
   url: https://github.com/apple/swift/releases
 
-# language: jruby
-# alias: Jruby
-# url: https://github.com/jruby/jruby/releases
-
 - language: pypy
-  alias: Pypy
+  alias: pypy
   url: http://doc.pypy.org/en/latest/index-of-release-notes.html
+
+# language: jruby
+# alias: Jjuby
+# url: https://github.com/jruby/jruby/releases
 
 # language: r-base
 # alias: R
