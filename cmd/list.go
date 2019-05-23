@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/janiltonmaciel/dockerfile-gen/core"
+	"github.com/janiltonmaciel/dockerfile-gen/manager"
 	"github.com/urfave/cli"
 	"gopkg.in/gookit/color.v1"
 )
@@ -47,7 +47,7 @@ func listAction(c *cli.Context) error {
 		return showCommandHelp(c)
 	}
 
-	language := core.GetLanguage(languageInput)
+	language := manager.GetLanguage(languageInput)
 	if language == nil {
 		return showLanguageCommandHelp(c, languageInput)
 	}
@@ -74,25 +74,20 @@ func showLanguageCommandHelp(c *cli.Context, languageInput string) error {
 	return cli.ShowCommandHelp(c, "languages")
 }
 
-func printVersions(c *cli.Context, language *core.Language, withPrerelease bool, versionInput string) {
-	versions := core.FindVersions(language.Name, withPrerelease, versionInput)
+func printVersions(c *cli.Context, language *manager.Language, withPrerelease bool, versionInput string) {
+	versions := manager.FindVersions(language.Name, withPrerelease, versionInput)
 	fmt.Fprintf(c.App.Writer, "%s:", color.FgLightYellow.Render(language.Alias))
 	fmt.Fprintln(c.App.Writer)
 
-	var versionColor string
+	var versionColor color.Color
 	for _, version := range versions {
-		// if version.Current {
-		// 	versionColor = color.FgGreen.Render(version.Version)
-		// } else {
-		// 	versionColor = color.FgLightYellow.Render(version.Version)
-		// }
-		versionColor = color.FgGreen.Render(version.Version)
+		versionColor = color.FgGreen
 		if version.Prerelease {
-			versionColor = color.FgLightYellow.Render(version.Version)
+			versionColor = color.FgLightCyan
 		}
 
 		fmt.Printf("%25s   %s\n",
-			versionColor,
+			versionColor.Render(version.Version),
 			color.FgDefault.Render(version.DistributionReleases))
 	}
 }

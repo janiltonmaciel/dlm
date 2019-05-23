@@ -1,13 +1,27 @@
-package core
+package manager
 
 import (
-	"fmt"
 	"strings"
 )
 
-var (
-	versions map[string]VersionConfig
+type (
+	AnswerVersion struct {
+		Language Language
+		Version  Version
+	}
+
+	Version struct {
+		Version              string         `yaml:"version"`
+		MajorVersion         string         `yaml:"majorVersion"`
+		Prerelease           bool           `yaml:"prerelease"`
+		Date                 string         `yaml:"date"`
+		Current              bool           `yaml:"current"`
+		DistributionReleases string         `yaml:"distributionReleases"`
+		Distributions        []Distribution `yaml:"distributions"`
+	}
 )
+
+var versions map[string][]Version
 
 func FindVersion(languageName string, versionTarget string) *Version {
 	if versionConfig, found := versions[languageName]; found {
@@ -47,19 +61,15 @@ func reverse(versions []Version) []Version {
 	return versions
 }
 
-func setVersions(languageChoices map[string]Language) {
-	versions = make(map[string]VersionConfig)
-	for _, lang := range languageChoices {
-		versionConfig := VersionConfig{}
-		fileNameVersions := fmt.Sprintf("%s-versions.yml", strings.ToLower(lang.Name))
-		loadConfig(fileNameVersions, &versionConfig)
-
-		for _, version := range versionConfig {
-			for i := 0; i < len(version.Distributions); i++ {
-				version.Distributions[i].Language = lang
-			}
-		}
-
-		versions[strings.ToLower(lang.Name)] = versionConfig
+func setVersions(lang Language, v []Version) {
+	if versions == nil {
+		versions = make(map[string][]Version)
 	}
+	for _, version := range v {
+		for i := 0; i < len(version.Distributions); i++ {
+			version.Distributions[i].Language = lang
+		}
+	}
+
+	versions[strings.ToLower(lang.Name)] = v
 }

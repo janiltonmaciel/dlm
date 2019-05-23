@@ -6,11 +6,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/janiltonmaciel/dockerfile-gen/manager"
 	"github.com/urfave/cli"
 	"gopkg.in/AlecAivazis/survey.v1"
 	"gopkg.in/gookit/color.v1"
-
-	"github.com/janiltonmaciel/dockerfile-gen/core"
 )
 
 type create struct{}
@@ -42,24 +41,24 @@ func (this create) action(c *cli.Context) error {
 	}
 
 	distributions, distribution := this.distributionLanguage(answersVersions, answerDistro, c)
-	context := core.NewContext(distributions, distribution)
+	context := manager.NewContext(distributions, distribution)
 	println("\n>>>>>>>>> DOCKERFILE >>>>>>>>>")
 	var data string
 	for index, distro := range distributions {
 		isFrom := (index == 0)
 		printDistro(distro)
 		if !isFrom {
-			data, err = core.SanitizeDockerfile(distro)
+			data, err = manager.SanitizeDockerfile(distro)
 			if err != nil {
 				fmt.Printf("Error: %s\n", err)
 				return err
 			}
 		}
-		languageBlock := core.NewLanguageBlock(distro, data, isFrom)
+		languageBlock := manager.NewLanguageBlock(distro, data, isFrom)
 		context.Languages = append(context.Languages, languageBlock)
 	}
 
-	contentDockerfile := core.ParseTemplate(context)
+	contentDockerfile := manager.ParseTemplate(context)
 	if contentDockerfile == "" {
 		println("contentDockerfile VAZIO")
 		return nil
@@ -74,13 +73,13 @@ func (this create) action(c *cli.Context) error {
 	// 	Default: ExtraLibs,
 	// }
 	// err = survey.AskOne(p, &libs, nil)
-	// core.CheckErr(err)
+	// manager.CheckErr(err)
 
 	return nil
 }
 
-func IntersectionImage(a, b []core.Distribution, answerDistro string) (c []core.Distribution) {
-	m := make(map[string]core.Distribution)
+func IntersectionImage(a, b []manager.Distribution, answerDistro string) (c []manager.Distribution) {
+	m := make(map[string]manager.Distribution)
 	for _, item := range a {
 		m[item.Image] = item
 	}
@@ -93,8 +92,8 @@ func IntersectionImage(a, b []core.Distribution, answerDistro string) (c []core.
 	return
 }
 
-func distributionLight(distros []core.Distribution) *core.Distribution {
-	var distribution core.Distribution
+func distributionLight(distros []manager.Distribution) *manager.Distribution {
+	var distribution manager.Distribution
 	for _, distro := range distros {
 		if distribution.Name == "" ||
 			(distro.Release >= distribution.Release && distro.Weight <= distribution.Weight) {
@@ -105,8 +104,8 @@ func distributionLight(distros []core.Distribution) *core.Distribution {
 	return &distribution
 }
 
-func distributionHight(distros []core.Distribution) *core.Distribution {
-	var distribution core.Distribution
+func distributionHight(distros []manager.Distribution) *manager.Distribution {
+	var distribution manager.Distribution
 	for _, distro := range distros {
 		if distribution.Name == "" ||
 			(distro.Release >= distribution.Release && distro.Weight >= distribution.Weight) {
@@ -117,8 +116,8 @@ func distributionHight(distros []core.Distribution) *core.Distribution {
 	return &distribution
 }
 
-func findDistroByNameRelease(distros []core.Distribution, distroName string, distroRelease float32) []core.Distribution {
-	data := make([]core.Distribution, 0)
+func findDistroByNameRelease(distros []manager.Distribution, distroName string, distroRelease float32) []manager.Distribution {
+	data := make([]manager.Distribution, 0)
 	for _, d := range distros {
 		if d.Name == distroName && d.Release == distroRelease {
 			data = append(data, d)
@@ -127,7 +126,7 @@ func findDistroByNameRelease(distros []core.Distribution, distroName string, dis
 	return data
 }
 
-func findDistributionLight(distros []core.Distribution, distro core.Distribution) *core.Distribution {
+func findDistributionLight(distros []manager.Distribution, distro manager.Distribution) *manager.Distribution {
 	data := findDistroByNameRelease(distros, distro.Name, distro.Release)
 
 	if len(data) <= 0 {
@@ -136,8 +135,8 @@ func findDistributionLight(distros []core.Distribution, distro core.Distribution
 	return distributionLight(data)
 }
 
-func findDistribution2(distros []core.Distribution, distroName string) *core.Distribution {
-	var distribution core.Distribution
+func findDistribution2(distros []manager.Distribution, distroName string) *manager.Distribution {
+	var distribution manager.Distribution
 	for _, d := range distros {
 		if strings.ToLower(d.Name) == strings.ToLower(distroName) {
 			if distribution.Name == "" ||
@@ -149,13 +148,13 @@ func findDistribution2(distros []core.Distribution, distroName string) *core.Dis
 	return &distribution
 }
 
-func Filter(answersVersions []core.AnswerVersion, answerDistro string,
-	functionFilter func(a, b []core.Distribution, answerDistro string) (c []core.Distribution)) []core.Distribution {
+func Filter(answersVersions []manager.AnswerVersion, answerDistro string,
+	functionFilter func(a, b []manager.Distribution, answerDistro string) (c []manager.Distribution)) []manager.Distribution {
 
-	var distributions []core.Distribution
+	var distributions []manager.Distribution
 	tam := len(answersVersions)
 	if tam == 1 {
-		distributions = make([]core.Distribution, 0)
+		distributions = make([]manager.Distribution, 0)
 		for _, distro := range answersVersions[0].Version.Distributions {
 			if strings.ToLower(distro.Name) == strings.ToLower(answerDistro) {
 				distributions = append(distributions, distro)
@@ -178,14 +177,14 @@ func Filter(answersVersions []core.AnswerVersion, answerDistro string,
 	return distributions
 }
 
-func printDistros(distros []core.Distribution) {
+func printDistros(distros []manager.Distribution) {
 	println()
 	for _, distro := range distros {
 		fmt.Printf("Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", distro.Image, distro.UrlDockerfile, distro.Release, distro.Weight)
 	}
 }
 
-func printDistro(d core.Distribution) {
+func printDistro(d manager.Distribution) {
 	println()
 	// fmt.Printf("FROM %s\n", distro.Image)
 	fmt.Printf("Name:%s - Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", d.Name, d.Image, d.UrlDockerfile, d.Release, d.Weight)
@@ -195,15 +194,15 @@ func printVariable(label string, val interface{}) {
 	fmt.Printf("\n%s: %v\n", label, val)
 }
 
-func FilterByImage(answersVersions []core.AnswerVersion, answerDistro string) ([]core.Distribution, *core.Distribution) {
+func FilterByImage(answersVersions []manager.AnswerVersion, answerDistro string) ([]manager.Distribution, *manager.Distribution) {
 	distrosImage := Filter(answersVersions, answerDistro, IntersectionImage)
 	if len(distrosImage) <= 0 {
-		return []core.Distribution{}, nil
+		return []manager.Distribution{}, nil
 	}
 
 	distroLight := distributionLight(distrosImage)
 
-	distros := make([]core.Distribution, 0)
+	distros := make([]manager.Distribution, 0)
 	for _, av := range answersVersions {
 		for _, distro := range av.Version.Distributions {
 			if distro.Image == distroLight.Image {
@@ -216,10 +215,10 @@ func FilterByImage(answersVersions []core.AnswerVersion, answerDistro string) ([
 	return distros, &distros[0]
 }
 
-func FilterByRelease(answersVersions []core.AnswerVersion, answerDistro string) (distros []core.Distribution, distribution *core.Distribution) {
+func FilterByRelease(answersVersions []manager.AnswerVersion, answerDistro string) (distros []manager.Distribution, distribution *manager.Distribution) {
 
-	for _, distro := range core.GetDistributions() {
-		distrosTemp := make([]core.Distribution, 0)
+	for _, distro := range manager.GetDistributions() {
+		distrosTemp := make([]manager.Distribution, 0)
 		if strings.ToLower(distro.Name) == strings.ToLower(answerDistro) {
 			for _, av := range answersVersions {
 				if d := findDistributionLight(av.Version.Distributions, distro); d != nil {
@@ -234,7 +233,7 @@ func FilterByRelease(answersVersions []core.AnswerVersion, answerDistro string) 
 				distribution = distroHight
 				distros = distrosTemp
 			} else {
-				distribution = distributionHight([]core.Distribution{*distribution, *distroHight})
+				distribution = distributionHight([]manager.Distribution{*distribution, *distroHight})
 				if distribution.UrlDockerfile == distroHight.UrlDockerfile {
 					distros = distrosTemp
 				}
@@ -245,9 +244,9 @@ func FilterByRelease(answersVersions []core.AnswerVersion, answerDistro string) 
 	return
 }
 
-func FilterByDistro(answersVersions []core.AnswerVersion, answerDistro string) (distros []core.Distribution, distribution *core.Distribution) {
+func FilterByDistro(answersVersions []manager.AnswerVersion, answerDistro string) (distros []manager.Distribution, distribution *manager.Distribution) {
 
-	distrosTemp := make([]core.Distribution, 0)
+	distrosTemp := make([]manager.Distribution, 0)
 	for _, av := range answersVersions {
 		if d := findDistribution2(av.Version.Distributions, answerDistro); d != nil {
 			// fmt.Printf("D* Name:%s - Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", d.Name, d.Image, d.UrlDockerfile, d.Release, d.Weight)
@@ -268,12 +267,12 @@ func FilterByDistro(answersVersions []core.AnswerVersion, answerDistro string) (
 	return
 }
 
-func sortDistributions(distros []core.Distribution, distro core.Distribution) ([]core.Distribution, core.Distribution) {
+func sortDistributions(distros []manager.Distribution, distro manager.Distribution) ([]manager.Distribution, manager.Distribution) {
 	sort.Slice(distros, func(i, j int) bool {
 		return distros[i].Sort() > distros[j].Sort()
 	})
 
-	distributions := make([]core.Distribution, 0)
+	distributions := make([]manager.Distribution, 0)
 	distributions = append(distributions, distro)
 	for _, d := range distros {
 		if d.Hash() != distro.Hash() {
@@ -284,7 +283,7 @@ func sortDistributions(distros []core.Distribution, distro core.Distribution) ([
 	return distributions, distro
 }
 
-func (this create) distributionLanguage(answersVersions []core.AnswerVersion, answerDistro string, c *cli.Context) ([]core.Distribution, core.Distribution) {
+func (this create) distributionLanguage(answersVersions []manager.AnswerVersion, answerDistro string, c *cli.Context) ([]manager.Distribution, manager.Distribution) {
 	distros, distribution := FilterByImage(answersVersions, answerDistro)
 	if len(distros) > 0 && distribution != nil {
 		return sortDistributions(distros, *distribution)
@@ -303,7 +302,7 @@ func (this create) distributionLanguage(answersVersions []core.AnswerVersion, an
 	}
 	println("VAZIO: FilterByDistro")
 
-	return nil, core.Distribution{}
+	return nil, manager.Distribution{}
 
 	// # buildpack-deps:stretch > buildpack-deps:stretch-scm > buildpack-deps:stretch-curl > debian:stretch > debian:stretch-slim
 	// for _, distro := range distros {
@@ -314,17 +313,17 @@ func (this create) distributionLanguage(answersVersions []core.AnswerVersion, an
 	// }
 }
 
-func (this create) languagesQuestion(c *cli.Context) (answersLanguages []core.Language, err error) {
+func (this create) languagesQuestion(c *cli.Context) (answersLanguages []manager.Language, err error) {
 	prompt := &survey.MultiSelect{
 		Message:  "Select the programming languages:",
-		Options:  core.GetLanguages(),
+		Options:  manager.GetLanguages(),
 		PageSize: 10,
 	}
 	var answers []string
 	err = survey.AskOne(prompt, &answers, survey.Required)
 
 	for _, lang := range answers {
-		language := core.GetLanguage(lang)
+		language := manager.GetLanguage(lang)
 		if language == nil {
 			msg := fmt.Sprintf("Language not found: %s", color.FgLightYellow.Render(lang))
 			return answersLanguages, cli.NewExitError(msg, 1)
@@ -335,7 +334,7 @@ func (this create) languagesQuestion(c *cli.Context) (answersLanguages []core.La
 	return
 }
 
-func (this create) versionsQuestion(answersLanguages []core.Language, c *cli.Context) (answersVersions []core.AnswerVersion, err error) {
+func (this create) versionsQuestion(answersLanguages []manager.Language, c *cli.Context) (answersVersions []manager.AnswerVersion, err error) {
 	var version string
 	for _, language := range answersLanguages {
 		help := fmt.Sprintf(
@@ -371,14 +370,14 @@ func (this create) versionsQuestion(answersLanguages []core.Language, c *cli.Con
 			return answersVersions, err
 		}
 
-		v := core.FindVersion(language.Name, version)
+		v := manager.FindVersion(language.Name, version)
 		if v == nil {
 			msg := this.messageNotFoundVersion(&language, version)
 			fmt.Fprintf(c.App.Writer, msg)
 			return answersVersions, cli.NewExitError("", 1)
 		}
 
-		answerVersion := core.AnswerVersion{
+		answerVersion := manager.AnswerVersion{
 			Language: language,
 			Version:  *v,
 		}
@@ -388,7 +387,7 @@ func (this create) versionsQuestion(answersLanguages []core.Language, c *cli.Con
 	return answersVersions, nil
 }
 
-func (this create) distributionsQuestion(answersVersions []core.AnswerVersion, c *cli.Context) (answerDistro string, err error) {
+func (this create) distributionsQuestion(answersVersions []manager.AnswerVersion, c *cli.Context) (answerDistro string, err error) {
 	distros := this.answersVersionsToDistros(answersVersions)
 	if len(distros) < 1 {
 		fmt.Println()
@@ -419,18 +418,18 @@ func (this create) distributionsQuestion(answersVersions []core.AnswerVersion, c
 	return strings.ToLower(answerDistro), nil
 }
 
-func (this create) answersVersionsToDistros(answersVersions []core.AnswerVersion) []string {
-	var distributions []core.Distribution
+func (this create) answersVersionsToDistros(answersVersions []manager.AnswerVersion) []string {
+	var distributions []manager.Distribution
 	tam := len(answersVersions)
 	if tam == 1 {
 		distributions = answersVersions[0].Version.Distributions
 	} else {
-		distributions = core.Intersection(
+		distributions = manager.Intersection(
 			answersVersions[0].Version.Distributions,
 			answersVersions[1].Version.Distributions,
 		)
 		for i := 2; i < tam; i++ {
-			distributions = core.Intersection(
+			distributions = manager.Intersection(
 				distributions,
 				answersVersions[i].Version.Distributions,
 			)
@@ -440,7 +439,7 @@ func (this create) answersVersionsToDistros(answersVersions []core.AnswerVersion
 	return this.distributionsName(distributions)
 }
 
-func (this create) distributionsName(distributions []core.Distribution) (distros []string) {
+func (this create) distributionsName(distributions []manager.Distribution) (distros []string) {
 	exist := make(map[string]bool)
 	for _, distro := range distributions {
 		if _, ok := exist[distro.Name]; !ok {
@@ -451,7 +450,7 @@ func (this create) distributionsName(distributions []core.Distribution) (distros
 	return
 }
 
-func (this create) messageNotFoundVersion(lang *core.Language, version string) string {
+func (this create) messageNotFoundVersion(lang *manager.Language, version string) string {
 	colorRed := color.FgRed.Render
 	colorYellow := color.FgLightYellow.Render
 	msg := fmt.Sprintf(
@@ -472,7 +471,7 @@ func (this create) messageNotFoundVersion(lang *core.Language, version string) s
 func (this create) saveDockerfile(content string) {
 	output := "Dockerfile"
 	rewrite := false
-	if core.HasDockerfile() {
+	if manager.HasDockerfile() {
 		p := &survey.Confirm{
 			Message: fmt.Sprintf("Rewrite the file `%s`", output),
 			Default: true,
