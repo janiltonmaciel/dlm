@@ -7,4 +7,4 @@
 - name: ALPINE
   before:
   after:
-    - RUN apk update && apk add -y bash
+    - RUN apk update && apk add --no-cache bash
