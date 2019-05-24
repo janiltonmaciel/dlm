@@ -14,18 +14,21 @@ func newCommandList() cli.Command {
 		Name:    "list",
 		Aliases: []string{"ls"},
 		Usage:   "List versions available for docker language",
-		UsageText: `
-    dfm list <language>                 # List versions available for docker
-        --pre-release                   When listing, show pre-release version
-    dfm list <language> <version>       # List versions available for docker, matching a given <version>
-        --pre-release                   When listing, show pre-release version
+		UsageText: fmt.Sprintf(`
+   %s
+   %s
+   %s
+   %s
 
 Examples:
-   dfm list golang --pre-release        # List versions available for docker golang with pre-release
-   dfm list python 3.7                  # List versions available for docker python, matching version 3.7
-   dfm list python 3 --pre-release      # List versions available for docker python with pre-release, matching version 3
-   dfm list node 8                      # List versions available for docker node, matching version 8
-`,
+   %s
+		`,
+			fmt.Sprintf("%-48s List versions available for docker %s", renderGreen("dfm list <language>"), renderYellow("<language>")),
+			fmt.Sprintf("%-48s When listing, show %s version", renderGreen("  --pre-release"), renderYellow("pre-release")),
+			fmt.Sprintf("%-48s List versions available for docker %s, matching a given %s", renderGreen("dfm list <language> <version>"), renderYellow("<language>"), renderYellow("<version>")),
+			fmt.Sprintf("%-48s When listing, show %s version", renderGreen("  --pre-release"), renderYellow("pre-release")),
+			listExamples,
+		),
 		Flags: []cli.Flag{
 			cli.BoolFlag{
 				Name:  "pre-release",

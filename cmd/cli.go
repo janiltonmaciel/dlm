@@ -4,7 +4,11 @@ import (
 	"fmt"
 
 	"github.com/urfave/cli"
+	"gopkg.in/gookit/color.v1"
 )
+
+var renderYellow = color.FgLightYellow.Render
+var renderGreen = color.FgGreen.Render
 
 func VersionPrinter(commit, date string) func(c *cli.Context) {
 	return func(c *cli.Context) {
@@ -15,14 +19,24 @@ func VersionPrinter(commit, date string) func(c *cli.Context) {
 	}
 }
 
+var listExamples = fmt.Sprintf(`%-48s %s
+   %-48s %s
+   %-48s %s
+   %-48s %s`,
+	renderGreen("dfm list golang 1.12 --pre-release"), fmt.Sprintf("List versions available for docker %s matching version %s, with %s ", renderYellow("golang"), renderYellow("1.12"), renderYellow("pre-release")),
+	renderGreen("dfm list python 3.7"), fmt.Sprintf("List versions available for docker %s matching version %s", renderYellow("python"), renderYellow("3.7")),
+	renderGreen("dfm list ruby"), fmt.Sprintf("List versions available for docker %s", renderYellow("ruby")),
+	renderGreen("dfm list node 8"), fmt.Sprintf("List versions available for docker %s matching version %s", renderYellow("node"), renderYellow("8")),
+)
+
 // https://github.com/urfave/cli/blob/master/help.go
 // AppHelpTemplate is the text template for the Default help topic.
 // cli.go uses text/template to render templates. You can
 // render custom help text by setting this variable.
-var AppHelpTemplate = `Name:
+var AppHelpTemplate = fmt.Sprintf(`%s
    {{.Name}}{{if .Usage}} - {{.Usage}}{{end}}
 
-Usage:
+%s
 {{- if .UsageText }}{{.UsageText}}
 {{- else }}
 	{{.HelpName}}
@@ -39,27 +53,34 @@ Usage:
 	{{end}}
 {{- end}}
 
-Examples:
-   dfm create                       # Create Dockerfile
-   dfm ls node                      # List versions available for docker node
-   dfm ls python --pre-release      # List versions available for docker python with pre-release
-   dfm ls node 8.15                 # List versions available for docker node, matching version 8.15
-   dfm languages                    # List all supported languages
+%s
+   %s
+   %s
+   %s
 
 
 {{- if .Version }}
 
-Version:
+%s
    {{ .Version }}
 {{- end}}
 
 {{- if len .Authors}}
 
-Author{{with $length := len .Authors}}{{if ne 1 $length}}S{{end}}{{end}}:
+%s{{with $length := len .Authors}}{{if ne 1 $length}}S{{end}}{{end}}:
    {{range $index, $author := .Authors}}{{if $index}}
    {{end}}{{$author}}{{end}}
 {{end}}
-`
+`,
+	renderYellow("Name:"),
+	renderYellow("Usage:"),
+	renderYellow("Examples:"),
+	fmt.Sprintf("%-48s %s", renderGreen("dfm create"), "Create Dockerfile"),
+	fmt.Sprintf("%-48s %s", renderGreen("dfm languages"), "List all supported languages"),
+	listExamples,
+	renderYellow("Version:"),
+	renderYellow("Author"),
+)
 var CommandHelpTemplate = `Name:
    {{.HelpName}} - {{.Usage}}
 

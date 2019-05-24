@@ -54,6 +54,25 @@ func FindVersions(languageName string, withPrerelease bool, versionTarget string
 	return reverse(data)
 }
 
+func GetValueDefault(lang Language) string {
+	valueDefault := ""
+	switch strings.ToLower(lang.Name) {
+	case "node":
+		valueDefault = "12.2.0"
+		// valueDefault = "11.4.0"
+	case "python":
+		valueDefault = "3.8.0a4"
+	case "ruby":
+		valueDefault = "2.6.0"
+	case "golang":
+		valueDefault = "1.12.0"
+	case "swift":
+		valueDefault = "5.0"
+	}
+
+	return valueDefault
+}
+
 func reverse(versions []Version) []Version {
 	for i, j := 0, len(versions)-1; i < j; i, j = i+1, j-1 {
 		versions[i], versions[j] = versions[j], versions[i]

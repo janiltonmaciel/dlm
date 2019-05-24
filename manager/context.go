@@ -33,7 +33,7 @@ var (
 
 	DisableGpgIPV6 = `
 # DISABLE GPG IPV6
-RUN mkdir ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf`
+RUN mkdir -p ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf`
 )
 
 func NewContext(distros []Distribution, distro Distribution) Context {
