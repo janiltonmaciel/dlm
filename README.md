@@ -3,8 +3,8 @@
 Dockerfile language manager
 ## Copyright and license
 
-Code released under the MIT license. See
-[LICENSE](https://github.com/janiltonmaciel/dockerfile-gen/blob/master/LICENSE) for the full license text.
+Code released under the Apache License. See
+[LICENSE](https://github.com/janiltonmaciel/dfm/blob/master/LICENSE) for the full license text.
 
 ## Credits
 
