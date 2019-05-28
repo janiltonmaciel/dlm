@@ -3,10 +3,10 @@ package cmd
 import (
 	"fmt"
 
+	"github.com/janiltonmaciel/dockerfile-gen/manager"
 	"github.com/urfave/cli"
 	"gopkg.in/AlecAivazis/survey.v1"
 	surveyCore "gopkg.in/AlecAivazis/survey.v1/core"
-	"gopkg.in/gookit/color.v1"
 )
 
 var author = "Janilton Maciel <janilton@gmail.com>"
@@ -18,13 +18,11 @@ func CreateApp(version, commit, date string) *cli.App {
 }
 
 func createApp(version string) *cli.App {
-	renderGreen := color.FgGreen.Render
-
 	app := cli.NewApp()
 	app.Commands = createCommands()
-	app.Author = renderGreen(author)
-	app.Version = renderGreen(version)
-	app.Name = renderGreen("dfm")
+	app.Author = manager.RenderGreen(author)
+	app.Version = manager.RenderGreen(version)
+	app.Name = manager.RenderGreen("dfm")
 	app.HelpName = app.Name
 	app.Usage = "Dockerfile Manager"
 	app.UsageText = fmt.Sprintf(`
@@ -36,14 +34,14 @@ func createApp(version string) *cli.App {
    %s
    %s
    %s`,
-		fmt.Sprintf("%-48s Create Dockerfile", renderGreen("dfm create")),
-		fmt.Sprintf("%-48s List versions available for docker %s", renderGreen("dfm list <language>"), renderYellow("<language>")),
-		fmt.Sprintf("%-48s When listing, show %s version", renderGreen("  --pre-release"), renderYellow("pre-release")),
-		fmt.Sprintf("%-48s List versions available for docker %s, matching a given %s", renderGreen("dfm list <language> <version>"), renderYellow("<language>"), renderYellow("<version>")),
-		fmt.Sprintf("%-48s When listing, show %s version", renderGreen("  --pre-release"), renderYellow("pre-release")),
-		fmt.Sprintf("%-48s List all supported languages", renderGreen("dfm languages")),
-		fmt.Sprintf("%-48s Print out the installed version of dfm", renderGreen("dfm --version")),
-		fmt.Sprintf("%-48s Show this message", renderGreen("dfm --help")),
+		fmt.Sprintf("%-48s Create Dockerfile", manager.RenderGreen("dfm create")),
+		fmt.Sprintf("%-48s List versions available for docker %s", manager.RenderGreen("dfm list <language>"), manager.RenderYellow("<language>")),
+		fmt.Sprintf("%-48s When listing, show %s version", manager.RenderGreen("  --pre-release"), manager.RenderYellow("pre-release")),
+		fmt.Sprintf("%-48s List versions available for docker %s, matching a given %s", manager.RenderGreen("dfm list <language> <version>"), manager.RenderYellow("<language>"), manager.RenderYellow("<version>")),
+		fmt.Sprintf("%-48s When listing, show %s version", manager.RenderGreen("  --pre-release"), manager.RenderYellow("pre-release")),
+		fmt.Sprintf("%-48s List all supported languages", manager.RenderGreen("dfm languages")),
+		fmt.Sprintf("%-48s Print out the installed version of dfm", manager.RenderGreen("dfm --version")),
+		fmt.Sprintf("%-48s Show this message", manager.RenderGreen("dfm --help")),
 	)
 
 	return app

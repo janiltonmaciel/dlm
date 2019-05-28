@@ -5,8 +5,6 @@ import (
 
 	"github.com/janiltonmaciel/dockerfile-gen/manager"
 	"github.com/urfave/cli"
-
-	"gopkg.in/gookit/color.v1"
 )
 
 func newCommandLanguage() cli.Command {
@@ -21,11 +19,11 @@ func newCommandLanguage() cli.Command {
 
 func languageAction(c *cli.Context) error {
 	languages := manager.GetLanguages()
-	fmt.Fprintln(c.App.Writer, color.FgLightYellow.Render("Supported languages:"))
+	fmt.Fprintln(c.App.Writer, manager.RenderYellow("Supported languages:"))
 	for _, lang := range languages {
-		fmt.Fprintf(c.App.Writer, "    %s", color.FgGreen.Render(lang))
+		fmt.Fprintf(c.App.Writer, "    %s", manager.RenderGreen(lang))
 		fmt.Fprintln(c.App.Writer)
 	}
-	fmt.Println()
+	fmt.Fprintln(c.App.Writer)
 	return nil
 }

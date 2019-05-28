@@ -1,10 +1,30 @@
 - name: DEBIAN
   before:
   after:
-    - RUN apt-get update && apt-get install -y --no-install-recommends bash \
+  command: RUN apt-get update && apt-get install -y --no-install-recommends %s \
        && rm -rf /var/lib/apt/lists/*
+  libs:
+    - openssh-client
+    - git
+    - curl
+    - bash
+    - tar
+    - make
+    - ca-certificates
 
 - name: ALPINE
   before:
   after:
-    - RUN apk update && apk add --no-cache bash
+  command: RUN apk update && apk add --no-cache --update %s
+  libs:
+    - curl
+    - bash
+    - tar
+    - make
+    - ca-certificates
+
+- name: UBUNTU
+  before:
+  after:
+  command:
+  libs:

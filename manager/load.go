@@ -3,6 +3,8 @@ package manager
 import (
 	"fmt"
 	"strings"
+
+	"gopkg.in/gookit/color.v1"
 )
 
 func init() {
@@ -11,6 +13,13 @@ func init() {
 	loadVersions()
 	loadContexts()
 }
+
+var (
+	RenderYellow = color.FgLightYellow.Render
+	RenderGreen  = color.FgGreen.Render
+	RenderCyan   = color.FgLightCyan.Render
+	RenderRed    = color.FgRed.Render
+)
 
 func loadDistributions() {
 	var d []Distribution

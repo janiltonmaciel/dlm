@@ -30,7 +30,7 @@ const (
 var distributions []Distribution
 
 func (d Distribution) Description() string {
-	desc := fmt.Sprintf(`##### %s ######
+	desc := fmt.Sprintf(`#################### %s ####################
 # Official Docker Image for %s
 # repository: %s
 # dockerfile: %s
@@ -86,6 +86,7 @@ func SanitizeDockerfile(distribution Distribution) (string, error) {
 	newData := make([]string, 0)
 	for _, line := range data {
 		for _, sanitize := range sanitizeAll {
+			// sanitize.Pattern.
 			if result := sanitize.Pattern.MatchString(line); result {
 				line = sanitize.Replace(distribution)
 				break

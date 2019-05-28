@@ -21,6 +21,16 @@ var (
 					return ""
 				},
 			},
+
+			// http://lists.alpinelinux.org/alpine-devel/5463.html
+			{Pattern: regexp.MustCompile(`\s+openssl-dev\s+`),
+				Replace: func(d Distribution) string {
+					if strings.ToUpper(d.Name) == DistributionALpine && d.Release >= float32(3.5) {
+						return "libressl-dev"
+					}
+					return "openssl-dev"
+				},
+			},
 		},
 
 		"PHP": []LanguageSanitize{
@@ -33,6 +43,7 @@ var (
 		  gpg --batch --keyserver keyserver.pgp.com --recv-keys "$key"; \`
 				},
 			},
+
 			{Pattern: regexp.MustCompile(`(\s*COPY.*docker-php-source.*/usr/local/bin/)`),
 				Replace: func(d Distribution) string {
 					respository := strings.TrimSuffix(d.UrlDockerfile, "/Dockerfile")

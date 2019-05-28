@@ -3,12 +3,9 @@ package cmd
 import (
 	"fmt"
 
+	"github.com/janiltonmaciel/dockerfile-gen/manager"
 	"github.com/urfave/cli"
-	"gopkg.in/gookit/color.v1"
 )
-
-var renderYellow = color.FgLightYellow.Render
-var renderGreen = color.FgGreen.Render
 
 func VersionPrinter(commit, date string) func(c *cli.Context) {
 	return func(c *cli.Context) {
@@ -23,10 +20,10 @@ var listExamples = fmt.Sprintf(`%-48s %s
    %-48s %s
    %-48s %s
    %-48s %s`,
-	renderGreen("dfm list golang 1.12 --pre-release"), fmt.Sprintf("List versions available for docker %s matching version %s, with %s ", renderYellow("golang"), renderYellow("1.12"), renderYellow("pre-release")),
-	renderGreen("dfm list python 3.7"), fmt.Sprintf("List versions available for docker %s matching version %s", renderYellow("python"), renderYellow("3.7")),
-	renderGreen("dfm list ruby"), fmt.Sprintf("List versions available for docker %s", renderYellow("ruby")),
-	renderGreen("dfm list node 8"), fmt.Sprintf("List versions available for docker %s matching version %s", renderYellow("node"), renderYellow("8")),
+	manager.RenderGreen("dfm list golang 1.12 --pre-release"), fmt.Sprintf("List versions available for docker %s matching version %s, with %s ", manager.RenderYellow("golang"), manager.RenderYellow("1.12"), manager.RenderYellow("pre-release")),
+	manager.RenderGreen("dfm list python 3.7"), fmt.Sprintf("List versions available for docker %s matching version %s", manager.RenderYellow("python"), manager.RenderYellow("3.7")),
+	manager.RenderGreen("dfm list ruby"), fmt.Sprintf("List versions available for docker %s", manager.RenderYellow("ruby")),
+	manager.RenderGreen("dfm list node 8"), fmt.Sprintf("List versions available for docker %s matching version %s", manager.RenderYellow("node"), manager.RenderYellow("8")),
 )
 
 // https://github.com/urfave/cli/blob/master/help.go
@@ -72,14 +69,14 @@ var AppHelpTemplate = fmt.Sprintf(`%s
    {{end}}{{$author}}{{end}}
 {{end}}
 `,
-	renderYellow("Name:"),
-	renderYellow("Usage:"),
-	renderYellow("Examples:"),
-	fmt.Sprintf("%-48s %s", renderGreen("dfm create"), "Create Dockerfile"),
-	fmt.Sprintf("%-48s %s", renderGreen("dfm languages"), "List all supported languages"),
+	manager.RenderYellow("Name:"),
+	manager.RenderYellow("Usage:"),
+	manager.RenderYellow("Examples:"),
+	fmt.Sprintf("%-48s %s", manager.RenderGreen("dfm create"), "Create Dockerfile"),
+	fmt.Sprintf("%-48s %s", manager.RenderGreen("dfm languages"), "List all supported languages"),
 	listExamples,
-	renderYellow("Version:"),
-	renderYellow("Author"),
+	manager.RenderYellow("Version:"),
+	manager.RenderYellow("Author"),
 )
 var CommandHelpTemplate = `Name:
    {{.HelpName}} - {{.Usage}}

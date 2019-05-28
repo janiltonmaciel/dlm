@@ -21,9 +21,11 @@ type (
 	}
 
 	ContextConfig struct {
-		Name   string   `yml:"name"`
-		Before []string `yml:"before"`
-		After  []string `yml:"after"`
+		Name    string   `yml:"name"`
+		Before  []string `yml:"before"`
+		After   []string `yml:"after"`
+		Command string   `yml:"command"`
+		Libs    []string `yml:"libs"`
 	}
 )
 
@@ -36,14 +38,21 @@ var (
 RUN mkdir -p ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf`
 )
 
-func NewContext(distros []Distribution, distro Distribution) Context {
-	distroContext := getDistributionContext(distro.Name)
+func NewContext(commandLibs string, distros []Distribution, distro Distribution) Context {
+	distroContext := GetDistributionContext(distro.Name)
 
 	before := make([]string, 0)
 	if len(distros) > 1 {
 		before = append(before, DisableGpgIPV6)
 	}
 	before = append(before, distroContext.Before...)
+
+	after := make([]string, 0)
+	after = append(after, distroContext.After...)
+	if commandLibs != "" {
+		after = append(after, commandLibs)
+	}
+
 	return Context{
 		From: Block{
 			Description: distro.Description(),
@@ -51,7 +60,7 @@ func NewContext(distros []Distribution, distro Distribution) Context {
 		},
 		Before:    before,
 		Languages: make([]Block, 0),
-		After:     distroContext.After,
+		After:     after,
 	}
 }
 
@@ -70,7 +79,7 @@ func NewLanguageBlock(distro Distribution, data string, isFrom bool) Block {
 	return block
 }
 
-func getDistributionContext(distributionName string) ContextConfig {
+func GetDistributionContext(distributionName string) ContextConfig {
 	distroContext, found := distributionContext[strings.ToUpper(distributionName)]
 	if found {
 		return distroContext

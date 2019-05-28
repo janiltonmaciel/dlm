@@ -8,7 +8,6 @@ import (
 	"github.com/janiltonmaciel/dockerfile-gen/manager"
 	"github.com/urfave/cli"
 	"gopkg.in/AlecAivazis/survey.v1"
-	"gopkg.in/gookit/color.v1"
 )
 
 type create struct{}
@@ -22,41 +21,69 @@ func newCommandCreate() cli.Command {
 	}
 }
 
-func (this create) action(c *cli.Context) error {
+func (this create) action(c *cli.Context) (err error) {
 
-	answersLanguages, err := this.languagesQuestion(c)
+	var answersLanguages []manager.Language
+	if answersLanguages, err = this.languagesQuestion(c); err != nil {
+		return err
+	}
+
+	var answersVersions []manager.AnswerVersion
+	if answersVersions, err = this.versionsQuestion(answersLanguages, c); err != nil {
+		return err
+	}
+
+	var answerDistro string
+	if answerDistro, err = this.distributionsQuestion(answersVersions, c); err != nil {
+		return err
+	}
+
+	var commandLibs string
+	if commandLibs, err = this.libsQuestion(answerDistro, c); err != nil {
+		return err
+	}
+
+	contentDockerfile, err := manager.GetContentDockerfile(commandLibs, answersVersions, answerDistro, c)
 	if err != nil {
 		return err
 	}
 
-	answersVersions, err := this.versionsQuestion(answersLanguages, c)
-	if err != nil {
-		return err
+	return this.saveDockerfile(contentDockerfile, c)
+}
+
+func (this create) libsQuestion(answerDistro string, c *cli.Context) (string, error) {
+	distroContext := manager.GetDistributionContext(answerDistro)
+	if len(distroContext.Libs) == 0 {
+		return "", nil
 	}
 
-	answerDistro, err := this.distributionsQuestion(answersVersions, c)
-	if err != nil {
-		return err
+	p := &survey.Confirm{
+		Message: "Add extra libs",
+		Default: false,
 	}
 
-	contentDockerfile, err := manager.GetContentDockerfile(answersVersions, answerDistro, c)
-	if err != nil {
-		return err
+	var addLibs bool
+	if err := survey.AskOne(p, &addLibs, nil); err != nil {
+		return "", err
 	}
 
-	this.saveDockerfile(contentDockerfile)
+	if addLibs {
+		prompt := &survey.MultiSelect{
+			Message:  "Select libs:",
+			Options:  distroContext.Libs,
+			PageSize: 10,
+		}
 
-	// ExtraLibs := "tar make git ca-certificates curl openssh"
-	// libs := ""
-	// p := &survey.Input{
-	// 	Message: "Add extra libs",
-	// 	Help:    "Alpine libs",
-	// 	Default: ExtraLibs,
-	// }
-	// err = survey.AskOne(p, &libs, nil)
-	// manager.CheckErr(err)
+		var answers []string
+		if err := survey.AskOne(prompt, &answers, survey.Required); err != nil {
+			return "", err
+		}
 
-	return nil
+		cmd := fmt.Sprintf(distroContext.Command, strings.Join(answers, " "))
+		return cmd, nil
+	}
+
+	return "", nil
 }
 
 func (this create) languagesQuestion(c *cli.Context) (answersLanguages []manager.Language, err error) {
@@ -67,11 +94,14 @@ func (this create) languagesQuestion(c *cli.Context) (answersLanguages []manager
 	}
 	var answers []string
 	err = survey.AskOne(prompt, &answers, survey.Required)
+	if err != nil {
+		return
+	}
 
 	for _, lang := range answers {
 		language := manager.GetLanguage(lang)
 		if language == nil {
-			msg := fmt.Sprintf("Language not found: %s", color.FgLightYellow.Render(lang))
+			msg := fmt.Sprintf("Language not found: %s", manager.RenderYellow(lang))
 			return answersLanguages, cli.NewExitError(msg, 1)
 		}
 		answersLanguages = append(answersLanguages, *language)
@@ -84,15 +114,15 @@ func (this create) versionsQuestion(answersLanguages []manager.Language, c *cli.
 	var version string
 	for _, language := range answersLanguages {
 		help := fmt.Sprintf("Usage:\n %s %-25s %s %s",
-			renderGreen("dfm list"),
-			renderGreen(strings.ToLower(language.Alias)),
+			manager.RenderGreen("dfm list"),
+			manager.RenderGreen(strings.ToLower(language.Alias)),
 			"List versions available for docker",
 			language.Alias,
 		)
 
 		valueDefault := manager.GetValueDefault(language)
 		prompt := &survey.Input{
-			Message: fmt.Sprintf("Docker %s version:", color.FgGreen.Render(language.Alias)),
+			Message: fmt.Sprintf("Docker %s version:", manager.RenderGreen(language.Alias)),
 			Help:    help,
 			Default: valueDefault,
 		}
@@ -123,19 +153,19 @@ func (this create) versionsQuestion(answersLanguages []manager.Language, c *cli.
 func (this create) distributionsQuestion(answersVersions []manager.AnswerVersion, c *cli.Context) (answerDistro string, err error) {
 	distros := this.answersVersionsToDistros(answersVersions)
 	if len(distros) < 1 {
-		fmt.Println()
+		fmt.Fprintln(c.App.Writer)
 		for _, av := range answersVersions {
 			names := strings.Join(this.distributionsName(av.Version.Distributions), ", ")
-			fmt.Printf(
+			fmt.Fprintf(c.App.Writer,
 				"Language: %-20v - Version: %-20v- Distributions: %s",
-				color.FgGreen.Render(av.Language.Name),
-				color.FgGreen.Render(av.Version.Version),
-				color.FgLightYellow.Render(names),
+				manager.RenderGreen(av.Language.Name),
+				manager.RenderGreen(av.Version.Version),
+				manager.RenderYellow(names),
 			)
-			fmt.Println()
+			fmt.Fprintln(c.App.Writer)
 		}
-		fmt.Println()
-		return answerDistro, cli.NewExitError(color.FgRed.Render("Versões de distributions incompativeis!"), 1)
+		fmt.Fprintln(c.App.Writer)
+		return answerDistro, cli.NewExitError(manager.RenderRed("X Incompatible distributions"), 1)
 	}
 
 	promptDistro := &survey.Select{
@@ -184,44 +214,52 @@ func (this create) distributionsName(distributions []manager.Distribution) (dist
 }
 
 func (this create) messageNotFoundVersion(lang *manager.Language, version string) string {
-	colorRed := color.FgRed.Render
-	colorYellow := color.FgLightYellow.Render
 	msg := fmt.Sprintf(
 		"  %s %s %s %s %s\n  %s %s %s\n",
-		colorRed("Docker"),
-		colorRed(lang.Name),
-		colorRed("version"),
-		fmt.Sprintf(colorYellow("'%s'"), version),
-		colorRed("not foud."),
-		colorRed("Try"),
-		fmt.Sprintf(colorYellow("`dfm ls %s`"), lang.Name),
-		colorRed("to browse available versions."),
+		manager.RenderRed("Docker"),
+		manager.RenderRed(lang.Name),
+		manager.RenderRed("version"),
+		fmt.Sprintf(manager.RenderYellow("'%s'"), version),
+		manager.RenderRed("not foud."),
+		manager.RenderRed("Try"),
+		fmt.Sprintf(manager.RenderYellow("`dfm ls %s`"), lang.Name),
+		manager.RenderRed("to browse available versions."),
 	)
 
 	return msg
 }
 
-func (this create) saveDockerfile(content string) {
+func (this create) saveDockerfile(content string, c *cli.Context) error {
 	output := "Dockerfile"
 	rewrite := false
 	if manager.HasDockerfile() {
 		p := &survey.Confirm{
-			Message: fmt.Sprintf("Rewrite the file `%s`", output),
+			Message: fmt.Sprintf("Rewrite the file `%s`:", output),
 			Default: true,
 		}
 		if err := survey.AskOne(p, &rewrite, nil); err != nil {
-			return
+			return err
 		}
 	} else {
 		rewrite = true
 	}
 
+	fmt.Fprintln(c.App.Writer)
 	if rewrite {
 		err := ioutil.WriteFile(output, []byte(content), 0644)
 		if err == nil {
-			fmt.Printf("> Successfully Generated `%s` \n", output)
+			fmt.Fprintf(c.App.Writer,
+				"%s `%s` \n",
+				manager.RenderCyan("⚡️ Successfully generated"),
+				manager.RenderGreen(output))
 		} else {
-			fmt.Printf("> Fail Generated `%s` \n", output)
+			fmt.Fprintf(c.App.Writer,
+				"%s `%s` \n",
+				manager.RenderRed("X Fail generated"),
+				manager.RenderYellow(output))
 		}
 	}
+	fmt.Fprintln(c.App.Writer)
+
+	return nil
 }

@@ -6,7 +6,6 @@ import (
 
 	"github.com/janiltonmaciel/dockerfile-gen/manager"
 	"github.com/urfave/cli"
-	"gopkg.in/gookit/color.v1"
 )
 
 func newCommandList() cli.Command {
@@ -23,10 +22,10 @@ func newCommandList() cli.Command {
 Examples:
    %s
 		`,
-			fmt.Sprintf("%-48s List versions available for docker %s", renderGreen("dfm list <language>"), renderYellow("<language>")),
-			fmt.Sprintf("%-48s When listing, show %s version", renderGreen("  --pre-release"), renderYellow("pre-release")),
-			fmt.Sprintf("%-48s List versions available for docker %s, matching a given %s", renderGreen("dfm list <language> <version>"), renderYellow("<language>"), renderYellow("<version>")),
-			fmt.Sprintf("%-48s When listing, show %s version", renderGreen("  --pre-release"), renderYellow("pre-release")),
+			fmt.Sprintf("%-48s List versions available for docker %s", manager.RenderGreen("dfm list <language>"), manager.RenderYellow("<language>")),
+			fmt.Sprintf("%-48s When listing, show %s version", manager.RenderGreen("  --pre-release"), manager.RenderYellow("pre-release")),
+			fmt.Sprintf("%-48s List versions available for docker %s, matching a given %s", manager.RenderGreen("dfm list <language> <version>"), manager.RenderYellow("<language>"), manager.RenderYellow("<version>")),
+			fmt.Sprintf("%-48s When listing, show %s version", manager.RenderGreen("  --pre-release"), manager.RenderYellow("pre-release")),
 			listExamples,
 		),
 		Flags: []cli.Flag{
@@ -63,15 +62,15 @@ func listAction(c *cli.Context) error {
 }
 
 func showCommandHelp(c *cli.Context) error {
-	fmt.Fprintln(c.App.Writer, color.FgRed.Render("Incorrect usage!"))
+	fmt.Fprintln(c.App.Writer, manager.RenderRed("X Incorrect usage!"))
 	fmt.Fprintln(c.App.Writer)
 	return cli.ShowCommandHelp(c, c.Command.Name)
 }
 
 func showLanguageCommandHelp(c *cli.Context, languageInput string) error {
 	msg := fmt.Sprintf("%s %s",
-		color.FgRed.Render("Language invalid:"),
-		color.FgYellow.Render(languageInput))
+		manager.RenderRed("X Language invalid:"),
+		manager.RenderYellow(languageInput))
 	fmt.Fprintln(c.App.Writer, msg)
 	fmt.Fprintln(c.App.Writer)
 	return cli.ShowCommandHelp(c, "languages")
@@ -79,18 +78,18 @@ func showLanguageCommandHelp(c *cli.Context, languageInput string) error {
 
 func printVersions(c *cli.Context, language *manager.Language, withPrerelease bool, versionInput string) {
 	versions := manager.FindVersions(language.Name, withPrerelease, versionInput)
-	fmt.Fprintf(c.App.Writer, "%s:", color.FgLightYellow.Render(language.Alias))
+	fmt.Fprintf(c.App.Writer, "%s:", manager.RenderYellow(language.Alias))
 	fmt.Fprintln(c.App.Writer)
 
-	var versionColor color.Color
 	for _, version := range versions {
-		versionColor = color.FgGreen
+		versionColor := manager.RenderGreen
 		if version.Prerelease {
-			versionColor = color.FgLightCyan
+			versionColor = manager.RenderCyan
 		}
 
-		fmt.Printf("%25s   %s\n",
-			versionColor.Render(version.Version),
-			color.FgDefault.Render(version.DistributionReleases))
+		fmt.Fprintf(c.App.Writer,
+			"%25s   %s\n",
+			versionColor(version.Version),
+			version.DistributionReleases)
 	}
 }

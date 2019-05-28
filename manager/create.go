@@ -8,20 +8,20 @@ import (
 	"github.com/urfave/cli"
 )
 
-func GetContentDockerfile(answersVersions []AnswerVersion, answerDistro string, c *cli.Context) (string, error) {
+func GetContentDockerfile(commandLibs string, answersVersions []AnswerVersion, answerDistro string, c *cli.Context) (string, error) {
+	fmt.Fprintln(c.App.Writer, RenderCyan("> Creating Dockerfile..."))
+
 	distributions, distribution := distributionLanguage(answersVersions, answerDistro, c)
-	context := NewContext(distributions, distribution)
-	println("\n>>>>>>>>> DOCKERFILE >>>>>>>>>")
+	context := NewContext(commandLibs, distributions, distribution)
 
 	var data string
 	var err error
 	for index, distro := range distributions {
 		isFrom := (index == 0)
-		// printDistro(distro)
 		if !isFrom {
 			data, err = SanitizeDockerfile(distro)
 			if err != nil {
-				fmt.Printf("Error: %s\n", err)
+				fmt.Fprintf(c.App.Writer, "Error: %s\n", err)
 				return "", err
 			}
 		}
@@ -37,19 +37,16 @@ func distributionLanguage(answersVersions []AnswerVersion, answerDistro string, 
 	if len(distros) > 0 && distribution != nil {
 		return appendDistribution(distros, *distribution)
 	}
-	println("VAZIO: filterByImage")
 
 	distros, distribution = filterByRelease(answersVersions, answerDistro)
 	if len(distros) > 0 && distribution != nil {
 		return appendDistribution(distros, *distribution)
 	}
-	println("VAZIO: filterByRelease")
 
 	distros, distribution = filterByDistro(answersVersions, answerDistro)
 	if len(distros) > 0 && distribution != nil {
 		return appendDistribution(distros, *distribution)
 	}
-	println("VAZIO: filterByDistro")
 
 	return nil, Distribution{}
 }
@@ -110,14 +107,11 @@ func filterByDistro(answersVersions []AnswerVersion, answerDistro string) (distr
 	distrosTemp := make([]Distribution, 0)
 	for _, av := range answersVersions {
 		if d := findDistributionHight(av.Version.Distributions, answerDistro); d != nil {
-			// fmt.Printf("D* Name:%s - Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", d.Name, d.Image, d.UrlDockerfile, d.Release, d.Weight)
 			distrosTemp = append(distrosTemp, *d)
 		}
 
 		if len(distrosTemp) == len(answersVersions) {
-			// fmt.Printf("distrosTemp %+v\n", distrosTemp)
 			d := findDistributionHight(distrosTemp, answerDistro)
-			// fmt.Printf("distrosTemp Name:%s - Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", d.Name, d.Image, d.UrlDockerfile, d.Release, d.Weight)
 			if distribution == nil || (d.Release > distribution.Release) {
 				distros = distrosTemp
 				distribution = d
@@ -181,15 +175,12 @@ func filter(answersVersions []AnswerVersion, answerDistro string,
 
 func sortDistributions(distributions []Distribution) []Distribution {
 	sort.Slice(distributions, func(i, j int) bool {
-		// fmt.Printf("I) Language: %s - sort:%d\n", distributions[i].Language.Name, distributions[i].Sort())
-		// fmt.Printf("j) Language: %s - sort:%d\n\n", distributions[j].Language.Name, distributions[j].Sort())
 		return distributions[i].Sort() > distributions[j].Sort()
 	})
 	return distributions
 }
 
 func appendDistribution(distros []Distribution, distro Distribution) ([]Distribution, Distribution) {
-	printDistro(distro)
 	distributions := make([]Distribution, 0)
 	distributions = append(distributions, distro)
 	for _, d := range distros {
@@ -251,19 +242,19 @@ func findDistroByNameRelease(distros []Distribution, distroName string, distroRe
 	return data
 }
 
-func printDistros(distros []Distribution) {
-	println()
-	for _, distro := range distros {
-		fmt.Printf("Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", distro.Image, distro.UrlDockerfile, distro.Release, distro.Weight)
-	}
-}
+// func printDistros(distros []Distribution) {
+// 	println()
+// 	for _, distro := range distros {
+// 		fmt.Printf("Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", distro.Image, distro.UrlDockerfile, distro.Release, distro.Weight)
+// 	}
+// }
 
-func printDistro(d Distribution) {
-	println()
-	// fmt.Printf("FROM %s\n", distro.Image)
-	fmt.Printf("Name:%s - Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", d.Name, d.Image, d.UrlDockerfile, d.Release, d.Weight)
-}
+// func printDistro(d Distribution) {
+// 	println()
+// 	// fmt.Printf("FROM %s\n", distro.Image)
+// 	fmt.Printf("Name:%s - Image: %s - Dockerfile:%s - Release: %f - Peso: %d\n", d.Name, d.Image, d.UrlDockerfile, d.Release, d.Weight)
+// }
 
-func printVariable(label string, val interface{}) {
-	fmt.Printf("\n%s: %v\n", label, val)
-}
+// func printVariable(label string, val interface{}) {
+// 	fmt.Printf("\n%s: %v\n", label, val)
+// }
