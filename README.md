@@ -4,7 +4,7 @@ Dockerfile language manager
 ## Copyright and license
 
 Code released under the Apache License. See
-[LICENSE](https://github.com/janiltonmaciel/dfm/blob/master/LICENSE) for the full license text.
+[LICENSE](https://github.com/janiltonmaciel/dlm/blob/master/LICENSE) for the full license text.
 
 ## Credits
 
