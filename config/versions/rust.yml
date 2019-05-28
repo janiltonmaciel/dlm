@@ -1,9 +1,35 @@
 
+  - version: 1.35.0
+    majorVersion: '1.35'
+    prerelease: false
+    date: '2019-05-23T14:00:47'
+    current: true
+    distributionReleases: Debian
+    distributions:
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: rust:1.35.0-stretch
+        urlRepository: https://github.com/rust-lang-nursery/docker-rust
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/29bf41a2cc4fb8d3f588cf51eb6a8ba883808c4b/1.35.0/stretch/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: rust:1.35.0-slim-stretch
+        urlRepository: https://github.com/rust-lang-nursery/docker-rust
+        urlDockerfile: https://raw.githubusercontent.com/rust-lang-nursery/docker-rust/29bf41a2cc4fb8d3f588cf51eb6a8ba883808c4b/1.35.0/stretch/slim/Dockerfile
+
   - version: 1.34.2
     majorVersion: '1.34'
     prerelease: false
     date: '2019-05-14T08:56:21'
-    current: true
+    current: false
     distributionReleases: Debian
     distributions:
 

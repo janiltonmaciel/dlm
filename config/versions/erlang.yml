@@ -1,8 +1,8 @@
 
-  - version: '22.0'
+  - version: 22.0.1
     majorVersion: '22.0'
     prerelease: false
-    date: '2019-05-15T23:06:18'
+    date: '2019-05-21T09:34:50'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -12,33 +12,68 @@
         release: 3.9
         weight: 1
         image: alpine:3.9
-        imageRepository: erlang:22.0-alpine
+        imageRepository: erlang:22.0.1-alpine
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/97a95ad0b19a8f14ad9a30524d1f7061f6c0bccd/22/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/040f28ef7594822e1c94e1fa5ed35897f6b13f57/22/alpine/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 5
         image: buildpack-deps:stretch
-        imageRepository: erlang:22.0
+        imageRepository: erlang:22.0.1
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/97a95ad0b19a8f14ad9a30524d1f7061f6c0bccd/22/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/040f28ef7594822e1c94e1fa5ed35897f6b13f57/22/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
         release: 9.0
         weight: 2
         image: debian:stretch
-        imageRepository: erlang:22.0-slim
+        imageRepository: erlang:22.0.1-slim
         urlRepository: https://github.com/erlang/docker-erlang-otp
-        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/97a95ad0b19a8f14ad9a30524d1f7061f6c0bccd/22/slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/040f28ef7594822e1c94e1fa5ed35897f6b13f57/22/slim/Dockerfile
+
+  - version: 21.3.8.2
+    majorVersion: '21.3'
+    prerelease: false
+    date: '2019-05-21T09:34:50'
+    current: true
+    distributionReleases: Alpine, Debian
+    distributions:
+
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        imageRepository: erlang:21.3.8.2-alpine
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/65deef427f90ff647f917825f70e1950da006df6/21/alpine/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: erlang:21.3.8.2
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/65deef427f90ff647f917825f70e1950da006df6/21/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 2
+        image: debian:stretch
+        imageRepository: erlang:21.3.8.2-slim
+        urlRepository: https://github.com/erlang/docker-erlang-otp
+        urlDockerfile: https://raw.githubusercontent.com/erlang/docker-erlang-otp/65deef427f90ff647f917825f70e1950da006df6/21/slim/Dockerfile
 
   - version: 21.3.8.1
     majorVersion: '21.3'
     prerelease: false
     date: '2019-05-15T23:06:18'
-    current: true
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -1026,7 +1061,7 @@
   - version: 20.3.8.21
     majorVersion: '20.3'
     prerelease: false
-    date: '2019-05-15T23:06:18'
+    date: '2019-05-21T09:34:50'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -2531,7 +2566,7 @@
   - version: 19.3.6.13
     majorVersion: '19.3'
     prerelease: false
-    date: '2019-05-15T23:06:18'
+    date: '2019-05-21T09:34:50'
     current: true
     distributionReleases: Debian
     distributions:
@@ -3155,7 +3190,7 @@
   - version: 18.3.4.11
     majorVersion: '18.3'
     prerelease: false
-    date: '2019-05-15T23:06:18'
+    date: '2019-05-21T09:34:50'
     current: true
     distributionReleases: Debian
     distributions:
