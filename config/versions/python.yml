@@ -1,9 +1,44 @@
 
+  - version: 3.8.0b1
+    majorVersion: '3.8'
+    prerelease: true
+    date: '2019-06-04T21:49:14'
+    current: true
+    distributionReleases: Alpine, Debian
+    distributions:
+
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        imageRepository: python:3.8.0b1-alpine3.9
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/alpine3.9/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: python:3.8.0b1-stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/stretch/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: python:3.8.0b1-slim-stretch
+        urlRepository: https://github.com/docker-library/python
+        urlDockerfile: https://raw.githubusercontent.com/docker-library/python/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/stretch/slim/Dockerfile
+
   - version: 3.8.0a4
     majorVersion: '3.8'
     prerelease: true
     date: '2019-05-07T15:49:35'
-    current: true
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -142,7 +177,7 @@
   - version: 3.7.3
     majorVersion: '3.7'
     prerelease: false
-    date: '2019-05-07T15:49:35'
+    date: '2019-06-04T21:49:14'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -651,7 +686,7 @@
   - version: 3.6.8
     majorVersion: '3.6'
     prerelease: false
-    date: '2019-05-07T15:49:35'
+    date: '2019-06-04T21:49:14'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -1621,7 +1656,7 @@
   - version: 3.5.7
     majorVersion: '3.5'
     prerelease: false
-    date: '2019-05-07T15:49:35'
+    date: '2019-06-04T21:49:14'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -2730,7 +2765,7 @@
   - version: 2.7.16
     majorVersion: '2.7'
     prerelease: false
-    date: '2019-05-07T15:49:35'
+    date: '2019-06-04T21:49:14'
     current: true
     distributionReleases: Alpine, Debian
     distributions:

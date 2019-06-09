@@ -1,7 +1,10 @@
 package manager
 
 import (
+	"reflect"
 	"strings"
+
+	"gopkg.in/AlecAivazis/survey.v1"
 )
 
 type (
@@ -24,7 +27,7 @@ type (
 var versions map[string][]Version
 
 func FindVersion(languageName string, versionTarget string) *Version {
-	if versionConfig, found := versions[languageName]; found {
+	if versionConfig, found := versions[strings.ToLower(languageName)]; found {
 		for _, version := range versionConfig {
 			if version.Version == versionTarget {
 				return &version
@@ -54,12 +57,42 @@ func FindVersions(languageName string, withPrerelease bool, versionTarget string
 	return reverse(data)
 }
 
+func FindMathVersion(languageName string, versionTarget string) string {
+	versions := FindVersions(languageName, false, versionTarget)
+	qtdVersions := len(versions)
+
+	switch qtdVersions {
+	case 0:
+		return versionTarget
+	case 1:
+		return versions[0].Version
+	default:
+		return versions[qtdVersions-1].Version
+	}
+}
+
+func TransformFindVersion(languageName string) survey.Transformer {
+	return func(ans interface{}) interface{} {
+		if isZero(reflect.ValueOf(ans)) {
+			return nil
+		}
+
+		s, ok := ans.(string)
+		if !ok {
+			return nil
+		}
+
+		return FindMathVersion(languageName, s)
+	}
+}
+
 func GetValueDefault(lang Language) string {
 	valueDefault := ""
 	switch strings.ToLower(lang.Name) {
+	case "php":
+		valueDefault = "7.3.5-cli"
 	case "node":
 		valueDefault = "12.2.0"
-		// valueDefault = "11.4.0"
 	case "python":
 		valueDefault = "3.8.0a4"
 	case "ruby":
@@ -78,6 +111,16 @@ func reverse(versions []Version) []Version {
 		versions[i], versions[j] = versions[j], versions[i]
 	}
 	return versions
+}
+
+func isZero(v reflect.Value) bool {
+	switch v.Kind() {
+	case reflect.Slice, reflect.Map:
+		return v.Len() == 0
+	}
+
+	// compare the types directly with more general coverage
+	return reflect.DeepEqual(v.Interface(), reflect.Zero(v.Type()).Interface())
 }
 
 func setVersions(lang Language, v []Version) {

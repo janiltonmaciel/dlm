@@ -12,7 +12,7 @@ func newCommandLanguage() cli.Command {
 		Name:  "languages",
 		Usage: "List all supported languages",
 		UsageText: `
-   dfm languages                    # List all supported languages\n`,
+   dlm languages                    # List all supported languages\n`,
 		Action: languageAction,
 	}
 }

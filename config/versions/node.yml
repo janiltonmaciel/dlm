@@ -1,9 +1,44 @@
 
+  - version: 12.4.0
+    majorVersion: '12.4'
+    prerelease: false
+    date: '2019-06-04T19:58:28'
+    current: true
+    distributionReleases: Alpine, Debian
+    distributions:
+
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        imageRepository: node:12.4.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5d8827883ba24066cec73f6d6c3e70c3ec4e1b28/12/alpine/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: node:12.4.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5d8827883ba24066cec73f6d6c3e70c3ec4e1b28/12/stretch/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: node:12.4.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/5d8827883ba24066cec73f6d6c3e70c3ec4e1b28/12/stretch-slim/Dockerfile
+
   - version: 12.3.1
     majorVersion: '12.3'
     prerelease: false
-    date: '2019-05-23T07:38:41'
-    current: true
+    date: '2019-05-29T14:38:59'
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -177,7 +212,7 @@
   - version: 11.15.0
     majorVersion: '11.15'
     prerelease: false
-    date: '2019-05-23T07:38:41'
+    date: '2019-06-04T19:58:28'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -189,7 +224,7 @@
         image: alpine:3.9
         imageRepository: node:11.15.0-alpine
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e8c9f49af6d18100ecb0093cbea4bae18f1271d9/11/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/11/alpine/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -198,7 +233,7 @@
         image: buildpack-deps:stretch
         imageRepository: node:11.15.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e8c9f49af6d18100ecb0093cbea4bae18f1271d9/11/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/11/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -207,7 +242,7 @@
         image: debian:stretch-slim
         imageRepository: node:11.15.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/e8c9f49af6d18100ecb0093cbea4bae18f1271d9/11/stretch-slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/11/stretch-slim/Dockerfile
 
   - version: 11.14.0
     majorVersion: '11.14'
@@ -769,11 +804,64 @@
         urlRepository: https://github.com/nodejs/docker-node
         urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/daf910e1241580d468375380649239a87dd65e74/11/slim/Dockerfile
 
+  - version: 10.16.0
+    majorVersion: '10.16'
+    prerelease: false
+    date: '2019-06-04T19:58:28'
+    current: true
+    distributionReleases: Alpine, Debian
+    distributions:
+
+      - name: Alpine
+        releaseName: '3.9'
+        release: 3.9
+        weight: 1
+        image: alpine:3.9
+        imageRepository: node:10.16.0-alpine
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8f2384f7edc345f5ffc0496458005981b512882/10/alpine/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 5
+        image: buildpack-deps:jessie
+        imageRepository: node:10.16.0-jessie
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8f2384f7edc345f5ffc0496458005981b512882/10/jessie/Dockerfile
+
+      - name: Debian
+        releaseName: 8 (jessie)
+        release: 8.0
+        weight: 1
+        image: debian:jessie-slim
+        imageRepository: node:10.16.0-jessie-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8f2384f7edc345f5ffc0496458005981b512882/10/jessie-slim/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 5
+        image: buildpack-deps:stretch
+        imageRepository: node:10.16.0-stretch
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8f2384f7edc345f5ffc0496458005981b512882/10/stretch/Dockerfile
+
+      - name: Debian
+        releaseName: 9 (stretch)
+        release: 9.0
+        weight: 1
+        image: debian:stretch-slim
+        imageRepository: node:10.16.0-stretch-slim
+        urlRepository: https://github.com/nodejs/docker-node
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/f8f2384f7edc345f5ffc0496458005981b512882/10/stretch-slim/Dockerfile
+
   - version: 10.15.3
     majorVersion: '10.15'
     prerelease: false
     date: '2019-05-23T07:38:41'
-    current: true
+    current: false
     distributionReleases: Alpine, Debian
     distributions:
 
@@ -2748,7 +2836,7 @@
   - version: 8.16.0
     majorVersion: '8.16'
     prerelease: false
-    date: '2019-05-23T07:38:41'
+    date: '2019-06-04T19:58:28'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -2760,7 +2848,7 @@
         image: alpine:3.9
         imageRepository: node:8.16.0-alpine
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/alpine/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/alpine/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2769,7 +2857,7 @@
         image: buildpack-deps:jessie
         imageRepository: node:8.16.0-jessie
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/jessie/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/jessie/Dockerfile
 
       - name: Debian
         releaseName: 8 (jessie)
@@ -2778,7 +2866,7 @@
         image: debian:jessie-slim
         imageRepository: node:8.16.0-jessie-slim
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/jessie-slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/jessie-slim/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -2787,7 +2875,7 @@
         image: buildpack-deps:stretch
         imageRepository: node:8.16.0-stretch
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/stretch/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/stretch/Dockerfile
 
       - name: Debian
         releaseName: 9 (stretch)
@@ -2796,7 +2884,7 @@
         image: debian:stretch-slim
         imageRepository: node:8.16.0-stretch-slim
         urlRepository: https://github.com/nodejs/docker-node
-        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/stretch-slim/Dockerfile
+        urlDockerfile: https://raw.githubusercontent.com/nodejs/docker-node/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/stretch-slim/Dockerfile
 
   - version: 8.15.1
     majorVersion: '8.15'

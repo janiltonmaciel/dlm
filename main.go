@@ -14,9 +14,7 @@ var (
 
 func main() {
 	app := cmd.CreateApp(version, commit, date)
+	_ = app.Run(os.Args)
 
-	err := app.Run(os.Args)
-	if err != nil {
-		print(err)
-	}
+	// _ = cmd.CreateApp(version, commit, date)
 }

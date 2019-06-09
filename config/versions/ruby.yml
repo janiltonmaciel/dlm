@@ -2,7 +2,7 @@
   - version: 2.6.3
     majorVersion: '2.6'
     prerelease: false
-    date: '2019-04-17T17:03:14'
+    date: '2019-05-31T13:50:24'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -187,7 +187,7 @@
   - version: 2.5.5
     majorVersion: '2.5'
     prerelease: false
-    date: '2019-04-17T17:03:14'
+    date: '2019-05-31T13:50:24'
     current: true
     distributionReleases: Alpine, Debian
     distributions:
@@ -398,7 +398,7 @@
   - version: 2.4.6
     majorVersion: '2.4'
     prerelease: false
-    date: '2019-04-17T17:03:14'
+    date: '2019-05-31T13:50:24'
     current: true
     distributionReleases: Alpine, Debian
     distributions:

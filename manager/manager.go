@@ -2,18 +2,27 @@ package manager
 
 import (
 	"bufio"
-	"io"
+	"fmt"
+	"io/ioutil"
 	"net/http"
 	"os"
 	"regexp"
 	"strings"
+	"time"
 
 	"gopkg.in/yaml.v3"
 )
 
 var (
 	reSlug = regexp.MustCompile("[^a-z0-9]+")
+	ttlYML = 24 * time.Hour
 )
+
+func loadConfigUrl(url string, o interface{}) {
+	if data, err := GetUrl(url, ttlYML); err == nil {
+		_ = yaml.Unmarshal(data, o)
+	}
+}
 
 func loadConfig(fileName string, o interface{}) {
 	data, err := FindBytes(fileName)
@@ -26,51 +35,39 @@ func loadConfig(fileName string, o interface{}) {
 	}
 }
 
-func HasDockerfile() bool {
-	if _, err := os.Stat("Dockerfile"); err == nil {
-		return true
-	} else {
-		return false
-	}
-}
-
-func GetUrl(url string) ([]string, error) {
-	if val, err := cache.get(url); err == nil {
-		// println("in cache...")
+func GetUrl(url string, ttl ...time.Duration) ([]byte, error) {
+	if val, err := cache.get(url, ttl...); err == nil {
 		return val, nil
 	}
 
-	content, err := request(url)
+	data, err := request(url)
 	if err != nil {
 		return nil, err
 	}
 
-	// set in cache
-	// println("not in cache...")
-	_ = cache.set(content, url)
+	_ = cache.set(data, url)
 
-	return content, nil
+	return data, nil
 }
 
-func request(url string) ([]string, error) {
+func request(url string) ([]byte, error) {
 	resp, err := http.Get(url)
-
 	if err != nil {
 		return nil, err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return nil, nil
+		return nil, fmt.Errorf("request error status code: %d", resp.StatusCode)
 	}
 
-	return LinesFromReader(resp.Body)
+	return ioutil.ReadAll(resp.Body)
 }
 
-func LinesFromReader(r io.Reader) ([]string, error) {
+func LinesFromReader(b []byte) ([]string, error) {
 	var lines []string
 
-	scanner := bufio.NewScanner(r)
+	scanner := bufio.NewScanner(strings.NewReader(string(b)))
 	for scanner.Scan() {
 		lines = append(lines, scanner.Text())
 	}
@@ -84,4 +81,12 @@ func LinesFromReader(r io.Reader) ([]string, error) {
 
 func slug(s string) string {
 	return strings.Trim(reSlug.ReplaceAllString(strings.ToLower(s), "-"), "-")
+}
+
+func HasDockerfile() bool {
+	if _, err := os.Stat("Dockerfile"); err == nil {
+		return true
+	} else {
+		return false
+	}
 }

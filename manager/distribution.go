@@ -76,25 +76,9 @@ func Intersection(a, b []Distribution) (c []Distribution) {
 	return
 }
 
-func SanitizeDockerfile(distribution Distribution) (string, error) {
-	data, err := GetUrl(distribution.UrlDockerfile)
-	if err != nil {
-		return "", err
-	}
-
-	sanitizeAll := GetLanguageSanitizeDockerfile(distribution.Language.Name)
-	newData := make([]string, 0)
-	for _, line := range data {
-		for _, sanitize := range sanitizeAll {
-			// sanitize.Pattern.
-			if result := sanitize.Pattern.MatchString(line); result {
-				line = sanitize.Replace(distribution)
-				break
-			}
-		}
-		newData = append(newData, line)
-	}
-	return strings.Join(newData, "\n"), nil
+func SanitizeDockerfile(distributionFrom Distribution, distribution Distribution) (string, error) {
+	sanitize := NewSanitize(distribution)
+	return sanitize.Do(distributionFrom)
 }
 
 func setDistributions(distros []Distribution) {

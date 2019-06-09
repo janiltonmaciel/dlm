@@ -3,8 +3,10 @@ package manager
 import (
 	"errors"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"path/filepath"
+	"time"
 )
 
 type cacheFile struct {
@@ -12,22 +14,34 @@ type cacheFile struct {
 	disabled bool
 }
 
-func (c cacheFile) get(url string) ([]string, error) {
+func (c cacheFile) get(url string, ttl ...time.Duration) ([]byte, error) {
 	if c.disabled {
-		return []string{}, errors.New("Disabled cache")
+		return nil, errors.New("Disabled cache")
 	}
 
 	tmpfn := filepath.Join(c.tmpdir, slug(url))
 	file, err := os.Open(tmpfn)
 	if err != nil {
-		return []string{}, err
+		return nil, err
 	}
 	defer file.Close()
 
-	return LinesFromReader(file)
+	if len(ttl) > 0 {
+		if stat, err := file.Stat(); err != nil {
+			return nil, err
+		} else {
+			elapsed := time.Since(stat.ModTime())
+			// fmt.Printf("File time: %+v - elapsed: %+v", stat.ModTime(), elapsed)
+			if elapsed > ttl[0] {
+				return nil, err
+			}
+		}
+	}
+
+	return ioutil.ReadAll(file)
 }
 
-func (c cacheFile) set(content []string, url string) error {
+func (c cacheFile) set(content []byte, url string) error {
 	if c.disabled {
 		return errors.New("Disabled cache")
 	}
@@ -41,10 +55,8 @@ func (c cacheFile) set(content []string, url string) error {
 		return err
 	}
 
-	for _, line := range content {
-		if _, err = fmt.Fprintln(f, line); err != nil {
-			return err
-		}
+	if _, err = fmt.Fprintln(f, string(content)); err != nil {
+		return err
 	}
 
 	return nil
@@ -55,7 +67,7 @@ var (
 )
 
 func init() {
-	cache = NewCache("dfm")
+	cache = NewCache("dlm")
 }
 
 func NewCache(prefix string) cacheFile {

@@ -38,8 +38,8 @@ var (
 RUN mkdir -p ~/.gnupg && echo 'disable-ipv6' >> ~/.gnupg/dirmngr.conf`
 )
 
-func NewContext(commandLibs string, distros []Distribution, distro Distribution) Context {
-	distroContext := GetDistributionContext(distro.Name)
+func NewContext(commandLibs string, distros []Distribution, distributionFrom Distribution) Context {
+	distroContext := GetDistributionContext(distributionFrom.Name)
 
 	before := make([]string, 0)
 	if len(distros) > 1 {
@@ -55,8 +55,8 @@ func NewContext(commandLibs string, distros []Distribution, distro Distribution)
 
 	return Context{
 		From: Block{
-			Description: distro.Description(),
-			Data:        fmt.Sprintf("FROM %s", distro.ImageRepository),
+			Description: distributionFrom.Description(),
+			Data:        fmt.Sprintf("FROM %s", distributionFrom.ImageRepository),
 		},
 		Before:    before,
 		Languages: make([]Block, 0),

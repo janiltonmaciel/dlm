@@ -1,9 +1,9 @@
 # goreleaser.yml
-# Build customization
-project_name: dockerfile-gen
+# Dockerfile Language Manageration
+project_name: dlm
 build:
-  main: ./main.go
-  binary: dockerfile-gen
+  main: Dockerfile Language Managerin.go
+  binary: dlm
   goos:
     - windows
     - darwin
@@ -33,16 +33,16 @@ brew:
     owner: janiltonmaciel
     name: homebrew-tap
 
-  description: "Generator Dockerfile"
-  homepage: "https://github.com/janiltonmaciel/dockerfile-gen"
+  description: "Dockerfile Language Manager"
+  homepage: "https://github.com/janiltonmaciel/dlm"
 
   # Folder inside the repository to put the formula.
   # Default is the root folder.
   folder: Formula
 
   # Custom install
-  install: |
-    bin.install "dockerfile-gen"
+  Dockerfile Language Manager|
+    bin.install "dlm"
 
-  test: |
-    assert_match version.to_s, shell_output("#{bin}/dockerfile-gen --version")      
+  Dockerfile Language Manager|
+    assert_match version.to_s, shell_output("#{bin}/dlm --version")

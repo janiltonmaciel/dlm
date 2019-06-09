@@ -1,5 +1,9 @@
 
   - name: Ubuntu
+    release_name: 19.10 (eoan)
+    release: 19.1
+
+  - name: Ubuntu
     release_name: 19.04 (disco)
     release: 19.04
 
@@ -38,6 +42,10 @@
   - name: Debian
     release_name: 6 (squeeze)
     release: 6
+
+  - name: Alpine
+    release_name: '4.1'
+    release: 4.1
 
   - name: Alpine
     release_name: '4.0'

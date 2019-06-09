@@ -1,32 +1,29 @@
 package cmd
 
 var (
-	ErrorTemplate = `{{color "red"}}{{ ErrorIcon }} {{.Error}}{{color "reset"}}
-`
-	MultiSelectQuestionTemplate = `
+	selectQuestionTemplate = `
 {{- if .ShowHelp }}{{- color "cyan"}}{{ HelpIcon }} {{ .Help }}{{color "reset"}}{{"\n"}}{{end}}
 {{- color "green+hb"}}{{ QuestionIcon }} {{color "reset"}}
 {{- color "default+hb"}}{{ .Message }}{{ .FilterMessage }}{{color "reset"}}
 {{- if .ShowAnswer}}{{color "cyan"}} {{.Answer}}{{color "reset"}}{{"\n"}}
-{{- else }}
-	{{- "  "}}{{- color "cyan"}}{{- if and .Help (not .ShowHelp)}}[ {{ HelpInputRune }} for more help]{{end}}{{color "reset"}}
+{{- else}}
+  {{- "  "}}{{- color "cyan"}}[Use arrows to move, enter to select, type to filter{{- if and .Help (not .ShowHelp)}}, {{ HelpInputRune }} for more help{{end}}]{{color "reset"}}
   {{- "\n"}}
-  {{- range $ix, $option := .PageEntries}}
-	{{- if eq $ix $.SelectedIndex}}{{color "cyan"}}{{ SelectFocusIcon }}{{color "reset"}}{{else}} {{end}}
-	{{- if index $.Checked $option}}{{color "green"}} {{ MarkedOptionIcon }} {{else}}{{color "default+hb"}} {{ UnmarkedOptionIcon }} {{end}}
-	{{- color "reset"}}
-	{{- " "}}{{$option}}{{"\n"}}
+  {{- range $ix, $choice := .PageEntries}}
+    {{- if eq $ix $.SelectedIndex}}{{color "cyan+b"}}{{ SelectFocusIcon }} {{else}}{{color "default+hb"}}  {{end}}
+    {{- $choice}}
+    {{- color "reset"}}{{"\n"}}
   {{- end}}
 {{- end}}`
 
-	InputQuestionTemplate = `
+	confirmQuestionTemplate = `
 {{- if .ShowHelp }}{{- color "cyan"}}{{ HelpIcon }} {{ .Help }}{{color "reset"}}{{"\n"}}{{end}}
 {{- color "green+hb"}}{{ QuestionIcon }} {{color "reset"}}
 {{- color "default+hb"}}{{ .Message }} {{color "reset"}}
-{{- if .ShowAnswer}}
+{{- if .Answer}}
   {{- color "cyan"}}{{.Answer}}{{color "reset"}}{{"\n"}}
 {{- else }}
-  {{- if .Default}}{{color "white"}}({{.Default}}) {{color "reset"}}{{end}}
   {{- if and .Help (not .ShowHelp)}}{{color "cyan"}}[{{ HelpInputRune }} for help]{{color "reset"}} {{end}}
+  {{- color "green+hb"}}{{if .Default}}(Yes/no) {{else}}(yes/No) {{end}}{{color "reset"}}
 {{- end}}`
 )

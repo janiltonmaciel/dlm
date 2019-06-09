@@ -22,9 +22,9 @@ func createApp(version string) *cli.App {
 	app.Commands = createCommands()
 	app.Author = manager.RenderGreen(author)
 	app.Version = manager.RenderGreen(version)
-	app.Name = manager.RenderGreen("dfm")
+	app.Name = manager.RenderGreen("dlm")
 	app.HelpName = app.Name
-	app.Usage = "Dockerfile Manager"
+	app.Usage = "Dockerfile language Manager"
 	app.UsageText = fmt.Sprintf(`
    %s
    %s
@@ -34,14 +34,14 @@ func createApp(version string) *cli.App {
    %s
    %s
    %s`,
-		fmt.Sprintf("%-48s Create Dockerfile", manager.RenderGreen("dfm create")),
-		fmt.Sprintf("%-48s List versions available for docker %s", manager.RenderGreen("dfm list <language>"), manager.RenderYellow("<language>")),
+		fmt.Sprintf("%-48s Create Dockerfile", manager.RenderGreen("dlm create")),
+		fmt.Sprintf("%-48s List versions available for docker %s", manager.RenderGreen("dlm list <language>"), manager.RenderYellow("<language>")),
 		fmt.Sprintf("%-48s When listing, show %s version", manager.RenderGreen("  --pre-release"), manager.RenderYellow("pre-release")),
-		fmt.Sprintf("%-48s List versions available for docker %s, matching a given %s", manager.RenderGreen("dfm list <language> <version>"), manager.RenderYellow("<language>"), manager.RenderYellow("<version>")),
+		fmt.Sprintf("%-48s List versions available for docker %s, matching a given %s", manager.RenderGreen("dlm list <language> <version>"), manager.RenderYellow("<language>"), manager.RenderYellow("<version>")),
 		fmt.Sprintf("%-48s When listing, show %s version", manager.RenderGreen("  --pre-release"), manager.RenderYellow("pre-release")),
-		fmt.Sprintf("%-48s List all supported languages", manager.RenderGreen("dfm languages")),
-		fmt.Sprintf("%-48s Print out the installed version of dfm", manager.RenderGreen("dfm --version")),
-		fmt.Sprintf("%-48s Show this message", manager.RenderGreen("dfm --help")),
+		fmt.Sprintf("%-48s List all supported languages", manager.RenderGreen("dlm languages")),
+		fmt.Sprintf("%-48s Print out the installed version of dlm", manager.RenderGreen("dlm --version")),
+		fmt.Sprintf("%-48s Show this message", manager.RenderGreen("dlm --help")),
 	)
 
 	return app
@@ -56,12 +56,13 @@ func createCommands() []cli.Command {
 }
 
 func configCli(commit, date string) {
-	cli.AppHelpTemplate = AppHelpTemplate
-	cli.VersionPrinter = VersionPrinter(commit, date)
-	cli.CommandHelpTemplate = CommandHelpTemplate
+	cli.AppHelpTemplate = appHelpTemplate
+	cli.VersionPrinter = versionPrinter(commit, date)
+	cli.CommandHelpTemplate = commandHelpTemplate
 }
 
 func configSurvey() {
 	surveyCore.QuestionIcon = "\n?"
-	survey.SelectQuestionTemplate = SelectQuestionTemplate
+	survey.SelectQuestionTemplate = selectQuestionTemplate
+	survey.ConfirmQuestionTemplate = confirmQuestionTemplate
 }

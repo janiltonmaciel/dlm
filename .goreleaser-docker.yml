@@ -1,9 +1,9 @@
 # goreleaser.yml
 # Build customization
-project_name: dockerfile-gen
+project_name: dlm
 build:
   main: ./main.go
-  binary: dockerfile-gen
+  binary: dlm
   goos:
     - windows
     - darwin
@@ -35,7 +35,7 @@ release:
 
 # Build docker
 dockers:
-- image: janilton/dockerfile-gen
+- image: janilton/dlm
   tag_templates:
   - '{{ .Major }}.{{ .Minor }}'
   - 'latest'

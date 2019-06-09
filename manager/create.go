@@ -9,17 +9,16 @@ import (
 )
 
 func GetContentDockerfile(commandLibs string, answersVersions []AnswerVersion, answerDistro string, c *cli.Context) (string, error) {
-	fmt.Fprintln(c.App.Writer, RenderCyan("> Creating Dockerfile..."))
-
-	distributions, distribution := distributionLanguage(answersVersions, answerDistro, c)
-	context := NewContext(commandLibs, distributions, distribution)
+	distributions, distributionFrom := distributionLanguage(answersVersions, answerDistro, c)
+	context := NewContext(commandLibs, distributions, distributionFrom)
 
 	var data string
 	var err error
 	for index, distro := range distributions {
 		isFrom := (index == 0)
 		if !isFrom {
-			data, err = SanitizeDockerfile(distro)
+			data, err = SanitizeDockerfile(distributionFrom, distro)
+			// fmt.Printf("GetContentDockerfile data: %v\n", data)
 			if err != nil {
 				fmt.Fprintf(c.App.Writer, "Error: %s\n", err)
 				return "", err
@@ -35,16 +34,19 @@ func GetContentDockerfile(commandLibs string, answersVersions []AnswerVersion, a
 func distributionLanguage(answersVersions []AnswerVersion, answerDistro string, c *cli.Context) ([]Distribution, Distribution) {
 	distros, distribution := filterByImage(answersVersions, answerDistro)
 	if len(distros) > 0 && distribution != nil {
+		// println("filterByImage")
 		return appendDistribution(distros, *distribution)
 	}
 
 	distros, distribution = filterByRelease(answersVersions, answerDistro)
 	if len(distros) > 0 && distribution != nil {
+		// println("filterByRelease")
 		return appendDistribution(distros, *distribution)
 	}
 
 	distros, distribution = filterByDistro(answersVersions, answerDistro)
 	if len(distros) > 0 && distribution != nil {
+		// println("filterByDistro")
 		return appendDistribution(distros, *distribution)
 	}
 
